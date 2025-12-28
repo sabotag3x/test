@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Batalha de Filmes</title>
+<title>FilmDuel – Seus filmes do Letterboxd</title>
 
 <style>
 body{
@@ -10,7 +10,7 @@ body{
   min-height:100vh;
   display:flex;
   justify-content:center;
-  background:#000;
+  background:radial-gradient(circle at top,#111,#000);
   color:#fff;
   font-family:Arial,sans-serif
 }
@@ -20,55 +20,130 @@ body{
   padding:40px;
   text-align:center
 }
-h1{margin-bottom:20px}
 
-#controls{margin-bottom:30px}
-input{padding:10px;font-size:16px;width:260px}
+h1{
+  font-size:32px;
+  margin-bottom:10px
+}
+.subtitle{
+  color:#aaa;
+  margin-bottom:30px
+}
 
-#startBtn{
+/* CONTROLES */
+#controls{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:14px;
+  margin-bottom:30px
+}
+input{
+  padding:14px;
+  font-size:18px;
+  width:320px;
+  border-radius:30px;
+  border:none;
+  outline:none;
+  text-align:center
+}
+button{
   background:linear-gradient(135deg,#ffcc00,#ff9900);
   color:#000;
   font-size:20px;
   font-weight:bold;
-  padding:14px 36px;
+  padding:14px 40px;
   border-radius:40px;
   border:none;
-  cursor:pointer;
-  margin-left:10px
+  cursor:pointer
 }
 
+/* DUELO */
 .duel{
   display:flex;
   justify-content:center;
   gap:80px;
   margin-top:40px
 }
-.card{width:300px}
+.card{
+  width:300px
+}
 .card img{
   width:100%;
-  border-radius:12px;
+  border-radius:14px;
   cursor:pointer;
   transition:transform .2s
 }
 .card img:hover{transform:scale(1.06)}
-.title{margin-top:10px;font-size:18px}
+.title{margin-top:12px;font-size:18px}
+
+/* CHAVEAMENTO FINAL */
+.bracket{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:60px;
+  margin-top:50px
+}
+.side{
+  display:flex;
+  gap:40px
+}
+.round{
+  display:flex;
+  flex-direction:column;
+  gap:16px
+}
+.small{
+  width:90px
+}
+.small img{
+  width:100%;
+  border-radius:6px
+}
+
+.champion{
+  width:340px;
+  display:flex;
+  flex-direction:column;
+  align-items:center
+}
+.champion img{
+  width:100%;
+  border-radius:20px
+}
+.champion .title{
+  font-size:22px;
+  margin-top:14px;
+  font-weight:bold
+}
+
+#status{
+  margin-top:20px;
+  color:#ffcc00;
+  font-size:18px
+}
 </style>
 </head>
 
 <body>
 <div class="container">
-  <h1>Batalha de Filmes</h1>
+  <h1>FilmDuel</h1>
+  <div class="subtitle">
+    Batalha dos seus filmes avaliados no Letterboxd
+  </div>
 
   <div id="controls">
-    <input id="user" placeholder="username do Letterboxd">
+    <input id="user" value="sabotag3x" placeholder="username do Letterboxd">
     <button id="startBtn">Gerar competição</button>
   </div>
 
+  <div id="status"></div>
   <div id="duel" class="duel"></div>
 </div>
 
 <script>
-let filmes=[], index=0, vencedores=[], atual=[];
+let pool=[], filmes=[], index=0, vencedores=[], atual=[], rounds=[];
 
 function shuffle(arr){
   const a=[...arr];
@@ -79,20 +154,35 @@ function shuffle(arr){
   return a;
 }
 
+/* ENTER dispara */
+document.getElementById("user").addEventListener("keydown",e=>{
+  if(e.key==="Enter") start();
+});
+
 async function start(){
   const user=document.getElementById("user").value.trim();
   if(!user) return;
 
-  document.getElementById("duel").innerHTML="Carregando lista…";
+  const status=document.getElementById("status");
+  const duel=document.getElementById("duel");
+  duel.innerHTML="";
+  rounds=[];
+
+  let countdown=5;
+  status.textContent=`Carregando lista (${countdown})…`;
+  const timer=setInterval(()=>{
+    countdown--;
+    status.textContent=`Carregando lista (${countdown})…`;
+    if(countdown===0) clearInterval(timer);
+  },1000);
 
   const res=await fetch(`/api/letterboxd/${user}`);
-  const pool=await res.json();
+  pool=await res.json();
 
-  const selected = shuffle(pool).slice(0,16);
+  const selected=shuffle(pool).slice(0,16);
+  const lang=navigator.language||"pt-BR";
 
-  const lang = navigator.language || "pt-BR";
-
-  const enriched = await fetch("/api/tmdb-batch", {
+  const enriched=await fetch("/api/tmdb-batch",{
     method:"POST",
     headers:{ "Content-Type":"application/json" },
     body:JSON.stringify({ films:selected, lang })
@@ -101,17 +191,19 @@ async function start(){
   filmes=enriched;
   index=0;
   vencedores=[];
+  status.textContent="";
   nextDuel();
 }
 
 function nextDuel(){
   if(index>=filmes.length){
+    rounds.push([...vencedores]);
     filmes=vencedores;
     vencedores=[];
     index=0;
+
     if(filmes.length===1){
-      document.getElementById("duel").innerHTML=
-        `<h2>Campeão<br>${filmes[0].title}</h2>`;
+      showBracket(filmes[0]);
       return;
     }
     nextDuel();
@@ -128,7 +220,7 @@ function nextDuel(){
 function card(f,i){
   return `
     <div class="card">
-      <img src="${f.poster||""}" onclick="choose(${i})">
+      <img src="${f.poster}" onclick="choose(${i})">
       <div class="title">${f.title} (${f.year})</div>
     </div>`;
 }
@@ -136,6 +228,38 @@ function card(f,i){
 function choose(i){
   vencedores.push(atual[i]);
   nextDuel();
+}
+
+function showBracket(champion){
+  const left=rounds.slice(0,3);
+  const right=rounds.slice(0,3).map(r=>[...r].reverse());
+
+  let html=`<div class="bracket">`;
+
+  html+=`<div class="side">`;
+  left.forEach(r=>{
+    html+=`<div class="round">`;
+    r.forEach(f=>html+=`<div class="small"><img src="${f.poster}"></div>`);
+    html+=`</div>`;
+  });
+  html+=`</div>`;
+
+  html+=`
+    <div class="champion">
+      <img src="${champion.poster}">
+      <div class="title">Campeão<br>${champion.title} (${champion.year})</div>
+    </div>
+  `;
+
+  html+=`<div class="side">`;
+  right.reverse().forEach(r=>{
+    html+=`<div class="round">`;
+    r.forEach(f=>html+=`<div class="small"><img src="${f.poster}"></div>`);
+    html+=`</div>`;
+  });
+  html+=`</div></div>`;
+
+  document.getElementById("duel").innerHTML=html;
 }
 
 document.getElementById("startBtn").onclick=start;
