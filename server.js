@@ -1,59 +1,55 @@
 const express = require("express");
 const axios = require("axios");
+const cheerio = require("cheerio");
 
 const app = express();
 app.use(express.static("."));
 
-function shuffle(arr) {
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
-
 app.get("/api/films", async (req, res) => {
   try {
-    const response = await axios.get("https://www.imdb.com/chart/top/", {
+    const listUrl =
+      "https://letterboxd.com/sabotag3x/list/1-year-1-movie/";
+
+    const response = await axios.get(listUrl, {
       headers: {
         "User-Agent": "Mozilla/5.0",
         "Accept-Language": "en-US,en;q=0.9"
       }
     });
 
-    const html = response.data;
+    const $ = cheerio.load(response.data);
+    const films = [];
 
-    const match = html.match(
-      /<script id="__NEXT_DATA__" type="application\/json">(.+?)<\/script>/
-    );
+    $("li.poster-container").each((_, el) => {
+      const posterEl = $(el).find("img");
+      const linkEl = $(el).find("a");
 
-    if (!match) {
-      return res.status(500).json({ error: "NEXT_DATA não encontrado" });
-    }
+      if (!posterEl.length || !linkEl.length) return;
 
-    const data = JSON.parse(match[1]);
+      const title = posterEl.attr("alt") || "";
+      const poster =
+        posterEl.attr("src") ||
+        posterEl.attr("data-src") ||
+        posterEl.attr("data-srcset")?.split(",")[0]?.split(" ")[0] ||
+        "";
 
-    const items =
-      data.props.pageProps.pageData.chartTitles.edges;
+      // tenta pegar o ano do texto próximo
+      const metaText = $(el).text();
+      const yearMatch = metaText.match(/\b(19|20)\d{2}\b/);
+      const year = yearMatch ? yearMatch[0] : "";
 
-    const films = items.map(edge => {
-      const n = edge.node;
-      return {
-        title: n.titleText.text,
-        year: n.releaseYear.year,
-        poster: n.primaryImage?.url || ""
-      };
+      films.push({ title, year, poster });
     });
 
-    const selected = shuffle(films).slice(0, 16);
-
     res.setHeader("Cache-Control", "no-store");
-    res.json({ films: selected });
-  } catch (e) {
-    console.error(e);
-    res.status(500).json({ error: "Erro ao buscar IMDb Top 250" });
+    res.json({ films });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Erro ao buscar lista do Letterboxd" });
   }
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT);
+app.listen(PORT, () => {
+  console.log("Servidor rodando na porta", PORT);
+});
