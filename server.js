@@ -7,7 +7,8 @@ app.use(express.static("."));
 
 app.get("/api/films", async (req, res) => {
   try {
-    const response = await axios.get("https://www.imdb.com/chart/top/", {
+    const url = "https://www.imdb.com/chart/top/";
+    const response = await axios.get(url, {
       headers: {
         "User-Agent": "Mozilla/5.0",
         "Accept-Language": "en-US,en;q=0.9"
@@ -19,31 +20,26 @@ app.get("/api/films", async (req, res) => {
 
     $("li.ipc-metadata-list-summary-item").each((_, el) => {
       const titleEl = $(el).find("h3.ipc-title__text");
+      const yearEl = $(el).find("span.ipc-metadata-list-summary-item__li");
       const posterEl = $(el).find("img");
+
       if (!titleEl.length || !posterEl.length) return;
 
       const title = titleEl.text().replace(/^\d+\.\s*/, "").trim();
-
-      const yearEl = $(el)
-        .find("span.ipc-metadata-list-summary-item__li")
-        .filter((_, s) => /^\d{4}$/.test($(s).text()))
-        .first();
-      const year = yearEl.length ? yearEl.text() : "";
-
-      let poster =
-        posterEl.attr("srcset")?.split(",").pop()?.trim().split(" ")[0] ||
-        posterEl.attr("src") ||
-        "";
-      if (poster.startsWith("/")) poster = "https://www.imdb.com" + poster;
+      const year = yearEl.first().text().trim();
+      const poster = posterEl.attr("src");
 
       films.push({ title, year, poster });
     });
 
     res.json({ films });
-  } catch {
-    res.status(500).json({ error: "Erro" });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Erro ao buscar Top 250 do IMDb." });
   }
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT);
+app.listen(PORT, () => {
+  console.log("Servidor rodando na porta", PORT);
+});
