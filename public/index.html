@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Batalha de Filmes – Letterboxd</title>
+<title>Batalha de Filmes</title>
 
 <style>
 body{
@@ -22,9 +22,7 @@ body{
 }
 h1{margin-bottom:20px}
 
-#controls{
-  margin-bottom:30px
-}
+#controls{margin-bottom:30px}
 
 input{
   padding:10px;
@@ -51,9 +49,7 @@ input{
   gap:80px;
   margin-top:40px
 }
-.card{
-  width:300px
-}
+.card{width:300px}
 .card img{
   width:100%;
   border-radius:12px;
@@ -63,7 +59,7 @@ input{
 .card img:hover{transform:scale(1.06)}
 .title{margin-top:10px;font-size:18px}
 
-/* RESULTADO FINAL */
+/* RESULTADO */
 .bracket{
   display:flex;
   justify-content:center;
@@ -71,27 +67,10 @@ input{
   gap:60px;
   margin-top:40px
 }
-
-.side{
-  display:flex;
-  align-items:center;
-  gap:40px
-}
-
-.round{
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  gap:18px
-}
-
-.small{
-  width:90px
-}
-.small img{
-  width:100%;
-  border-radius:6px
-}
+.side{display:flex;gap:40px}
+.round{display:flex;flex-direction:column;gap:18px}
+.small{width:90px}
+.small img{width:100%;border-radius:6px}
 
 .champion{
   width:320px;
@@ -99,10 +78,7 @@ input{
   flex-direction:column;
   align-items:center
 }
-.champion img{
-  width:100%;
-  border-radius:18px
-}
+.champion img{width:100%;border-radius:18px}
 .champion .title{
   font-size:22px;
   margin-top:14px;
@@ -113,7 +89,7 @@ input{
 
 <body>
 <div class="container">
-  <h1>Batalha de Filmes – Letterboxd</h1>
+  <h1>Batalha de Filmes</h1>
 
   <div id="controls">
     <input id="user" placeholder="username do Letterboxd">
@@ -124,12 +100,7 @@ input{
 </div>
 
 <script>
-let pool = [];
-let filmes = [];
-let index = 0;
-let vencedores = [];
-let atual = [];
-let rounds = [];
+let pool=[], filmes=[], index=0, vencedores=[], atual=[], rounds=[];
 
 function shuffle(arr){
   const a=[...arr];
@@ -141,30 +112,30 @@ function shuffle(arr){
 }
 
 async function start(){
-  const user = document.getElementById("user").value.trim();
+  const user=document.getElementById("user").value.trim();
   if(!user) return;
 
-  document.getElementById("duel").innerHTML = "Carregando filmes…";
+  document.getElementById("duel").innerHTML="Carregando…";
 
-  const res = await fetch(`/api/letterboxd/${user}`);
-  pool = await res.json();
+  const res=await fetch(`/api/letterboxd/${user}`);
+  pool=await res.json();
 
-  filmes = shuffle(pool).slice(0,16);
-  index = 0;
-  vencedores = [];
-  rounds = [];
+  filmes=shuffle(pool).slice(0,16);
+  index=0;
+  vencedores=[];
+  rounds=[];
 
   nextDuel();
 }
 
 function nextDuel(){
-  if(index >= filmes.length){
+  if(index>=filmes.length){
     rounds.push([...vencedores]);
-    filmes = vencedores;
-    vencedores = [];
-    index = 0;
+    filmes=vencedores;
+    vencedores=[];
+    index=0;
 
-    if(filmes.length === 1){
+    if(filmes.length===1){
       showBracket(filmes[0]);
       return;
     }
@@ -172,20 +143,19 @@ function nextDuel(){
     return;
   }
 
-  atual = [filmes[index], filmes[index+1]];
-  index += 2;
+  atual=[filmes[index],filmes[index+1]];
+  index+=2;
 
-  document.getElementById("duel").innerHTML =
-    card(atual[0],0) + card(atual[1],1);
+  document.getElementById("duel").innerHTML=
+    card(atual[0],0)+card(atual[1],1);
 }
 
 function card(f,i){
   return `
     <div class="card">
-      <img src="${f.poster}" onclick="choose(${i})">
+      <img src="${f.poster||""}" onclick="choose(${i})">
       <div class="title">${f.title} (${f.year})</div>
-    </div>
-  `;
+    </div>`;
 }
 
 function choose(i){
@@ -194,38 +164,37 @@ function choose(i){
 }
 
 function showBracket(champion){
-  const left = rounds.slice(0,3);
-  const right = rounds.slice(0,3).map(r=>[...r].reverse());
+  const left=rounds.slice(0,3);
+  const right=rounds.slice(0,3).map(r=>[...r].reverse());
 
   let html=`<div class="bracket">`;
 
   html+=`<div class="side">`;
   left.forEach(r=>{
     html+=`<div class="round">`;
-    r.forEach(f=>html+=`<div class="small"><img src="${f.poster}"></div>`);
+    r.forEach(f=>html+=`<div class="small"><img src="${f.poster||""}"></div>`);
     html+=`</div>`;
   });
   html+=`</div>`;
 
   html+=`
     <div class="champion">
-      <img src="${champion.poster}">
+      <img src="${champion.poster||""}">
       <div class="title">Campeão<br>${champion.title} (${champion.year})</div>
-    </div>
-  `;
+    </div>`;
 
   html+=`<div class="side">`;
   right.reverse().forEach(r=>{
     html+=`<div class="round">`;
-    r.forEach(f=>html+=`<div class="small"><img src="${f.poster}"></div>`);
+    r.forEach(f=>html+=`<div class="small"><img src="${f.poster||""}"></div>`);
     html+=`</div>`;
   });
   html+=`</div></div>`;
 
-  document.getElementById("duel").innerHTML = html;
+  document.getElementById("duel").innerHTML=html;
 }
 
-document.getElementById("startBtn").onclick = start;
+document.getElementById("startBtn").onclick=start;
 </script>
 </body>
 </html>
