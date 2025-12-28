@@ -54,7 +54,7 @@ button{
   border:none;
   padding:14px 34px;
   border-radius:40px;
-  font-size:16px;
+  font-size:15px;
   font-weight:bold;
   cursor:pointer;
 }
@@ -62,28 +62,45 @@ button{
 .lists{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:16px 18px;
-  margin-top:22px;
+  gap:18px 22px;
+  margin-top:32px;
+  max-width:900px;
 }
 
 /* ================= GAME ================= */
 
-#game{display:none}
+#game{
+  display:none;
+  min-height:80vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
 
 #status{
-  margin:20px 0 12px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  margin-top:40px;
 }
 
 #loading-main{
-  font-size:32px;
+  font-size:34px;
   font-weight:bold;
   color:#ffbf2f;
+  margin-top:18px;
 }
 
 #loading-sub{
   margin-top:8px;
-  font-size:16px;
+  font-size:15px;
   opacity:.9;
+}
+
+#countdown{
+  width:180px;
+  margin-bottom:14px;
 }
 
 /* ================= DUELO ================= */
@@ -91,7 +108,7 @@ button{
 .duel{
   display:flex;
   justify-content:center;
-  align-items:flex-start;
+  align-items:center;
   gap:120px;
   min-height:520px;
 }
@@ -112,7 +129,7 @@ button{
 .card img:hover{transform:scale(1.05)}
 
 .title{
-  margin-top:16px;
+  margin-top:18px;
   width:100%;
   min-height:44px;
   font-size:16px;
@@ -173,7 +190,7 @@ button{
 }
 
 #again{
-  margin-top:8px;
+  margin-top:10px;
 }
 
 /* ================= MOBILE ================= */
@@ -201,12 +218,24 @@ button{
   <button onclick="startUser()">Meus filmes</button>
 
   <div class="lists">
-    <button onclick="startList('https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/')">Top 250</button>
-    <button onclick="startList('https://letterboxd.com/jack/list/official-top-250-films-with-the-most-fans/')">Populares</button>
+    <button onclick="startList('https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/')">Top 250 Letterboxd</button>
+    <button onclick="startList('https://letterboxd.com/dave/list/imdb-top-250/')">IMDb Top 250</button>
+    <button onclick="startList('https://letterboxd.com/jack/list/official-top-250-films-with-the-most-fans/')">Mais Populares</button>
     <button onclick="startList('https://letterboxd.com/lifeasfiction/list/letterboxd-100-animation/')">Animação</button>
+    <button onclick="startList('https://letterboxd.com/petitebutfierce/list/disney/')">Disney</button>
     <button onclick="startList('https://letterboxd.com/jaywill/list/ghibli/')">Ghibli</button>
-    <button onclick="startList('https://letterboxd.com/a24/list/every-a24-movie-ever/')">A24</button>
     <button onclick="startList('https://letterboxd.com/purecinema1/list/brazil/')">Brasil</button>
+    <button onclick="startList('https://letterboxd.com/jack/list/official-top-250-documentary-films/')">Documentários</button>
+    <button onclick="startList('https://letterboxd.com/chris_coke/list/letterboxds-top-250-science-fiction-films/')">Ficção Científica</button>
+    <button onclick="startList('https://letterboxd.com/brsan/list/letterboxds-top-250-international-films/')">Estrangeiros</button>
+    <button onclick="startList('https://letterboxd.com/oscars/list/oscar-winning-films-best-picture/')">Oscar</button>
+    <button onclick="startList('https://letterboxd.com/festival_cannes/list/70-years-of-the-palme-dor-70-ans-de-la-palme/')">Palma de Ouro</button>
+    <button onclick="startList('https://letterboxd.com/bafta/list/all-bafta-best-film-award-winners/')">BAFTA</button>
+    <button onclick="startList('https://letterboxd.com/jbutts15/list/the-complete-criterion-collection/')">Criterion</button>
+    <button onclick="startList('https://letterboxd.com/a24/list/every-a24-movie-ever/')">A24</button>
+    <button onclick="startList('https://letterboxd.com/crew/list/the-2010s-top-250-narrative-features/')">Década 2010</button>
+    <button onclick="startList('https://letterboxd.com/victorp26/list/mcu/')">Universo Marvel</button>
+    <button onclick="startList('https://letterboxd.com/darrencb/list/letterboxds-top-250-horror-films/')">Terror</button>
   </div>
 </div>
 
@@ -214,8 +243,9 @@ button{
 
 <div id="game">
   <div id="status">
+    <img id="countdown" src="https://media.giphy.com/media/26BRzozg4TCBXv6QU/giphy.gif">
     <div id="loading-main">Carregando lista…</div>
-    <div id="loading-sub"></div>
+    <div id="loading-sub">Preparando o projetor</div>
   </div>
 
   <div id="duel" class="duel"></div>
@@ -245,7 +275,7 @@ function startLoading(){
   loadingTimer=setInterval(()=>{
     i=(i+1)%loadingTexts.length;
     document.getElementById("loading-sub").innerText=loadingTexts[i];
-  },2500);
+  },2300);
 }
 
 function stopLoading(){
@@ -264,7 +294,7 @@ async function startList(url){
 
 async function start(endpoint){
   document.getElementById("home").style.display="none";
-  document.getElementById("game").style.display="block";
+  document.getElementById("game").style.display="flex";
   startLoading();
 
   const res=await fetch(endpoint);
