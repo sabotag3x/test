@@ -191,6 +191,8 @@ button{
 /* ================= MOBILE ================= */
 
 
+/* ================= MOBILE GERAL ================= */
+
 @media (max-width: 768px){
 
   body{
@@ -220,7 +222,6 @@ button{
     padding: 16px 28px;
   }
 
-  /* listas voltam a se comportar bem no mobile */
   .lists{
     grid-template-columns: 1fr 1fr;
     gap: 14px;
@@ -234,7 +235,7 @@ button{
   }
 }
 
-/* --------- TELA DE LOADING --------- */
+/* ================= LOADING ================= */
 
 #status{
   display:flex;
@@ -253,10 +254,10 @@ button{
   margin-top:10px;
 }
 
-/* --------- DUELO (VOTOS) --------- */
+/* ================= DUELO ================= */
 
 .duel{
-  align-items:center; /* centraliza verticalmente */
+  align-items:center;
 }
 
 @media (max-width: 768px){
@@ -267,7 +268,7 @@ button{
   }
 
   .card{
-    width: 42vw; /* dois posters lado a lado */
+    width: 42vw;
   }
 
   .card img{
@@ -276,144 +277,97 @@ button{
 
   .title{
     font-size: 15px;
-    min-height: unset;
     margin-top: 10px;
-    -webkit-line-clamp: unset; /* não corta mais */
+    -webkit-line-clamp: unset;
   }
 }
 
-/* --------- RESULTADO FINAL (CAMPEÃO) --------- */
+/* ================= RESULTADO FINAL ================= */
 
-.bracket{
-  align-items:center;
-}
-
-@media (max-width: 900px){
-
-  /* mantém chaveamento VISÍVEL no mobile */
-  .bracket{
-    flex-direction:column;
-    gap: 22px;
-  }
-
-  .side{
-    flex-direction:row;
-    justify-content:center;
-    gap: 14px;
-    width: 100%;
-    overflow:hidden;
-  }
-
-  .round{
-    gap: 10px;
-  }
-
-  /* tamanhos por porcentagem */
-  .r1 img{ width: 10vw; min-width:40px }
-  .r2 img{ width: 14vw; min-width:55px }
-  .r3 img{ width: 18vw; min-width:70px }
-
-.champion{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  max-width:100%;
-}
-
-.champion img{
-  width: 60vw;
-  max-width: 260px;
-  height: auto;
-}
-
-.champion .title{
-  font-size: 20px;
-  text-align:center;
-}
-
-
-  #again{
-    margin-top: 10px;
-    font-size:18px;
-    padding:14px 28px;
-  }
-}
-
-/* --------- MOBILE MUITO PEQUENO --------- */
-
-@media (max-width: 420px){
-
-  .card{
-    width: 44vw;
-  }
-
-  .r1 img{ width: 9vw }
-  .r2 img{ width: 13vw }
-  .r3 img{ width: 17vw }
-
-  .champion img{
-    width: 65vw;
-    max-width: 240px;
-  }
-}
-    /* ================================================= */
-/* PATCH DEFINITIVO – RESULTADO FINAL (CAMPEÃO)     */
-/* NÃO ALTERA HOME / LISTAS / DUELO                  */
-/* ================================================= */
-
-/* ---- DESKTOP ---- */
+/* ---- DESKTOP (ajuste fino, NÃO quebra) ---- */
 
 .bracket{
   max-width:1200px;
   margin:0 auto;
+  align-items:center;
 }
 
 .side{
-  max-width:320px;   /* impede roubar espaço do campeão */
+  max-width:320px;
 }
 
 .champion{
-  max-width:420px;
+  max-width:320px;
 }
 
 .champion img{
+  width:50%;
   max-width:360px;
-  width:100%;
   height:auto;
 }
 
-/* ---- MOBILE ---- */
+/* ---- MOBILE DEFINITIVO ---- */
 
 @media (max-width: 900px){
 
   .bracket{
     flex-direction:column;
+    gap:28px;
+    width:100%;
+  }
+
+  /* lados viram FAIXAS */
+  .side{
+    display:flex;
+    flex-direction:row;
+    gap:14px;
+    width:100%;
+    max-width:100%;
+    justify-content:center;
+    overflow-x:auto;
+    padding:0 8px;
+  }
+
+  .round{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .r1 img{ width:52px }
+  .r2 img{ width:72px }
+  .r3 img{ width:92px }
+
+  .champion{
+    width:100%;
     align-items:center;
   }
 
-  .side{
-    max-width:100%;
-    justify-content:center;
-  }
-
-  .champion{
-    max-width:100%;
-  }
-
   .champion img{
-    width:75%;
-    max-width:280px;
+    width: clamp(220px, 50vw, 300px);
+  }
+
+  .champion .title{
+    font-size:20px;
+    text-align:center;
+  }
+
+  #again{
+    font-size:18px;
+    padding:14px 30px;
+    margin-top:12px;
   }
 }
+
+/* ---- MOBILE MUITO PEQUENO ---- */
 
 @media (max-width: 420px){
 
   .champion img{
-    width:80%;
-    max-width:240px;
+    width: clamp(200px, 50vw, 260px);
   }
 }
+
 
     </style>
 </head>
