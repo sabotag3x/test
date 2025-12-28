@@ -475,19 +475,40 @@ async function startList(url){
 }
 
 async function start(endpoint){
-  document.getElementById("home").style.display="none";
-  document.getElementById("game").style.display="flex";
+  document.getElementById("home").style.display = "none";
+  document.getElementById("game").style.display = "flex";
   startLoading();
 
-  const res=await fetch(endpoint);
-  pool=shuffle(await res.json()).filter(f=>f.poster);
+  try{
+    const res = await fetch(endpoint);
+    const data = await res.json();
 
-  filmes=pool.splice(0,16);
-  initialRound=[...filmes];
-  rounds=[]; winners=[]; idx=0;
+    const valid = Array.isArray(data)
+      ? data.filter(f => f && f.poster)
+      : [];
 
-  stopLoading();
-  next();
+    if(valid.length < 16){
+      throw new Error("NOT_ENOUGH");
+    }
+
+    pool = shuffle(valid);
+    filmes = pool.splice(0,16);
+    initialRound = [...filmes];
+    rounds = [];
+    winners = [];
+    idx = 0;
+
+    stopLoading();
+    next();
+
+  }catch(e){
+    stopLoading();
+    showError(
+      e.message === "NOT_ENOUGH"
+        ? "Esse usuário não tem filmes suficientes para a batalha."
+        : "Usuário inexistente ou erro ao carregar os filmes."
+    );
+  }
 }
 
 function next(){
