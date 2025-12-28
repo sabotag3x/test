@@ -1,12 +1,10 @@
 {
-  "name": "imdb-playwright-debug",
+  "name": "imdb-html-scraper",
   "private": true,
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "npx playwright install chromium"
+    "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.19.2",
-    "playwright": "^1.43.0"
+    "express": "^4.19.2"
   }
 }
