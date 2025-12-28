@@ -324,15 +324,25 @@ button{
   .r2 img{ width: 14vw; min-width:55px }
   .r3 img{ width: 18vw; min-width:70px }
 
-  .champion img{
-    width: 70vw;     /* NÃO explode mais */
-    max-width: 320px;
-  }
+.champion{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  max-width:100%;
+}
 
-  .champion .title{
-    font-size: 20px;
-    text-align:center;
-  }
+.champion img{
+  width: 60vw;
+  max-width: 260px;
+  height: auto;
+}
+
+.champion .title{
+  font-size: 20px;
+  text-align:center;
+}
+
 
   #again{
     margin-top: 10px;
@@ -354,7 +364,8 @@ button{
   .r3 img{ width: 17vw }
 
   .champion img{
-    width: 78vw;
+    width: 65vw;
+    max-width: 240px;
   }
 }
 
