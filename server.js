@@ -14,7 +14,7 @@ function shuffle(arr) {
 
 app.get("/api/films", async (req, res) => {
   try {
-    const response = await axios.get("https://www.imdb.com/pt/user/ur55777575/ratings/", {
+    const response = await axios.get("https://www.imdb.com/chart/top/", {
       headers: {
         "User-Agent": "Mozilla/5.0",
         "Accept-Language": "en-US,en;q=0.9"
