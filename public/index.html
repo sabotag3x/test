@@ -2,58 +2,45 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>IMDb – Debug ao Vivo</title>
+<title>IMDb – Extração com Progresso</title>
 
 <style>
-body {
-  background:#000;
-  color:#fff;
-  font-family:Arial;
-  padding:40px;
-}
-input, button {
-  padding:10px;
-  font-size:16px;
-}
-button {
-  cursor:pointer;
-}
-#log {
-  margin-top:20px;
-  background:#111;
-  padding:15px;
-  height:300px;
-  overflow:auto;
-  font-family:monospace;
-  font-size:13px;
-}
-#counter {
-  margin-top:15px;
-  font-size:18px;
-  color:#ffcc00;
-}
+body { background:#000; color:#fff; font-family:Arial; padding:40px }
+input, button { padding:10px; font-size:16px }
+#log { margin-top:20px; background:#111; padding:15px; height:220px; overflow:auto; font-family:monospace }
+#counter { margin-top:10px; color:#ffcc00; font-size:18px }
+table { margin-top:20px; width:100%; border-collapse:collapse }
+th, td { border:1px solid #444; padding:6px }
 </style>
 </head>
 
 <body>
 
-<h2>IMDb – Extração com debug em tempo real</h2>
+<h2>IMDb – Extração completa (browser real)</h2>
 
 <input id="userId" value="ur55777575">
-<button onclick="buscar()">Buscar</button>
+<button onclick="start()">Buscar</button>
 
 <div id="counter">Aguardando…</div>
-
 <div id="log"></div>
 
+<table id="table" style="display:none">
+<thead><tr><th>#</th><th>Filme</th><th>Ano</th></tr></thead>
+<tbody></tbody>
+</table>
+
 <script>
-function buscar() {
+function start() {
   const user = document.getElementById("userId").value.trim();
   const log = document.getElementById("log");
   const counter = document.getElementById("counter");
+  const table = document.getElementById("table");
+  const tbody = table.querySelector("tbody");
 
   log.textContent = "";
   counter.textContent = "Iniciando…";
+  table.style.display = "none";
+  tbody.innerHTML = "";
 
   const es = new EventSource(`/api/imdb-stream/${user}`);
 
@@ -63,17 +50,23 @@ function buscar() {
   });
 
   es.addEventListener("progress", e => {
-    const data = JSON.parse(e.data);
-    counter.textContent = `Filmes detectados até agora: ${data.total}`;
+    const { count } = JSON.parse(e.data);
+    counter.textContent = `Encontrados até agora: ${count}`;
   });
 
   es.addEventListener("done", e => {
-    const data = JSON.parse(e.data);
-    counter.textContent = `Finalizado. Total detectado: ${data.total}`;
+    const { total, items } = JSON.parse(e.data);
+    counter.textContent = `Finalizado. Total: ${total}`;
+    items.forEach((m, i) => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `<td>${i+1}</td><td>${m.title}</td><td>${m.year}</td>`;
+      tbody.appendChild(tr);
+    });
+    table.style.display = "table";
     es.close();
   });
 
-  es.addEventListener("error", e => {
+  es.addEventListener("error", () => {
     counter.textContent = "Erro durante a execução";
     es.close();
   });
