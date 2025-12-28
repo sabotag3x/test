@@ -1,12 +1,11 @@
-import express from "express";
-import fetch from "node-fetch";
-import path from "path";
+const express = require("express");
+const path = require("path");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 const TMDB_TOKEN = process.env.TMDB_TOKEN;
 
-const __dirname = new URL(".", import.meta.url).pathname;
+/* ================= MIDDLEWARE ================= */
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
@@ -15,7 +14,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 const cache = new Map();
 
-/* ================= HELPERS ================= */
+/* ================= TMDB ================= */
 
 async function tmdbEnrich(films, lang = "pt-BR") {
   const enriched = [];
@@ -34,8 +33,9 @@ async function tmdbEnrich(films, lang = "pt-BR") {
     });
 
     const j = await r.json();
+    if (!j.results) continue;
 
-    const match = j.results?.find(r => {
+    const match = j.results.find(r => {
       if (!r.poster_path || !r.release_date) return false;
       const y = parseInt(r.release_date.slice(0, 4));
       return f.year ? Math.abs(y - f.year) <= 1 : true;
@@ -63,8 +63,9 @@ app.get("/api/user/:user", async (req, res) => {
 
   const films = [];
   let page = 1;
+  const MAX_PAGES = 20;
 
-  while (true) {
+  while (page <= MAX_PAGES) {
     const url = `https://letterboxd.com/${user}/films/page/${page}/`;
     const html = await fetch(url).then(r => r.text());
 
@@ -91,17 +92,18 @@ app.get("/api/user/:user", async (req, res) => {
 /* ================= LETTERBOXD LIST ================= */
 
 app.get("/api/list", async (req, res) => {
-  const url = req.query.url;
-  const key = `list:${url}`;
+  const listUrl = req.query.url;
+  const key = `list:${listUrl}`;
 
   if (cache.has(key)) return res.json(cache.get(key));
 
   const films = [];
   let page = 1;
+  const MAX_PAGES = 20;
 
-  while (true) {
-    const pageUrl = `${url}page/${page}/`;
-    const html = await fetch(pageUrl).then(r => r.text());
+  while (page <= MAX_PAGES) {
+    const url = `${listUrl}page/${page}/`;
+    const html = await fetch(url).then(r => r.text());
 
     const items = html.match(/data-item-full-display-name="([^"]+)"/g);
     if (!items) break;
@@ -123,4 +125,8 @@ app.get("/api/list", async (req, res) => {
   res.json(enriched);
 });
 
-app.listen(PORT, () => console.log("FilmDuel OK"));
+/* ================= START ================= */
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log("FilmDuel rodando na porta", PORT);
+});
