@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>FilmDuel – Batalha dos seus filmes</title>
+<title>FilmDuel – Batalha de Filmes</title>
 
 <style>
 *{box-sizing:border-box}
@@ -33,8 +33,12 @@ body{
   gap:22px;
 }
 
-h1{font-size:42px;margin:0}
-.subtitle{opacity:.85}
+h1{font-size:44px;margin:0}
+
+.subtitle{
+  opacity:.85;
+  margin-bottom:10px;
+}
 
 input{
   padding:14px 20px;
@@ -63,9 +67,27 @@ button{
   margin-top:10px;
 }
 
-/* ================= JOGO ================= */
+/* ================= GAME ================= */
 
 #game{display:none}
+
+#status{
+  margin:40px 0 20px;
+}
+
+#loading-main{
+  font-size:28px;
+  font-weight:bold;
+  color:#ffbf2f;
+}
+
+#loading-sub{
+  margin-top:10px;
+  font-size:16px;
+  opacity:.9;
+}
+
+/* ================= DUELO ================= */
 
 .duel{
   display:flex;
@@ -102,40 +124,24 @@ button{
   overflow:hidden;
 }
 
-/* ================= SEM POSTER ================= */
-
-.noposter{
-  width:260px;
-  height:390px;
-  background:#111;
-  border-radius:16px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  font-size:22px;
-  color:#ffbf2f;
-  cursor:pointer;
-}
-
 /* ================= RESULTADO ================= */
 
 .bracket{
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:80px;
+  gap:90px;
 }
 
 .side{
   display:flex;
-  gap:24px;
+  gap:26px;
 }
 
 .round{
   display:flex;
   flex-direction:column;
-  gap:12px;
+  gap:14px;
 }
 
 .round img{
@@ -153,21 +159,19 @@ button{
 }
 
 .champion img{
-  width:320px;
-  border-radius:22px;
+  width:360px;
+  border-radius:24px;
+}
+
+.champion .title{
+  margin-top:14px;
+  font-size:22px;
+  font-weight:bold;
 }
 
 #again{
   display:none;
-  margin-top:30px;
-}
-
-/* ================= STATUS ================= */
-
-#status{
-  margin:20px 0;
-  font-size:16px;
-  opacity:.8;
+  margin-top:40px;
 }
 </style>
 </head>
@@ -197,7 +201,11 @@ button{
 <!-- ================= GAME ================= -->
 
 <div id="game">
-  <div id="status"></div>
+  <div id="status">
+    <div id="loading-main">Carregando lista…</div>
+    <div id="loading-sub"></div>
+  </div>
+
   <div id="duel" class="duel"></div>
   <button id="again" onclick="location.reload()">Jogar novamente</button>
 </div>
@@ -206,9 +214,31 @@ button{
 
 <script>
 let pool=[], filmes=[], atual=[], idx=0, winners=[], rounds=[];
+let loadingTimer=null;
 
-function shuffle(a){
-  return a.sort(()=>Math.random()-.5);
+const loadingTexts=[
+  "Polindo estatueta do Oscar",
+  "Escolhendo os melhores filmes",
+  "Discutindo com críticos no Letterboxd",
+  "Recontando votos do júri",
+  "Rebobinando VHS",
+  "Ajustando projeção 35mm"
+];
+
+function shuffle(a){return a.sort(()=>Math.random()-.5)}
+
+function startLoading(){
+  let i=0;
+  document.getElementById("loading-sub").innerText=loadingTexts[0];
+  loadingTimer=setInterval(()=>{
+    i=(i+1)%loadingTexts.length;
+    document.getElementById("loading-sub").innerText=loadingTexts[i];
+  },2500);
+}
+
+function stopLoading(){
+  clearInterval(loadingTimer);
+  document.getElementById("status").innerHTML="";
 }
 
 async function startUser(){
@@ -223,7 +253,7 @@ async function startList(url){
 async function start(endpoint){
   document.getElementById("home").style.display="none";
   document.getElementById("game").style.display="block";
-  document.getElementById("status").innerText="Carregando lista…";
+  startLoading();
 
   const res=await fetch(endpoint);
   pool=shuffle(await res.json()).filter(f=>f.poster);
@@ -231,7 +261,7 @@ async function start(endpoint){
   filmes=pool.splice(0,16);
   rounds=[]; winners=[]; idx=0;
 
-  document.getElementById("status").innerText="";
+  stopLoading();
   next();
 }
 
@@ -251,12 +281,9 @@ function next(){
 }
 
 function card(f,i){
-  if(!f) return "";
   return `
   <div class="card">
-    ${f.poster
-      ? `<img src="${f.poster}" onclick="choose(${i})">`
-      : `<div class="noposter" onclick="choose(${i})">🎬</div>`}
+    <img src="${f.poster}" onclick="choose(${i})">
     <div class="title">${f.title} (${f.year})</div>
   </div>`;
 }
