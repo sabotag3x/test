@@ -7,8 +7,7 @@ app.use(express.static("."));
 
 app.get("/api/films", async (req, res) => {
   try {
-    const url = "https://www.imdb.com/chart/top/";
-    const response = await axios.get(url, {
+    const response = await axios.get("https://www.imdb.com/chart/top/", {
       headers: {
         "User-Agent": "Mozilla/5.0",
         "Accept-Language": "en-US,en;q=0.9"
@@ -18,35 +17,33 @@ app.get("/api/films", async (req, res) => {
     const $ = cheerio.load(response.data);
     const films = [];
 
-$("li.ipc-metadata-list-summary-item").each((_, el) => {
-  const titleEl = $(el).find("h3.ipc-title__text");
-  const posterEl = $(el).find("img");
+    $("li.ipc-metadata-list-summary-item").each((_, el) => {
+      const titleEl = $(el).find("h3.ipc-title__text");
+      const posterEl = $(el).find("img");
+      if (!titleEl.length || !posterEl.length) return;
 
-  if (!titleEl.length || !posterEl.length) return;
+      const title = titleEl.text().replace(/^\d+\.\s*/, "").trim();
 
-  const title = titleEl.text().replace(/^\d+\.\s*/, "").trim();
+      const yearEl = $(el)
+        .find("span.ipc-metadata-list-summary-item__li")
+        .filter((_, s) => /^\d{4}$/.test($(s).text()))
+        .first();
+      const year = yearEl.length ? yearEl.text() : "";
 
-  // pega o ano (4 dígitos)
-  const metaText = $(el).text();
-  const yearMatch = metaText.match(/\b(19|20)\d{2}\b/);
-  const year = yearMatch ? yearMatch[0] : "";
+      let poster =
+        posterEl.attr("srcset")?.split(",").pop()?.trim().split(" ")[0] ||
+        posterEl.attr("src") ||
+        "";
+      if (poster.startsWith("/")) poster = "https://www.imdb.com" + poster;
 
-  const poster =
-    posterEl.attr("srcset")?.split(",").pop()?.split(" ")[0] ||
-    posterEl.attr("src");
-
-  films.push({ title, year, poster });
-});
+      films.push({ title, year, poster });
+    });
 
     res.json({ films });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: "Erro ao buscar Top 250 do IMDb." });
+  } catch {
+    res.status(500).json({ error: "Erro" });
   }
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log("Servidor rodando na porta", PORT);
-});
-
+app.listen(PORT);
