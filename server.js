@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const PAGE_SIZE = 250;
-const MAX_ITEMS = 3000; // limite de segurança
+const MAX_ITEMS = 3000;
 
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -19,25 +19,28 @@ app.get("/api/imdb/:user", async (req, res) => {
   let index = 1;
 
   try {
-    for (let start = 1; start <= MAX_ITEMS; start += PAGE_SIZE) {
+    for (let start = 0; start < MAX_ITEMS; start += PAGE_SIZE) {
       const url =
-        `https://www.imdb.com/user/${user}/ratings` +
-        `?sort=date_added,desc&count=250&start=${start}`;
+        `https://www.imdb.com/user/${user}/ratings/_ajax` +
+        `?start=${start}&count=${PAGE_SIZE}&sort=date_added,desc`;
 
       const r = await fetch(url, {
         headers: {
           "User-Agent": "Mozilla/5.0",
-          "Accept-Language": "en-US,en;q=0.9"
+          "Accept": "text/html",
+          "X-Requested-With": "XMLHttpRequest"
         }
       });
 
       const html = await r.text();
 
+      if (!html || html.length < 500) break;
+
       const blocks = html.split("ipc-metadata-list-summary-item");
-      if (blocks.length <= 1) break; // acabou
+      if (blocks.length <= 1) break;
 
       for (const block of blocks.slice(1)) {
-        // exclui séries (2019–2023)
+        // excluir séries (2019–2023)
         if (/\d{4}\s*–\s*\d{4}/.test(block)) continue;
 
         const titleMatch = block.match(/ipc-title__text">([^<]+)/);
@@ -56,7 +59,6 @@ app.get("/api/imdb/:user", async (req, res) => {
         index++;
       }
 
-      // se veio menos que 250, é a última página
       if (blocks.length - 1 < PAGE_SIZE) break;
     }
 
@@ -69,5 +71,5 @@ app.get("/api/imdb/:user", async (req, res) => {
 });
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("IMDb extractor FINAL rodando");
+  console.log("IMDb extractor REAL rodando");
 });
