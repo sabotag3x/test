@@ -288,7 +288,7 @@ button{
 
 /* ================= RESULTADO FINAL ================= */
 
-/* ---- DESKTOP (mantém como está, não quebra) ---- */
+/* ---- DESKTOP (mantém intacto) ---- */
 
 .bracket{
   max-width:1200px;
@@ -318,7 +318,7 @@ button{
   border-radius:22px;
 }
 
-/* ---- MOBILE DEFINITIVO (REGRA 50 / 40 / 10) ---- */
+/* ---- MOBILE DEFINITIVO: 40 / 30 / 20 ---- */
 
 @media (max-width: 900px){
 
@@ -328,10 +328,10 @@ button{
     width:100%;
   }
 
-  /* COLUNAS DE CIMA (SEMIFINALISTAS) */
+  /* ===== CHAVEAMENTO ===== */
   .side{
-    width:40vw;              /* 40% total reservado */
-    max-width:40vw;
+    width:30vw;              /* 30% TOTAL */
+    max-width:30vw;
     display:flex;
     justify-content:space-between;
     gap:2vw;
@@ -340,19 +340,19 @@ button{
   .round{
     display:flex;
     flex-direction:column;
-    gap:1.5vh;
+    gap:1.2vh;
+    width:100%;
   }
 
-  /* cada coluna interna divide o espaço */
   .round img{
     width:100%;
     height:auto;
   }
 
-  /* CAMPEÃO */
+  /* ===== CAMPEÃO ===== */
   .champion{
-    width:50vw;              /* 50% cravado */
-    max-width:50vw;
+    width:40vw;              /* 40% CRAVADO */
+    max-width:40vw;
     align-items:center;
   }
 
@@ -362,15 +362,15 @@ button{
   }
 
   .champion .title{
-    font-size:20px;
+    font-size:19px;
     text-align:center;
     margin-top:12px;
   }
 
   #again{
     margin-top:14px;
-    font-size:18px;
-    padding:14px 30px;
+    font-size:17px;
+    padding:14px 28px;
   }
 }
 
@@ -379,15 +379,16 @@ button{
 @media (max-width: 420px){
 
   .side{
-    width:38vw;
-    max-width:38vw;
+    width:28vw;
+    max-width:28vw;
   }
 
   .champion{
-    width:48vw;
-    max-width:48vw;
+    width:38vw;
+    max-width:38vw;
   }
 }
+
 
 
 
