@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>IMDb – HTML Scraper</title>
+<title>IMDb / Letterboxd – Filmes Avaliados</title>
 
 <style>
 body {
@@ -11,7 +11,7 @@ body {
   font-family:Arial;
   padding:40px;
 }
-input, button {
+input, select, button {
   padding:10px;
   font-size:16px;
 }
@@ -37,9 +37,14 @@ th, td {
 
 <body>
 
-<h2>IMDb – Extração via HTML (teste)</h2>
+<h2>Buscar filmes avaliados</h2>
 
-<input id="userId" value="ur55777575">
+<select id="source">
+  <option value="imdb">IMDb</option>
+  <option value="letterboxd">Letterboxd</option>
+</select>
+
+<input id="userId" placeholder="urXXXX ou username">
 <button onclick="buscar()">Buscar</button>
 
 <div id="status">Aguardando…</div>
@@ -57,16 +62,19 @@ th, td {
 
 <script>
 async function buscar() {
-  const user = document.getElementById("userId").value.trim();
+  const source = document.getElementById("source").value;
+  const user   = document.getElementById("userId").value.trim();
   const status = document.getElementById("status");
-  const table = document.getElementById("table");
-  const tbody = table.querySelector("tbody");
+  const table  = document.getElementById("table");
+  const tbody  = table.querySelector("tbody");
+
+  if (!user) return;
 
   status.textContent = "Buscando…";
   table.style.display = "none";
   tbody.innerHTML = "";
 
-  const res = await fetch(`/api/imdb/${user}`);
+  const res = await fetch(`/api/${source}/${user}`);
   const data = await res.json();
 
   if (!Array.isArray(data) || data.length === 0) {
@@ -81,7 +89,7 @@ async function buscar() {
   });
 
   table.style.display = "table";
-  status.textContent = `Encontrados ${data.length} itens`;
+  status.textContent = `Encontrados ${data.length} filmes`;
 }
 </script>
 
