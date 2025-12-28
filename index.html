@@ -4,105 +4,109 @@
   <meta charset="UTF-8" />
   <title>Batalha de Filmes</title>
   <style>
-    body { font-family: Arial; text-align: center; }
-    button { padding: 10px 20px; margin: 10px; }
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    button { padding: 6px 12px; margin-left: 6px; }
+    #duelo { margin-top: 20px; font-size: 18px; }
   </style>
 </head>
 <body>
 
-<h1>Batalha de Filmes (Letterboxd)</h1>
+<h1>Batalha de Filmes</h1>
 
-<input id="username" placeholder="Username do Letterboxd" />
+<input id="username" placeholder="username ou ID" />
 <button onclick="start()">Gerar competição</button>
 
-<h2 id="fase"></h2>
-<h1 id="duelo"></h1>
-
-<button id="b1" onclick="choose(0)" style="display:none"></button>
-<button id="b2" onclick="choose(1)" style="display:none"></button>
+<div id="status"></div>
+<div id="duelo"></div>
 
 <script>
 let filmes = [];
-let vencedores = [];
 let index = 0;
 let atual = [];
-
-function faseNome(n) {
-  if (n === 16) return "Oitavas de final";
-  if (n === 8) return "Quartas de final";
-  if (n === 4) return "Semifinal";
-  if (n === 2) return "Final";
-  return "Fase";
-}
-
-async function start() {
-  const username = document.getElementById("username").value;
-
-  const res = await fetch("/api/films", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ username })
-  });
-
-  const data = await res.json();
-
-  if (!res.ok) {
-    alert(data.error || "Erro ao buscar filmes.");
-    return;
-  }
-
-  if (!data.films || data.films.length < 2) {
-    alert("Poucos filmes encontrados para gerar a competição.");
-    return;
-  }
-
-  filmes = shuffle(data.films).slice(0, 16);
-  iniciarFase();
-}
-
+let vencedores = [];
 
 function shuffle(arr) {
   return arr.sort(() => Math.random() - 0.5);
 }
 
-function iniciarFase() {
+async function start() {
+  document.getElementById("status").innerText = "Buscando filmes...";
+  document.getElementById("duelo").innerText = "";
+
+  const username = document.getElementById("username").value.trim();
+  if (!username) {
+    alert("Informe o usuário.");
+    return;
+  }
+
+  let res, data;
+
+  try {
+    res = await fetch("/api/films", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username })
+    });
+
+    data = await res.json();
+  } catch (e) {
+    alert("Falha de conexão com o servidor.");
+    return;
+  }
+
+  if (!res.ok) {
+    alert(data.error || "Erro ao buscar filmes.");
+    document.getElementById("status").innerText = "";
+    return;
+  }
+
+  if (!Array.isArray(data.films) || data.films.length < 2) {
+    alert("Lista de filmes inválida.");
+    document.getElementById("status").innerText = "";
+    return;
+  }
+
+  filmes = shuffle(data.films).slice(0, 16);
   index = 0;
   vencedores = [];
-  document.getElementById("fase").innerText = faseNome(filmes.length);
-  proximo();
+
+  document.getElementById("status").innerText =
+    `Competição iniciada com ${filmes.length} filmes`;
+
+  proximoDuelo();
 }
 
-function proximo() {
+function proximoDuelo() {
   if (index >= filmes.length) {
     filmes = vencedores;
+    vencedores = [];
+    index = 0;
+
     if (filmes.length === 1) {
-      document.getElementById("duelo").innerText = "Campeão: " + filmes[0];
-      document.getElementById("b1").style.display = "none";
-      document.getElementById("b2").style.display = "none";
-    } else {
-      iniciarFase();
+      document.getElementById("duelo").innerText =
+        "Campeão: " + filmes[0];
+      return;
     }
+
+    proximoDuelo();
     return;
   }
 
   atual = [filmes[index], filmes[index + 1]];
   index += 2;
 
-  document.getElementById("duelo").innerText =
-    atual[0] + " VS " + atual[1];
-
-  document.getElementById("b1").innerText = atual[0];
-  document.getElementById("b2").innerText = atual[1];
-  document.getElementById("b1").style.display = "inline-block";
-  document.getElementById("b2").style.display = "inline-block";
+  document.getElementById("duelo").innerHTML = `
+    <p>${atual[0]} VS ${atual[1]}</p>
+    <button onclick="choose(0)">${atual[0]}</button>
+    <button onclick="choose(1)">${atual[1]}</button>
+  `;
 }
 
 function choose(i) {
   vencedores.push(atual[i]);
-  proximo();
+  proximoDuelo();
 }
 </script>
 
 </body>
 </html>
-
