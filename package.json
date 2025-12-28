@@ -1,5 +1,5 @@
 {
-  "name": "imdb-json-api",
+  "name": "imdb-web",
   "private": true,
   "scripts": {
     "start": "node server.js"
