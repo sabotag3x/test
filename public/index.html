@@ -288,104 +288,115 @@ button{
 
 /* ================= RESULTADO FINAL ================= */
 
-/* ---- DESKTOP (mantém intacto) ---- */
-
 .bracket{
-  max-width:1200px;
-  margin:0 auto;
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:4%;
+  gap:5%;
+  width:100%;
+  max-width:1400px;
+  margin:0 auto;
 }
 
 .side{
-  width:20%;
   display:flex;
-  justify-content:center;
-}
-
-.champion{
-  width:40%;
-  display:flex;
-  flex-direction:column;
+  gap:18px;
   align-items:center;
 }
 
-.champion img{
-  width:100%;
-  height:auto;
-  border-radius:22px;
+/* colunas (8 / 4 / 2 / 1) */
+.round{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
 }
 
-/* ---- MOBILE DEFINITIVO: 40 / 30 / 20 ---- */
+/* tamanhos proporcionais */
+.r1 img{ width:56px }
+.r2 img{ width:80px }
+.r3 img{ width:110px }
+.r4 img{ width:140px } /* FINALISTAS */
+
+.champion{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:40%;
+  max-width:420px;
+}
+
+.champion img{
+  width:50%;
+  max-width:360px;
+  height:auto;
+}
+
+.champion .title{
+  font-size:22px;
+  font-weight:bold;
+  text-align:center;
+}
+
+#again{
+  margin-top:14px;
+}
+
+/* ================= MOBILE ================= */
 
 @media (max-width: 900px){
 
   .bracket{
     flex-direction:column;
-    gap:4vh;
-    width:100%;
+    gap:24px;
   }
 
-  /* ===== CHAVEAMENTO ===== */
+  /* lados viram FAIXAS horizontais */
   .side{
-    width:30vw;              /* 30% TOTAL */
-    max-width:30vw;
-    display:flex;
-    justify-content:space-between;
-    gap:2vw;
+    width:50%;
+    justify-content:center;
+    gap:14px;
+    overflow-x:auto;
   }
 
   .round{
-    display:flex;
     flex-direction:column;
-    gap:1.2vh;
-    width:100%;
+    gap:10px;
   }
 
-  .round img{
-    width:100%;
-    height:auto;
-  }
+  /* PROPORÇÃO DEFINITIVA (40 / 30 / 20 / 10) */
+  .r1 img{ width:4vw }
+  .r2 img{ width:6vw }
+  .r3 img{ width:8vw }
+  .r4 img{ width:10vw }
 
-  /* ===== CAMPEÃO ===== */
   .champion{
-    width:40vw;              /* 40% CRAVADO */
-    max-width:40vw;
-    align-items:center;
+    width:50%;
+    max-width:none;
   }
 
   .champion img{
-    width:100%;
-    height:auto;
+    width:40%;
+    max-width:260px;
   }
 
   .champion .title{
-    font-size:19px;
-    text-align:center;
-    margin-top:12px;
-  }
-
-  #again{
-    margin-top:14px;
-    font-size:17px;
-    padding:14px 28px;
+    font-size:20px;
   }
 }
 
-/* ---- MOBILE MUITO PEQUENO ---- */
-
 @media (max-width: 420px){
 
-  .side{
-    width:28vw;
-    max-width:28vw;
-  }
+  .r1 img{ width:4vw }
+  .r2 img{ width:6vw }
+  .r3 img{ width:7vw }
+  .r4 img{ width:9vw }
 
   .champion{
-    width:38vw;
-    max-width:38vw;
+    width:40%;
+  }
+
+  .champion img{
+    max-width:230px;
   }
 }
 
@@ -570,24 +581,39 @@ function choose(i){
 }
 
 function showFinal(champ){
-  const left8  = initialRound.slice(0,8);
-  const right8 = initialRound.slice(8,16);
+  const r1 = initialRound;     // 16
+  const r2 = rounds[0];        // 8
+  const r3 = rounds[1];        // 4
+  const r4 = rounds[2];        // 2
+
+  const left8  = r1.slice(0,8);
+  const right8 = r1.slice(8,16);
+
+  const left4  = r2.slice(0,4);
+  const right4 = r2.slice(4,8);
+
+  const left2  = r3.slice(0,2);
+  const right2 = r3.slice(2,4);
+
+  const left1  = r4[0];
+  const right1 = r4[1];
 
   document.getElementById("duel").innerHTML = `
     <div class="bracket">
 
-      <!-- QUARTAS ESQUERDA -->
+      <!-- LADO ESQUERDO -->
       <div class="side">
         <div class="round r1">
           ${left8.map(f=>`<img src="${f.poster}">`).join("")}
         </div>
-
         <div class="round r2">
-          ${rounds[0].slice(0,4).map(f=>`<img src="${f.poster}">`).join("")}
+          ${left4.map(f=>`<img src="${f.poster}">`).join("")}
         </div>
-
         <div class="round r3">
-          ${rounds[1].slice(0,2).map(f=>`<img src="${f.poster}">`).join("")}
+          ${left2.map(f=>`<img src="${f.poster}">`).join("")}
+        </div>
+        <div class="round r4">
+          <img src="${left1.poster}">
         </div>
       </div>
 
@@ -600,16 +626,17 @@ function showFinal(champ){
         <button id="again" onclick="location.reload()">Jogar novamente</button>
       </div>
 
-      <!-- DIREITA -->
+      <!-- LADO DIREITO -->
       <div class="side">
+        <div class="round r4">
+          <img src="${right1.poster}">
+        </div>
         <div class="round r3">
-          ${rounds[1].slice(2,4).map(f=>`<img src="${f.poster}">`).join("")}
+          ${right2.map(f=>`<img src="${f.poster}">`).join("")}
         </div>
-
         <div class="round r2">
-          ${rounds[0].slice(4,8).map(f=>`<img src="${f.poster}">`).join("")}
+          ${right4.map(f=>`<img src="${f.poster}">`).join("")}
         </div>
-
         <div class="round r1">
           ${right8.map(f=>`<img src="${f.poster}">`).join("")}
         </div>
@@ -618,6 +645,7 @@ function showFinal(champ){
     </div>
   `;
 }
+
   
 </script>
 
