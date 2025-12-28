@@ -14,6 +14,7 @@ app.get("/", (req, res) => {
 app.get("/api/imdb-stream/:user", async (req, res) => {
   const user = req.params.user;
 
+  // SSE headers
   res.setHeader("Content-Type", "text/event-stream");
   res.setHeader("Cache-Control", "no-cache");
   res.setHeader("Connection", "keep-alive");
@@ -23,12 +24,25 @@ app.get("/api/imdb-stream/:user", async (req, res) => {
     res.write(`data: ${JSON.stringify(data)}\n\n`);
   };
 
-  const browser = await chromium.launch({ headless: true });
-  const page = await browser.newPage();
+  let browser;
 
   try {
+    send("log", "Iniciando navegador…");
+
+    browser = await chromium.launch({
+      headless: true,
+      args: [
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage"
+      ]
+    });
+
+    const page = await browser.newPage();
+
     const url = `https://www.imdb.com/user/${user}/ratings`;
     send("log", `Abrindo ${url}`);
+
     await page.goto(url, { waitUntil: "networkidle" });
 
     let lastCount = 0;
@@ -36,23 +50,28 @@ app.get("/api/imdb-stream/:user", async (req, res) => {
     const MAX_STABLE = 3;
 
     while (true) {
-      // rola para baixo para disparar carregamento
-      await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+      // força scroll
+      await page.evaluate(() => {
+        window.scrollTo(0, document.body.scrollHeight);
+      });
+
       await page.waitForTimeout(1200);
 
       const items = await page.$$eval(
         ".ipc-metadata-list-summary-item",
-        els => els.map(el => {
-          const title =
-            el.querySelector(".ipc-title__text")?.textContent?.trim() || "";
-          const year =
-            el.textContent.match(/\b(19|20)\d{2}\b/)?.[0] || "";
-          return { title, year };
-        })
+        els =>
+          els.map(el => {
+            const title =
+              el.querySelector(".ipc-title__text")?.textContent?.trim() || "";
+            const year =
+              el.textContent.match(/\b(19|20)\d{2}\b/)?.[0] || "";
+            return { title, year };
+          })
       );
 
       const count = items.length;
       send("progress", { count });
+      send("log", `Itens detectados no DOM: ${count}`);
 
       if (count === lastCount) {
         stableRounds++;
@@ -60,11 +79,8 @@ app.get("/api/imdb-stream/:user", async (req, res) => {
         stableRounds = 0;
       }
 
-      send("log", `Itens no DOM: ${count}`);
-
-      // encerra quando não cresce mais após algumas tentativas
       if (stableRounds >= MAX_STABLE) {
-        send("log", "Nenhum item novo após rolagem. Encerrando.");
+        send("log", "Nenhum item novo após scroll. Encerrando.");
         send("done", { total: count, items });
         break;
       }
@@ -72,13 +88,18 @@ app.get("/api/imdb-stream/:user", async (req, res) => {
       lastCount = count;
     }
   } catch (err) {
-    send("error", err.message);
+    send("error", {
+      message: err.message,
+      stack: err.stack
+    });
   } finally {
-    await browser.close();
+    if (browser) {
+      await browser.close();
+    }
     res.end();
   }
 });
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("IMDb Playwright app rodando");
+  console.log("IMDb Playwright Debug rodando");
 });
