@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Batalha de Filmes – IMDb Top 250</title>
   <style>
     body { font-family: Arial, sans-serif; padding: 20px; }
@@ -14,7 +14,7 @@
 
 <h1>Batalha de Filmes – IMDb Top 250</h1>
 
-<button onclick="start()">Gerar competição</button>
+<button id="btn">Gerar competição</button>
 
 <div id="status"></div>
 <div id="duelo"></div>
@@ -75,4 +75,19 @@ function proximoDuelo() {
   index += 2;
 
   document.getElementById("duelo").innerHTML = `
-    <p>${atual[0]} VS ${atual[1]()
+    <p>${atual[0]} VS ${atual[1]}</p>
+    <button onclick="choose(0)">${atual[0]}</button>
+    <button onclick="choose(1)">${atual[1]}</button>
+  `;
+}
+
+function choose(i) {
+  vencedores.push(atual[i]);
+  proximoDuelo();
+}
+
+document.getElementById("btn").addEventListener("click", start);
+</script>
+
+</body>
+</html>
