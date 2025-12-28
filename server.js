@@ -25,15 +25,16 @@ async function getRatedFilms(username, minStars = 4) {
 
     posters.each((_, el) => {
       const title = $(el).find("img").attr("alt");
-      const ratingText = $(el).find("span.rating").text();
+const ratingEl = $(el).find("span.rating");
+if (!ratingEl.length) return;
 
-      const stars =
-        (ratingText.match(/★/g) || []).length +
-        (ratingText.includes("½") ? 0.5 : 0);
+const rating = parseInt(ratingEl.attr("data-rating"), 10);
+const stars = rating / 2;
 
-      if (stars >= minStars) {
-        films.push(title);
-      }
+if (stars >= minStars) {
+  films.push(title);
+}
+
     });
 
     page++;
@@ -68,3 +69,4 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log("Servidor rodando na porta", PORT);
 });
+
