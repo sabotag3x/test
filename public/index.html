@@ -191,108 +191,111 @@ button{
 /* ================= MOBILE ================= */
 
 /* ================= MOBILE AJUSTADO ================= */
-/* ================= MOBILE – BIG UI ================= */
+/* ================= MOBILE RESPONSIVO ================= */
 @media (max-width: 900px){
 
   body{
-    font-size:18px;
+    font-size:16px;
   }
 
   .container{
-    padding:12px 14px 28px;
+    padding:12px 10px 24px;
   }
 
   /* HOME */
   h1{
-    font-size:36px;
+    font-size:32px;
   }
 
   .subtitle{
-    font-size:18px;
+    font-size:16px;
     line-height:1.4;
   }
 
   input{
     width:90%;
-    font-size:20px;
-    padding:18px 22px;
+    font-size:16px;
+    padding:14px 18px;
   }
 
   button{
-    font-size:20px;
-    padding:18px 38px;
+    font-size:16px;
+    padding:14px 28px;
   }
 
   .lists{
     grid-template-columns:1fr 1fr;
-    gap:18px;
+    gap:14px;
   }
 
   /* LOADING */
   #loading-main{
-    font-size:34px;
+    font-size:28px;
   }
 
   #loading-sub{
-    font-size:18px;
+    font-size:15px;
   }
 
   /* DUELO */
   .duel{
-    flex-direction:column;
-    align-items:center;
-    gap:36px;
-    min-height:auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:4vw;
+    width:100%;
   }
 
   .card{
-    width:78vw;
-    max-width:340px;
+    width:43vw;          /* 2 cards = ~86% da tela */
+    max-width:220px;
   }
 
   .card img{
-    border-radius:20px;
+    width:100%;
+    border-radius:16px;
   }
 
   .title{
-    font-size:18px;
+    font-size:15px;
     line-height:1.3;
-    min-height:auto;
-    margin-top:14px;
+    margin-top:10px;
   }
 
   /* RESULTADO FINAL */
   .bracket{
     flex-direction:column;
-    gap:26px;
+    gap:20px;
   }
 
   .side{
     justify-content:center;
+    gap:12px;
   }
 
-  .r1 img{width:72px}
-  .r2 img{width:100px}
-  .r3 img{width:140px}
+  .r1 img{width:14vw}
+  .r2 img{width:18vw}
+  .r3 img{width:24vw}
 
   .champion img{
-    width:85vw;
-    max-width:360px;
+    width:72vw;          /* destaque, mas não ocupa tudo */
+    max-width:320px;
   }
 
   .champion .title{
-    font-size:24px;
-    text-align:center;
+    font-size:20px;
   }
 
   #again{
-    font-size:20px;
-    padding:16px 36px;
+    font-size:16px;
+    padding:14px 28px;
   }
 }
+
 @media (max-width: 900px){
   body{
-    background:red !important;
+    background:yellow !important;
   }
 }
 
