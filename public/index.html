@@ -14,16 +14,17 @@ body{
   color:#fff;
   font-family:Arial,sans-serif
 }
+
 .container{
-  max-width:1600px;
+  max-width:1700px;
   width:100%;
   padding:40px;
   text-align:center
 }
 
 h1{
-  font-size:32px;
-  margin-bottom:10px
+  font-size:34px;
+  margin-bottom:8px
 }
 .subtitle{
   color:#aaa;
@@ -36,7 +37,7 @@ h1{
   flex-direction:column;
   align-items:center;
   gap:14px;
-  margin-bottom:30px
+  margin-bottom:20px
 }
 input{
   padding:14px;
@@ -52,76 +53,113 @@ button{
   color:#000;
   font-size:20px;
   font-weight:bold;
-  padding:14px 40px;
+  padding:14px 44px;
   border-radius:40px;
   border:none;
   cursor:pointer
 }
 
-/* DUELO */
+#status{
+  margin:16px 0;
+  color:#ffcc00;
+  font-size:18px
+}
+
+/* DUELOS */
 .duel{
   display:flex;
   justify-content:center;
-  gap:80px;
+  align-items:center;
+  gap:90px;
   margin-top:40px
 }
+
 .card{
-  width:300px
+  display:flex;
+  flex-direction:column;
+  align-items:center
 }
+
 .card img{
-  width:100%;
   border-radius:14px;
   cursor:pointer;
   transition:transform .2s
 }
-.card img:hover{transform:scale(1.06)}
-.title{margin-top:12px;font-size:18px}
+.card img:hover{transform:scale(1.05)}
 
-/* CHAVEAMENTO FINAL */
+.title{
+  margin-top:10px;
+  font-size:17px;
+  max-width:220px
+}
+
+/* SEM POSTER */
+.noposter{
+  width:220px;
+  height:330px;
+  background:#111;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  cursor:pointer;
+  font-size:20px;
+  color:#ffcc00
+}
+
+/* ================= CHAVEAMENTO ================= */
+
 .bracket{
   display:flex;
   justify-content:center;
-  align-items:center;
-  gap:60px;
-  margin-top:50px
+  align-items:center; /* CENTRALIZAÇÃO VERTICAL REAL */
+  gap:80px;
+  margin-top:60px
 }
+
 .side{
   display:flex;
+  align-items:center;
   gap:40px
 }
+
+/* cada coluna (round) */
 .round{
   display:flex;
   flex-direction:column;
-  gap:16px
-}
-.small{
-  width:90px
-}
-.small img{
-  width:100%;
-  border-radius:6px
+  justify-content:space-between;
+  align-items:center
 }
 
+/* TAMANHOS POR RODADA */
+.round.r1 img{ width:70px }
+.round.r2 img{ width:95px }
+.round.r3 img{ width:120px }
+
+.round.r1{ gap:22px }
+.round.r2{ gap:34px }
+.round.r3{ gap:46px }
+
+.round img{
+  border-radius:8px
+}
+
+/* CAMPEÃO */
 .champion{
-  width:340px;
+  width:360px;
   display:flex;
   flex-direction:column;
   align-items:center
 }
 .champion img{
   width:100%;
-  border-radius:20px
+  border-radius:22px
 }
 .champion .title{
-  font-size:22px;
-  margin-top:14px;
+  font-size:24px;
+  margin-top:16px;
   font-weight:bold
-}
-
-#status{
-  margin-top:20px;
-  color:#ffcc00;
-  font-size:18px
 }
 </style>
 </head>
@@ -139,7 +177,7 @@ button{
   </div>
 
   <div id="status"></div>
-  <div id="duel" class="duel"></div>
+  <div id="duel"></div>
 </div>
 
 <script>
@@ -154,7 +192,6 @@ function shuffle(arr){
   return a;
 }
 
-/* ENTER dispara */
 document.getElementById("user").addEventListener("keydown",e=>{
   if(e.key==="Enter") start();
 });
@@ -168,16 +205,16 @@ async function start(){
   duel.innerHTML="";
   rounds=[];
 
-  let countdown=5;
-  status.textContent=`Carregando lista (${countdown})…`;
-  const timer=setInterval(()=>{
-    countdown--;
-    status.textContent=`Carregando lista (${countdown})…`;
-    if(countdown===0) clearInterval(timer);
+  let c=5;
+  status.textContent=`Carregando lista (${c})…`;
+  const t=setInterval(()=>{
+    c--;
+    status.textContent=`Carregando lista (${c})…`;
+    if(c===0) clearInterval(t);
   },1000);
 
-  const res=await fetch(`/api/letterboxd/${user}`);
-  pool=await res.json();
+  const poolRes=await fetch(`/api/letterboxd/${user}`);
+  pool=await poolRes.json();
 
   const selected=shuffle(pool).slice(0,16);
   const lang=navigator.language||"pt-BR";
@@ -213,15 +250,21 @@ function nextDuel(){
   atual=[filmes[index],filmes[index+1]];
   index+=2;
 
-  document.getElementById("duel").innerHTML=
+  duel.innerHTML=
     card(atual[0],0)+card(atual[1],1);
 }
 
 function card(f,i){
+  const img=f.poster
+    ? `<img src="${f.poster}" width="260" onclick="choose(${i})">`
+    : `<div class="noposter" onclick="choose(${i})">🎬<br>${f.title}</div>`;
+
   return `
-    <div class="card">
-      <img src="${f.poster}" onclick="choose(${i})">
-      <div class="title">${f.title} (${f.year})</div>
+    <div class="duel">
+      <div class="card">
+        ${img}
+        <div class="title">${f.title} (${f.year})</div>
+      </div>
     </div>`;
 }
 
@@ -237,9 +280,9 @@ function showBracket(champion){
   let html=`<div class="bracket">`;
 
   html+=`<div class="side">`;
-  left.forEach(r=>{
-    html+=`<div class="round">`;
-    r.forEach(f=>html+=`<div class="small"><img src="${f.poster}"></div>`);
+  left.forEach((r,i)=>{
+    html+=`<div class="round r${i+1}">`;
+    r.forEach(f=>html+=`<img src="${f.poster}">`);
     html+=`</div>`;
   });
   html+=`</div>`;
@@ -252,14 +295,14 @@ function showBracket(champion){
   `;
 
   html+=`<div class="side">`;
-  right.reverse().forEach(r=>{
-    html+=`<div class="round">`;
-    r.forEach(f=>html+=`<div class="small"><img src="${f.poster}"></div>`);
+  right.reverse().forEach((r,i)=>{
+    html+=`<div class="round r${i+1}">`;
+    r.forEach(f=>html+=`<img src="${f.poster}">`);
     html+=`</div>`;
   });
   html+=`</div></div>`;
 
-  document.getElementById("duel").innerHTML=html;
+  duel.innerHTML=html;
 }
 
 document.getElementById("startBtn").onclick=start;
