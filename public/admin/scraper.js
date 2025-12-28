@@ -1,28 +1,27 @@
 async function run(){
-  const key  = document.getElementById("key").value.trim();
   const name = document.getElementById("name").value.trim();
+  const key  = document.getElementById("key").value.trim();
   const url  = document.getElementById("url").value.trim();
-  const log  = document.getElementById("log");
+  const out  = document.getElementById("output");
 
-  if(!key || !name || !url){
+  if(!name || !key || !url){
     alert("Preencha todos os campos");
     return;
   }
 
-  log.innerText = "Iniciando scraping...\n";
+  out.value = "Carregando...\n";
 
-  const res = await fetch("/admin/scrape", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ key, name, url })
-  });
+  const res = await fetch(`/api/list?url=${encodeURIComponent(url)}`);
+  const films = await res.json();
 
-  const data = await res.json();
+  const json = {
+    [key]: {
+      name,
+      source: url,
+      updated_at: new Date().toISOString().slice(0,10),
+      films
+    }
+  };
 
-  if(data.error){
-    log.innerText += "Erro: " + data.error;
-    return;
-  }
-
-  log.innerText += `Concluído.\nFilmes salvos: ${data.count}\n`;
+  out.value = JSON.stringify(json, null, 2);
 }
