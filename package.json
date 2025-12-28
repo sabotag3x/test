@@ -1,5 +1,5 @@
 {
-  "name": "letterboxd-battle-tmdb",
+  "name": "letterboxd-battle-on-demand",
   "private": true,
   "scripts": {
     "start": "node server.js"
