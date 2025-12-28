@@ -4,7 +4,6 @@ const cheerio = require("cheerio");
 
 const app = express();
 
-/* servir index.html */
 app.use(express.static("."));
 app.use(express.json());
 
@@ -13,7 +12,11 @@ async function getRatedFilms(username) {
   let films = [];
 
   while (true) {
-    const url = `https://letterboxd.com/${username}/films/ratings/page/${page}/`;
+    const url =
+      page === 1
+        ? `https://letterboxd.com/${username}/films/ratings/`
+        : `https://letterboxd.com/${username}/films/ratings/page/${page}/`;
+
     const res = await axios.get(url, {
       headers: { "User-Agent": "Mozilla/5.0" }
     });
@@ -56,7 +59,4 @@ app.post("/api/films", async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.log("Servidor rodando na porta", PORT);
-});
+app.listen(PORT, () => console.log("Rodando na porta", PORT));
