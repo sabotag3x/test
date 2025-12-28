@@ -15,6 +15,11 @@ function shuffle(arr) {
 
 app.get("/api/films", async (req, res) => {
   try {
+    res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate, proxy-revalidate");
+    res.setHeader("Pragma", "no-cache");
+    res.setHeader("Expires", "0");
+    res.setHeader("Surrogate-Control", "no-store");
+
     const response = await axios.get("https://www.imdb.com/chart/top/", {
       headers: {
         "User-Agent": "Mozilla/5.0",
@@ -27,18 +32,19 @@ app.get("/api/films", async (req, res) => {
 
     $("li.ipc-metadata-list-summary-item").each((_, el) => {
       const titleEl = $(el).find("h3.ipc-title__text");
-      const yearEl = $(el).find("span.ipc-metadata-list-summary-item__li");
       const posterEl = $(el).find("img");
+      const yearEl = $(el)
+        .find("span.ipc-metadata-list-summary-item__li")
+        .filter((_, s) => /^\d{4}$/.test($(s).text()))
+        .first();
 
       if (!titleEl.length || !posterEl.length) return;
 
       const title = titleEl.text().replace(/^\d+\.\s*/, "").trim();
-      const year = yearEl.first().text().trim();
-      let poster = posterEl.attr("src");
+      const year = yearEl.length ? yearEl.text() : "";
 
-      if (poster && poster.startsWith("/")) {
-        poster = "https://www.imdb.com" + poster;
-      }
+      let poster = posterEl.attr("src") || "";
+      if (poster.startsWith("/")) poster = "https://www.imdb.com" + poster;
 
       films.push({ title, year, poster });
     });
