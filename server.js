@@ -3,13 +3,10 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-/* rota raiz */
-app.get("/", (req, res) => {
-  res.send("IMDb JSON API online");
-});
+app.use(express.static("public"));
 
-/* endpoint que retorna JSON limpo */
-app.get("/imdb/:user", async (req, res) => {
+/* API que busca no IMDb e retorna JSON */
+app.get("/api/imdb/:user", async (req, res) => {
   const user = req.params.user;
   let page = 1;
   let movies = [];
@@ -27,19 +24,17 @@ app.get("/imdb/:user", async (req, res) => {
 
       const html = await r.text();
 
-      // parse simples sem DOM pesado
-      const blocks = html.split('ipc-metadata-list-summary-item');
-
+      const blocks = html.split("ipc-metadata-list-summary-item");
       if (blocks.length <= 1) break;
 
       blocks.slice(1).forEach(block => {
-        const titleMatch = block.match(/ipc-title__text">([^<]+)/);
-        const yearMatch  = block.match(/\((\d{4})\)/);
+        const title = block.match(/ipc-title__text">([^<]+)/);
+        const year  = block.match(/\((\d{4})\)/);
 
-        if (titleMatch) {
+        if (title) {
           movies.push({
-            title: titleMatch[1].trim(),
-            year: yearMatch ? yearMatch[1] : ""
+            title: title[1].trim(),
+            year: year ? year[1] : ""
           });
         }
       });
@@ -47,14 +42,13 @@ app.get("/imdb/:user", async (req, res) => {
       page++;
     }
 
-    res.setHeader("Access-Control-Allow-Origin", "*");
     res.json(movies);
 
   } catch (err) {
-    res.status(500).json({ error: "Falha ao extrair dados do IMDb" });
+    res.status(500).json({ error: "Erro ao buscar dados do IMDb" });
   }
 });
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("IMDb JSON API ativa");
+  console.log("App IMDb rodando");
 });
