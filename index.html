@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Batalha de Filmes – IMDb Top 250</title>
+<title>Batalha de Filmes</title>
 
 <style>
 body{
@@ -61,20 +61,17 @@ h1{margin-bottom:20px}
   gap:60px;
   margin-top:40px
 }
-
 .side{
   display:flex;
   align-items:center;
   gap:40px
 }
-
 .round{
   display:flex;
   flex-direction:column;
   justify-content:space-between;
   gap:18px
 }
-
 .small{
   width:90px
 }
@@ -82,7 +79,6 @@ h1{margin-bottom:20px}
   width:100%;
   border-radius:6px
 }
-
 .champion{
   width:320px;
   display:flex;
@@ -103,7 +99,7 @@ h1{margin-bottom:20px}
 
 <body>
 <div class="container">
-  <h1>Batalha de Filmes – IMDb Top 250</h1>
+  <h1>Batalha de Filmes</h1>
   <button id="startBtn">🎬 Gerar competição</button>
   <div id="duel" class="duel"></div>
 </div>
@@ -122,36 +118,38 @@ function shuffle(arr){
 }
 
 async function start(){
-  const res=await fetch("/api/films?ts="+Date.now());
-  const data=await res.json();
+  const res = await fetch("/api/films?ts=" + Date.now());
+  const data = await res.json();
 
-  filmes=shuffle(data.films).slice(0,16);
-  index=0;
-  vencedores=[];
-  rounds=[];
+  filmes = shuffle(data.films).slice(0,16);
+  index = 0;
+  vencedores = [];
+  rounds = [];
+
   nextDuel();
 }
 
 function nextDuel(){
-  if(index>=filmes.length){
+  if(index >= filmes.length){
     rounds.push([...vencedores]);
-    filmes=vencedores;
-    vencedores=[];
-    index=0;
 
-    if(filmes.length===1){
-      showBracket(filmes[0]);
+    if(vencedores.length === 1){
+      showBracket(vencedores[0]);
       return;
     }
-    nextDuel();
-    return;
+
+    filmes = vencedores;
+    vencedores = [];
+    index = 0;
   }
 
-  atual=[filmes[index],filmes[index+1]];
-  index+=2;
+  if(filmes.length < 2) return;
+
+  atual = [filmes[index], filmes[index + 1]];
+  index += 2;
 
   document.getElementById("duel").innerHTML =
-    card(atual[0],0)+card(atual[1],1);
+    card(atual[0], 0) + card(atual[1], 1);
 }
 
 function card(f,i){
@@ -172,35 +170,39 @@ function showBracket(champion){
   const left = rounds.slice(0,3);
   const right = rounds.slice(0,3).map(r=>[...r].reverse());
 
-  let html=`<div class="bracket">`;
+  let html = `<div class="bracket">`;
 
-  html+=`<div class="side">`;
+  html += `<div class="side">`;
   left.forEach(r=>{
-    html+=`<div class="round">`;
-    r.forEach(f=>html+=`<div class="small"><img src="${f.poster}"></div>`);
-    html+=`</div>`;
+    html += `<div class="round">`;
+    r.forEach(f=>{
+      html += `<div class="small"><img src="${f.poster}"></div>`;
+    });
+    html += `</div>`;
   });
-  html+=`</div>`;
+  html += `</div>`;
 
-  html+=`
+  html += `
     <div class="champion">
       <img src="${champion.poster}">
       <div class="title">Campeão<br>${champion.title} (${champion.year})</div>
     </div>
   `;
 
-  html+=`<div class="side">`;
+  html += `<div class="side">`;
   right.reverse().forEach(r=>{
-    html+=`<div class="round">`;
-    r.forEach(f=>html+=`<div class="small"><img src="${f.poster}"></div>`);
-    html+=`</div>`;
+    html += `<div class="round">`;
+    r.forEach(f=>{
+      html += `<div class="small"><img src="${f.poster}"></div>`;
+    });
+    html += `</div>`;
   });
-  html+=`</div></div>`;
+  html += `</div></div>`;
 
-  document.getElementById("duel").innerHTML=html;
+  document.getElementById("duel").innerHTML = html;
 }
 
-document.getElementById("startBtn").onclick=start;
+document.getElementById("startBtn").onclick = start;
 </script>
 </body>
 </html>
