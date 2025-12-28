@@ -341,37 +341,43 @@ button{
 
 /* ================= RESULTADO FINAL – MOBILE DEFINITIVO ================= */
 
+/* ================= RESULTADO FINAL – MOBILE VERTICAL DEFINITIVO ================= */
+
 @media (max-width: 900px){
 
   .bracket{
     display:flex;
     flex-direction:column;
     align-items:center;
-    gap:22px;
+    justify-content:center;
+    gap:16px;
     width:100%;
   }
 
-  /* FAIXA SUPERIOR (8 → 4 → 2 → 1) */
-  .side:first-child,
-  .side:last-child{
+  /* blocos de chaves (cima e baixo) */
+  .side{
     display:flex;
-    justify-content:center;
-    align-items:flex-start;
+    flex-direction:column;
+    align-items:center;
     gap:10px;
     width:100%;
   }
 
   .round{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
     gap:8px;
+    flex-wrap:wrap;
   }
 
-  /* TODOS OS POSTERS DAS CHAVES = MESMO TAMANHO */
+  /* TODOS os posters das chaves = mesmo tamanho pequeno */
   .round img{
-    width:8vw;
-    max-width:48px;
-    min-width:36px;
+    width:9vw;
+    max-width:42px;
+    min-width:30px;
+    height:auto;
   }
 
   /* CAMPEÃO */
@@ -379,12 +385,14 @@ button{
     display:flex;
     flex-direction:column;
     align-items:center;
+    justify-content:center;
+    gap:10px;
     width:100%;
   }
 
   .champion img{
-    width:40vw;        /* <= REGRA QUE VOCÊ PEDIU */
-    max-width:240px;
+    width:40vw;        /* campeão nunca passa disso */
+    max-width:220px;
     height:auto;
   }
 
@@ -394,9 +402,9 @@ button{
   }
 
   #again{
-    margin-top:12px;
-    font-size:17px;
-    padding:14px 26px;
+    margin-top:10px;
+    font-size:16px;
+    padding:12px 26px;
   }
 }
 
@@ -405,15 +413,16 @@ button{
 @media (max-width: 420px){
 
   .round img{
-    width:9vw;
-    max-width:44px;
+    width:10vw;
+    max-width:36px;
   }
 
   .champion img{
-    width:44vw;
-    max-width:210px;
+    width:46vw;
+    max-width:200px;
   }
 }
+
 
     </style>
 </head>
