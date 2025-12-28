@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Batalha de Filmes – IMDb Top 250</title>
-
   <style>
     body {
       margin: 0;
@@ -15,45 +14,35 @@
       color: #fff;
       font-family: Arial, sans-serif;
     }
-
     .container {
       text-align: center;
-      max-width: 900px;
+      max-width: 1000px;
       width: 100%;
     }
-
-    h1 {
-      margin-bottom: 20px;
-    }
-
     button {
       cursor: pointer;
       border: none;
       background: none;
       color: inherit;
+      font-size: 16px;
     }
-
     .duel {
       display: flex;
       justify-content: center;
       gap: 40px;
       margin-top: 30px;
     }
-
     .card {
-      width: 400px;
+      width: 260px;
     }
-
     .card img {
       width: 100%;
       border-radius: 8px;
-      transition: transform 0.2s;
+      transition: transform .2s;
     }
-
     .card img:hover {
       transform: scale(1.05);
     }
-
     .title {
       margin-top: 10px;
       font-size: 16px;
@@ -65,7 +54,6 @@
 <div class="container">
   <h1>Batalha de Filmes – IMDb Top 250</h1>
   <button id="startBtn">Gerar competição</button>
-
   <div id="duel" class="duel"></div>
 </div>
 
@@ -76,7 +64,12 @@ let vencedores = [];
 let atual = [];
 
 function shuffle(arr) {
-  return arr.sort(() => Math.random() - 0.5);
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
 }
 
 async function start() {
@@ -101,7 +94,6 @@ function nextDuel() {
         `<h2>Campeão: ${filmes[0].title} (${filmes[0].year})</h2>`;
       return;
     }
-
     nextDuel();
     return;
   }
@@ -109,10 +101,8 @@ function nextDuel() {
   atual = [filmes[index], filmes[index + 1]];
   index += 2;
 
-  document.getElementById("duel").innerHTML = `
-    ${card(atual[0], 0)}
-    ${card(atual[1], 1)}
-  `;
+  document.getElementById("duel").innerHTML =
+    card(atual[0], 0) + card(atual[1], 1);
 }
 
 function card(film, i) {
@@ -136,4 +126,3 @@ document.getElementById("startBtn").addEventListener("click", start);
 
 </body>
 </html>
-
