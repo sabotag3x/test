@@ -3,7 +3,6 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 
 const app = express();
-
 app.use(express.static("."));
 app.use(express.json());
 
@@ -26,14 +25,17 @@ async function getRatedFilms(username) {
 
     const $ = cheerio.load(res.data);
 
-    const posters = $("li.poster-container div.poster");
+    const jsonLd = $('script[type="application/ld+json"]').html();
+    if (!jsonLd) break;
 
-    if (posters.length === 0) break;
+    const data = JSON.parse(jsonLd);
+    if (!data.itemListElement || data.itemListElement.length === 0) break;
 
-    posters.each((_, el) => {
-      const title = $(el).attr("data-film-name");
-      if (title) films.push(title);
-    });
+    for (const item of data.itemListElement) {
+      if (item.item && item.item.name) {
+        films.push(item.item.name);
+      }
+    }
 
     page++;
   }
@@ -43,21 +45,18 @@ async function getRatedFilms(username) {
 
 app.post("/api/films", async (req, res) => {
   const { username } = req.body;
-
   if (!username) {
     return res.status(400).json({ error: "Username não informado." });
   }
 
   try {
     const films = await getRatedFilms(username);
-
     if (films.length === 0) {
       return res.status(400).json({ error: "Nenhum filme encontrado." });
     }
-
     res.json({ films });
-  } catch (e) {
-    console.error(e);
+  } catch (err) {
+    console.error(err);
     res.status(500).json({ error: "Erro ao buscar filmes." });
   }
 });
