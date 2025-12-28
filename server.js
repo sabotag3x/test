@@ -13,7 +13,7 @@ app.get("/", (_, res) =>
   res.sendFile(path.join(__dirname, "public", "index.html"))
 );
 
-/* ================= LETTERBOXD (LISTA) ================= */
+/* ================= LETTERBOXD ================= */
 
 app.get("/api/letterboxd/:user", async (req, res) => {
   const user = req.params.user;
@@ -29,7 +29,7 @@ app.get("/api/letterboxd/:user", async (req, res) => {
       }).then(r => r.text());
 
       const items = html.match(/<li class="griditem">[\s\S]*?<\/li>/g);
-      if (!items || items.length === 0) break;
+      if (!items) break;
 
       for (const item of items) {
         const m = item.match(/data-item-full-display-name="([^"]+)"/);
@@ -40,7 +40,7 @@ app.get("/api/letterboxd/:user", async (req, res) => {
 
         movies.push({
           title: raw.replace(/\s*\(\d{4}\)/, "").trim(),
-          year: y ? y[1] : ""
+          year: y ? parseInt(y[1]) : null
         });
       }
 
@@ -53,7 +53,7 @@ app.get("/api/letterboxd/:user", async (req, res) => {
   }
 });
 
-/* ================= TMDb (ON-DEMAND, CORRETO) ================= */
+/* ================= TMDb ROBUSTO ================= */
 
 app.post("/api/tmdb-batch", async (req, res) => {
   const { films, lang } = req.body;
@@ -64,24 +64,31 @@ app.post("/api/tmdb-batch", async (req, res) => {
       const url =
         `https://api.themoviedb.org/3/search/movie` +
         `?query=${encodeURIComponent(f.title)}` +
-        `&year=${f.year}` +
         `&language=${lang || "pt-BR"}`;
 
       const r = await fetch(url, {
         headers: {
           Authorization: `Bearer ${TMDB_TOKEN}`,
-          "Accept": "application/json"
+          Accept: "application/json"
         }
       });
 
       const j = await r.json();
-      const movie = j.results && j.results[0];
+      let match = null;
+
+      if (j.results && j.results.length) {
+        match = j.results.find(r => {
+          if (!r.poster_path || !r.release_date) return false;
+          const y = parseInt(r.release_date.slice(0, 4));
+          return f.year ? Math.abs(y - f.year) <= 1 : true;
+        });
+      }
 
       results.push({
-        title: movie?.title || f.title,
-        year: f.year,
-        poster: movie?.poster_path
-          ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+        title: match?.title || f.title,
+        year: f.year || "",
+        poster: match?.poster_path
+          ? `https://image.tmdb.org/t/p/w500${match.poster_path}`
           : null
       });
     }
@@ -93,5 +100,5 @@ app.post("/api/tmdb-batch", async (req, res) => {
 });
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("Letterboxd Battle + TMDb OK");
+  console.log("FilmDuel backend OK");
 });
