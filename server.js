@@ -1,63 +1,60 @@
 const express = require("express");
 const axios = require("axios");
-const cheerio = require("cheerio");
 
 const app = express();
 app.use(express.static("."));
 
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 app.get("/api/films", async (req, res) => {
   try {
-    const listUrl =
-      req.query.url ||
-      "https://letterboxd.com/sabotag3x/list/1-year-1-movie/";
+    const response = await axios.get("https://www.imdb.com/pt/user/ur55777575/ratings/", {
+      headers: {
+        "User-Agent": "Mozilla/5.0",
+        "Accept-Language": "en-US,en;q=0.9"
+      }
+    });
 
-    const films = [];
-    let page = 1;
+    const html = response.data;
 
-    while (true) {
-      const url = page === 1 ? listUrl : `${listUrl}page/${page}/`;
+    const match = html.match(
+      /<script id="__NEXT_DATA__" type="application\/json">(.+?)<\/script>/
+    );
 
-      const r = await axios.get(url, {
-        headers: {
-          "User-Agent": "Mozilla/5.0",
-          "Accept-Language": "en-US,en;q=0.9"
-        }
-      });
-
-      const $ = cheerio.load(r.data);
-      const posters = $("li.poster-container");
-
-      if (posters.length === 0) break;
-
-      posters.each((_, el) => {
-        const img = $(el).find("img");
-        const title = img.attr("alt") || "";
-
-        const poster =
-          img.attr("src") ||
-          img.attr("data-src") ||
-          img.attr("data-srcset")?.split(",")[0]?.split(" ")[0] ||
-          "";
-
-        films.push({
-          title,
-          year: "",
-          poster
-        });
-      });
-
-      page++;
-      if (page > 10) break; // segurança
+    if (!match) {
+      return res.status(500).json({ error: "NEXT_DATA não encontrado" });
     }
 
-    res.json({ films });
+    const data = JSON.parse(match[1]);
+
+    const items =
+      data.props.pageProps.pageData.chartTitles.edges;
+
+    const films = items.map(edge => {
+      const n = edge.node;
+      return {
+        title: n.titleText.text,
+        year: n.releaseYear.year,
+        poster: n.primaryImage?.url || ""
+      };
+    });
+
+    const selected = shuffle(films).slice(0, 16);
+
+    res.setHeader("Cache-Control", "no-store");
+    res.json({ films: selected });
   } catch (e) {
     console.error(e);
-    res.status(500).json({ error: "Erro ao buscar lista" });
+    res.status(500).json({ error: "Erro ao buscar IMDb Top 250" });
   }
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () =>
-  console.log("Servidor rodando em http://localhost:" + PORT)
-);
+app.listen(PORT);
+
