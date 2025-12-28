@@ -41,25 +41,27 @@ app.get("/api/imdb/:user", async (req, res) => {
     const pages = await Promise.all(requests);
     const movies = [];
 
-    pages.forEach(html => {
-      const blocks = html.split("ipc-metadata-list-summary-item");
-      if (blocks.length <= 1) return;
+pages.forEach(html => {
+  const blocks = html.split("ipc-metadata-list-summary-item");
+  if (blocks.length <= 1) return;
 
-      blocks.slice(1).forEach(block => {
-        const titleMatch = block.match(/ipc-title__text">([^<]+)/);
-        const yearMatch  = block.match(/\((\d{4})\)/);
+  blocks.slice(1).forEach(block => {
+    // título
+    const titleMatch = block.match(/ipc-title__text">([^<]+)/);
+    if (!titleMatch) return;
 
-        if (!titleMatch || !yearMatch) return;
+    const title = titleMatch[1].trim();
 
-        const title = titleMatch[1].trim();
-        const year  = yearMatch[1];
+    // EXCLUI séries (ano com intervalo 2019–2023)
+    if (/\d{4}\s*–\s*\d{4}/.test(block)) return;
 
-        // EXCLUI SÉRIES (ano com intervalo)
-        if (block.match(/\d{4}–/)) return;
+    // tenta achar um ano isolado de 4 dígitos (1900–2099)
+    const yearMatch = block.match(/\b(19|20)\d{2}\b/);
+    const year = yearMatch ? yearMatch[0] : "";
 
-        movies.push({ title, year });
-      });
-    });
+    movies.push({ title, year });
+  });
+});
 
     cache[user] = movies;
     res.json(movies);
@@ -73,3 +75,4 @@ app.get("/api/imdb/:user", async (req, res) => {
 app.listen(PORT, "0.0.0.0", () => {
   console.log("IMDb app otimizado rodando");
 });
+
