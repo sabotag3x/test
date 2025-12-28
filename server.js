@@ -1,38 +1,41 @@
 const express = require("express");
-const axios = require("axios");
-const cheerio = require("cheerio");
-
 const app = express();
+
 app.use(express.static("."));
 
-app.get("/api/films", async (req, res) => {
-  try {
-    const url = "https://www.imdb.com/chart/top/";
-    const response = await axios.get(url, {
-      headers: {
-        "User-Agent": "Mozilla/5.0",
-        "Accept-Language": "en-US,en;q=0.9"
-      }
-    });
+const films = [
+  "The Shawshank Redemption",
+  "The Godfather",
+  "The Dark Knight",
+  "The Godfather Part II",
+  "12 Angry Men",
+  "Schindler's List",
+  "The Lord of the Rings: The Return of the King",
+  "Pulp Fiction",
+  "The Lord of the Rings: The Fellowship of the Ring",
+  "The Good, the Bad and the Ugly",
+  "Forrest Gump",
+  "Fight Club",
+  "Inception",
+  "The Lord of the Rings: The Two Towers",
+  "Star Wars: Episode V – The Empire Strikes Back",
+  "The Matrix",
+  "Goodfellas",
+  "One Flew Over the Cuckoo's Nest",
+  "Se7en",
+  "Seven Samurai",
+  "Interstellar",
+  "City of God",
+  "Spirited Away",
+  "Saving Private Ryan",
+  "The Green Mile"
+];
 
-    const $ = cheerio.load(response.data);
-    const films = [];
-
-    $("td.titleColumn a").each((_, el) => {
-      const title = $(el).text().trim();
-      if (title) films.push(title);
-    });
-
-    if (films.length === 0) {
-      return res.status(500).json({ error: "Lista vazia." });
-    }
-
-    res.json({ films });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: "Falha ao buscar Top 250." });
-  }
+app.get("/api/films", (req, res) => {
+  res.json({ films });
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log("Rodando na porta", PORT));
+app.listen(PORT, () => {
+  console.log("Servidor rodando na porta", PORT);
+});
