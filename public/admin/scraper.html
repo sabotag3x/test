@@ -23,17 +23,12 @@ label{
   font-weight:bold;
 }
 
-input, textarea, button{
+input, button{
   width:100%;
   padding:12px;
   border-radius:8px;
   border:none;
   font-size:15px;
-}
-
-textarea{
-  min-height:120px;
-  resize:vertical;
 }
 
 button{
@@ -63,4 +58,13 @@ button{
 <label>Nome amigável</label>
 <input id="name" placeholder="IMDb Top 250">
 
-<label>URL da lista Letterboxd<
+<label>URL da lista Letterboxd</label>
+<input id="url" placeholder="https://letterboxd.com/...">
+
+<button onclick="run()">Scrapear lista</button>
+
+<div id="log"></div>
+
+<script src="scraper.js"></script>
+</body>
+</html>
