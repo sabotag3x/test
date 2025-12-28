@@ -4,8 +4,8 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const MAX_PAGES = 10;     // 10 × 250 ≈ 2500
-const RETRY_LIMIT = 3;   // tentativas por página
+const MAX_PAGES = 10; // até ~2500 filmes
+const RETRY_LIMIT = 2;
 
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -24,7 +24,9 @@ app.get("/api/imdb/:user", async (req, res) => {
       let attempts = 0;
 
       while (attempts < RETRY_LIMIT) {
-        const url = `https://www.imdb.com/user/${user}/ratings?sort=date_added,desc&page=${page}`;
+        const url =
+          `https://www.imdb.com/user/${user}/ratings` +
+          `?sort=date_added,desc&count=250&page=${page}`;
 
         const r = await fetch(url, {
           headers: {
@@ -36,10 +38,10 @@ app.get("/api/imdb/:user", async (req, res) => {
         html = await r.text();
 
         const count = (html.match(/ipc-metadata-list-summary-item/g) || []).length;
-        if (count >= 200) break;
+        if (count >= 200) break; // agora faz sentido
 
         attempts++;
-        await new Promise(r => setTimeout(r, 800));
+        await new Promise(r => setTimeout(r, 500));
       }
 
       const blocks = html.split("ipc-metadata-list-summary-item");
@@ -75,5 +77,5 @@ app.get("/api/imdb/:user", async (req, res) => {
 });
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("IMDb extractor rodando");
+  console.log("IMDb extractor CORRETO rodando");
 });
