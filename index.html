@@ -34,7 +34,6 @@ h1{margin-bottom:20px}
   margin-bottom:40px
 }
 
-/* DUELO */
 .duel{
   display:flex;
   justify-content:center;
@@ -53,7 +52,6 @@ h1{margin-bottom:20px}
 .card img:hover{transform:scale(1.06)}
 .title{margin-top:10px;font-size:18px}
 
-/* RESULTADO FINAL */
 .bracket{
   display:flex;
   justify-content:center;
@@ -69,7 +67,6 @@ h1{margin-bottom:20px}
 .round{
   display:flex;
   flex-direction:column;
-  justify-content:space-between;
   gap:18px
 }
 .small{
@@ -130,7 +127,8 @@ async function start(){
 }
 
 function nextDuel(){
-  if(index >= filmes.length){
+  // FECHA RODADA SOMENTE SE HOUVE ESCOLHAS
+  if(index >= filmes.length && vencedores.length > 0){
     rounds.push([...vencedores]);
 
     if(vencedores.length === 1){
@@ -143,7 +141,8 @@ function nextDuel(){
     index = 0;
   }
 
-  if(filmes.length < 2) return;
+  // GARANTE QUE HÁ CONFRONTO
+  if(index + 1 >= filmes.length) return;
 
   atual = [filmes[index], filmes[index + 1]];
   index += 2;
@@ -175,9 +174,7 @@ function showBracket(champion){
   html += `<div class="side">`;
   left.forEach(r=>{
     html += `<div class="round">`;
-    r.forEach(f=>{
-      html += `<div class="small"><img src="${f.poster}"></div>`;
-    });
+    r.forEach(f=>html += `<div class="small"><img src="${f.poster}"></div>`);
     html += `</div>`;
   });
   html += `</div>`;
@@ -192,9 +189,7 @@ function showBracket(champion){
   html += `<div class="side">`;
   right.reverse().forEach(r=>{
     html += `<div class="round">`;
-    r.forEach(f=>{
-      html += `<div class="small"><img src="${f.poster}"></div>`;
-    });
+    r.forEach(f=>html += `<div class="small"><img src="${f.poster}"></div>`);
     html += `</div>`;
   });
   html += `</div></div>`;
