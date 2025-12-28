@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Batalha de Filmes – IMDb Top 250</title>
+
 <style>
 body{
   margin:0;
@@ -10,42 +11,73 @@ body{
   display:flex;
   justify-content:center;
   align-items:center;
-  background:#0f0f0f;
+  background:radial-gradient(circle at top, #1b1b1b, #000);
   color:#fff;
-  font-family:Arial,sans-serif
+  font-family:Arial, Helvetica, sans-serif;
 }
+
 .container{
   text-align:center;
-  max-width:1200px;
-  width:100%
+  max-width:1400px;
+  width:100%;
+  padding:40px 20px;
 }
-button{
+
+h1{
+  margin-bottom:25px;
+  font-size:36px;
+}
+
+/* BOTÃO CTA */
+#startBtn{
+  background:linear-gradient(135deg, #ffcc00, #ff9900);
+  color:#000;
+  font-size:20px;
+  font-weight:bold;
+  padding:14px 36px;
+  border-radius:40px;
   cursor:pointer;
   border:none;
-  background:none;
-  color:inherit;
-  font-size:16px
+  box-shadow:0 8px 25px rgba(255,153,0,.4);
+  transition:transform .15s, box-shadow .15s;
 }
+
+#startBtn:hover{
+  transform:scale(1.05);
+  box-shadow:0 12px 35px rgba(255,153,0,.6);
+}
+
+#startBtn:active{
+  transform:scale(.98);
+}
+
+/* DUELO */
 .duel{
   display:flex;
   justify-content:center;
-  gap:60px;
-  margin-top:30px
+  gap:80px;
+  margin-top:40px;
 }
+
+/* CARDS */
 .card{
-  width:300px
+  width:300px;
 }
+
 .card img{
   width:100%;
-  border-radius:10px;
-  transition:transform .2s
+  border-radius:12px;
+  transition:transform .2s, box-shadow .2s;
 }
+
 .card img:hover{
-  transform:scale(1.05)
+  transform:scale(1.06);
+  box-shadow:0 10px 30px rgba(0,0,0,.7);
 }
+
 .title{
   margin-top:10px;
-  font-size:18px
+  font-size:18px;
 }
 
 /* RESULTADO FINAL */
@@ -53,40 +85,58 @@ button{
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:40px;
-  margin-top:40px
+  gap:50px;
+  margin-top:40px;
 }
+
+.side{
+  display:flex;
+  gap:30px;
+}
+
 .round{
   display:flex;
   flex-direction:column;
-  gap:12px
+  gap:14px;
 }
+
 .small{
-  width:90px
+  width:90px;
 }
+
 .small img{
   width:100%;
-  border-radius:6px
+  border-radius:6px;
 }
+
 .champion{
-  width:260px
+  width:300px;
 }
+
 .champion img{
   width:100%;
-  border-radius:12px
+  border-radius:16px;
+  box-shadow:0 15px 40px rgba(0,0,0,.8);
+}
+
+.champion .title{
+  font-size:20px;
+  margin-top:14px;
+  font-weight:bold;
 }
 </style>
 </head>
+
 <body>
 
 <div class="container">
   <h1>Batalha de Filmes – IMDb Top 250</h1>
-  <button id="startBtn">Gerar competição</button>
+  <button id="startBtn">🎬 Gerar competição</button>
   <div id="duel" class="duel"></div>
 </div>
 
 <script>
-let filmes=[],index=0,vencedores=[],atual=[];
+let filmes=[], index=0, vencedores=[], atual=[];
 let rounds=[];
 
 function shuffle(arr){
@@ -99,7 +149,7 @@ function shuffle(arr){
 }
 
 async function start(){
-  const res=await fetch("/api/films");
+  const res=await fetch("/api/films?ts="+Date.now());
   const data=await res.json();
 
   filmes=shuffle(data.films).slice(0,16);
@@ -124,11 +174,11 @@ function nextDuel(){
     return;
   }
 
-  atual=[filmes[index],filmes[index+1]];
+  atual=[filmes[index], filmes[index+1]];
   index+=2;
 
-  document.getElementById("duel").innerHTML=
-    card(atual[0],0)+card(atual[1],1);
+  document.getElementById("duel").innerHTML =
+    card(atual[0],0) + card(atual[1],1);
 }
 
 function card(film,i){
@@ -148,31 +198,44 @@ function choose(i){
 }
 
 function showBracket(champion){
+  const half=Math.floor(rounds.length/2);
+  const left=rounds.slice(0,half);
+  const right=rounds.slice(half).reverse();
+
   let html=`<div class="bracket">`;
 
-  rounds.forEach(r=>{
+  html+=`<div class="side">`;
+  left.forEach(r=>{
     html+=`<div class="round">`;
     r.forEach(f=>{
-      html+=`
-        <div class="small">
-          <img src="${f.poster}" title="${f.title}">
-        </div>
-      `;
+      html+=`<div class="small"><img src="${f.poster}" title="${f.title}"></div>`;
     });
     html+=`</div>`;
   });
+  html+=`</div>`;
 
   html+=`
     <div class="champion">
       <img src="${champion.poster}">
       <div class="title">Campeão<br>${champion.title} (${champion.year})</div>
     </div>
-  </div>`;
+  `;
 
+  html+=`<div class="side">`;
+  right.forEach(r=>{
+    html+=`<div class="round">`;
+    r.forEach(f=>{
+      html+=`<div class="small"><img src="${f.poster}" title="${f.title}"></div>`;
+    });
+    html+=`</div>`;
+  });
+  html+=`</div>`;
+
+  html+=`</div>`;
   document.getElementById("duel").innerHTML=html;
 }
 
-document.getElementById("startBtn").addEventListener("click",start);
+document.getElementById("startBtn").addEventListener("click", start);
 </script>
 
 </body>
