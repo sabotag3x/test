@@ -286,76 +286,91 @@ button{
 
 /* ---- DESKTOP (ajuste fino, NÃO quebra) ---- */
 
+/* ================= RESULTADO FINAL ================= */
+
+/* ---- DESKTOP (mantém como está, não quebra) ---- */
+
 .bracket{
   max-width:1200px;
   margin:0 auto;
+  display:flex;
+  justify-content:center;
   align-items:center;
+  gap:4%;
 }
 
 .side{
-  max-width:320px;
+  width:20%;
+  display:flex;
+  justify-content:center;
 }
 
 .champion{
-  max-width:320px;
+  width:40%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
 .champion img{
-  width:50%;
-  max-width:360px;
+  width:100%;
   height:auto;
+  border-radius:22px;
 }
 
-/* ---- MOBILE DEFINITIVO ---- */
+/* ---- MOBILE DEFINITIVO (REGRA 50 / 40 / 10) ---- */
 
 @media (max-width: 900px){
 
   .bracket{
     flex-direction:column;
-    gap:28px;
+    gap:4vh;
     width:100%;
   }
 
-  /* lados viram FAIXAS */
+  /* COLUNAS DE CIMA (SEMIFINALISTAS) */
   .side{
+    width:40vw;              /* 40% total reservado */
+    max-width:40vw;
     display:flex;
-    flex-direction:row;
-    gap:14px;
-    width:100%;
-    max-width:100%;
-    justify-content:center;
-    overflow-x:auto;
-    padding:0 8px;
+    justify-content:space-between;
+    gap:2vw;
   }
 
   .round{
     display:flex;
     flex-direction:column;
-    gap:10px;
+    gap:1.5vh;
   }
 
-  .r1 img{ width:52px }
-  .r2 img{ width:72px }
-  .r3 img{ width:92px }
-
-  .champion{
+  /* cada coluna interna divide o espaço */
+  .round img{
     width:100%;
+    height:auto;
+  }
+
+  /* CAMPEÃO */
+  .champion{
+    width:50vw;              /* 50% cravado */
+    max-width:50vw;
     align-items:center;
   }
 
   .champion img{
-    width: clamp(220px, 50vw, 300px);
+    width:100%;
+    height:auto;
   }
 
   .champion .title{
     font-size:20px;
     text-align:center;
+    margin-top:12px;
   }
 
   #again{
+    margin-top:14px;
     font-size:18px;
     padding:14px 30px;
-    margin-top:12px;
   }
 }
 
@@ -363,10 +378,17 @@ button{
 
 @media (max-width: 420px){
 
-  .champion img{
-    width: clamp(200px, 50vw, 260px);
+  .side{
+    width:38vw;
+    max-width:38vw;
+  }
+
+  .champion{
+    width:48vw;
+    max-width:48vw;
   }
 }
+
 
 
     </style>
