@@ -1,0 +1,14 @@
+{
+  "name": "letterboxd-batalha",
+  "version": "1.0.0",
+  "description": "Batalha de filmes usando ratings do Letterboxd",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "axios": "^1.6.8",
+    "cheerio": "^1.0.0"
+  }
+}
