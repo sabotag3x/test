@@ -1,9 +1,11 @@
 const express = require("express");
 const path = require("path");
-const { chromium } = require("playwright");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// número máximo de páginas a tentar
+const MAX_PAGES = 10;
 
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -11,95 +13,60 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-app.get("/api/imdb-stream/:user", async (req, res) => {
+app.get("/api/imdb/:user", async (req, res) => {
   const user = req.params.user;
-
-  // SSE headers
-  res.setHeader("Content-Type", "text/event-stream");
-  res.setHeader("Cache-Control", "no-cache");
-  res.setHeader("Connection", "keep-alive");
-
-  const send = (event, data) => {
-    res.write(`event: ${event}\n`);
-    res.write(`data: ${JSON.stringify(data)}\n\n`);
-  };
-
-  let browser;
+  const movies = [];
+  let index = 1;
 
   try {
-    send("log", "Iniciando navegador…");
+    for (let page = 1; page <= MAX_PAGES; page++) {
+      const url =
+        `https://www.imdb.com/user/${user}/ratings` +
+        `?sort=date_added,desc&page=${page}`;
 
-    browser = await chromium.launch({
-      headless: true,
-      args: [
-        "--no-sandbox",
-        "--disable-setuid-sandbox",
-        "--disable-dev-shm-usage"
-      ]
-    });
-
-    const page = await browser.newPage();
-
-    const url = `https://www.imdb.com/user/${user}/ratings`;
-    send("log", `Abrindo ${url}`);
-
-    await page.goto(url, { waitUntil: "networkidle" });
-
-    let lastCount = 0;
-    let stableRounds = 0;
-    const MAX_STABLE = 3;
-
-    while (true) {
-      // força scroll
-      await page.evaluate(() => {
-        window.scrollTo(0, document.body.scrollHeight);
+      const r = await fetch(url, {
+        headers: {
+          "User-Agent": "Mozilla/5.0",
+          "Accept-Language": "en-US,en;q=0.9"
+        }
       });
 
-      await page.waitForTimeout(1200);
+      const html = await r.text();
 
-      const items = await page.$$eval(
-        ".ipc-metadata-list-summary-item",
-        els =>
-          els.map(el => {
-            const title =
-              el.querySelector(".ipc-title__text")?.textContent?.trim() || "";
-            const year =
-              el.textContent.match(/\b(19|20)\d{2}\b/)?.[0] || "";
-            return { title, year };
-          })
-      );
+      const blocks = html.split("ipc-metadata-list-summary-item");
+      const found = blocks.length - 1;
 
-      const count = items.length;
-      send("progress", { count });
-      send("log", `Itens detectados no DOM: ${count}`);
+      // se não veio nada novo, encerra
+      if (found <= 0) break;
 
-      if (count === lastCount) {
-        stableRounds++;
-      } else {
-        stableRounds = 0;
+      for (const block of blocks.slice(1)) {
+        const titleMatch = block.match(/ipc-title__text">([^<]+)/);
+        if (!titleMatch) continue;
+
+        const title = titleMatch[1].trim();
+        const yearMatch = block.match(/\b(19|20)\d{2}\b/);
+        const year = yearMatch ? yearMatch[0] : "";
+
+        movies.push({
+          index,
+          title,
+          year
+        });
+
+        index++;
       }
 
-      if (stableRounds >= MAX_STABLE) {
-        send("log", "Nenhum item novo após scroll. Encerrando.");
-        send("done", { total: count, items });
-        break;
-      }
-
-      lastCount = count;
+      // pequeno delay para evitar respostas ainda menores
+      await new Promise(r => setTimeout(r, 600));
     }
+
+    res.json(movies);
+
   } catch (err) {
-    send("error", {
-      message: err.message,
-      stack: err.stack
-    });
-  } finally {
-    if (browser) {
-      await browser.close();
-    }
-    res.end();
+    res.status(500).json({ error: err.message });
   }
 });
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("IMDb Playwright Debug rodando");
+  console.log("IMDb HTML scraper (~700) rodando");
 });
