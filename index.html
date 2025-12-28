@@ -12,18 +12,18 @@ body{
   justify-content:center;
   background:#000;
   color:#fff;
-  font-family:Arial, sans-serif;
+  font-family:Arial,sans-serif
 }
 .container{
-  max-width:1600px;
+  max-width:1400px;
   width:100%;
   padding:40px;
-  text-align:center;
+  text-align:center
 }
 h1{margin-bottom:20px}
 
 #startBtn{
-  background:#ffcc00;
+  background:linear-gradient(135deg,#ffcc00,#ff9900);
   color:#000;
   font-size:20px;
   font-weight:bold;
@@ -31,37 +31,50 @@ h1{margin-bottom:20px}
   border-radius:40px;
   border:none;
   cursor:pointer;
-  margin-bottom:40px;
+  margin-bottom:40px
 }
 
-.bracket{
-  display:grid;
-  grid-template-columns: repeat(9, auto);
-  align-items:center;
-  justify-content:center;
-  gap:30px;
-}
-
-.column{
+/* DUELO */
+.duel{
   display:flex;
-  flex-direction:column;
-  gap:20px;
+  justify-content:center;
+  gap:80px;
+  margin-top:40px
 }
-
-.card.small{width:90px}
-.card.medium{width:130px}
-.card.large{width:180px}
-.card.champion{width:300px}
-
+.card{
+  width:300px
+}
 .card img{
   width:100%;
-  border-radius:8px;
+  border-radius:12px;
+  cursor:pointer;
+  transition:transform .2s
 }
+.card img:hover{transform:scale(1.06)}
+.title{margin-top:10px;font-size:18px}
 
-.title{
-  font-size:14px;
-  margin-top:6px;
+/* RESULTADO FINAL */
+.bracket{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:50px;
+  margin-top:40px
 }
+.side{
+  display:flex;
+  gap:30px
+}
+.round{
+  display:flex;
+  flex-direction:column;
+  gap:14px
+}
+.small{width:90px}
+.small img{width:100%;border-radius:6px}
+.champion{width:300px}
+.champion img{width:100%;border-radius:16px}
+.champion .title{font-size:20px;margin-top:12px;font-weight:bold}
 </style>
 </head>
 
@@ -69,85 +82,99 @@ h1{margin-bottom:20px}
 <div class="container">
   <h1>Batalha de Filmes – IMDb Top 250</h1>
   <button id="startBtn">🎬 Gerar competição</button>
-  <div id="duel"></div>
+  <div id="duel" class="duel"></div>
 </div>
 
 <script>
-let filmes=[], atual=[], vencedores=[];
+let filmes=[], index=0, vencedores=[], atual=[];
 let rounds=[];
 
-async function start(){
-  const res = await fetch("/api/films?ts="+Date.now());
-  const data = await res.json();
-  filmes = shuffle(data.films).slice(0,16);
-  rounds = [filmes];
-  playRound(filmes);
-}
-
-function shuffle(a){
-  const b=[...a];
-  for(let i=b.length-1;i>0;i--){
+function shuffle(arr){
+  const a=[...arr];
+  for(let i=a.length-1;i>0;i--){
     const j=Math.floor(Math.random()*(i+1));
-    [b[i],b[j]]=[b[j],b[i]];
+    [a[i],a[j]]=[a[j],a[i]];
   }
-  return b;
+  return a;
 }
 
-function playRound(list){
-  if(list.length===1){
-    renderBracket();
+async function start(){
+  const res=await fetch("/api/films?ts="+Date.now());
+  const data=await res.json();
+
+  filmes=shuffle(data.films).slice(0,16);
+  index=0;
+  vencedores=[];
+  rounds=[];
+  nextDuel();
+}
+
+function nextDuel(){
+  if(index>=filmes.length){
+    rounds.push([...vencedores]);
+    filmes=vencedores;
+    vencedores=[];
+    index=0;
+
+    if(filmes.length===1){
+      showBracket(filmes[0]);
+      return;
+    }
+    nextDuel();
     return;
   }
-  vencedores=[];
-  for(let i=0;i<list.length;i+=2){
-    vencedores.push(list[i]); // vencedor automático (demo)
-  }
-  rounds.push(vencedores);
-  playRound(vencedores);
+
+  atual=[filmes[index],filmes[index+1]];
+  index+=2;
+
+  document.getElementById("duel").innerHTML =
+    card(atual[0],0)+card(atual[1],1);
 }
 
-function renderBracket(){
-  const duel=document.getElementById("duel");
+function card(f,i){
+  return `
+    <div class="card">
+      <img src="${f.poster}" onclick="choose(${i})">
+      <div class="title">${f.title} (${f.year})</div>
+    </div>
+  `;
+}
 
-  const leftRounds = rounds.slice(0,3);
-  const rightRounds = rounds.slice(0,3).map(r=>[...r].reverse());
-  const champion = rounds[rounds.length-1][0];
+function choose(i){
+  vencedores.push(atual[i]);
+  nextDuel();
+}
 
-  let html = `<div class="bracket">`;
+function showBracket(champion){
+  const left = rounds.slice(0,3);
+  const right = rounds.slice(0,3).map(r=>[...r].reverse());
 
-  leftRounds.forEach((r,i)=>{
-    html+=`<div class="column">`;
-    r.forEach(f=>html+=card(f,i));
+  let html=`<div class="bracket">`;
+
+  html+=`<div class="side">`;
+  left.forEach(r=>{
+    html+=`<div class="round">`;
+    r.forEach(f=>html+=`<div class="small"><img src="${f.poster}"></div>`);
     html+=`</div>`;
   });
+  html+=`</div>`;
 
   html+=`
-    <div class="column">
-      <div class="card champion">
-        <img src="${champion.poster}">
-        <div class="title">Campeão<br>${champion.title} (${champion.year})</div>
-      </div>
+    <div class="champion">
+      <img src="${champion.poster}">
+      <div class="title">Campeão<br>${champion.title} (${champion.year})</div>
     </div>
   `;
 
-  rightRounds.reverse().forEach((r,i)=>{
-    html+=`<div class="column">`;
-    r.forEach(f=>html+=card(f,2-i));
+  html+=`<div class="side">`;
+  right.reverse().forEach(r=>{
+    html+=`<div class="round">`;
+    r.forEach(f=>html+=`<div class="small"><img src="${f.poster}"></div>`);
     html+=`</div>`;
   });
+  html+=`</div></div>`;
 
-  html+=`</div>`;
-  duel.innerHTML=html;
-}
-
-function card(f,stage){
-  const size = stage===0?"small":stage===1?"medium":"large";
-  return `
-    <div class="card ${size}">
-      <img src="${f.poster}">
-      <div class="title">${f.title}</div>
-    </div>
-  `;
+  document.getElementById("duel").innerHTML=html;
 }
 
 document.getElementById("startBtn").onclick=start;
