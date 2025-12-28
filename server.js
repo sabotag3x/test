@@ -18,16 +18,20 @@ async function getRatedFilms(username) {
         : `https://letterboxd.com/${username}/films/ratings/page/${page}/`;
 
     const res = await axios.get(url, {
-      headers: { "User-Agent": "Mozilla/5.0" }
+      headers: {
+        "User-Agent": "Mozilla/5.0",
+        "Accept-Language": "en-US,en;q=0.9"
+      }
     });
 
     const $ = cheerio.load(res.data);
-    const posters = $("li.poster-container");
+
+    const posters = $("li.poster-container div.poster");
 
     if (posters.length === 0) break;
 
     posters.each((_, el) => {
-      const title = $(el).find("img").attr("alt");
+      const title = $(el).attr("data-film-name");
       if (title) films.push(title);
     });
 
