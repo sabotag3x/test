@@ -89,14 +89,16 @@ function nextDuel() {
     vencedores = [];
     index = 0;
 
-    if (filmes.length === 1) {
-      document.getElementById("duel").innerHTML =
-        `<h2>Campeão: ${filmes[0].title} (${filmes[0].year})</h2>`;
-      return;
-    }
-    nextDuel();
-    return;
-  }
+if (filmes.length === 1) {
+  const f = filmes[0];
+  document.getElementById("duel").innerHTML = `
+    <div class="card">
+      <img src="${f.poster}" alt="${f.title}">
+      <div class="title">Campeão<br>${f.title} (${f.year})</div>
+    </div>
+  `;
+  return;
+}
 
   atual = [filmes[index], filmes[index + 1]];
   index += 2;
@@ -126,4 +128,5 @@ document.getElementById("startBtn").addEventListener("click", start);
 
 </body>
 </html>
+
 
