@@ -38,7 +38,7 @@ th, td {
 
 <h2>Buscar filmes avaliados no IMDb</h2>
 
-<input id="userId" placeholder="urXXXXXXXX" value="ur55777575">
+<input id="userId" value="ur55777575">
 <button onclick="buscar()">Buscar</button>
 
 <div id="status"></div>
@@ -46,6 +46,7 @@ th, td {
 <table id="table" style="display:none">
 <thead>
 <tr>
+  <th>#</th>
   <th>Filme</th>
   <th>Ano</th>
 </tr>
@@ -75,7 +76,7 @@ async function buscar() {
 
     data.forEach(m => {
       const tr = document.createElement("tr");
-      tr.innerHTML = `<td>${m.title}</td><td>${m.year}</td>`;
+      tr.innerHTML = `<td>${m.index}</td><td>${m.title}</td><td>${m.year}</td>`;
       tbody.appendChild(tr);
     });
 
@@ -84,7 +85,7 @@ async function buscar() {
 
   } catch (err) {
     console.error(err);
-    status.textContent = "Erro ao buscar dados (veja o console)";
+    status.textContent = "Erro ao buscar dados";
   }
 }
 </script>
