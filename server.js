@@ -1,4 +1,3 @@
-// server.js
 const express = require("express");
 const path = require("path");
 
@@ -10,91 +9,16 @@ app.get("/", (_, res) =>
   res.sendFile(path.join(__dirname, "public", "index.html"))
 );
 
-/* ================= IMDb (espera HTML “estável”) ================= */
-
-async function fetchStableHTML(url, headers, maxWaitMs = 3000) {
-  const start = Date.now();
-  let lastSize = 0;
-  let stableCount = 0;
-
-  while (Date.now() - start < maxWaitMs) {
-    const html = await fetch(url, { headers }).then(r => r.text());
-    const size = html.length;
-
-    if (size === lastSize && size > 50000) {
-      stableCount++;
-      if (stableCount >= 2) return html; // tamanho estabilizou
-    } else {
-      stableCount = 0;
-    }
-
-    lastSize = size;
-    await new Promise(r => setTimeout(r, 300));
-  }
-
-  return await fetch(url, { headers }).then(r => r.text());
-}
-
-app.get("/api/imdb/:user", async (req, res) => {
-  const user = req.params.user;
-  const movies = [];
-  let index = 1;
-  const startTime = Date.now();
-
-  try {
-    for (let page = 1; page <= 50; page++) {
-      if (Date.now() - startTime > 10000) break;
-
-      const url =
-        `https://www.imdb.com/user/${user}/ratings` +
-        `?sort=date_added,desc&page=${page}`;
-
-      const html = await fetchStableHTML(
-        url,
-        {
-          "User-Agent": "Mozilla/5.0",
-          "Accept-Language": "en-US,en;q=0.9"
-        },
-        3000
-      );
-
-      const blocks = html.split("ipc-metadata-list-summary-item");
-      if (blocks.length <= 1) break;
-
-      for (const b of blocks.slice(1)) {
-        const t = b.match(/ipc-title__text">([^<]+)/);
-        if (!t) continue;
-
-        const y = b.match(/\b(19|20)\d{2}\b/);
-
-        movies.push({
-          index,
-          title: t[1].trim(),
-          year: y ? y[0] : ""
-        });
-        index++;
-      }
-    }
-
-    res.json(movies);
-  } catch (e) {
-    res.status(500).json({ error: e.message });
-  }
-});
-
-/* ================= Letterboxd (já OK) ================= */
+/* ================= Letterboxd (encerra automaticamente) ================= */
 
 app.get("/api/letterboxd/:user", async (req, res) => {
   const user = req.params.user;
   const movies = [];
   let index = 1;
   let page = 1;
-  const startTime = Date.now();
 
   try {
     while (true) {
-      if (Date.now() - startTime > 10000) break;
-
       const url = `https://letterboxd.com/${user}/films/page/${page}/`;
 
       const html = await fetch(url, {
@@ -102,6 +26,8 @@ app.get("/api/letterboxd/:user", async (req, res) => {
       }).then(r => r.text());
 
       const items = html.match(/<li class="griditem">[\s\S]*?<\/li>/g);
+
+      // 🔴 GATILHO DE FIM
       if (!items || items.length === 0) break;
 
       for (const item of items) {
