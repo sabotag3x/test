@@ -5,12 +5,32 @@
 <title>IMDb – Filmes Avaliados</title>
 
 <style>
-body { background:#000; color:#fff; font-family:Arial; padding:40px }
-input, button { padding:10px; font-size:16px }
-button { cursor:pointer }
-table { margin-top:20px; width:100%; border-collapse:collapse }
-th, td { border:1px solid #444; padding:8px }
-#status { margin-top:15px; color:#ffcc00 }
+body {
+  background:#000;
+  color:#fff;
+  font-family:Arial;
+  padding:40px;
+}
+input, button {
+  padding:10px;
+  font-size:16px;
+}
+button {
+  cursor:pointer;
+}
+table {
+  margin-top:20px;
+  width:100%;
+  border-collapse:collapse;
+}
+th, td {
+  border:1px solid #444;
+  padding:8px;
+}
+#status {
+  margin-top:15px;
+  color:#ffcc00;
+}
 </style>
 </head>
 
@@ -18,14 +38,17 @@ th, td { border:1px solid #444; padding:8px }
 
 <h2>Buscar filmes avaliados no IMDb</h2>
 
-<input id="userId" value="ur55777575">
+<input id="userId" placeholder="urXXXXXXXX" value="ur55777575">
 <button onclick="buscar()">Buscar</button>
 
 <div id="status"></div>
 
 <table id="table" style="display:none">
 <thead>
-<tr><th>Filme</th><th>Ano</th></tr>
+<tr>
+  <th>Filme</th>
+  <th>Ano</th>
+</tr>
 </thead>
 <tbody></tbody>
 </table>
@@ -37,22 +60,16 @@ async function buscar() {
   const table = document.getElementById("table");
   const tbody = table.querySelector("tbody");
 
-  status.textContent = "Buscando dados...";
+  status.textContent = "Buscando filmes...";
   table.style.display = "none";
   tbody.innerHTML = "";
 
   try {
     const res = await fetch(`/api/imdb/${user}`);
-
-    if (!res.ok) {
-      status.textContent = "Erro ao buscar dados da API";
-      return;
-    }
-
     const data = await res.json();
 
     if (!Array.isArray(data) || data.length === 0) {
-      status.textContent = "Nenhum filme encontrado (ou erro de extração)";
+      status.textContent = "Nenhum filme encontrado";
       return;
     }
 
@@ -67,7 +84,7 @@ async function buscar() {
 
   } catch (err) {
     console.error(err);
-    status.textContent = "Erro inesperado (veja o console)";
+    status.textContent = "Erro ao buscar dados (veja o console)";
   }
 }
 </script>
