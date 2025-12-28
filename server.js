@@ -18,19 +18,25 @@ app.get("/api/films", async (req, res) => {
     const $ = cheerio.load(response.data);
     const films = [];
 
-    $("li.ipc-metadata-list-summary-item").each((_, el) => {
-      const titleEl = $(el).find("h3.ipc-title__text");
-      const yearEl = $(el).find("span.ipc-metadata-list-summary-item__li");
-      const posterEl = $(el).find("img");
+$("li.ipc-metadata-list-summary-item").each((_, el) => {
+  const titleEl = $(el).find("h3.ipc-title__text");
+  const posterEl = $(el).find("img");
 
-      if (!titleEl.length || !posterEl.length) return;
+  if (!titleEl.length || !posterEl.length) return;
 
-      const title = titleEl.text().replace(/^\d+\.\s*/, "").trim();
-      const year = yearEl.first().text().trim();
-      const poster = posterEl.attr("src");
+  const title = titleEl.text().replace(/^\d+\.\s*/, "").trim();
 
-      films.push({ title, year, poster });
-    });
+  // pega o ano (4 dígitos)
+  const metaText = $(el).text();
+  const yearMatch = metaText.match(/\b(19|20)\d{2}\b/);
+  const year = yearMatch ? yearMatch[0] : "";
+
+  const poster =
+    posterEl.attr("srcset")?.split(",").pop()?.split(" ")[0] ||
+    posterEl.attr("src");
+
+  films.push({ title, year, poster });
+});
 
     res.json({ films });
   } catch (err) {
@@ -43,3 +49,4 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log("Servidor rodando na porta", PORT);
 });
+
