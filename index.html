@@ -73,7 +73,7 @@ function shuffle(arr) {
 }
 
 async function start() {
-  const res = await fetch("/api/films");
+  const res = await fetch("/api/films?ts=" + Date.now());
   const data = await res.json();
 
   filmes = shuffle(data.films).slice(0, 16);
@@ -126,3 +126,4 @@ document.getElementById("startBtn").addEventListener("click", start);
 
 </body>
 </html>
+
