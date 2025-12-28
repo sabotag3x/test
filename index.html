@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <title>Batalha de Filmes – IMDb Top 250</title>
+  <meta charset="UTF-8">
+  <title>Batalha de Filmes</title>
   <style>
     body { font-family: Arial, sans-serif; padding: 20px; }
     button { padding: 6px 12px; margin: 6px; }
-    #status { margin-top: 10px; }
     #duelo { margin-top: 20px; font-size: 18px; }
   </style>
 </head>
 <body>
 
-<h1>Batalha de Filmes – IMDb Top 250</h1>
+<h1>Batalha de Filmes</h1>
 
 <button id="btn">Gerar competição</button>
 
-<div id="status"></div>
 <div id="duelo"></div>
 
 <script>
@@ -30,29 +28,13 @@ function shuffle(arr) {
 }
 
 async function start() {
-  document.getElementById("status").innerText = "Carregando filmes...";
-  document.getElementById("duelo").innerText = "";
+  const res = await fetch("/api/films");
+  const data = await res.json();
 
-  try {
-    const res = await fetch("/api/films");
-    const data = await res.json();
-
-    if (!res.ok || !Array.isArray(data.films)) {
-      throw new Error("Resposta inválida");
-    }
-
-    filmes = shuffle(data.films).slice(0, 16);
-    index = 0;
-    vencedores = [];
-
-    document.getElementById("status").innerText =
-      `Competição iniciada com ${filmes.length} filmes`;
-
-    proximoDuelo();
-  } catch (e) {
-    alert("Erro ao carregar filmes.");
-    document.getElementById("status").innerText = "";
-  }
+  filmes = shuffle(data.films).slice(0, 16);
+  index = 0;
+  vencedores = [];
+  proximoDuelo();
 }
 
 function proximoDuelo() {
