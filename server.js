@@ -5,12 +5,11 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, "public")));
-
 app.get("/", (_, res) =>
   res.sendFile(path.join(__dirname, "public", "index.html"))
 );
 
-/* ================= IMDb ================= */
+/* ================= IMDb (inalterado) ================= */
 
 app.get("/api/imdb/:user", async (req, res) => {
   const user = req.params.user;
@@ -44,7 +43,6 @@ app.get("/api/imdb/:user", async (req, res) => {
           title: t[1].trim(),
           year: y ? y[0] : ""
         });
-
         index++;
       }
     }
@@ -55,7 +53,7 @@ app.get("/api/imdb/:user", async (req, res) => {
   }
 });
 
-/* ================= Letterboxd ================= */
+/* ================= Letterboxd (CORRETO) ================= */
 
 app.get("/api/letterboxd/:user", async (req, res) => {
   const user = req.params.user;
@@ -74,23 +72,22 @@ app.get("/api/letterboxd/:user", async (req, res) => {
         headers: { "User-Agent": "Mozilla/5.0" }
       }).then(r => r.text());
 
-      const blocks = html.split('class="frame"');
-      if (blocks.length <= 1) break;
+      // cada filme está em <li class="griditem">
+      const items = html.match(/<li class="griditem">[\s\S]*?<\/li>/g);
+      if (!items || items.length === 0) break;
 
-      for (const b of blocks.slice(1)) {
-        const t =
-          b.match(/data-original-title="([^"]+)"/) ||
-          b.match(/frame-title">([^<]+)/);
+      for (const item of items) {
+        // TÍTULO CORRETO
+        const titleAttr = item.match(/data-original-title="([^"]+)"/);
+        if (!titleAttr) continue;
 
-        if (!t) continue;
-
-        const raw = t[1];
-        const y = raw.match(/\((\d{4})\)/);
+        const raw = titleAttr[1]; // ex: "Rebel Ridge (2024)"
+        const yearMatch = raw.match(/\((\d{4})\)/);
 
         movies.push({
           index,
           title: raw.replace(/\s*\(\d{4}\)/, "").trim(),
-          year: y ? y[1] : ""
+          year: yearMatch ? yearMatch[1] : ""
         });
 
         index++;
@@ -106,5 +103,5 @@ app.get("/api/letterboxd/:user", async (req, res) => {
 });
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("IMDb + Letterboxd scraper (10s timeout) rodando");
+  console.log("IMDb + Letterboxd scraper rodando (parser correto)");
 });
