@@ -4,67 +4,66 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+const MAX_PAGES = 10; // força várias páginas mesmo sem garantia
+
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-/*
-  DEBUG ENDPOINT
-  Não extrai filmes.
-  Apenas mostra o que o IMDb está retornando.
-*/
-app.get("/api/debug/:user", async (req, res) => {
+app.get("/api/imdb/:user", async (req, res) => {
   const user = req.params.user;
-
-  const report = [];
+  const movies = [];
+  let index = 1;
 
   try {
-    for (let start = 0; start <= 1000; start += 250) {
+    for (let page = 1; page <= MAX_PAGES; page++) {
       const url =
-        `https://www.imdb.com/user/${user}/ratings/_ajax` +
-        `?start=${start}&count=250&sort=date_added,desc`;
+        `https://www.imdb.com/user/${user}/ratings` +
+        `?sort=date_added,desc&count=250&page=${page}`;
 
       const r = await fetch(url, {
         headers: {
           "User-Agent": "Mozilla/5.0",
-          "Accept": "text/html",
-          "X-Requested-With": "XMLHttpRequest"
+          "Accept-Language": "en-US,en;q=0.9"
         }
       });
 
       const html = await r.text();
 
-      const itemCount =
-        (html.match(/ipc-metadata-list-summary-item/g) || []).length;
+      const blocks = html.split("ipc-metadata-list-summary-item");
 
-      const looksBlocked =
-        html.includes("captcha") ||
-        html.includes("verify you are a human") ||
-        html.includes("Cloudflare");
+      // se não veio nada novo, continua mesmo assim
+      if (blocks.length <= 1) continue;
 
-      report.push({
-        start,
-        status: r.status,
-        htmlLength: html.length,
-        itemsFound: itemCount,
-        blocked: looksBlocked
-      });
+      for (const block of blocks.slice(1)) {
+        // NÃO exclui séries aqui (igual ao código antigo)
+        const titleMatch = block.match(/ipc-title__text">([^<]+)/);
+        if (!titleMatch) continue;
 
-      // se não veio nada, para
-      if (html.length < 500) break;
+        const title = titleMatch[1].trim();
+        const yearMatch = block.match(/\b(19|20)\d{2}\b/);
+        const year = yearMatch ? yearMatch[0] : "";
+
+        movies.push({
+          index,
+          title,
+          year
+        });
+
+        index++;
+      }
     }
 
-    res.json(report);
+    res.json(movies);
 
   } catch (err) {
-    res.status(500).json({
-      error: err.message
-    });
+    console.error(err);
+    res.status(500).json({ error: "Erro ao buscar IMDb" });
   }
 });
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("IMDb DEBUG app rodando");
+  console.log("IMDb extractor (versão ~700) rodando");
 });
