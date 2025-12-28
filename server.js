@@ -4,11 +4,11 @@ const cheerio = require("cheerio");
 
 const app = express();
 
-/* Serve o index.html e arquivos estáticos */
+/* servir index.html */
 app.use(express.static("."));
 app.use(express.json());
 
-async function getRatedFilms(username, minStars = 4) {
+async function getRatedFilms(username) {
   let page = 1;
   let films = [];
 
@@ -25,16 +25,7 @@ async function getRatedFilms(username, minStars = 4) {
 
     posters.each((_, el) => {
       const title = $(el).find("img").attr("alt");
-const ratingEl = $(el).find("span.rating");
-if (!ratingEl.length) return;
-
-const rating = parseInt(ratingEl.attr("data-rating"), 10);
-const stars = rating / 2;
-
-if (stars >= minStars) {
-  films.push(title);
-}
-
+      if (title) films.push(title);
     });
 
     page++;
@@ -53,8 +44,8 @@ app.post("/api/films", async (req, res) => {
   try {
     const films = await getRatedFilms(username);
 
-    if (films.length < 2) {
-      return res.status(400).json({ error: "Poucos filmes encontrados." });
+    if (films.length === 0) {
+      return res.status(400).json({ error: "Nenhum filme encontrado." });
     }
 
     res.json({ films });
@@ -69,4 +60,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log("Servidor rodando na porta", PORT);
 });
-
