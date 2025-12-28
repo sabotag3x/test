@@ -196,70 +196,165 @@ button{
 
 /* ================= RESULTADO FINAL – MOBILE INTELIGENTE ================= */
 
-@media (max-width: 600px){
+/* =========================================================
+   AJUSTES RESPONSIVOS – MOBILE FIRST
+   ========================================================= */
 
+/* --------- HOME --------- */
+
+@media (max-width: 768px){
+
+  body{
+    font-size: 18px;
+  }
+
+  .container{
+    padding: 12px 16px 24px;
+  }
+
+  h1{
+    font-size: 34px;
+  }
+
+  .subtitle{
+    font-size: 16px;
+  }
+
+  input{
+    width: 90%;
+    font-size: 18px;
+    padding: 16px 20px;
+  }
+
+  button{
+    font-size: 18px;
+    padding: 16px 28px;
+  }
+
+  /* listas voltam a se comportar bem no mobile */
+  .lists{
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .lists button{
+    width: 100%;
+    padding: 16px 18px;
+    font-size: 16px;
+  }
+}
+
+/* --------- TELA DE LOADING --------- */
+
+#status{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-height:50vh;
+}
+
+#loading-main{
+  font-size: clamp(26px, 6vw, 34px);
+}
+
+#loading-sub{
+  font-size: clamp(16px, 4vw, 18px);
+  margin-top:10px;
+}
+
+/* --------- DUELO (VOTOS) --------- */
+
+.duel{
+  align-items:center; /* centraliza verticalmente */
+}
+
+@media (max-width: 768px){
+
+  .duel{
+    gap: 6vw;
+    min-height: auto;
+  }
+
+  .card{
+    width: 42vw; /* dois posters lado a lado */
+  }
+
+  .card img{
+    width: 100%;
+  }
+
+  .title{
+    font-size: 15px;
+    min-height: unset;
+    margin-top: 10px;
+    -webkit-line-clamp: unset; /* não corta mais */
+  }
+}
+
+/* --------- RESULTADO FINAL (CAMPEÃO) --------- */
+
+.bracket{
+  align-items:center;
+}
+
+@media (max-width: 900px){
+
+  /* mantém chaveamento VISÍVEL no mobile */
   .bracket{
-    flex-direction: row;            /* tenta layout desktop */
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    padding: 0 6px;
+    flex-direction:column;
+    gap: 22px;
   }
 
   .side{
-    flex-direction: column;
-    gap: 10px;
+    flex-direction:row;
+    justify-content:center;
+    gap: 14px;
+    width: 100%;
+    overflow:hidden;
   }
 
   .round{
-    gap: 8px;
+    gap: 10px;
   }
 
-  .r1 img{width: 42px}
-  .r2 img{width: 56px}
-  .r3 img{width: 76px}
-
-  .champion{
-    flex-shrink: 0;
-    max-width: 46vw;                /* garante espaço pros lados */
-    align-items: center;
-  }
+  /* tamanhos por porcentagem */
+  .r1 img{ width: 10vw; min-width:40px }
+  .r2 img{ width: 14vw; min-width:55px }
+  .r3 img{ width: 18vw; min-width:70px }
 
   .champion img{
-    width: 100%;
-    max-width: 240px;               /* ↓ diminui poster do campeão */
+    width: 70vw;     /* NÃO explode mais */
+    max-width: 320px;
   }
 
   .champion .title{
     font-size: 20px;
-    text-align: center;
+    text-align:center;
   }
 
   #again{
     margin-top: 10px;
-    font-size: 17px;
+    font-size:18px;
+    padding:14px 28px;
+  }
+}
+
+/* --------- MOBILE MUITO PEQUENO --------- */
+
+@media (max-width: 420px){
+
+  .card{
+    width: 44vw;
   }
 
-  /* ===== FALLBACK AUTOMÁTICO SE NÃO COUBER ===== */
-  @media (max-width: 430px){
+  .r1 img{ width: 9vw }
+  .r2 img{ width: 13vw }
+  .r3 img{ width: 17vw }
 
-    .bracket{
-      flex-direction: column;
-      gap: 22px;
-    }
-
-    .side{
-      flex-direction: row;
-      justify-content: center;
-    }
-
-    .champion{
-      max-width: 90vw;
-    }
-
-    .champion img{
-      max-width: 320px;
-    }
+  .champion img{
+    width: 78vw;
   }
 }
 
