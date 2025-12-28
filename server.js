@@ -1,6 +1,8 @@
 const express = require("express");
 const path = require("path");
 
+const TMDB_KEY = process.env.TMDB_KEY;
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -10,10 +12,38 @@ app.get("/", (_, res) =>
   res.sendFile(path.join(__dirname, "public", "index.html"))
 );
 
-/* ================= Letterboxd ================= */
+async function fetchFromTMDb(title, year, lang) {
+  const q = encodeURIComponent(title);
+
+  const searchUrl =
+    `https://api.themoviedb.org/3/search/movie` +
+    `?api_key=${TMDB_KEY}` +
+    `&query=${q}` +
+    `&year=${year}` +
+    `&language=${lang}`;
+
+  const r = await fetch(searchUrl);
+  const j = await r.json();
+
+  if (!j.results || j.results.length === 0) return null;
+
+  const movie = j.results[0];
+
+  return {
+    title: movie.title,
+    poster: movie.poster_path
+      ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+      : null
+  };
+}
+
+/* ================= Letterboxd + TMDb ================= */
 
 app.get("/api/letterboxd/:user", async (req, res) => {
   const user = req.params.user;
+  const lang =
+    req.headers["accept-language"]?.split(",")[0] || "en-US";
+
   const movies = [];
   let index = 1;
   let page = 1;
@@ -30,21 +60,27 @@ app.get("/api/letterboxd/:user", async (req, res) => {
       if (!items || items.length === 0) break;
 
       for (const item of items) {
-        const titleMatch =
-          item.match(/data-item-full-display-name="([^"]+)"/);
-        const posterMatch =
-          item.match(/<img[^>]+src="([^"]+)"/);
+        const t = item.match(/data-item-full-display-name="([^"]+)"/);
+        if (!t) continue;
 
-        if (!titleMatch || !posterMatch) continue;
+        const raw = t[1];
+        const y = raw.match(/\((\d{4})\)/);
 
-        const raw = titleMatch[1];
-        const yearMatch = raw.match(/\((\d{4})\)/);
+        const originalTitle =
+          raw.replace(/\s*\(\d{4}\)/, "").trim();
+        const year = y ? y[1] : "";
+
+        const tmdb = await fetchFromTMDb(
+          originalTitle,
+          year,
+          lang
+        );
 
         movies.push({
           index,
-          title: raw.replace(/\s*\(\d{4}\)/, "").trim(),
-          year: yearMatch ? yearMatch[1] : "",
-          poster: posterMatch[1]
+          title: tmdb?.title || originalTitle,
+          year,
+          poster: tmdb?.poster || null
         });
 
         index++;
@@ -60,5 +96,5 @@ app.get("/api/letterboxd/:user", async (req, res) => {
 });
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("Letterboxd Battle rodando");
+  console.log("Letterboxd Battle + TMDb (localizado) rodando");
 });
