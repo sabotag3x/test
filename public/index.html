@@ -16,20 +16,14 @@ body{
 }
 
 .container{
-  max-width:1700px;
+  max-width:1800px;
   width:100%;
   padding:40px;
   text-align:center
 }
 
-h1{
-  font-size:34px;
-  margin-bottom:8px
-}
-.subtitle{
-  color:#aaa;
-  margin-bottom:30px
-}
+h1{font-size:34px;margin-bottom:6px}
+.subtitle{color:#aaa;margin-bottom:26px}
 
 /* CONTROLES */
 #controls{
@@ -37,7 +31,6 @@ h1{
   flex-direction:column;
   align-items:center;
   gap:14px;
-  margin-bottom:20px
 }
 input{
   padding:14px;
@@ -45,7 +38,6 @@ input{
   width:320px;
   border-radius:30px;
   border:none;
-  outline:none;
   text-align:center
 }
 button{
@@ -65,22 +57,25 @@ button{
   font-size:18px
 }
 
-/* DUELOS */
-.duel{
+/* ================= DUELO ================= */
+
+#duel{
   display:flex;
   justify-content:center;
-  align-items:center;
-  gap:90px;
+  align-items:flex-start;
+  gap:100px;
   margin-top:40px
 }
 
 .card{
   display:flex;
   flex-direction:column;
-  align-items:center
+  align-items:center;
+  width:260px
 }
 
 .card img{
+  width:260px;
   border-radius:14px;
   cursor:pointer;
   transition:transform .2s
@@ -90,22 +85,21 @@ button{
 .title{
   margin-top:10px;
   font-size:17px;
-  max-width:220px
+  text-align:center
 }
 
-/* SEM POSTER */
 .noposter{
-  width:220px;
-  height:330px;
+  width:260px;
+  height:390px;
   background:#111;
   border-radius:14px;
   display:flex;
   align-items:center;
   justify-content:center;
-  text-align:center;
   cursor:pointer;
-  font-size:20px;
-  color:#ffcc00
+  color:#ffcc00;
+  font-size:18px;
+  text-align:center
 }
 
 /* ================= CHAVEAMENTO ================= */
@@ -113,9 +107,9 @@ button{
 .bracket{
   display:flex;
   justify-content:center;
-  align-items:center; /* CENTRALIZAÇÃO VERTICAL REAL */
-  gap:80px;
-  margin-top:60px
+  align-items:center;
+  gap:120px;
+  margin-top:70px
 }
 
 .side{
@@ -124,22 +118,28 @@ button{
   gap:40px
 }
 
-/* cada coluna (round) */
+.side.right{
+  align-items:center;
+  text-align:right
+}
+
 .round{
   display:flex;
   flex-direction:column;
-  justify-content:space-between;
-  align-items:center
+  align-items:center;
 }
 
-/* TAMANHOS POR RODADA */
-.round.r1 img{ width:70px }
-.round.r2 img{ width:95px }
-.round.r3 img{ width:120px }
+.side.right .round{
+  align-items:flex-end;
+}
 
-.round.r1{ gap:22px }
-.round.r2{ gap:34px }
-.round.r3{ gap:46px }
+.round.r1 img{width:65px}
+.round.r2 img{width:90px}
+.round.r3 img{width:120px}
+
+.round.r1{gap:18px}
+.round.r2{gap:28px}
+.round.r3{gap:40px}
 
 .round img{
   border-radius:8px
@@ -147,7 +147,7 @@ button{
 
 /* CAMPEÃO */
 .champion{
-  width:360px;
+  width:380px;
   display:flex;
   flex-direction:column;
   align-items:center
@@ -158,8 +158,9 @@ button{
 }
 .champion .title{
   font-size:24px;
-  margin-top:16px;
-  font-weight:bold
+  margin-top:18px;
+  font-weight:bold;
+  text-align:center
 }
 </style>
 </head>
@@ -172,7 +173,7 @@ button{
   </div>
 
   <div id="controls">
-    <input id="user" value="sabotag3x" placeholder="username do Letterboxd">
+    <input id="user" value="sabotag3x">
     <button id="startBtn">Gerar competição</button>
   </div>
 
@@ -250,21 +251,19 @@ function nextDuel(){
   atual=[filmes[index],filmes[index+1]];
   index+=2;
 
-  duel.innerHTML=
+  duel.innerHTML =
     card(atual[0],0)+card(atual[1],1);
 }
 
 function card(f,i){
   const img=f.poster
-    ? `<img src="${f.poster}" width="260" onclick="choose(${i})">`
+    ? `<img src="${f.poster}" onclick="choose(${i})">`
     : `<div class="noposter" onclick="choose(${i})">🎬<br>${f.title}</div>`;
 
   return `
-    <div class="duel">
-      <div class="card">
-        ${img}
-        <div class="title">${f.title} (${f.year})</div>
-      </div>
+    <div class="card">
+      ${img}
+      <div class="title">${f.title} (${f.year})</div>
     </div>`;
 }
 
@@ -275,11 +274,11 @@ function choose(i){
 
 function showBracket(champion){
   const left=rounds.slice(0,3);
-  const right=rounds.slice(0,3).map(r=>[...r].reverse());
+  const right=rounds.slice(0,3);
 
   let html=`<div class="bracket">`;
 
-  html+=`<div class="side">`;
+  html+=`<div class="side left">`;
   left.forEach((r,i)=>{
     html+=`<div class="round r${i+1}">`;
     r.forEach(f=>html+=`<img src="${f.poster}">`);
@@ -294,10 +293,10 @@ function showBracket(champion){
     </div>
   `;
 
-  html+=`<div class="side">`;
-  right.reverse().forEach((r,i)=>{
+  html+=`<div class="side right">`;
+  right.forEach((r,i)=>{
     html+=`<div class="round r${i+1}">`;
-    r.forEach(f=>html+=`<img src="${f.poster}">`);
+    [...r].reverse().forEach(f=>html+=`<img src="${f.poster}">`);
     html+=`</div>`;
   });
   html+=`</div></div>`;
