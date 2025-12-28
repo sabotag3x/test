@@ -23,12 +23,7 @@ body{
 h1{margin-bottom:20px}
 
 #controls{margin-bottom:30px}
-
-input{
-  padding:10px;
-  font-size:16px;
-  width:260px
-}
+input{padding:10px;font-size:16px;width:260px}
 
 #startBtn{
   background:linear-gradient(135deg,#ffcc00,#ff9900);
@@ -42,7 +37,6 @@ input{
   margin-left:10px
 }
 
-/* DUELO */
 .duel{
   display:flex;
   justify-content:center;
@@ -58,32 +52,6 @@ input{
 }
 .card img:hover{transform:scale(1.06)}
 .title{margin-top:10px;font-size:18px}
-
-/* RESULTADO */
-.bracket{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:60px;
-  margin-top:40px
-}
-.side{display:flex;gap:40px}
-.round{display:flex;flex-direction:column;gap:18px}
-.small{width:90px}
-.small img{width:100%;border-radius:6px}
-
-.champion{
-  width:320px;
-  display:flex;
-  flex-direction:column;
-  align-items:center
-}
-.champion img{width:100%;border-radius:18px}
-.champion .title{
-  font-size:22px;
-  margin-top:14px;
-  font-weight:bold
-}
 </style>
 </head>
 
@@ -100,7 +68,7 @@ input{
 </div>
 
 <script>
-let pool=[], filmes=[], index=0, vencedores=[], atual=[], rounds=[];
+let filmes=[], index=0, vencedores=[], atual=[];
 
 function shuffle(arr){
   const a=[...arr];
@@ -115,28 +83,35 @@ async function start(){
   const user=document.getElementById("user").value.trim();
   if(!user) return;
 
-  document.getElementById("duel").innerHTML="Carregando…";
+  document.getElementById("duel").innerHTML="Carregando lista…";
 
   const res=await fetch(`/api/letterboxd/${user}`);
-  pool=await res.json();
+  const pool=await res.json();
 
-  filmes=shuffle(pool).slice(0,16);
+  const selected = shuffle(pool).slice(0,16);
+
+  const lang = navigator.language || "pt-BR";
+
+  const enriched = await fetch("/api/tmdb-batch", {
+    method:"POST",
+    headers:{ "Content-Type":"application/json" },
+    body:JSON.stringify({ films:selected, lang })
+  }).then(r=>r.json());
+
+  filmes=enriched;
   index=0;
   vencedores=[];
-  rounds=[];
-
   nextDuel();
 }
 
 function nextDuel(){
   if(index>=filmes.length){
-    rounds.push([...vencedores]);
     filmes=vencedores;
     vencedores=[];
     index=0;
-
     if(filmes.length===1){
-      showBracket(filmes[0]);
+      document.getElementById("duel").innerHTML=
+        `<h2>Campeão<br>${filmes[0].title}</h2>`;
       return;
     }
     nextDuel();
@@ -161,37 +136,6 @@ function card(f,i){
 function choose(i){
   vencedores.push(atual[i]);
   nextDuel();
-}
-
-function showBracket(champion){
-  const left=rounds.slice(0,3);
-  const right=rounds.slice(0,3).map(r=>[...r].reverse());
-
-  let html=`<div class="bracket">`;
-
-  html+=`<div class="side">`;
-  left.forEach(r=>{
-    html+=`<div class="round">`;
-    r.forEach(f=>html+=`<div class="small"><img src="${f.poster||""}"></div>`);
-    html+=`</div>`;
-  });
-  html+=`</div>`;
-
-  html+=`
-    <div class="champion">
-      <img src="${champion.poster||""}">
-      <div class="title">Campeão<br>${champion.title} (${champion.year})</div>
-    </div>`;
-
-  html+=`<div class="side">`;
-  right.reverse().forEach(r=>{
-    html+=`<div class="round">`;
-    r.forEach(f=>html+=`<div class="small"><img src="${f.poster||""}"></div>`);
-    html+=`</div>`;
-  });
-  html+=`</div></div>`;
-
-  document.getElementById("duel").innerHTML=html;
 }
 
 document.getElementById("startBtn").onclick=start;
