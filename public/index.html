@@ -5,10 +5,12 @@
 <title>IMDb – Filmes Avaliados</title>
 
 <style>
-body { background:#000; color:#fff; font-family:Arial; padding:30px }
+body { background:#000; color:#fff; font-family:Arial; padding:40px }
 input, button { padding:10px; font-size:16px }
+button { cursor:pointer }
 table { margin-top:20px; width:100%; border-collapse:collapse }
 th, td { border:1px solid #444; padding:8px }
+#status { margin-top:15px; color:#ffcc00 }
 </style>
 </head>
 
@@ -16,8 +18,10 @@ th, td { border:1px solid #444; padding:8px }
 
 <h2>Buscar filmes avaliados no IMDb</h2>
 
-<input id="userId" placeholder="urXXXXXXXX">
+<input id="userId" value="ur55777575">
 <button onclick="buscar()">Buscar</button>
+
+<div id="status"></div>
 
 <table id="table" style="display:none">
 <thead>
@@ -29,21 +33,42 @@ th, td { border:1px solid #444; padding:8px }
 <script>
 async function buscar() {
   const user = document.getElementById("userId").value.trim();
-  if (!user) return;
+  const status = document.getElementById("status");
+  const table = document.getElementById("table");
+  const tbody = table.querySelector("tbody");
 
-  const res = await fetch(`/api/imdb/${user}`);
-  const data = await res.json();
-
-  const tbody = document.querySelector("#table tbody");
+  status.textContent = "Buscando dados...";
+  table.style.display = "none";
   tbody.innerHTML = "";
 
-  data.forEach(m => {
-    const tr = document.createElement("tr");
-    tr.innerHTML = `<td>${m.title}</td><td>${m.year}</td>`;
-    tbody.appendChild(tr);
-  });
+  try {
+    const res = await fetch(`/api/imdb/${user}`);
 
-  document.getElementById("table").style.display = "table";
+    if (!res.ok) {
+      status.textContent = "Erro ao buscar dados da API";
+      return;
+    }
+
+    const data = await res.json();
+
+    if (!Array.isArray(data) || data.length === 0) {
+      status.textContent = "Nenhum filme encontrado (ou erro de extração)";
+      return;
+    }
+
+    data.forEach(m => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `<td>${m.title}</td><td>${m.year}</td>`;
+      tbody.appendChild(tr);
+    });
+
+    table.style.display = "table";
+    status.textContent = `Encontrados ${data.length} filmes`;
+
+  } catch (err) {
+    console.error(err);
+    status.textContent = "Erro inesperado (veja o console)";
+  }
 }
 </script>
 
