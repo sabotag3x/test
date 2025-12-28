@@ -1,10 +1,11 @@
 {
-  "name": "imdb-web",
+  "name": "imdb-playwright",
   "private": true,
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "playwright": "^1.43.0"
   }
 }
