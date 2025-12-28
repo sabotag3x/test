@@ -1,3 +1,4 @@
+// server.js
 const express = require("express");
 const path = require("path");
 
@@ -9,7 +10,7 @@ app.get("/", (_, res) =>
   res.sendFile(path.join(__dirname, "public", "index.html"))
 );
 
-/* ================= IMDb (inalterado) ================= */
+/* ================= IMDb ================= */
 
 app.get("/api/imdb/:user", async (req, res) => {
   const user = req.params.user;
@@ -53,7 +54,7 @@ app.get("/api/imdb/:user", async (req, res) => {
   }
 });
 
-/* ================= Letterboxd (CORRETO) ================= */
+/* ================= Letterboxd ================= */
 
 app.get("/api/letterboxd/:user", async (req, res) => {
   const user = req.params.user;
@@ -72,24 +73,21 @@ app.get("/api/letterboxd/:user", async (req, res) => {
         headers: { "User-Agent": "Mozilla/5.0" }
       }).then(r => r.text());
 
-      // cada filme está em <li class="griditem">
       const items = html.match(/<li class="griditem">[\s\S]*?<\/li>/g);
       if (!items || items.length === 0) break;
 
       for (const item of items) {
-        // TÍTULO CORRETO
-        const titleAttr = item.match(/data-original-title="([^"]+)"/);
-        if (!titleAttr) continue;
+        const m = item.match(/data-item-full-display-name="([^"]+)"/);
+        if (!m) continue;
 
-        const raw = titleAttr[1]; // ex: "Rebel Ridge (2024)"
-        const yearMatch = raw.match(/\((\d{4})\)/);
+        const raw = m[1];
+        const y = raw.match(/\((\d{4})\)/);
 
         movies.push({
           index,
           title: raw.replace(/\s*\(\d{4}\)/, "").trim(),
-          year: yearMatch ? yearMatch[1] : ""
+          year: y ? y[1] : ""
         });
-
         index++;
       }
 
@@ -102,6 +100,4 @@ app.get("/api/letterboxd/:user", async (req, res) => {
   }
 });
 
-app.listen(PORT, "0.0.0.0", () => {
-  console.log("IMDb + Letterboxd scraper rodando (parser correto)");
-});
+app.listen(PORT, "0.0.0.0");
