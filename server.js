@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const { chromium } = require("playwright");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -10,10 +11,6 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-/*
-  SSE endpoint
-  Envia logs + progresso em tempo real
-*/
 app.get("/api/imdb-stream/:user", async (req, res) => {
   const user = req.params.user;
 
@@ -21,67 +18,67 @@ app.get("/api/imdb-stream/:user", async (req, res) => {
   res.setHeader("Cache-Control", "no-cache");
   res.setHeader("Connection", "keep-alive");
 
-  const send = (type, data) => {
-    res.write(`event: ${type}\n`);
+  const send = (event, data) => {
+    res.write(`event: ${event}\n`);
     res.write(`data: ${JSON.stringify(data)}\n\n`);
   };
 
-  let total = 0;
-  let index = 1;
+  const browser = await chromium.launch({ headless: true });
+  const page = await browser.newPage();
 
   try {
-    for (let page = 1; page <= 10; page++) {
-      send("log", `Buscando página ${page}…`);
+    const url = `https://www.imdb.com/user/${user}/ratings`;
+    send("log", `Abrindo ${url}`);
+    await page.goto(url, { waitUntil: "networkidle" });
 
-      const url =
-        `https://www.imdb.com/user/${user}/ratings` +
-        `?sort=date_added,desc&count=250&page=${page}`;
+    let lastCount = 0;
+    let stableRounds = 0;
+    const MAX_STABLE = 3;
 
-      const r = await fetch(url, {
-        headers: {
-          "User-Agent": "Mozilla/5.0",
-          "Accept-Language": "en-US,en;q=0.9"
-        }
-      });
+    while (true) {
+      // rola para baixo para disparar carregamento
+      await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+      await page.waitForTimeout(1200);
 
-      const html = await r.text();
+      const items = await page.$$eval(
+        ".ipc-metadata-list-summary-item",
+        els => els.map(el => {
+          const title =
+            el.querySelector(".ipc-title__text")?.textContent?.trim() || "";
+          const year =
+            el.textContent.match(/\b(19|20)\d{2}\b/)?.[0] || "";
+          return { title, year };
+        })
+      );
 
-      send("log", `Página ${page}: ${Math.round(html.length / 1024)} KB recebidos`);
+      const count = items.length;
+      send("progress", { count });
 
-      const blocks = html.split("ipc-metadata-list-summary-item");
-      const found = Math.max(0, blocks.length - 1);
+      if (count === lastCount) {
+        stableRounds++;
+      } else {
+        stableRounds = 0;
+      }
 
-      send("log", `Página ${page}: ${found} itens detectados no HTML`);
+      send("log", `Itens no DOM: ${count}`);
 
-      if (found === 0) {
-        send("log", "Nenhum item encontrado, encerrando.");
+      // encerra quando não cresce mais após algumas tentativas
+      if (stableRounds >= MAX_STABLE) {
+        send("log", "Nenhum item novo após rolagem. Encerrando.");
+        send("done", { total: count, items });
         break;
       }
 
-      total += found;
-
-      send("progress", {
-        page,
-        total
-      });
-
-      // delay visível para o usuário acompanhar
-      await new Promise(r => setTimeout(r, 800));
+      lastCount = count;
     }
-
-    send("done", {
-      total,
-      message: "Processo finalizado"
-    });
-
-    res.end();
-
   } catch (err) {
     send("error", err.message);
+  } finally {
+    await browser.close();
     res.end();
   }
 });
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("IMDb debug streamer rodando");
+  console.log("IMDb Playwright app rodando");
 });
