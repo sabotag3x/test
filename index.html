@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Batalha de Filmes – IMDb Top 250</title>
   <style>
     body { font-family: Arial, sans-serif; padding: 20px; }
@@ -33,31 +33,26 @@ async function start() {
   document.getElementById("status").innerText = "Carregando filmes...";
   document.getElementById("duelo").innerText = "";
 
-  let res, data;
-
   try {
-    res = await fetch("/api/films", { method: "POST" });
-    data = await res.json();
-  } catch (e) {
-    alert("Erro ao conectar com o servidor.");
-    document.getElementById("status").innerText = "";
-    return;
-  }
+    const res = await fetch("/api/films");
+    const data = await res.json();
 
-  if (!res.ok || !Array.isArray(data.films)) {
+    if (!res.ok || !Array.isArray(data.films)) {
+      throw new Error("Resposta inválida");
+    }
+
+    filmes = shuffle(data.films).slice(0, 16);
+    index = 0;
+    vencedores = [];
+
+    document.getElementById("status").innerText =
+      `Competição iniciada com ${filmes.length} filmes`;
+
+    proximoDuelo();
+  } catch (e) {
     alert("Erro ao carregar filmes.");
     document.getElementById("status").innerText = "";
-    return;
   }
-
-  filmes = shuffle(data.films).slice(0, 16);
-  index = 0;
-  vencedores = [];
-
-  document.getElementById("status").innerText =
-    `Competição iniciada com ${filmes.length} filmes`;
-
-  proximoDuelo();
 }
 
 function proximoDuelo() {
@@ -80,17 +75,4 @@ function proximoDuelo() {
   index += 2;
 
   document.getElementById("duelo").innerHTML = `
-    <p>${atual[0]} VS ${atual[1]}</p>
-    <button onclick="choose(0)">${atual[0]}</button>
-    <button onclick="choose(1)">${atual[1]}</button>
-  `;
-}
-
-function choose(i) {
-  vencedores.push(atual[i]);
-  proximoDuelo();
-}
-</script>
-
-</body>
-</html>
+    <p>${atual[0]} VS ${atual[1]()
