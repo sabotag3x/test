@@ -4,21 +4,35 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const MAX_PAGES = 10; // força várias páginas mesmo sem garantia
-
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-app.get("/api/imdb/:user", async (req, res) => {
+/*
+  SSE endpoint
+  Envia logs + progresso em tempo real
+*/
+app.get("/api/imdb-stream/:user", async (req, res) => {
   const user = req.params.user;
-  const movies = [];
+
+  res.setHeader("Content-Type", "text/event-stream");
+  res.setHeader("Cache-Control", "no-cache");
+  res.setHeader("Connection", "keep-alive");
+
+  const send = (type, data) => {
+    res.write(`event: ${type}\n`);
+    res.write(`data: ${JSON.stringify(data)}\n\n`);
+  };
+
+  let total = 0;
   let index = 1;
 
   try {
-    for (let page = 1; page <= MAX_PAGES; page++) {
+    for (let page = 1; page <= 10; page++) {
+      send("log", `Buscando página ${page}…`);
+
       const url =
         `https://www.imdb.com/user/${user}/ratings` +
         `?sort=date_added,desc&count=250&page=${page}`;
@@ -32,38 +46,42 @@ app.get("/api/imdb/:user", async (req, res) => {
 
       const html = await r.text();
 
+      send("log", `Página ${page}: ${Math.round(html.length / 1024)} KB recebidos`);
+
       const blocks = html.split("ipc-metadata-list-summary-item");
+      const found = Math.max(0, blocks.length - 1);
 
-      // se não veio nada novo, continua mesmo assim
-      if (blocks.length <= 1) continue;
+      send("log", `Página ${page}: ${found} itens detectados no HTML`);
 
-      for (const block of blocks.slice(1)) {
-        // NÃO exclui séries aqui (igual ao código antigo)
-        const titleMatch = block.match(/ipc-title__text">([^<]+)/);
-        if (!titleMatch) continue;
-
-        const title = titleMatch[1].trim();
-        const yearMatch = block.match(/\b(19|20)\d{2}\b/);
-        const year = yearMatch ? yearMatch[0] : "";
-
-        movies.push({
-          index,
-          title,
-          year
-        });
-
-        index++;
+      if (found === 0) {
+        send("log", "Nenhum item encontrado, encerrando.");
+        break;
       }
+
+      total += found;
+
+      send("progress", {
+        page,
+        total
+      });
+
+      // delay visível para o usuário acompanhar
+      await new Promise(r => setTimeout(r, 800));
     }
 
-    res.json(movies);
+    send("done", {
+      total,
+      message: "Processo finalizado"
+    });
+
+    res.end();
 
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: "Erro ao buscar IMDb" });
+    send("error", err.message);
+    res.end();
   }
 });
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("IMDb extractor (versão ~700) rodando");
+  console.log("IMDb debug streamer rodando");
 });
