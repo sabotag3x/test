@@ -1,60 +1,70 @@
-const express = require("express");
-const axios = require("axios");
+async function loadRatings() {
+  const userId = document.getElementById("userId").value.trim();
+  if (!userId) return;
 
-const app = express();
-app.use(express.static("."));
+  const table = document.getElementById("table");
+  const tbody = table.querySelector("tbody");
+  tbody.innerHTML = "";
+  table.style.display = "none";
 
-function shuffle(arr) {
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
+  let page = 1;
+  let hasMore = true;
+  let allMovies = [];
 
-app.get("/api/films", async (req, res) => {
-  try {
-    const response = await axios.get("https://www.imdb.com/chart/top/", {
-      headers: {
-        "User-Agent": "Mozilla/5.0",
-        "Accept-Language": "en-US,en;q=0.9"
+  while (hasMore) {
+    const url = `https://corsproxy.io/?https://www.imdb.com/user/${userId}/ratings?sort=date_added,desc&mode=detail&page=${page}`;
+
+    const res = await fetch(url);
+    const html = await res.text();
+
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, "text/html");
+
+    const items = doc.querySelectorAll(".lister-item");
+
+    if (items.length === 0) {
+      hasMore = false;
+      break;
+    }
+
+    items.forEach(item => {
+      const titleEl = item.querySelector(".lister-item-header a");
+      const yearEl = item.querySelector(".lister-item-year");
+
+      if (titleEl) {
+        allMovies.push({
+          title: titleEl.textContent.trim(),
+          year: yearEl ? yearEl.textContent.replace(/[()]/g, "") : ""
+        });
       }
     });
 
-    const html = response.data;
-
-    const match = html.match(
-      /<script id="__NEXT_DATA__" type="application\/json">(.+?)<\/script>/
-    );
-
-    if (!match) {
-      return res.status(500).json({ error: "NEXT_DATA não encontrado" });
-    }
-
-    const data = JSON.parse(match[1]);
-
-    const items =
-      data.props.pageProps.pageData.chartTitles.edges;
-
-    const films = items.map(edge => {
-      const n = edge.node;
-      return {
-        title: n.titleText.text,
-        year: n.releaseYear.year,
-        poster: n.primaryImage?.url || ""
-      };
-    });
-
-    const selected = shuffle(films).slice(0, 16);
-
-    res.setHeader("Cache-Control", "no-store");
-    res.json({ films: selected });
-  } catch (e) {
-    console.error(e);
-    res.status(500).json({ error: "Erro ao buscar IMDb Top 250" });
+    page++;
   }
-});
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT);
+  renderTable(allMovies);
+  exportJSON(allMovies);
+}
 
+function renderTable(movies) {
+  const tbody = document.querySelector("#table tbody");
+  movies.forEach(m => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td>${m.title}</td><td>${m.year}</td>`;
+    tbody.appendChild(tr);
+  });
+
+  document.getElementById("table").style.display = "table";
+}
+
+function exportJSON(data) {
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "imdb_filmes_avaliados.json";
+  a.click();
+
+  URL.revokeObjectURL(url);
+}
