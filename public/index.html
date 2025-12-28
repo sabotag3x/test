@@ -179,14 +179,10 @@ function nextDuel(){
     card(atual[0],0) + card(atual[1],1);
 }
 
-function poster(title, year){
-  return `https://letterboxd.com/ajax/poster/film/${encodeURIComponent(title.toLowerCase().replace(/[^a-z0-9]+/g,"-"))}/std/125x187/`;
-}
-
 function card(f,i){
   return `
     <div class="card">
-      <img src="${poster(f.title,f.year)}" onclick="choose(${i})">
+      <img src="${f.poster}" onclick="choose(${i})">
       <div class="title">${f.title} (${f.year})</div>
     </div>
   `;
@@ -206,14 +202,14 @@ function showBracket(champion){
   html+=`<div class="side">`;
   left.forEach(r=>{
     html+=`<div class="round">`;
-    r.forEach(f=>html+=`<div class="small"><img src="${poster(f.title,f.year)}"></div>`);
+    r.forEach(f=>html+=`<div class="small"><img src="${f.poster}"></div>`);
     html+=`</div>`;
   });
   html+=`</div>`;
 
   html+=`
     <div class="champion">
-      <img src="${poster(champion.title,champion.year)}">
+      <img src="${champion.poster}">
       <div class="title">Campeão<br>${champion.title} (${champion.year})</div>
     </div>
   `;
@@ -221,7 +217,7 @@ function showBracket(champion){
   html+=`<div class="side">`;
   right.reverse().forEach(r=>{
     html+=`<div class="round">`;
-    r.forEach(f=>html+=`<div class="small"><img src="${poster(f.title,f.year)}"></div>`);
+    r.forEach(f=>html+=`<div class="small"><img src="${f.poster}"></div>`);
     html+=`</div>`;
   });
   html+=`</div></div>`;
