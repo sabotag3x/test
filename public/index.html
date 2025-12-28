@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>IMDb – Extração com Debug</title>
+<title>IMDb – HTML Scraper</title>
 
 <style>
 body {
@@ -18,19 +18,10 @@ input, button {
 button {
   cursor:pointer;
 }
-#counter {
-  margin-top:10px;
+#status {
+  margin-top:15px;
   color:#ffcc00;
   font-size:18px;
-}
-#log {
-  margin-top:20px;
-  background:#111;
-  padding:15px;
-  height:220px;
-  overflow:auto;
-  font-family:monospace;
-  font-size:13px;
 }
 table {
   margin-top:20px;
@@ -46,13 +37,12 @@ th, td {
 
 <body>
 
-<h2>IMDb – Extração completa (browser real)</h2>
+<h2>IMDb – Extração via HTML (teste)</h2>
 
 <input id="userId" value="ur55777575">
-<button onclick="start()">Buscar</button>
+<button onclick="buscar()">Buscar</button>
 
-<div id="counter">Aguardando…</div>
-<div id="log"></div>
+<div id="status">Aguardando…</div>
 
 <table id="table" style="display:none">
 <thead>
@@ -66,54 +56,32 @@ th, td {
 </table>
 
 <script>
-function start() {
+async function buscar() {
   const user = document.getElementById("userId").value.trim();
-  const log = document.getElementById("log");
-  const counter = document.getElementById("counter");
+  const status = document.getElementById("status");
   const table = document.getElementById("table");
   const tbody = table.querySelector("tbody");
 
-  log.textContent = "";
-  counter.textContent = "Iniciando…";
+  status.textContent = "Buscando…";
   table.style.display = "none";
   tbody.innerHTML = "";
 
-  const es = new EventSource(`/api/imdb-stream/${user}`);
+  const res = await fetch(`/api/imdb/${user}`);
+  const data = await res.json();
 
-  es.addEventListener("log", e => {
-    log.textContent += e.data + "\n";
-    log.scrollTop = log.scrollHeight;
+  if (!Array.isArray(data) || data.length === 0) {
+    status.textContent = "Nenhum resultado";
+    return;
+  }
+
+  data.forEach(m => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td>${m.index}</td><td>${m.title}</td><td>${m.year}</td>`;
+    tbody.appendChild(tr);
   });
 
-  es.addEventListener("progress", e => {
-    const { count } = JSON.parse(e.data);
-    counter.textContent = `Encontrados até agora: ${count}`;
-  });
-
-  es.addEventListener("done", e => {
-    const { total, items } = JSON.parse(e.data);
-    counter.textContent = `Finalizado. Total: ${total}`;
-
-    items.forEach((m, i) => {
-      const tr = document.createElement("tr");
-      tr.innerHTML = `<td>${i + 1}</td><td>${m.title}</td><td>${m.year}</td>`;
-      tbody.appendChild(tr);
-    });
-
-    table.style.display = "table";
-    es.close();
-  });
-
-  es.addEventListener("error", e => {
-    try {
-      const data = JSON.parse(e.data);
-      counter.textContent = "Erro: " + data.message;
-      log.textContent += "\n\nSTACK:\n" + data.stack;
-    } catch {
-      counter.textContent = "Erro durante a execução";
-    }
-    es.close();
-  });
+  table.style.display = "table";
+  status.textContent = `Encontrados ${data.length} itens`;
 }
 </script>
 
