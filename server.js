@@ -1,38 +1,41 @@
 const express = require("express");
-const app = express();
+const axios = require("axios");
+const cheerio = require("cheerio");
 
+const app = express();
 app.use(express.static("."));
 
-const films = [
-  "The Shawshank Redemption",
-  "The Godfather",
-  "The Dark Knight",
-  "The Godfather Part II",
-  "12 Angry Men",
-  "Schindler's List",
-  "The Lord of the Rings: The Return of the King",
-  "Pulp Fiction",
-  "The Lord of the Rings: The Fellowship of the Ring",
-  "The Good, the Bad and the Ugly",
-  "Forrest Gump",
-  "Fight Club",
-  "Inception",
-  "The Lord of the Rings: The Two Towers",
-  "Star Wars: Episode V – The Empire Strikes Back",
-  "The Matrix",
-  "Goodfellas",
-  "One Flew Over the Cuckoo's Nest",
-  "Se7en",
-  "Seven Samurai",
-  "Interstellar",
-  "City of God",
-  "Spirited Away",
-  "Saving Private Ryan",
-  "The Green Mile"
-];
+app.get("/api/films", async (req, res) => {
+  try {
+    const url = "https://www.imdb.com/chart/top/";
 
-app.get("/api/films", (req, res) => {
-  res.json({ films });
+    const response = await axios.get(url, {
+      headers: {
+        "User-Agent": "Mozilla/5.0",
+        "Accept-Language": "en-US,en;q=0.9"
+      }
+    });
+
+    const $ = cheerio.load(response.data);
+    const films = [];
+
+    // IMDb ATUAL usa essa estrutura
+    $("ul.ipc-metadata-list li h3.ipc-title__text").each((_, el) => {
+      const text = $(el).text().trim();
+      // remove "1. ", "2. ", etc
+      const title = text.replace(/^\d+\.\s*/, "");
+      if (title) films.push(title);
+    });
+
+    if (films.length === 0) {
+      return res.status(500).json({ error: "Lista vazia." });
+    }
+
+    res.json({ films });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Erro ao buscar Top 250 do IMDb." });
+  }
 });
 
 const PORT = process.env.PORT || 3000;
