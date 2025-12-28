@@ -4,8 +4,8 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const MAX_PAGES = 10; // 10 x 250 = ~2500
-const RETRY_LIMIT = 3;
+const MAX_PAGES = 10;     // 10 × 250 ≈ 2500
+const RETRY_LIMIT = 3;   // tentativas por página
 
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -16,14 +16,13 @@ app.get("/", (req, res) => {
 app.get("/api/imdb/:user", async (req, res) => {
   const user = req.params.user;
   const movies = [];
-  let globalIndex = 1;
+  let index = 1;
 
   try {
     for (let page = 1; page <= MAX_PAGES; page++) {
       let html = "";
       let attempts = 0;
 
-      // retry se página vier incompleta
       while (attempts < RETRY_LIMIT) {
         const url = `https://www.imdb.com/user/${user}/ratings?sort=date_added,desc&page=${page}`;
 
@@ -36,12 +35,11 @@ app.get("/api/imdb/:user", async (req, res) => {
 
         html = await r.text();
 
-        // página válida costuma ter > 200 itens
         const count = (html.match(/ipc-metadata-list-summary-item/g) || []).length;
         if (count >= 200) break;
 
         attempts++;
-        await new Promise(r => setTimeout(r, 800)); // pequeno delay
+        await new Promise(r => setTimeout(r, 800));
       }
 
       const blocks = html.split("ipc-metadata-list-summary-item");
@@ -59,10 +57,12 @@ app.get("/api/imdb/:user", async (req, res) => {
         const year = yearMatch ? yearMatch[0] : "";
 
         movies.push({
-          index: globalIndex++,
+          index,
           title,
           year
         });
+
+        index++;
       }
     }
 
@@ -75,5 +75,5 @@ app.get("/api/imdb/:user", async (req, res) => {
 });
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("IMDb extractor estável rodando");
+  console.log("IMDb extractor rodando");
 });
