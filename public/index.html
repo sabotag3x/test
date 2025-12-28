@@ -105,6 +105,41 @@ button{
 #game{display:none}
 
 </style>
+  <script>
+function startUser(){
+  const user = document.getElementById("user").value.trim();
+  if(!user) return;
+
+  document.getElementById("home").style.display = "none";
+  document.getElementById("game").style.display = "block";
+
+  fetch(`/api/letterboxd/user/${user}`)
+    .then(r=>r.json())
+    .then(data=>{
+      startGame(data.films);
+    })
+    .catch(()=>{
+      alert("Erro ao carregar filmes do usuário");
+      location.reload();
+    });
+}
+
+function startList(url, name){
+  document.getElementById("home").style.display = "none";
+  document.getElementById("game").style.display = "block";
+
+  fetch(`/api/letterboxd/list?url=${encodeURIComponent(url)}`)
+    .then(r=>r.json())
+    .then(data=>{
+      startGame(data.films);
+    })
+    .catch(()=>{
+      alert("Erro ao carregar lista");
+      location.reload();
+    });
+}
+</script>
+
 </head>
 
 <body>
