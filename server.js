@@ -1,11 +1,18 @@
 const express = require("express");
-const app = express();
+const path = require("path");
 
+const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static("public"));
+/* pasta de arquivos públicos */
+app.use(express.static(path.join(__dirname, "public")));
 
-/* API que busca no IMDb e retorna JSON */
+/* rota raiz garantida */
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
+/* API IMDb */
 app.get("/api/imdb/:user", async (req, res) => {
   const user = req.params.user;
   let page = 1;
@@ -45,10 +52,11 @@ app.get("/api/imdb/:user", async (req, res) => {
     res.json(movies);
 
   } catch (err) {
-    res.status(500).json({ error: "Erro ao buscar dados do IMDb" });
+    console.error(err);
+    res.status(500).json({ error: "Erro ao buscar IMDb" });
   }
 });
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("App IMDb rodando");
+  console.log("App IMDb rodando na porta", PORT);
 });
