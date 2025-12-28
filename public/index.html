@@ -192,110 +192,114 @@ button{
 
 /* ================= MOBILE AJUSTADO ================= */
 /* ================= MOBILE RESPONSIVO ================= */
-@media (max-width: 900px){
+/* ================= MOBILE AJUSTES GRANDES ================= */
+
+@media (max-width: 600px){
 
   body{
-    font-size:16px;
+    font-size: 20px;
   }
 
   .container{
-    padding:12px 10px 24px;
+    padding: 12px 14px 24px;
   }
 
-  /* HOME */
   h1{
-    font-size:32px;
+    font-size: 36px;
   }
 
   .subtitle{
-    font-size:16px;
-    line-height:1.4;
+    font-size: 18px;
   }
 
   input{
-    width:90%;
-    font-size:16px;
-    padding:14px 18px;
+    width: 90%;
+    font-size: 18px;
+    padding: 16px 22px;
   }
 
   button{
-    font-size:16px;
-    padding:14px 28px;
+    font-size: 18px;
+    padding: 16px 28px;
   }
 
   .lists{
-    grid-template-columns:1fr 1fr;
-    gap:14px;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
   }
 
-  /* LOADING */
-  #loading-main{
-    font-size:28px;
-  }
+  /* ===== DUELO ===== */
 
-  #loading-sub{
-    font-size:15px;
-  }
-
-  /* DUELO */
   .duel{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:flex-start;
-    gap:4vw;
-    width:100%;
+    min-height: calc(100vh - 120px);
+    align-items: center;
+    gap: 18px;
   }
 
   .card{
-    width:43vw;          /* 2 cards = ~86% da tela */
-    max-width:220px;
+    width: 44vw; /* dois cards lado a lado */
   }
 
   .card img{
-    width:100%;
-    border-radius:16px;
+    width: 100%;
   }
 
   .title{
-    font-size:15px;
-    line-height:1.3;
-    margin-top:10px;
+    font-size: 17px;
+    margin-top: 14px;
+    line-height: 1.3;
+    -webkit-line-clamp: unset; /* NÃO corta título */
   }
 
-  /* RESULTADO FINAL */
+  /* ===== LOADING ===== */
+
+  #status{
+    margin-top: 80px;
+  }
+
+  #loading-main{
+    font-size: 34px;
+  }
+
+  #loading-sub{
+    font-size: 18px;
+  }
+
+  /* ===== RESULTADO FINAL ===== */
+
   .bracket{
-    flex-direction:column;
-    gap:20px;
+    flex-direction: column;
+    gap: 26px;
   }
 
   .side{
-    justify-content:center;
-    gap:12px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 14px;
   }
 
-  .r1 img{width:14vw}
-  .r2 img{width:18vw}
-  .r3 img{width:24vw}
+  .round{
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .r1 img{width: 48px}
+  .r2 img{width: 64px}
+  .r3 img{width: 88px}
 
   .champion img{
-    width:72vw;          /* destaque, mas não ocupa tudo */
-    max-width:320px;
+    width: 82vw;
+    max-width: 360px;
   }
 
   .champion .title{
-    font-size:20px;
+    font-size: 22px;
+    text-align: center;
   }
 
   #again{
-    font-size:16px;
-    padding:14px 28px;
-  }
-}
-
-@media (max-width: 900px){
-  body{
-    background:yellow !important;
+    font-size: 18px;
+    padding: 14px 30px;
   }
 }
 
@@ -311,8 +315,12 @@ button{
   <h1>FilmDuel</h1>
   <div class="subtitle">Batalha dos seus filmes avaliados no Letterboxd</div>
 
-  <input id="user" value="sabotag3x" placeholder="Usuário Letterboxd">
+  <input id="user" placeholder="Seu usuário no Letterboxd">
   <button onclick="startUser()">Meus filmes</button>
+
+  <div class="subtitle" style="margin-top:18px">
+  Listas prontas
+</div>
 
   <div class="lists">
     <button onclick="startList('https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/')">Top 250 Letterboxd</button>
