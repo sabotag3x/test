@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>FilmDuel – Scraper de Listas</title>
+
+<style>
+body{
+  background:#111;
+  color:#fff;
+  font-family:Arial,sans-serif;
+  padding:40px;
+  max-width:900px;
+  margin:auto;
+}
+
+h1{margin-bottom:10px}
+
+label{
+  display:block;
+  margin-top:20px;
+  margin-bottom:6px;
+  font-weight:bold;
+}
+
+input, textarea, button{
+  width:100%;
+  padding:12px;
+  border-radius:8px;
+  border:none;
+  font-size:15px;
+}
+
+textarea{
+  min-height:120px;
+  resize:vertical;
+}
+
+button{
+  margin-top:20px;
+  background:#ffbf2f;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+#log{
+  margin-top:30px;
+  font-size:14px;
+  opacity:.9;
+  white-space:pre-wrap;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Scraper de Listas – FilmDuel</h1>
+<p>Use esta página para importar listas do Letterboxd uma única vez.</p>
+
+<label>Slug da lista (ex: imdb_top_250)</label>
+<input id="key" placeholder="slug_da_lista">
+
+<label>Nome amigável</label>
+<input id="name" placeholder="IMDb Top 250">
+
+<label>URL da lista Letterboxd<
