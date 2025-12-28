@@ -8,48 +8,56 @@ app.use(express.static("."));
 app.get("/api/films", async (req, res) => {
   try {
     const listUrl =
+      req.query.url ||
       "https://letterboxd.com/sabotag3x/list/1-year-1-movie/";
 
-    const response = await axios.get(listUrl, {
-      headers: {
-        "User-Agent": "Mozilla/5.0",
-        "Accept-Language": "en-US,en;q=0.9"
-      }
-    });
-
-    const $ = cheerio.load(response.data);
     const films = [];
+    let page = 1;
 
-    $("li.poster-container").each((_, el) => {
-      const posterEl = $(el).find("img");
-      const linkEl = $(el).find("a");
+    while (true) {
+      const url = page === 1 ? listUrl : `${listUrl}page/${page}/`;
 
-      if (!posterEl.length || !linkEl.length) return;
+      const r = await axios.get(url, {
+        headers: {
+          "User-Agent": "Mozilla/5.0",
+          "Accept-Language": "en-US,en;q=0.9"
+        }
+      });
 
-      const title = posterEl.attr("alt") || "";
-      const poster =
-        posterEl.attr("src") ||
-        posterEl.attr("data-src") ||
-        posterEl.attr("data-srcset")?.split(",")[0]?.split(" ")[0] ||
-        "";
+      const $ = cheerio.load(r.data);
+      const posters = $("li.poster-container");
 
-      // tenta pegar o ano do texto próximo
-      const metaText = $(el).text();
-      const yearMatch = metaText.match(/\b(19|20)\d{2}\b/);
-      const year = yearMatch ? yearMatch[0] : "";
+      if (posters.length === 0) break;
 
-      films.push({ title, year, poster });
-    });
+      posters.each((_, el) => {
+        const img = $(el).find("img");
+        const title = img.attr("alt") || "";
 
-    res.setHeader("Cache-Control", "no-store");
+        const poster =
+          img.attr("src") ||
+          img.attr("data-src") ||
+          img.attr("data-srcset")?.split(",")[0]?.split(" ")[0] ||
+          "";
+
+        films.push({
+          title,
+          year: "",
+          poster
+        });
+      });
+
+      page++;
+      if (page > 10) break; // segurança
+    }
+
     res.json({ films });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: "Erro ao buscar lista do Letterboxd" });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: "Erro ao buscar lista" });
   }
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log("Servidor rodando na porta", PORT);
-});
+app.listen(PORT, () =>
+  console.log("Servidor rodando em http://localhost:" + PORT)
+);
