@@ -593,29 +593,53 @@ function choose(i){
 }
 
 function showFinal(champ){
-  const left8=initialRound.slice(0,8);
-  const right8=initialRound.slice(8,16);
+  const left8  = initialRound.slice(0,8);
+  const right8 = initialRound.slice(8,16);
 
-  document.getElementById("duel").innerHTML=`
+  document.getElementById("duel").innerHTML = `
     <div class="bracket">
 
+      <!-- QUARTAS ESQUERDA -->
       <div class="side">
-        <div class="round r1">${left8.map(f=>`<img src="${f.poster}">`).join("")}</div>
-        <div class="round r2">${rounds[0].slice(0,4).map(f=>`<img src="${f.poster}">`).join("")}</div>
+        <div class="round r1">
+          ${left8.map(f=>`<img src="${f.poster}">`).join("")}
+        </div>
+
+        <div class="round r2">
+          ${rounds[0].slice(0,4).map(f=>`<img src="${f.poster}">`).join("")}
+        </div>
+
+        <div class="round r3">
+          ${rounds[1].slice(0,2).map(f=>`<img src="${f.poster}">`).join("")}
+        </div>
       </div>
 
+      <!-- CAMPEÃO -->
       <div class="champion">
         <img src="${champ.poster}">
-        <div class="title">Campeão<br>${champ.title} (${champ.year})</div>
+        <div class="title">
+          Campeão<br>${champ.title} (${champ.year})
+        </div>
         <button id="again" onclick="location.reload()">Jogar novamente</button>
       </div>
 
+      <!-- DIREITA -->
       <div class="side">
-        <div class="round r2">${rounds[0].slice(4,8).map(f=>`<img src="${f.poster}">`).join("")}</div>
-        <div class="round r1">${right8.map(f=>`<img src="${f.poster}">`).join("")}</div>
+        <div class="round r3">
+          ${rounds[1].slice(2,4).map(f=>`<img src="${f.poster}">`).join("")}
+        </div>
+
+        <div class="round r2">
+          ${rounds[0].slice(4,8).map(f=>`<img src="${f.poster}">`).join("")}
+        </div>
+
+        <div class="round r1">
+          ${right8.map(f=>`<img src="${f.poster}">`).join("")}
+        </div>
       </div>
 
-    </div>`;
+    </div>
+  `;
 }
   
 </script>
