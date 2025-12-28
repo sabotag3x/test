@@ -189,70 +189,107 @@ button{
 
 /* ================= MOBILE ================= */
 
-@media(max-width:900px){
+/* ================= MOBILE AJUSTADO ================= */
+@media (max-width: 900px){
 
-  h1{font-size:36px}
-  .subtitle{font-size:16px}
-
-  .container{
-    padding:12px 14px 28px;
-  }
-
-  input{
-    width:100%;
-    max-width:320px;
+  body{
     font-size:18px;
   }
 
+  .container{
+    padding:16px 14px 32px;
+  }
+
+  /* HOME */
+  h1{
+    font-size:38px;
+  }
+
+  .subtitle{
+    font-size:18px;
+    line-height:1.4;
+    text-align:center;
+  }
+
+  input{
+    width:92%;
+    max-width:none;
+    font-size:18px;
+    padding:16px 22px;
+  }
+
   button{
-    font-size:17px;
-    padding:16px 42px;
+    font-size:18px;
+    padding:16px 38px;
   }
 
   .lists{
-    grid-template-columns:1fr;
-    gap:14px;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
   }
 
+  .lists button{
+    font-size:16px;
+    padding:16px 10px;
+    border-radius:28px;
+  }
+
+  /* LOADING */
+  #status{
+    margin-top:80px;
+  }
+
+  #loading-main{
+    font-size:36px;
+  }
+
+  #loading-sub{
+    font-size:18px;
+  }
+
+  /* DUELO */
   .duel{
     flex-direction:column;
-    gap:28px;
-    min-height:auto;
+    justify-content:center;
+    align-items:center;
+    gap:36px;
+    min-height:calc(100vh - 120px);
   }
 
   .card{
-    width:85vw;
+    width:78vw;
     max-width:360px;
+  }
+
+  .card img{
+    width:100%;
+    border-radius:18px;
   }
 
   .title{
     font-size:18px;
+    line-height:1.3;
+    margin-top:18px;
+    min-height:auto;
+    -webkit-line-clamp:unset;
   }
 
-  /* vencedor mobile */
-
-  .bracket{
-    flex-direction:column;
-    gap:24px;
-  }
-
-  .side{
-    justify-content:center;
-  }
-
+  /* RESULTADO FINAL (não altera layout, só escala) */
   .champion img{
-    width:85vw;
+    width:86vw;
     max-width:420px;
   }
 
   .champion .title{
-    font-size:22px;
+    font-size:24px;
   }
 
-  #countdown{
-    width:220px;
+  #again{
+    font-size:18px;
+    padding:16px 40px;
   }
 }
+
 </style>
 </head>
 
@@ -294,7 +331,7 @@ button{
 
 <div id="game">
   <div id="status">
-    <img id="countdown" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Film_countdown_5.gif">
+    <img id="countdown" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Buster_Keaton_as_a_bellboy_in_the_March_18_1918_movie_The_Bell_Boy.gif">
     <div id="loading-main">Carregando lista…</div>
     <div id="loading-sub">Preparando o projetor</div>
   </div>
