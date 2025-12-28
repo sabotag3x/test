@@ -1,56 +1,48 @@
 const express = require("express");
 const axios = require("axios");
+const cheerio = require("cheerio");
 
 const app = express();
 app.use(express.static("."));
 app.use(express.json());
 
-async function getRatedFilms(username) {
-  let page = 1;
-  let films = [];
+async function getImdbTop250() {
+  const url = "https://www.imdb.com/chart/top/";
 
-  while (true) {
-    const url = `https://letterboxd.com/ajax/username/${username}/films/ratings/?page=${page}`;
-
-    const res = await axios.get(url, {
-      headers: {
-        "User-Agent": "Mozilla/5.0",
-        "X-Requested-With": "XMLHttpRequest"
-      }
-    });
-
-    const items = res.data?.items;
-    if (!items || items.length === 0) break;
-
-    for (const item of items) {
-      if (item.film && item.film.name) {
-        films.push(item.film.name);
-      }
+  const res = await axios.get(url, {
+    headers: {
+      "User-Agent": "Mozilla/5.0",
+      "Accept-Language": "en-US,en;q=0.9"
     }
+  });
 
-    page++;
-  }
+  const $ = cheerio.load(res.data);
+  const films = [];
+
+  $("td.titleColumn a").each((_, el) => {
+    const title = $(el).text().trim();
+    if (title) films.push(title);
+  });
 
   return films;
 }
 
 app.post("/api/films", async (req, res) => {
-  const { username } = req.body;
-  if (!username) {
-    return res.status(400).json({ error: "Username não informado." });
-  }
-
   try {
-    const films = await getRatedFilms(username);
-    if (films.length === 0) {
-      return res.status(400).json({ error: "Nenhum filme encontrado." });
+    const films = await getImdbTop250();
+
+    if (!films || films.length === 0) {
+      return res.status(500).json({ error: "Falha ao carregar Top 250." });
     }
+
     res.json({ films });
   } catch (e) {
     console.error(e);
-    res.status(500).json({ error: "Erro ao buscar filmes." });
+    res.status(500).json({ error: "Erro ao buscar Top 250 do IMDb." });
   }
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log("Rodando na porta", PORT));
+app.listen(PORT, () => {
+  console.log("Servidor rodando na porta", PORT);
+});
