@@ -2,55 +2,81 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>IMDb – Teste</title>
+<title>IMDb – Debug ao Vivo</title>
 
 <style>
-body { background:#000; color:#fff; font-family:Arial; padding:40px }
-input, button { padding:10px; font-size:16px }
-table { margin-top:20px; width:100%; border-collapse:collapse }
-th, td { border:1px solid #444; padding:8px }
-#status { margin-top:15px; color:#ffcc00 }
+body {
+  background:#000;
+  color:#fff;
+  font-family:Arial;
+  padding:40px;
+}
+input, button {
+  padding:10px;
+  font-size:16px;
+}
+button {
+  cursor:pointer;
+}
+#log {
+  margin-top:20px;
+  background:#111;
+  padding:15px;
+  height:300px;
+  overflow:auto;
+  font-family:monospace;
+  font-size:13px;
+}
+#counter {
+  margin-top:15px;
+  font-size:18px;
+  color:#ffcc00;
+}
 </style>
 </head>
 
 <body>
 
-<h2>Teste IMDb (versão ~700)</h2>
+<h2>IMDb – Extração com debug em tempo real</h2>
 
 <input id="userId" value="ur55777575">
 <button onclick="buscar()">Buscar</button>
 
-<div id="status"></div>
+<div id="counter">Aguardando…</div>
 
-<table id="table" style="display:none">
-<thead>
-<tr><th>#</th><th>Filme</th><th>Ano</th></tr>
-</thead>
-<tbody></tbody>
-</table>
+<div id="log"></div>
 
 <script>
-async function buscar() {
+function buscar() {
   const user = document.getElementById("userId").value.trim();
-  const status = document.getElementById("status");
-  const table = document.getElementById("table");
-  const tbody = table.querySelector("tbody");
+  const log = document.getElementById("log");
+  const counter = document.getElementById("counter");
 
-  status.textContent = "Buscando...";
-  table.style.display = "none";
-  tbody.innerHTML = "";
+  log.textContent = "";
+  counter.textContent = "Iniciando…";
 
-  const res = await fetch(`/api/imdb/${user}`);
-  const data = await res.json();
+  const es = new EventSource(`/api/imdb-stream/${user}`);
 
-  data.forEach(m => {
-    const tr = document.createElement("tr");
-    tr.innerHTML = `<td>${m.index}</td><td>${m.title}</td><td>${m.year}</td>`;
-    tbody.appendChild(tr);
+  es.addEventListener("log", e => {
+    log.textContent += e.data + "\n";
+    log.scrollTop = log.scrollHeight;
   });
 
-  table.style.display = "table";
-  status.textContent = `Encontrados ${data.length} itens`;
+  es.addEventListener("progress", e => {
+    const data = JSON.parse(e.data);
+    counter.textContent = `Filmes detectados até agora: ${data.total}`;
+  });
+
+  es.addEventListener("done", e => {
+    const data = JSON.parse(e.data);
+    counter.textContent = `Finalizado. Total detectado: ${data.total}`;
+    es.close();
+  });
+
+  es.addEventListener("error", e => {
+    counter.textContent = "Erro durante a execução";
+    es.close();
+  });
 }
 </script>
 
