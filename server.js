@@ -5,10 +5,17 @@ const cheerio = require("cheerio");
 const app = express();
 app.use(express.static("."));
 
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 app.get("/api/films", async (req, res) => {
   try {
-    const url = "https://www.imdb.com/chart/top/";
-    const response = await axios.get(url, {
+    const response = await axios.get("https://www.imdb.com/chart/top/", {
       headers: {
         "User-Agent": "Mozilla/5.0",
         "Accept-Language": "en-US,en;q=0.9"
@@ -27,12 +34,18 @@ app.get("/api/films", async (req, res) => {
 
       const title = titleEl.text().replace(/^\d+\.\s*/, "").trim();
       const year = yearEl.first().text().trim();
-      const poster = posterEl.attr("src");
+      let poster = posterEl.attr("src");
+
+      if (poster && poster.startsWith("/")) {
+        poster = "https://www.imdb.com" + poster;
+      }
 
       films.push({ title, year, poster });
     });
 
-    res.json({ films });
+    const selected = shuffle(films).slice(0, 16);
+
+    res.json({ films: selected });
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: "Erro ao buscar Top 250 do IMDb." });
@@ -40,6 +53,4 @@ app.get("/api/films", async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log("Servidor rodando na porta", PORT);
-});
+app.listen(PORT);
