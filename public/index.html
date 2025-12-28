@@ -2,15 +2,45 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>IMDb – Extração com Progresso</title>
+<title>IMDb – Extração com Debug</title>
 
 <style>
-body { background:#000; color:#fff; font-family:Arial; padding:40px }
-input, button { padding:10px; font-size:16px }
-#log { margin-top:20px; background:#111; padding:15px; height:220px; overflow:auto; font-family:monospace }
-#counter { margin-top:10px; color:#ffcc00; font-size:18px }
-table { margin-top:20px; width:100%; border-collapse:collapse }
-th, td { border:1px solid #444; padding:6px }
+body {
+  background:#000;
+  color:#fff;
+  font-family:Arial;
+  padding:40px;
+}
+input, button {
+  padding:10px;
+  font-size:16px;
+}
+button {
+  cursor:pointer;
+}
+#counter {
+  margin-top:10px;
+  color:#ffcc00;
+  font-size:18px;
+}
+#log {
+  margin-top:20px;
+  background:#111;
+  padding:15px;
+  height:220px;
+  overflow:auto;
+  font-family:monospace;
+  font-size:13px;
+}
+table {
+  margin-top:20px;
+  width:100%;
+  border-collapse:collapse;
+}
+th, td {
+  border:1px solid #444;
+  padding:6px;
+}
 </style>
 </head>
 
@@ -25,7 +55,13 @@ th, td { border:1px solid #444; padding:6px }
 <div id="log"></div>
 
 <table id="table" style="display:none">
-<thead><tr><th>#</th><th>Filme</th><th>Ano</th></tr></thead>
+<thead>
+<tr>
+  <th>#</th>
+  <th>Filme</th>
+  <th>Ano</th>
+</tr>
+</thead>
 <tbody></tbody>
 </table>
 
@@ -57,17 +93,25 @@ function start() {
   es.addEventListener("done", e => {
     const { total, items } = JSON.parse(e.data);
     counter.textContent = `Finalizado. Total: ${total}`;
+
     items.forEach((m, i) => {
       const tr = document.createElement("tr");
-      tr.innerHTML = `<td>${i+1}</td><td>${m.title}</td><td>${m.year}</td>`;
+      tr.innerHTML = `<td>${i + 1}</td><td>${m.title}</td><td>${m.year}</td>`;
       tbody.appendChild(tr);
     });
+
     table.style.display = "table";
     es.close();
   });
 
-  es.addEventListener("error", () => {
-    counter.textContent = "Erro durante a execução";
+  es.addEventListener("error", e => {
+    try {
+      const data = JSON.parse(e.data);
+      counter.textContent = "Erro: " + data.message;
+      log.textContent += "\n\nSTACK:\n" + data.stack;
+    } catch {
+      counter.textContent = "Erro durante a execução";
+    }
     es.close();
   });
 }
