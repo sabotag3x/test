@@ -1,5 +1,5 @@
 {
-  "name": "imdb-letterboxd-scraper",
+  "name": "letterboxd-battle",
   "private": true,
   "scripts": {
     "start": "node server.js"
