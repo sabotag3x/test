@@ -10,7 +10,30 @@ app.get("/", (_, res) =>
   res.sendFile(path.join(__dirname, "public", "index.html"))
 );
 
-/* ================= IMDb ================= */
+/* ================= IMDb (espera HTML “estável”) ================= */
+
+async function fetchStableHTML(url, headers, maxWaitMs = 3000) {
+  const start = Date.now();
+  let lastSize = 0;
+  let stableCount = 0;
+
+  while (Date.now() - start < maxWaitMs) {
+    const html = await fetch(url, { headers }).then(r => r.text());
+    const size = html.length;
+
+    if (size === lastSize && size > 50000) {
+      stableCount++;
+      if (stableCount >= 2) return html; // tamanho estabilizou
+    } else {
+      stableCount = 0;
+    }
+
+    lastSize = size;
+    await new Promise(r => setTimeout(r, 300));
+  }
+
+  return await fetch(url, { headers }).then(r => r.text());
+}
 
 app.get("/api/imdb/:user", async (req, res) => {
   const user = req.params.user;
@@ -26,9 +49,14 @@ app.get("/api/imdb/:user", async (req, res) => {
         `https://www.imdb.com/user/${user}/ratings` +
         `?sort=date_added,desc&page=${page}`;
 
-      const html = await fetch(url, {
-        headers: { "User-Agent": "Mozilla/5.0" }
-      }).then(r => r.text());
+      const html = await fetchStableHTML(
+        url,
+        {
+          "User-Agent": "Mozilla/5.0",
+          "Accept-Language": "en-US,en;q=0.9"
+        },
+        3000
+      );
 
       const blocks = html.split("ipc-metadata-list-summary-item");
       if (blocks.length <= 1) break;
@@ -54,7 +82,7 @@ app.get("/api/imdb/:user", async (req, res) => {
   }
 });
 
-/* ================= Letterboxd ================= */
+/* ================= Letterboxd (já OK) ================= */
 
 app.get("/api/letterboxd/:user", async (req, res) => {
   const user = req.params.user;
