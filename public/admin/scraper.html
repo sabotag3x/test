@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>FilmDuel – Scraper de Listas</title>
+<title>FilmDuel – Scraping Manual</title>
 
 <style>
 body{
@@ -14,56 +14,40 @@ body{
   margin:auto;
 }
 
-h1{margin-bottom:10px}
-
-label{
-  display:block;
-  margin-top:20px;
-  margin-bottom:6px;
-  font-weight:bold;
-}
-
-input, button{
+input, textarea, button{
   width:100%;
   padding:12px;
+  margin-top:10px;
   border-radius:8px;
   border:none;
-  font-size:15px;
+  font-size:14px;
 }
 
 button{
-  margin-top:20px;
   background:#ffbf2f;
   font-weight:bold;
   cursor:pointer;
 }
 
-#log{
-  margin-top:30px;
-  font-size:14px;
-  opacity:.9;
-  white-space:pre-wrap;
+textarea{
+  min-height:320px;
+  font-family:monospace;
+  white-space:pre;
 }
 </style>
 </head>
 
 <body>
 
-<h1>Scraper de Listas – FilmDuel</h1>
-<p>Use esta página para importar listas do Letterboxd uma única vez.</p>
+<h1>Scraping manual – FilmDuel</h1>
 
-<label>Slug da lista (ex: imdb_top_250)</label>
-<input id="key" placeholder="slug_da_lista">
+<input id="name" placeholder="Nome da lista (ex: IMDb Top 250)">
+<input id="key" placeholder="Slug (ex: imdb_top_250)">
+<input id="url" placeholder="URL da lista Letterboxd">
 
-<label>Nome amigável</label>
-<input id="name" placeholder="IMDb Top 250">
+<button onclick="run()">Gerar JSON</button>
 
-<label>URL da lista Letterboxd</label>
-<input id="url" placeholder="https://letterboxd.com/...">
-
-<button onclick="run()">Scrapear lista</button>
-
-<div id="log"></div>
+<textarea id="output" placeholder="O JSON vai aparecer aqui..."></textarea>
 
 <script src="scraper.js"></script>
 </body>
