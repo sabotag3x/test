@@ -16,7 +16,7 @@
     }
     .container {
       text-align: center;
-      max-width: 1000px;
+      max-width: 1100px;
       width: 100%;
     }
     button {
@@ -29,15 +29,15 @@
     .duel {
       display: flex;
       justify-content: center;
-      gap: 40px;
+      gap: 60px;
       margin-top: 30px;
     }
     .card {
-      width: 260px;
+      width: 300px;
     }
     .card img {
       width: 100%;
-      border-radius: 8px;
+      border-radius: 10px;
       transition: transform .2s;
     }
     .card img:hover {
@@ -45,7 +45,7 @@
     }
     .title {
       margin-top: 10px;
-      font-size: 16px;
+      font-size: 18px;
     }
   </style>
 </head>
@@ -73,7 +73,7 @@ function shuffle(arr) {
 }
 
 async function start() {
-  const res = await fetch("/api/films?ts=" + Date.now());
+  const res = await fetch("/api/films");
   const data = await res.json();
 
   filmes = shuffle(data.films).slice(0, 16);
@@ -89,16 +89,20 @@ function nextDuel() {
     vencedores = [];
     index = 0;
 
-if (filmes.length === 1) {
-  const f = filmes[0];
-  document.getElementById("duel").innerHTML = `
-    <div class="card">
-      <img src="${f.poster}" alt="${f.title}">
-      <div class="title">Campeão<br>${f.title} (${f.year})</div>
-    </div>
-  `;
-  return;
-}
+    if (filmes.length === 1) {
+      const f = filmes[0];
+      document.getElementById("duel").innerHTML = `
+        <div class="card">
+          <img src="${f.poster}" alt="${f.title}">
+          <div class="title">Campeão<br>${f.title} (${f.year})</div>
+        </div>
+      `;
+      return;
+    }
+
+    nextDuel();
+    return;
+  }
 
   atual = [filmes[index], filmes[index + 1]];
   index += 2;
@@ -128,5 +132,3 @@ document.getElementById("startBtn").addEventListener("click", start);
 
 </body>
 </html>
-
-
