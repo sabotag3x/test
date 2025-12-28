@@ -81,20 +81,23 @@ app.get("/api/letterboxd/:user", async (req, res) => {
 
       const html = await r.text();
 
-      const posters = html.match(/data-film-name="[^"]+"/g);
-      const years   = html.match(/data-film-release-year="\d{4}"/g);
+const posters = html.match(/<li class="poster-container[\s\S]*?<\/li>/g);
+if (!posters) break;
 
-      if (!posters || posters.length === 0) break;
+posters.forEach(p => {
+  const titleMatch = p.match(/alt="([^"]+)"/);
+  if (!titleMatch) return;
 
-      posters.forEach((p, i) => {
-        const title = p.replace(/data-film-name=|"/g, "");
-        const year  = years && years[i]
-          ? years[i].replace(/data-film-release-year=|"/g, "")
-          : "";
+  const raw = titleMatch[1]; // ex: "Fight Club (1999)"
+  const yearMatch = raw.match(/\((\d{4})\)/);
 
-        movies.push({ index, title, year });
-        index++;
-      });
+  const title = raw.replace(/\s*\(\d{4}\)/, "").trim();
+  const year = yearMatch ? yearMatch[1] : "";
+
+  movies.push({ index, title, year });
+  index++;
+});
+
 
       page++;
       await new Promise(r => setTimeout(r, 300));
@@ -110,3 +113,4 @@ app.get("/api/letterboxd/:user", async (req, res) => {
 app.listen(PORT, "0.0.0.0", () => {
   console.log("IMDb + Letterboxd scraper rodando");
 });
+
