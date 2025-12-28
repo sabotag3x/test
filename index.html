@@ -10,233 +10,147 @@ body{
   min-height:100vh;
   display:flex;
   justify-content:center;
-  align-items:center;
-  background:radial-gradient(circle at top, #1b1b1b, #000);
+  background:#000;
   color:#fff;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:Arial, sans-serif;
 }
-
 .container{
-  text-align:center;
-  max-width:1400px;
+  max-width:1600px;
   width:100%;
-  padding:40px 20px;
+  padding:40px;
+  text-align:center;
 }
+h1{margin-bottom:20px}
 
-h1{
-  margin-bottom:25px;
-  font-size:36px;
-}
-
-/* BOTÃO CTA */
 #startBtn{
-  background:linear-gradient(135deg, #ffcc00, #ff9900);
+  background:#ffcc00;
   color:#000;
   font-size:20px;
   font-weight:bold;
   padding:14px 36px;
   border-radius:40px;
-  cursor:pointer;
   border:none;
-  box-shadow:0 8px 25px rgba(255,153,0,.4);
-  transition:transform .15s, box-shadow .15s;
+  cursor:pointer;
+  margin-bottom:40px;
 }
 
-#startBtn:hover{
-  transform:scale(1.05);
-  box-shadow:0 12px 35px rgba(255,153,0,.6);
-}
-
-#startBtn:active{
-  transform:scale(.98);
-}
-
-/* DUELO */
-.duel{
-  display:flex;
-  justify-content:center;
-  gap:80px;
-  margin-top:40px;
-}
-
-/* CARDS */
-.card{
-  width:300px;
-}
-
-.card img{
-  width:100%;
-  border-radius:12px;
-  transition:transform .2s, box-shadow .2s;
-}
-
-.card img:hover{
-  transform:scale(1.06);
-  box-shadow:0 10px 30px rgba(0,0,0,.7);
-}
-
-.title{
-  margin-top:10px;
-  font-size:18px;
-}
-
-/* RESULTADO FINAL */
 .bracket{
-  display:flex;
-  justify-content:center;
+  display:grid;
+  grid-template-columns: repeat(9, auto);
   align-items:center;
-  gap:50px;
-  margin-top:40px;
-}
-
-.side{
-  display:flex;
+  justify-content:center;
   gap:30px;
 }
 
-.round{
+.column{
   display:flex;
   flex-direction:column;
-  gap:14px;
+  gap:20px;
 }
 
-.small{
-  width:90px;
-}
+.card.small{width:90px}
+.card.medium{width:130px}
+.card.large{width:180px}
+.card.champion{width:300px}
 
-.small img{
+.card img{
   width:100%;
-  border-radius:6px;
+  border-radius:8px;
 }
 
-.champion{
-  width:300px;
-}
-
-.champion img{
-  width:100%;
-  border-radius:16px;
-  box-shadow:0 15px 40px rgba(0,0,0,.8);
-}
-
-.champion .title{
-  font-size:20px;
-  margin-top:14px;
-  font-weight:bold;
+.title{
+  font-size:14px;
+  margin-top:6px;
 }
 </style>
 </head>
 
 <body>
-
 <div class="container">
   <h1>Batalha de Filmes – IMDb Top 250</h1>
   <button id="startBtn">🎬 Gerar competição</button>
-  <div id="duel" class="duel"></div>
+  <div id="duel"></div>
 </div>
 
 <script>
-let filmes=[], index=0, vencedores=[], atual=[];
+let filmes=[], atual=[], vencedores=[];
 let rounds=[];
 
-function shuffle(arr){
-  const a=[...arr];
-  for(let i=a.length-1;i>0;i--){
-    const j=Math.floor(Math.random()*(i+1));
-    [a[i],a[j]]=[a[j],a[i]];
-  }
-  return a;
-}
-
 async function start(){
-  const res=await fetch("/api/films?ts="+Date.now());
-  const data=await res.json();
-
-  filmes=shuffle(data.films).slice(0,16);
-  index=0;
-  vencedores=[];
-  rounds=[];
-  nextDuel();
+  const res = await fetch("/api/films?ts="+Date.now());
+  const data = await res.json();
+  filmes = shuffle(data.films).slice(0,16);
+  rounds = [filmes];
+  playRound(filmes);
 }
 
-function nextDuel(){
-  if(index>=filmes.length){
-    rounds.push([...vencedores]);
-    filmes=vencedores;
-    vencedores=[];
-    index=0;
+function shuffle(a){
+  const b=[...a];
+  for(let i=b.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [b[i],b[j]]=[b[j],b[i]];
+  }
+  return b;
+}
 
-    if(filmes.length===1){
-      showBracket(filmes[0]);
-      return;
-    }
-    nextDuel();
+function playRound(list){
+  if(list.length===1){
+    renderBracket();
     return;
   }
-
-  atual=[filmes[index], filmes[index+1]];
-  index+=2;
-
-  document.getElementById("duel").innerHTML =
-    card(atual[0],0) + card(atual[1],1);
+  vencedores=[];
+  for(let i=0;i<list.length;i+=2){
+    vencedores.push(list[i]); // vencedor automático (demo)
+  }
+  rounds.push(vencedores);
+  playRound(vencedores);
 }
 
-function card(film,i){
-  return `
-    <div class="card">
-      <button onclick="choose(${i})">
-        <img src="${film.poster}" alt="${film.title}">
-      </button>
-      <div class="title">${film.title} (${film.year})</div>
-    </div>
-  `;
-}
+function renderBracket(){
+  const duel=document.getElementById("duel");
 
-function choose(i){
-  vencedores.push(atual[i]);
-  nextDuel();
-}
+  const leftRounds = rounds.slice(0,3);
+  const rightRounds = rounds.slice(0,3).map(r=>[...r].reverse());
+  const champion = rounds[rounds.length-1][0];
 
-function showBracket(champion){
-  const half=Math.floor(rounds.length/2);
-  const left=rounds.slice(0,half);
-  const right=rounds.slice(half).reverse();
+  let html = `<div class="bracket">`;
 
-  let html=`<div class="bracket">`;
-
-  html+=`<div class="side">`;
-  left.forEach(r=>{
-    html+=`<div class="round">`;
-    r.forEach(f=>{
-      html+=`<div class="small"><img src="${f.poster}" title="${f.title}"></div>`;
-    });
+  leftRounds.forEach((r,i)=>{
+    html+=`<div class="column">`;
+    r.forEach(f=>html+=card(f,i));
     html+=`</div>`;
   });
-  html+=`</div>`;
 
   html+=`
-    <div class="champion">
-      <img src="${champion.poster}">
-      <div class="title">Campeão<br>${champion.title} (${champion.year})</div>
+    <div class="column">
+      <div class="card champion">
+        <img src="${champion.poster}">
+        <div class="title">Campeão<br>${champion.title} (${champion.year})</div>
+      </div>
     </div>
   `;
 
-  html+=`<div class="side">`;
-  right.forEach(r=>{
-    html+=`<div class="round">`;
-    r.forEach(f=>{
-      html+=`<div class="small"><img src="${f.poster}" title="${f.title}"></div>`;
-    });
+  rightRounds.reverse().forEach((r,i)=>{
+    html+=`<div class="column">`;
+    r.forEach(f=>html+=card(f,2-i));
     html+=`</div>`;
   });
-  html+=`</div>`;
 
   html+=`</div>`;
-  document.getElementById("duel").innerHTML=html;
+  duel.innerHTML=html;
 }
 
-document.getElementById("startBtn").addEventListener("click", start);
-</script>
+function card(f,stage){
+  const size = stage===0?"small":stage===1?"medium":"large";
+  return `
+    <div class="card ${size}">
+      <img src="${f.poster}">
+      <div class="title">${f.title}</div>
+    </div>
+  `;
+}
 
+document.getElementById("startBtn").onclick=start;
+</script>
 </body>
 </html>
