@@ -3,6 +3,9 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 
 const app = express();
+
+/* Serve o index.html e arquivos estáticos */
+app.use(express.static("."));
 app.use(express.json());
 
 async function getRatedFilms(username, minStars = 4) {
@@ -23,8 +26,9 @@ async function getRatedFilms(username, minStars = 4) {
     posters.each((_, el) => {
       const title = $(el).find("img").attr("alt");
       const ratingText = $(el).find("span.rating").text();
+
       const stars =
-        ratingText.split("★").length - 1 +
+        (ratingText.match(/★/g) || []).length +
         (ratingText.includes("½") ? 0.5 : 0);
 
       if (stars >= minStars) {
@@ -41,6 +45,10 @@ async function getRatedFilms(username, minStars = 4) {
 app.post("/api/films", async (req, res) => {
   const { username } = req.body;
 
+  if (!username) {
+    return res.status(400).json({ error: "Username não informado." });
+  }
+
   try {
     const films = await getRatedFilms(username);
 
@@ -50,6 +58,7 @@ app.post("/api/films", async (req, res) => {
 
     res.json({ films });
   } catch (e) {
+    console.error(e);
     res.status(500).json({ error: "Erro ao buscar filmes." });
   }
 });
@@ -59,4 +68,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log("Servidor rodando na porta", PORT);
 });
-
