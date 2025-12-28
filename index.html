@@ -2,26 +2,78 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Batalha de Filmes</title>
+  <title>Batalha de Filmes – IMDb Top 250</title>
+
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; }
-    button { padding: 6px 12px; margin: 6px; }
-    #duelo { margin-top: 20px; font-size: 18px; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0f0f0f;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: inherit;
+    }
+
+    .duel {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .card {
+      width: 220px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+
+    .card img:hover {
+      transform: scale(1.05);
+    }
+
+    .title {
+      margin-top: 10px;
+      font-size: 16px;
+    }
   </style>
 </head>
 <body>
 
-<h1>Batalha de Filmes</h1>
+<div class="container">
+  <h1>Batalha de Filmes – IMDb Top 250</h1>
+  <button id="startBtn">Gerar competição</button>
 
-<button id="btn">Gerar competição</button>
-
-<div id="duelo"></div>
+  <div id="duel" class="duel"></div>
+</div>
 
 <script>
 let filmes = [];
 let index = 0;
-let atual = [];
 let vencedores = [];
+let atual = [];
 
 function shuffle(arr) {
   return arr.sort(() => Math.random() - 0.5);
@@ -34,41 +86,52 @@ async function start() {
   filmes = shuffle(data.films).slice(0, 16);
   index = 0;
   vencedores = [];
-  proximoDuelo();
+
+  nextDuel();
 }
 
-function proximoDuelo() {
+function nextDuel() {
   if (index >= filmes.length) {
     filmes = vencedores;
     vencedores = [];
     index = 0;
 
     if (filmes.length === 1) {
-      document.getElementById("duelo").innerText =
-        "Campeão: " + filmes[0];
+      document.getElementById("duel").innerHTML =
+        `<h2>Campeão: ${filmes[0].title} (${filmes[0].year})</h2>`;
       return;
     }
 
-    proximoDuelo();
+    nextDuel();
     return;
   }
 
   atual = [filmes[index], filmes[index + 1]];
   index += 2;
 
-  document.getElementById("duelo").innerHTML = `
-    <p>${atual[0]} VS ${atual[1]}</p>
-    <button onclick="choose(0)">${atual[0]}</button>
-    <button onclick="choose(1)">${atual[1]}</button>
+  document.getElementById("duel").innerHTML = `
+    ${card(atual[0], 0)}
+    ${card(atual[1], 1)}
+  `;
+}
+
+function card(film, i) {
+  return `
+    <div class="card">
+      <button onclick="choose(${i})">
+        <img src="${film.poster}" alt="${film.title}">
+      </button>
+      <div class="title">${film.title} (${film.year})</div>
+    </div>
   `;
 }
 
 function choose(i) {
   vencedores.push(atual[i]);
-  proximoDuelo();
+  nextDuel();
 }
 
-document.getElementById("btn").addEventListener("click", start);
+document.getElementById("startBtn").addEventListener("click", start);
 </script>
 
 </body>
