@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>FilmDuel – Batalha de Filmes</title>
+<title>FilmDuel</title>
 
 <style>
 *{box-sizing:border-box}
@@ -19,8 +19,8 @@ body{
 
 .container{
   width:100%;
-  max-width:1700px;
-  padding:16px 30px 24px;
+  max-width:1600px;
+  padding:40px 30px;
   text-align:center;
 }
 
@@ -30,21 +30,33 @@ body{
   display:flex;
   flex-direction:column;
   align-items:center;
-  gap:22px;
 }
 
-h1{font-size:44px;margin:0}
+h1{
+  font-size:44px;
+  margin-bottom:10px;
+}
 
 .subtitle{
   opacity:.85;
-  margin-bottom:10px;
+  margin-bottom:30px;
+}
+
+/* ===== MEUS FILMES ===== */
+
+.user-box{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:14px;
+  margin-bottom:50px; /* espaçamento maior */
 }
 
 input{
   padding:14px 20px;
   border-radius:30px;
   border:none;
-  width:280px;
+  width:300px;
   font-size:16px;
   text-align:center;
 }
@@ -54,104 +66,44 @@ button{
   border:none;
   padding:14px 34px;
   border-radius:40px;
-  font-size:16px;
+  font-size:15px;
   font-weight:bold;
   cursor:pointer;
+}
+
+/* ===== LISTAS ===== */
+
+.lists-title{
+  font-size:26px;
+  margin-bottom:30px;
+}
+
+.lists{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px 30px;
+  width:100%;
+  max-width:900px;
+}
+
+.list-btn{
+  padding:16px 18px;
+  border-radius:18px;
+  background:#ffbf2f;
+  color:#000;
+  font-weight:bold;
+  cursor:pointer;
+  transition:.15s;
+}
+
+.list-btn:hover{
+  transform:scale(1.04);
 }
 
 /* ================= GAME ================= */
 
 #game{display:none}
 
-#status{
-  margin:24px 0 10px;
-}
-
-#loading-main{
-  font-size:30px;
-  font-weight:bold;
-  color:#ffbf2f;
-}
-
-#loading-sub{
-  margin-top:8px;
-  font-size:16px;
-  opacity:.9;
-}
-
-/* ================= DUELO ================= */
-
-.duel{
-  display:flex;
-  justify-content:center;
-  align-items:flex-start;
-  gap:140px; /* AJUSTE – mais espaço lateral */
-  min-height:520px;
-}
-
-/* ================= RESULTADO FINAL ================= */
-
-.bracket{
-  display:flex;
-  justify-content:center;
-  align-items:center; /* AJUSTE – centraliza tudo verticalmente */
-  gap:120px;
-  margin-top:10px;
-}
-
-/* COLUNAS LATERAIS */
-.side{
-  display:flex;
-  gap:26px;
-}
-
-.round{
-  display:flex;
-  flex-direction:column;
-  justify-content:center; /* AJUSTE */
-  gap:12px;
-}
-
-.round img{
-  border-radius:8px;
-}
-
-/* tamanhos progressivos */
-.r1 img{width:52px}   /* AJUSTE */
-.r2 img{width:78px}   /* AJUSTE */
-.r3 img{width:120px}
-
-/* ================= CAMPEÃO ================= */
-
-.champion{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center; /* AJUSTE */
-}
-
-.champion img{
-  width:360px;
-  border-radius:22px;
-}
-
-.champion .title{
-  margin-top:12px;
-  font-size:22px;
-  font-weight:bold;
-}
-
-/* BOTÃO JOGAR NOVAMENTE */
-#again{
-  margin-top:16px; /* AJUSTE – sobe botão */
-  display:block;   /* AJUSTE – nunca some */
-}
-
-/* ================= MOBILE ================= */
-
-@media(max-width:900px){
-  .bracket{flex-direction:column;gap:30px}
-}
 </style>
 </head>
 
@@ -161,30 +113,51 @@ button{
 <!-- ================= HOME ================= -->
 <div id="home">
   <h1>FilmDuel</h1>
-  <div class="subtitle">Batalha dos seus filmes avaliados no Letterboxd</div>
+  <div class="subtitle">Batalha de filmes do Letterboxd</div>
 
-  <input id="user" value="sabotag3x">
-  <button onclick="startUser()">Meus filmes</button>
+  <div class="user-box">
+    <input id="user" value="sabotag3x">
+    <button onclick="startUser()">Meus filmes</button>
+  </div>
+
+  <div class="lists-title">Listas</div>
+
+  <div class="lists">
+
+    <div class="list-btn" onclick="startList('https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/','Top 250 Letterboxd')">Top 250 Letterboxd</div>
+    <div class="list-btn" onclick="startList('https://letterboxd.com/dave/list/imdb-top-250/','IMDb Top 250')">IMDb Top 250</div>
+    <div class="list-btn" onclick="startList('https://letterboxd.com/jack/list/official-top-250-films-with-the-most-fans/','Mais Populares')">Mais populares</div>
+
+    <div class="list-btn" onclick="startList('https://letterboxd.com/lifeasfiction/list/letterboxd-100-animation/','Animação')">Animação</div>
+    <div class="list-btn" onclick="startList('https://letterboxd.com/petitebutfierce/list/disney/','Disney')">Disney</div>
+    <div class="list-btn" onclick="startList('https://letterboxd.com/jaywill/list/ghibli/','Ghibli')">Ghibli</div>
+
+    <div class="list-btn" onclick="startList('https://letterboxd.com/purecinema1/list/brazil/','Brasil')">Brasil</div>
+    <div class="list-btn" onclick="startList('https://letterboxd.com/jack/list/official-top-250-documentary-films/','Documentários')">Documentários</div>
+    <div class="list-btn" onclick="startList('https://letterboxd.com/chris_coke/list/letterboxds-top-250-science-fiction-films/','Ficção científica')">Ficção</div>
+
+    <div class="list-btn" onclick="startList('https://letterboxd.com/brsan/list/letterboxds-top-250-international-films/','Estrangeiros')">Estrangeiros</div>
+    <div class="list-btn" onclick="startList('https://letterboxd.com/oscars/list/oscar-winning-films-best-picture/','Oscar')">Oscar</div>
+    <div class="list-btn" onclick="startList('https://letterboxd.com/festival_cannes/list/70-years-of-the-palme-dor-70-ans-de-la-palme/','Palma de Ouro')">Palma de Ouro</div>
+
+    <div class="list-btn" onclick="startList('https://letterboxd.com/bafta/list/all-bafta-best-film-award-winners/','BAFTA')">BAFTA</div>
+    <div class="list-btn" onclick="startList('https://letterboxd.com/jbutts15/list/the-complete-criterion-collection/','Criterion')">Criterion</div>
+    <div class="list-btn" onclick="startList('https://letterboxd.com/a24/list/every-a24-movie-ever/','A24')">A24</div>
+
+    <div class="list-btn" onclick="startList('https://letterboxd.com/crew/list/the-2010s-top-250-narrative-features/','Década 2010')">Top década 2010</div>
+    <div class="list-btn" onclick="startList('https://letterboxd.com/victorp26/list/mcu/','Universo Marvel')">Universo Marvel</div>
+    <div class="list-btn" onclick="startList('https://letterboxd.com/darrencb/list/letterboxds-top-250-horror-films/','Terror')">Terror</div>
+
+  </div>
 </div>
 
 <!-- ================= GAME ================= -->
-<div id="game">
-  <div id="status">
-    <div id="loading-main">Carregando lista…</div>
-    <div id="loading-sub"></div>
-  </div>
-
-  <div id="duel" class="duel"></div>
-
-  <!-- BOTÃO FIXO -->
-  <button id="again" onclick="location.reload()">Jogar novamente</button>
-</div>
-
-</div>
+<div id="game"></div>
 
 <script>
-/* TODO O JS PERMANECE IGUAL AO SEU ATUAL */
-/* NÃO ALTERADO */
+/* JS EXISTENTE PERMANECE */
+/* startUser() */
+/* startList(url, nome) */
 </script>
 
 </body>
