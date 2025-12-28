@@ -2,206 +2,60 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Batalha de Filmes – IMDb Top 250</title>
+<title>IMDb – Filmes Avaliados</title>
 
 <style>
-body{
-  margin:0;
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
+body {
   background:#000;
   color:#fff;
-  font-family:Arial,sans-serif
+  font-family:Arial, sans-serif;
+  padding:30px;
 }
-.container{
-  max-width:1600px;
-  width:100%;
-  padding:40px;
-  text-align:center
-}
-h1{margin-bottom:20px}
 
-#startBtn{
-  background:linear-gradient(135deg,#ffcc00,#ff9900);
-  color:#000;
-  font-size:20px;
-  font-weight:bold;
-  padding:14px 36px;
-  border-radius:40px;
-  border:none;
+input, button {
+  padding:10px;
+  font-size:16px;
+}
+
+button {
   cursor:pointer;
-  margin-bottom:40px
 }
 
-/* DUELO */
-.duel{
-  display:flex;
-  justify-content:center;
-  gap:80px;
-  margin-top:40px
-}
-.card{
-  width:300px
-}
-.card img{
+table {
+  margin-top:20px;
   width:100%;
-  border-radius:12px;
-  cursor:pointer;
-  transition:transform .2s
-}
-.card img:hover{transform:scale(1.06)}
-.title{margin-top:10px;font-size:18px}
-
-/* RESULTADO FINAL */
-.bracket{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:60px;
-  margin-top:40px
+  border-collapse:collapse;
 }
 
-.side{
-  display:flex;
-  align-items:center;
-  gap:40px
+th, td {
+  border:1px solid #444;
+  padding:8px;
+  text-align:left;
 }
 
-.round{
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  gap:18px
-}
-
-.small{
-  width:90px
-}
-.small img{
-  width:100%;
-  border-radius:6px
-}
-
-.champion{
-  width:320px;
-  display:flex;
-  flex-direction:column;
-  align-items:center
-}
-.champion img{
-  width:100%;
-  border-radius:18px
-}
-.champion .title{
-  font-size:22px;
-  margin-top:14px;
-  font-weight:bold
+th {
+  background:#111;
 }
 </style>
 </head>
 
 <body>
-<div class="container">
-  <h1>Batalha de Filmes – IMDb Top 250</h1>
-  <button id="startBtn">🎬 Gerar competição</button>
-  <div id="duel" class="duel"></div>
-</div>
 
-<script>
-let filmes=[], index=0, vencedores=[], atual=[];
-let rounds=[];
+<h1>Filmes avaliados no IMDb</h1>
 
-function shuffle(arr){
-  const a=[...arr];
-  for(let i=a.length-1;i>0;i--){
-    const j=Math.floor(Math.random()*(i+1));
-    [a[i],a[j]]=[a[j],a[i]];
-  }
-  return a;
-}
+<input id="userId" placeholder="urXXXXXXXX">
+<button onclick="loadRatings()">Buscar</button>
 
-async function start(){
-  const res=await fetch("/api/films?ts="+Date.now());
-  const data=await res.json();
+<table id="table" style="display:none">
+  <thead>
+    <tr>
+      <th>Filme</th>
+      <th>Ano</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
 
-  filmes=shuffle(data.films).slice(0,16);
-  index=0;
-  vencedores=[];
-  rounds=[];
-  nextDuel();
-}
-
-function nextDuel(){
-  if(index>=filmes.length){
-    rounds.push([...vencedores]);
-    filmes=vencedores;
-    vencedores=[];
-    index=0;
-
-    if(filmes.length===1){
-      showBracket(filmes[0]);
-      return;
-    }
-    nextDuel();
-    return;
-  }
-
-  atual=[filmes[index],filmes[index+1]];
-  index+=2;
-
-  document.getElementById("duel").innerHTML =
-    card(atual[0],0)+card(atual[1],1);
-}
-
-function card(f,i){
-  return `
-    <div class="card">
-      <img src="${f.poster}" onclick="choose(${i})">
-      <div class="title">${f.title} (${f.year})</div>
-    </div>
-  `;
-}
-
-function choose(i){
-  vencedores.push(atual[i]);
-  nextDuel();
-}
-
-function showBracket(champion){
-  const left = rounds.slice(0,3);
-  const right = rounds.slice(0,3).map(r=>[...r].reverse());
-
-  let html=`<div class="bracket">`;
-
-  html+=`<div class="side">`;
-  left.forEach(r=>{
-    html+=`<div class="round">`;
-    r.forEach(f=>html+=`<div class="small"><img src="${f.poster}"></div>`);
-    html+=`</div>`;
-  });
-  html+=`</div>`;
-
-  html+=`
-    <div class="champion">
-      <img src="${champion.poster}">
-      <div class="title">Campeão<br>${champion.title} (${champion.year})</div>
-    </div>
-  `;
-
-  html+=`<div class="side">`;
-  right.reverse().forEach(r=>{
-    html+=`<div class="round">`;
-    r.forEach(f=>html+=`<div class="small"><img src="${f.poster}"></div>`);
-    html+=`</div>`;
-  });
-  html+=`</div></div>`;
-
-  document.getElementById("duel").innerHTML=html;
-}
-
-document.getElementById("startBtn").onclick=start;
-</script>
+<script src="server.js"></script>
 </body>
 </html>
-
