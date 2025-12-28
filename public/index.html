@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>IMDb – Filmes Avaliados</title>
+
+<style>
+body { background:#000; color:#fff; font-family:Arial; padding:30px }
+input, button { padding:10px; font-size:16px }
+table { margin-top:20px; width:100%; border-collapse:collapse }
+th, td { border:1px solid #444; padding:8px }
+</style>
+</head>
+
+<body>
+
+<h2>Buscar filmes avaliados no IMDb</h2>
+
+<input id="userId" placeholder="urXXXXXXXX">
+<button onclick="buscar()">Buscar</button>
+
+<table id="table" style="display:none">
+<thead>
+<tr><th>Filme</th><th>Ano</th></tr>
+</thead>
+<tbody></tbody>
+</table>
+
+<script>
+async function buscar() {
+  const user = document.getElementById("userId").value.trim();
+  if (!user) return;
+
+  const res = await fetch(`/api/imdb/${user}`);
+  const data = await res.json();
+
+  const tbody = document.querySelector("#table tbody");
+  tbody.innerHTML = "";
+
+  data.forEach(m => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td>${m.title}</td><td>${m.year}</td>`;
+    tbody.appendChild(tr);
+  });
+
+  document.getElementById("table").style.display = "table";
+}
+</script>
+
+</body>
+</html>
