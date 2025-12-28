@@ -2,60 +2,30 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>IMDb – Filmes Avaliados</title>
+<title>IMDb Ratings</title>
 
 <style>
-body {
-  background:#000;
-  color:#fff;
-  font-family:Arial, sans-serif;
-  padding:30px;
-}
-
-input, button {
-  padding:10px;
-  font-size:16px;
-}
-
-button {
-  cursor:pointer;
-}
-
-table {
-  margin-top:20px;
-  width:100%;
-  border-collapse:collapse;
-}
-
-th, td {
-  border:1px solid #444;
-  padding:8px;
-  text-align:left;
-}
-
-th {
-  background:#111;
-}
+body{background:#000;color:#fff;font-family:Arial;padding:30px}
+input,button{padding:10px;font-size:16px}
+table{margin-top:20px;width:100%;border-collapse:collapse}
+th,td{border:1px solid #444;padding:8px}
 </style>
 </head>
 
 <body>
 
-<h1>Filmes avaliados no IMDb</h1>
+<h2>IMDb – Filmes Avaliados</h2>
 
 <input id="userId" placeholder="urXXXXXXXX">
 <button onclick="loadRatings()">Buscar</button>
 
 <table id="table" style="display:none">
-  <thead>
-    <tr>
-      <th>Filme</th>
-      <th>Ano</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
+<thead>
+<tr><th>Filme</th><th>Ano</th></tr>
+</thead>
+<tbody></tbody>
 </table>
 
-<script src="server.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
