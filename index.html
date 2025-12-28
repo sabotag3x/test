@@ -45,9 +45,21 @@ async function start() {
   });
 
   const data = await res.json();
-  filmes = shuffle(data.films).slice(0, 16); // limita a 16
+
+  if (!res.ok) {
+    alert(data.error || "Erro ao buscar filmes.");
+    return;
+  }
+
+  if (!data.films || data.films.length < 2) {
+    alert("Poucos filmes encontrados para gerar a competição.");
+    return;
+  }
+
+  filmes = shuffle(data.films).slice(0, 16);
   iniciarFase();
 }
+
 
 function shuffle(arr) {
   return arr.sort(() => Math.random() - 0.5);
@@ -93,3 +105,4 @@ function choose(i) {
 
 </body>
 </html>
+
