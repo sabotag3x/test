@@ -8,7 +8,6 @@ app.use(express.static("."));
 app.get("/api/films", async (req, res) => {
   try {
     const url = "https://www.imdb.com/chart/top/";
-
     const response = await axios.get(url, {
       headers: {
         "User-Agent": "Mozilla/5.0",
@@ -19,17 +18,19 @@ app.get("/api/films", async (req, res) => {
     const $ = cheerio.load(response.data);
     const films = [];
 
-    // IMDb ATUAL usa essa estrutura
-    $("ul.ipc-metadata-list li h3.ipc-title__text").each((_, el) => {
-      const text = $(el).text().trim();
-      // remove "1. ", "2. ", etc
-      const title = text.replace(/^\d+\.\s*/, "");
-      if (title) films.push(title);
-    });
+    $("li.ipc-metadata-list-summary-item").each((_, el) => {
+      const titleEl = $(el).find("h3.ipc-title__text");
+      const yearEl = $(el).find("span.ipc-metadata-list-summary-item__li");
+      const posterEl = $(el).find("img");
 
-    if (films.length === 0) {
-      return res.status(500).json({ error: "Lista vazia." });
-    }
+      if (!titleEl.length || !posterEl.length) return;
+
+      const title = titleEl.text().replace(/^\d+\.\s*/, "").trim();
+      const year = yearEl.first().text().trim();
+      const poster = posterEl.attr("src");
+
+      films.push({ title, year, poster });
+    });
 
     res.json({ films });
   } catch (err) {
