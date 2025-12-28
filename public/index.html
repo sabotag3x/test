@@ -339,68 +339,81 @@ button{
   margin-top:14px;
 }
 
-/* ================= MOBILE ================= */
+/* ================= RESULTADO FINAL – MOBILE DEFINITIVO ================= */
 
 @media (max-width: 900px){
 
   .bracket{
+    display:flex;
     flex-direction:column;
-    gap:24px;
+    align-items:center;
+    gap:22px;
+    width:100%;
   }
 
-  /* lados viram FAIXAS horizontais */
-  .side{
-    width:100%;
+  /* FAIXA SUPERIOR (8 → 4 → 2 → 1) */
+  .side:first-child,
+  .side:last-child{
+    display:flex;
     justify-content:center;
-    gap:14px;
-    overflow-x:auto;
+    align-items:flex-start;
+    gap:10px;
+    width:100%;
   }
 
   .round{
+    display:flex;
     flex-direction:column;
-    gap:10px;
+    gap:8px;
   }
 
-  /* PROPORÇÃO DEFINITIVA (40 / 30 / 20 / 10) */
-  .r1 img{ width:8vw }
-  .r2 img{ width:12vw }
-  .r3 img{ width:16vw }
-  .r4 img{ width:20vw }
+  /* TODOS OS POSTERS DAS CHAVES = MESMO TAMANHO */
+  .round img{
+    width:8vw;
+    max-width:48px;
+    min-width:36px;
+  }
 
+  /* CAMPEÃO */
   .champion{
-    width:50%;
-    max-width:none;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
   }
 
   .champion img{
-    width:100%;
-    max-width:260px;
+    width:40vw;        /* <= REGRA QUE VOCÊ PEDIU */
+    max-width:240px;
+    height:auto;
   }
 
   .champion .title{
-    font-size:20px;
+    font-size:18px;
+    text-align:center;
+  }
+
+  #again{
+    margin-top:12px;
+    font-size:17px;
+    padding:14px 26px;
   }
 }
+
+/* ================= MOBILE MUITO PEQUENO ================= */
 
 @media (max-width: 420px){
 
-  .r1 img{ width:7vw }
-  .r2 img{ width:11vw }
-  .r3 img{ width:15vw }
-  .r4 img{ width:18vw }
-
-  .champion{
-    width:55%;
+  .round img{
+    width:9vw;
+    max-width:44px;
   }
 
   .champion img{
-    max-width:230px;
+    width:44vw;
+    max-width:210px;
   }
 }
-
-
-
-
 
     </style>
 </head>
