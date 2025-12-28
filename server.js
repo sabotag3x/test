@@ -1,51 +1,23 @@
 const express = require("express");
 const path = require("path");
 
-const TMDB_KEY = process.env.TMDB_KEY;
+const TMDB_TOKEN = process.env.TMDB_TOKEN;
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (_, res) =>
   res.sendFile(path.join(__dirname, "public", "index.html"))
 );
 
-async function fetchFromTMDb(title, year, lang) {
-  const q = encodeURIComponent(title);
-
-  const searchUrl =
-    `https://api.themoviedb.org/3/search/movie` +
-    `?api_key=${TMDB_KEY}` +
-    `&query=${q}` +
-    `&year=${year}` +
-    `&language=${lang}`;
-
-  const r = await fetch(searchUrl);
-  const j = await r.json();
-
-  if (!j.results || j.results.length === 0) return null;
-
-  const movie = j.results[0];
-
-  return {
-    title: movie.title,
-    poster: movie.poster_path
-      ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
-      : null
-  };
-}
-
-/* ================= Letterboxd + TMDb ================= */
+/* ================= LETTERBOXD: SÓ LISTA ================= */
 
 app.get("/api/letterboxd/:user", async (req, res) => {
   const user = req.params.user;
-  const lang =
-    req.headers["accept-language"]?.split(",")[0] || "en-US";
-
   const movies = [];
-  let index = 1;
   let page = 1;
 
   try {
@@ -60,30 +32,16 @@ app.get("/api/letterboxd/:user", async (req, res) => {
       if (!items || items.length === 0) break;
 
       for (const item of items) {
-        const t = item.match(/data-item-full-display-name="([^"]+)"/);
-        if (!t) continue;
+        const m = item.match(/data-item-full-display-name="([^"]+)"/);
+        if (!m) continue;
 
-        const raw = t[1];
+        const raw = m[1];
         const y = raw.match(/\((\d{4})\)/);
 
-        const originalTitle =
-          raw.replace(/\s*\(\d{4}\)/, "").trim();
-        const year = y ? y[1] : "";
-
-        const tmdb = await fetchFromTMDb(
-          originalTitle,
-          year,
-          lang
-        );
-
         movies.push({
-          index,
-          title: tmdb?.title || originalTitle,
-          year,
-          poster: tmdb?.poster || null
+          title: raw.replace(/\s*\(\d{4}\)/, "").trim(),
+          year: y ? y[1] : ""
         });
-
-        index++;
       }
 
       page++;
@@ -95,6 +53,45 @@ app.get("/api/letterboxd/:user", async (req, res) => {
   }
 });
 
+/* ================= TMDb: ON-DEMAND ================= */
+
+app.post("/api/tmdb-batch", async (req, res) => {
+  const { films, lang } = req.body;
+  const results = [];
+
+  try {
+    for (const f of films) {
+      const q = encodeURIComponent(f.title);
+
+      const url =
+        `https://api.themoviedb.org/3/search/movie` +
+        `?query=${q}&year=${f.year}&language=${lang}`;
+
+      const r = await fetch(url, {
+        headers: {
+          Authorization: `Bearer ${TMDB_TOKEN}`,
+          "Content-Type": "application/json;charset=utf-8"
+        }
+      });
+
+      const j = await r.json();
+      const movie = j.results && j.results[0];
+
+      results.push({
+        title: movie?.title || f.title,
+        year: f.year,
+        poster: movie?.poster_path
+          ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+          : null
+      });
+    }
+
+    res.json(results);
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("Letterboxd Battle + TMDb (localizado) rodando");
+  console.log("Letterboxd Battle (TMDb on-demand) rodando");
 });
