@@ -2,18 +2,18 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>Batalha de Filmes</title>
+  <title>Batalha de Filmes – IMDb Top 250</title>
   <style>
     body { font-family: Arial, sans-serif; padding: 20px; }
-    button { padding: 6px 12px; margin-left: 6px; }
+    button { padding: 6px 12px; margin: 6px; }
+    #status { margin-top: 10px; }
     #duelo { margin-top: 20px; font-size: 18px; }
   </style>
 </head>
 <body>
 
-<h1>Batalha de Filmes</h1>
+<h1>Batalha de Filmes – IMDb Top 250</h1>
 
-<input id="username" placeholder="username ou ID" />
 <button onclick="start()">Gerar competição</button>
 
 <div id="status"></div>
@@ -30,38 +30,22 @@ function shuffle(arr) {
 }
 
 async function start() {
-  document.getElementById("status").innerText = "Buscando filmes...";
+  document.getElementById("status").innerText = "Carregando filmes...";
   document.getElementById("duelo").innerText = "";
-
-  const username = document.getElementById("username").value.trim();
-  if (!username) {
-    alert("Informe o usuário.");
-    return;
-  }
 
   let res, data;
 
   try {
-    res = await fetch("/api/films", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username })
-    });
-
+    res = await fetch("/api/films", { method: "POST" });
     data = await res.json();
   } catch (e) {
-    alert("Falha de conexão com o servidor.");
-    return;
-  }
-
-  if (!res.ok) {
-    alert(data.error || "Erro ao buscar filmes.");
+    alert("Erro ao conectar com o servidor.");
     document.getElementById("status").innerText = "";
     return;
   }
 
-  if (!Array.isArray(data.films) || data.films.length < 2) {
-    alert("Lista de filmes inválida.");
+  if (!res.ok || !Array.isArray(data.films)) {
+    alert("Erro ao carregar filmes.");
     document.getElementById("status").innerText = "";
     return;
   }
