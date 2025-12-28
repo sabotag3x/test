@@ -13,7 +13,7 @@ app.get("/", (_, res) =>
   res.sendFile(path.join(__dirname, "public", "index.html"))
 );
 
-/* ================= LETTERBOXD: SÓ LISTA ================= */
+/* ================= LETTERBOXD (LISTA) ================= */
 
 app.get("/api/letterboxd/:user", async (req, res) => {
   const user = req.params.user;
@@ -53,7 +53,7 @@ app.get("/api/letterboxd/:user", async (req, res) => {
   }
 });
 
-/* ================= TMDb: ON-DEMAND ================= */
+/* ================= TMDb (ON-DEMAND, CORRETO) ================= */
 
 app.post("/api/tmdb-batch", async (req, res) => {
   const { films, lang } = req.body;
@@ -61,16 +61,16 @@ app.post("/api/tmdb-batch", async (req, res) => {
 
   try {
     for (const f of films) {
-      const q = encodeURIComponent(f.title);
-
       const url =
         `https://api.themoviedb.org/3/search/movie` +
-        `?query=${q}&year=${f.year}&language=${lang}`;
+        `?query=${encodeURIComponent(f.title)}` +
+        `&year=${f.year}` +
+        `&language=${lang || "pt-BR"}`;
 
       const r = await fetch(url, {
         headers: {
           Authorization: `Bearer ${TMDB_TOKEN}`,
-          "Content-Type": "application/json;charset=utf-8"
+          "Accept": "application/json"
         }
       });
 
@@ -93,5 +93,5 @@ app.post("/api/tmdb-batch", async (req, res) => {
 });
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("Letterboxd Battle (TMDb on-demand) rodando");
+  console.log("Letterboxd Battle + TMDb OK");
 });
