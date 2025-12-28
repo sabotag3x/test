@@ -4,368 +4,152 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FilmDuel – Batalha de Filmes</title>
-
 <style>
-*{box-sizing:border-box}
-
-body{
-  margin:0;
-  min-height:100vh;
-  background:#000;
-  color:#fff;
-  font-family:Arial,sans-serif;
-  display:flex;
-  justify-content:center;
-}
-
-.container{
-  width:100%;
-  max-width:1600px;
-  padding:14px 24px 32px;
-  text-align:center;
-}
-
-/* ================= HOME ================= */
-
-#home{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:22px;
-}
-
-h1{font-size:44px;margin:0}
-
-.subtitle{
-  opacity:.85;
-  margin-bottom:10px;
-  font-size:18px;
-}
-
-input{
-  padding:16px 22px;
-  border-radius:30px;
-  border:none;
-  width:300px;
-  font-size:17px;
-  text-align:center;
-}
-
-button{
-  background:#ffbf2f;
-  border:none;
-  padding:16px 38px;
-  border-radius:40px;
-  font-size:16px;
-  font-weight:bold;
-  cursor:pointer;
-}
-
-.lists{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px 22px;
-  margin-top:34px;
-  max-width:900px;
-}
-
-/* ================= GAME ================= */
-
-#game{
-  display:none;
-  min-height:85vh;
-  flex-direction:column;
-  justify-content:center;
-}
-
-#status{
-  display:none;
-  flex-direction:column;
-  align-items:center;
-  justify-content:flex-end;
-  padding-top:120px;
-}
-
-#countdown{
-  width:260px;
-  max-width:80vw;
-  margin-bottom:26px;
-}
-
-#loading-main{
-  font-size:34px;
-  font-weight:bold;
-  color:#ffbf2f;
-}
-
-#loading-sub{
-  margin-top:10px;
-  font-size:17px;
-  opacity:.9;
-}
-
-/* ================= DUELO ================= */
-
-.duel{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:120px;
-  min-height:520px;
-}
-
-.card{
-  width:300px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-}
-
-.card img{
-  width:100%;
-  border-radius:18px;
-  cursor:pointer;
-  transition:transform .2s;
-}
-.card img:hover{transform:scale(1.05)}
-
-.title{
-  margin-top:18px;
-  width:100%;
-  font-size:18px;
-  line-height:1.3;
-  text-align:center;
-}
-
-/* ================= RESULTADO ================= */
+/* ===== RESULTADO FINAL – ESTRUTURA BASE ===== */
 
 .bracket{
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:90px;
+  gap:2.5%;
+  width:100%;
+  max-width:1400px;
+  margin:0 auto;
 }
 
+/* cada lado (esquerda e direita) */
 .side{
   display:flex;
-  gap:26px;
-  align-items:center;
+  gap:1.2%;
+  flex:1;
+  justify-content:center;
 }
 
+/* rounds */
 .round{
   display:flex;
   flex-direction:column;
-  gap:14px;
+  gap:10px;
+  align-items:center;
 }
 
-.round img{
-  border-radius:8px;
+/* ===== COLUNAS (somam ~95%) ===== */
+
+/* primeira rodada */
+.r1{
+  flex-basis:12%;
+  max-width:12%;
 }
 
-.r1 img{width:55px}
-.r2 img{width:80px}
-.r3 img{width:120px}
+/* segunda rodada */
+.r2{
+  flex-basis:16%;
+  max-width:16%;
+}
 
+/* terceira rodada (semifinalistas) */
+.r3{
+  flex-basis:20%;
+  max-width:20%;
+}
+
+/* campeão (quarta coluna) */
 .champion{
+  flex-basis:27%;
+  max-width:27%;
   display:flex;
   flex-direction:column;
   align-items:center;
-  gap:14px;
+  justify-content:center;
+}
+
+/* ===== IMAGENS ===== */
+
+.r1 img,
+.r2 img,
+.r3 img{
+  width:100%;
+  border-radius:8px;
 }
 
 .champion img{
-  width:360px;
-  border-radius:22px;
+  width:100%;
+  height:auto;
+  border-radius:20px;
 }
 
+/* ===== TEXTO ===== */
+
 .champion .title{
-  font-size:24px;
+  margin-top:10px;
+  font-size:22px;
+  text-align:center;
   font-weight:bold;
 }
 
 #again{
   margin-top:12px;
-  padding:14px 36px;
+  padding:14px 32px;
+  font-size:18px;
 }
 
-/* ================= MOBILE ================= */
-
-/* ================= MOBILE AJUSTADO ================= */
-/* ================= MOBILE RESPONSIVO ================= */
-/* ================= MOBILE AJUSTES GRANDES ================= */
-
-/* ================= RESULTADO FINAL – MOBILE INTELIGENTE ================= */
-
-/* =========================================================
-   AJUSTES RESPONSIVOS – MOBILE FIRST
-   ========================================================= */
-
-/* --------- HOME --------- */
-
-@media (max-width: 768px){
-
-  body{
-    font-size: 18px;
-  }
-
-  .container{
-    padding: 12px 16px 24px;
-  }
-
-  h1{
-    font-size: 34px;
-  }
-
-  .subtitle{
-    font-size: 16px;
-  }
-
-  input{
-    width: 90%;
-    font-size: 18px;
-    padding: 16px 20px;
-  }
-
-  button{
-    font-size: 18px;
-    padding: 16px 28px;
-  }
-
-  /* listas voltam a se comportar bem no mobile */
-  .lists{
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-    width: 100%;
-  }
-
-  .lists button{
-    width: 100%;
-    padding: 16px 18px;
-    font-size: 16px;
-  }
-}
-
-/* --------- TELA DE LOADING --------- */
-
-#status{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  min-height:50vh;
-}
-
-#loading-main{
-  font-size: clamp(26px, 6vw, 34px);
-}
-
-#loading-sub{
-  font-size: clamp(16px, 4vw, 18px);
-  margin-top:10px;
-}
-
-/* --------- DUELO (VOTOS) --------- */
-
-.duel{
-  align-items:center; /* centraliza verticalmente */
-}
-
-@media (max-width: 768px){
-
-  .duel{
-    gap: 6vw;
-    min-height: auto;
-  }
-
-  .card{
-    width: 42vw; /* dois posters lado a lado */
-  }
-
-  .card img{
-    width: 100%;
-  }
-
-  .title{
-    font-size: 15px;
-    min-height: unset;
-    margin-top: 10px;
-    -webkit-line-clamp: unset; /* não corta mais */
-  }
-}
-
-/* --------- RESULTADO FINAL (CAMPEÃO) --------- */
-
-.bracket{
-  align-items:center;
-}
+/* ================================================= */
+/* ===================== MOBILE ==================== */
+/* ================================================= */
 
 @media (max-width: 900px){
 
-  /* mantém chaveamento VISÍVEL no mobile */
   .bracket{
     flex-direction:column;
-    gap: 22px;
+    gap:24px;
   }
 
+  /* lados ficam em cima e embaixo */
   .side{
-    flex-direction:row;
-    justify-content:center;
-    gap: 14px;
-    width: 100%;
-    overflow:hidden;
+    flex:unset;
+    width:100%;
+    gap:3%;
   }
 
-  .round{
-    gap: 10px;
+  /* redistribuição MOBILE (total ~95%) */
+  .r1{ flex-basis:14%; max-width:14%; }
+  .r2{ flex-basis:18%; max-width:18%; }
+  .r3{ flex-basis:22%; max-width:22%; }
+
+  .champion{
+    flex-basis:38%;
+    max-width:38%;
   }
 
-  /* tamanhos por porcentagem */
-  .r1 img{ width: 10vw; min-width:40px }
-  .r2 img{ width: 14vw; min-width:55px }
-  .r3 img{ width: 18vw; min-width:70px }
+  .champion img{
+    max-width:300px;
+    width:100%;
+  }
 
-.champion{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  max-width:100%;
-}
-
-.champion img{
-  width: 60vw;
-  max-width: 260px;
-  height: auto;
-}
-
-.champion .title{
-  font-size: 20px;
-  text-align:center;
-}
-
-
-  #again{
-    margin-top: 10px;
-    font-size:18px;
-    padding:14px 28px;
+  .champion .title{
+    font-size:20px;
   }
 }
 
-/* --------- MOBILE MUITO PEQUENO --------- */
+/* ===== MOBILE MUITO PEQUENO ===== */
 
 @media (max-width: 420px){
 
-  .card{
-    width: 44vw;
+  .r1{ flex-basis:13%; max-width:13%; }
+  .r2{ flex-basis:17%; max-width:17%; }
+  .r3{ flex-basis:21%; max-width:21%; }
+
+  .champion{
+    flex-basis:44%;
+    max-width:44%;
   }
 
-  .r1 img{ width: 9vw }
-  .r2 img{ width: 13vw }
-  .r3 img{ width: 17vw }
-
   .champion img{
-    width: 65vw;
-    max-width: 240px;
+    max-width:260px;
+  }
+
+  .champion .title{
+    font-size:18px;
   }
 }
 
