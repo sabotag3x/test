@@ -22,7 +22,7 @@ async function loadRatings() {
 
     items.forEach(item => {
       const titleEl = item.querySelector("a.ipc-title-link-wrapper");
-      const yearEl = item.querySelector(".ipc-inline-list__item span");
+      const yearEl  = item.querySelector(".ipc-inline-list__item span");
 
       if (titleEl) {
         movies.push({
@@ -52,9 +52,10 @@ function renderTable(movies) {
 }
 
 function downloadJSON(data) {
-  const blob = new Blob([JSON.stringify(data, null, 2)], {
-    type: "application/json"
-  });
+  const blob = new Blob(
+    [JSON.stringify(data, null, 2)],
+    { type: "application/json" }
+  );
 
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
