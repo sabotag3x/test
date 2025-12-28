@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>IMDb – Filmes Avaliados</title>
+<title>IMDb Debug</title>
 
 <style>
 body {
@@ -15,78 +15,36 @@ input, button {
   padding:10px;
   font-size:16px;
 }
-button {
-  cursor:pointer;
-}
-table {
+pre {
   margin-top:20px;
-  width:100%;
-  border-collapse:collapse;
-}
-th, td {
-  border:1px solid #444;
-  padding:8px;
-}
-#status {
-  margin-top:15px;
-  color:#ffcc00;
+  background:#111;
+  padding:20px;
+  max-height:70vh;
+  overflow:auto;
 }
 </style>
 </head>
 
 <body>
 
-<h2>Buscar filmes avaliados no IMDb</h2>
+<h2>IMDb – Debug de extração</h2>
 
 <input id="userId" value="ur55777575">
-<button onclick="buscar()">Buscar</button>
+<button onclick="debug()">Rodar debug</button>
 
-<div id="status"></div>
-
-<table id="table" style="display:none">
-<thead>
-<tr>
-  <th>#</th>
-  <th>Filme</th>
-  <th>Ano</th>
-</tr>
-</thead>
-<tbody></tbody>
-</table>
+<pre id="out"></pre>
 
 <script>
-async function buscar() {
+async function debug() {
   const user = document.getElementById("userId").value.trim();
-  const status = document.getElementById("status");
-  const table = document.getElementById("table");
-  const tbody = table.querySelector("tbody");
+  const out = document.getElementById("out");
 
-  status.textContent = "Buscando filmes...";
-  table.style.display = "none";
-  tbody.innerHTML = "";
+  out.textContent = "Executando...\n\n";
 
-  try {
-    const res = await fetch(`/api/imdb/${user}`);
-    const data = await res.json();
+  const res = await fetch(`/api/debug/${user}`);
+  const data = await res.json();
 
-    if (!Array.isArray(data) || data.length === 0) {
-      status.textContent = "Nenhum filme encontrado";
-      return;
-    }
-
-    data.forEach(m => {
-      const tr = document.createElement("tr");
-      tr.innerHTML = `<td>${m.index}</td><td>${m.title}</td><td>${m.year}</td>`;
-      tbody.appendChild(tr);
-    });
-
-    table.style.display = "table";
-    status.textContent = `Encontrados ${data.length} filmes`;
-
-  } catch (err) {
-    console.error(err);
-    status.textContent = "Erro ao buscar dados";
-  }
+  out.textContent = JSON.stringify(data, null, 2);
 }
 </script>
 
