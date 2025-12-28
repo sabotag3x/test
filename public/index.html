@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>IMDb / Letterboxd – Filmes Avaliados</title>
+<title>Buscar filmes avaliados</title>
 
 <style>
 body {
@@ -14,9 +14,6 @@ body {
 input, select, button {
   padding:10px;
   font-size:16px;
-}
-button {
-  cursor:pointer;
 }
 #status {
   margin-top:15px;
@@ -51,11 +48,7 @@ th, td {
 
 <table id="table" style="display:none">
 <thead>
-<tr>
-  <th>#</th>
-  <th>Filme</th>
-  <th>Ano</th>
-</tr>
+<tr><th>#</th><th>Filme</th><th>Ano</th></tr>
 </thead>
 <tbody></tbody>
 </table>
@@ -63,10 +56,10 @@ th, td {
 <script>
 async function buscar() {
   const source = document.getElementById("source").value;
-  const user   = document.getElementById("userId").value.trim();
+  const user = document.getElementById("userId").value.trim();
   const status = document.getElementById("status");
-  const table  = document.getElementById("table");
-  const tbody  = table.querySelector("tbody");
+  const table = document.getElementById("table");
+  const tbody = table.querySelector("tbody");
 
   if (!user) return;
 
