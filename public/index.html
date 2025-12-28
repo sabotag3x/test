@@ -20,19 +20,26 @@ body{
 .container{
   width:100%;
   max-width:1600px;
-  padding:40px;
+  padding:24px 40px 40px;
   text-align:center;
 }
 
-/* HOME */
+/* ================= HOME ================= */
+
 #home{
   display:flex;
   flex-direction:column;
   align-items:center;
   gap:22px;
 }
+
 h1{font-size:44px;margin:0}
-.subtitle{opacity:.85}
+
+.subtitle{
+  opacity:.85;
+  margin-bottom:10px;
+}
+
 input{
   padding:14px 20px;
   border-radius:30px;
@@ -41,6 +48,7 @@ input{
   font-size:16px;
   text-align:center;
 }
+
 button{
   background:#ffbf2f;
   border:none;
@@ -50,39 +58,64 @@ button{
   font-weight:bold;
   cursor:pointer;
 }
+
 .lists{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
   gap:14px;
+  margin-top:10px;
 }
 
-/* GAME */
-#game{display:none}
-#status{margin:40px 0}
+/* ================= GAME ================= */
 
-/* DUELO */
+#game{display:none}
+
+#status{
+  margin:30px 0 10px;
+}
+
+#loading-main{
+  font-size:30px;
+  font-weight:bold;
+  color:#ffbf2f;
+}
+
+#loading-sub{
+  margin-top:8px;
+  font-size:16px;
+  opacity:.9;
+}
+
+/* ================= DUELO ================= */
+
 .duel{
   display:flex;
   justify-content:center;
-  align-items:center;
+  align-items:flex-start;
   gap:120px;
   min-height:520px;
 }
+
 .card{
   width:260px;
   display:flex;
   flex-direction:column;
   align-items:center;
 }
+
 .card img{
   width:100%;
   border-radius:16px;
   cursor:pointer;
+  transition:transform .2s;
 }
+.card img:hover{transform:scale(1.05)}
+
 .title{
-  margin-top:10px;
+  margin-top:14px;
   width:100%;
+  min-height:42px;
   font-size:16px;
   line-height:1.2;
   display:-webkit-box;
@@ -91,25 +124,33 @@ button{
   overflow:hidden;
 }
 
-/* RESULTADO */
+/* ================= RESULTADO ================= */
+
 .bracket{
   display:flex;
   justify-content:center;
-  align-items:center;
-  gap:90px;
+  align-items:flex-start;
+  gap:80px;
+  margin-top:10px;
 }
+
 .side{
   display:flex;
-  gap:26px;
+  gap:22px;
 }
+
 .round{
   display:flex;
   flex-direction:column;
-  gap:14px;
+  gap:12px;
 }
-.round img{border-radius:8px}
-.r1 img{width:65px}
-.r2 img{width:87px}
+
+.round img{
+  border-radius:8px;
+}
+
+.r1 img{width:60px}
+.r2 img{width:84px}
 .r3 img{width:120px}
 
 .champion{
@@ -117,19 +158,28 @@ button{
   flex-direction:column;
   align-items:center;
 }
+
 .champion img{
-  width:360px;
-  border-radius:24px;
+  width:340px;
+  border-radius:22px;
 }
+
 .champion .title{
-  margin-top:14px;
+  margin-top:10px;
   font-size:22px;
   font-weight:bold;
 }
 
 #again{
   display:none;
-  margin-top:40px;
+  margin-top:18px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+  .duel{gap:40px}
+  .bracket{flex-direction:column;gap:30px}
 }
 </style>
 </head>
@@ -137,21 +187,33 @@ button{
 <body>
 <div class="container">
 
+<!-- ================= HOME ================= -->
+
 <div id="home">
   <h1>FilmDuel</h1>
   <div class="subtitle">Batalha dos seus filmes avaliados no Letterboxd</div>
-  <input id="user" value="sabotag3x">
+
+  <input id="user" value="sabotag3x" placeholder="Usuário Letterboxd">
   <button onclick="startUser()">Meus filmes</button>
+
   <div class="lists">
     <button onclick="startList('https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/')">Top 250</button>
+    <button onclick="startList('https://letterboxd.com/jack/list/official-top-250-films-with-the-most-fans/')">Populares</button>
     <button onclick="startList('https://letterboxd.com/lifeasfiction/list/letterboxd-100-animation/')">Animação</button>
-    <button onclick="startList('https://letterboxd.com/a24/list/every-a24-movie-ever/')">A24</button>
     <button onclick="startList('https://letterboxd.com/jaywill/list/ghibli/')">Ghibli</button>
+    <button onclick="startList('https://letterboxd.com/a24/list/every-a24-movie-ever/')">A24</button>
+    <button onclick="startList('https://letterboxd.com/purecinema1/list/brazil/')">Brasil</button>
   </div>
 </div>
 
+<!-- ================= GAME ================= -->
+
 <div id="game">
-  <div id="status"></div>
+  <div id="status">
+    <div id="loading-main">Carregando lista…</div>
+    <div id="loading-sub"></div>
+  </div>
+
   <div id="duel" class="duel"></div>
   <button id="again" onclick="location.reload()">Jogar novamente</button>
 </div>
@@ -161,12 +223,38 @@ button{
 <script>
 let pool=[], filmes=[], atual=[], idx=0, winners=[], rounds=[];
 let initialRound=[];
+let loadingTimer=null;
+
+const loadingTexts=[
+  "Polindo estatueta do Oscar",
+  "Escolhendo os melhores filmes",
+  "Discutindo com críticos no Letterboxd",
+  "Recontando votos do júri",
+  "Rebobinando VHS",
+  "Ajustando projeção 35mm"
+];
 
 function shuffle(a){return a.sort(()=>Math.random()-.5)}
 
-async function startUser(){
-  start(`/api/user/${document.getElementById("user").value}`);
+function startLoading(){
+  let i=0;
+  document.getElementById("loading-sub").innerText=loadingTexts[0];
+  loadingTimer=setInterval(()=>{
+    i=(i+1)%loadingTexts.length;
+    document.getElementById("loading-sub").innerText=loadingTexts[i];
+  },2500);
 }
+
+function stopLoading(){
+  clearInterval(loadingTimer);
+  document.getElementById("status").innerHTML="";
+}
+
+async function startUser(){
+  const u=document.getElementById("user").value.trim();
+  start(`/api/user/${u}`);
+}
+
 async function startList(url){
   start(`/api/list?url=${encodeURIComponent(url)}`);
 }
@@ -174,7 +262,7 @@ async function startList(url){
 async function start(endpoint){
   document.getElementById("home").style.display="none";
   document.getElementById("game").style.display="block";
-  document.getElementById("status").innerText="Carregando lista…";
+  startLoading();
 
   const res=await fetch(endpoint);
   pool=shuffle(await res.json()).filter(f=>f.poster);
@@ -183,7 +271,7 @@ async function start(endpoint){
   initialRound=[...filmes];
   rounds=[]; winners=[]; idx=0;
 
-  document.getElementById("status").innerText="";
+  stopLoading();
   next();
 }
 
@@ -193,8 +281,10 @@ function next(){
     filmes=winners; winners=[]; idx=0;
     if(filmes.length===1) return showFinal(filmes[0]);
   }
+
   atual=[filmes[idx],filmes[idx+1]];
   idx+=2;
+
   document.getElementById("duel").innerHTML=
     card(atual[0],0)+card(atual[1],1);
 }
@@ -228,6 +318,7 @@ function showFinal(champ){
       <div class="champion">
         <img src="${champ.poster}">
         <div class="title">Campeão<br>${champ.title} (${champ.year})</div>
+        <button id="again" onclick="location.reload()">Jogar novamente</button>
       </div>
 
       <div class="side">
@@ -237,7 +328,6 @@ function showFinal(champ){
       </div>
 
     </div>`;
-  document.getElementById("again").style.display="inline-block";
 }
 </script>
 
