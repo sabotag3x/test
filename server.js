@@ -5,11 +5,12 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, "public")));
+
 app.get("/", (_, res) =>
   res.sendFile(path.join(__dirname, "public", "index.html"))
 );
 
-/* ================= Letterboxd (encerra automaticamente) ================= */
+/* ================= Letterboxd ================= */
 
 app.get("/api/letterboxd/:user", async (req, res) => {
   const user = req.params.user;
@@ -26,22 +27,26 @@ app.get("/api/letterboxd/:user", async (req, res) => {
       }).then(r => r.text());
 
       const items = html.match(/<li class="griditem">[\s\S]*?<\/li>/g);
-
-      // 🔴 GATILHO DE FIM
       if (!items || items.length === 0) break;
 
       for (const item of items) {
-        const m = item.match(/data-item-full-display-name="([^"]+)"/);
-        if (!m) continue;
+        const titleMatch =
+          item.match(/data-item-full-display-name="([^"]+)"/);
+        const posterMatch =
+          item.match(/<img[^>]+src="([^"]+)"/);
 
-        const raw = m[1];
-        const y = raw.match(/\((\d{4})\)/);
+        if (!titleMatch || !posterMatch) continue;
+
+        const raw = titleMatch[1];
+        const yearMatch = raw.match(/\((\d{4})\)/);
 
         movies.push({
           index,
           title: raw.replace(/\s*\(\d{4}\)/, "").trim(),
-          year: y ? y[1] : ""
+          year: yearMatch ? yearMatch[1] : "",
+          poster: posterMatch[1]
         });
+
         index++;
       }
 
@@ -54,4 +59,6 @@ app.get("/api/letterboxd/:user", async (req, res) => {
   }
 });
 
-app.listen(PORT, "0.0.0.0");
+app.listen(PORT, "0.0.0.0", () => {
+  console.log("Letterboxd Battle rodando");
+});
