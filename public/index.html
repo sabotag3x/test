@@ -187,6 +187,83 @@ button{
 
 #again{margin-top:14px}
 
+  /* ====== VERSUS MODE ====== */
+
+.versus-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  max-width:900px;
+  margin:auto;
+}
+
+.versus-card{
+  flex:1;
+  text-align:center;
+}
+
+.versus-card img{
+  width:100%;
+  max-width:260px;
+  border-radius:12px;
+  cursor:pointer;
+}
+
+.versus-center{
+  width:100px;
+  text-align:center;
+  font-weight:bold;
+}
+
+.versus-center .score{
+  font-size:22px;
+}
+
+.versus-center .progress{
+  font-size:14px;
+  opacity:.7;
+}
+
+.versus-result{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
+
+.versus-votes{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  margin-top:20px;
+}
+
+.mini-posters{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  justify-content:center;
+}
+
+.mini-posters img{
+  width:40px;
+  border-radius:6px;
+}
+
+@media(max-width:700px){
+  .versus-container{
+    flex-direction:column;
+  }
+  .versus-center{
+    order:-1;
+    margin-bottom:10px;
+  }
+  .versus-votes{
+    flex-direction:column;
+  }
+}
+
+
 /* ================= MOBILE ================= */
 
 @media (max-width: 900px){
@@ -268,9 +345,21 @@ button{
 </div>
 
 <script>
+/* ====== VARIÁVEIS GERAIS ====== */
+
 let pool=[], filmes=[], atual=[], idx=0, winners=[], rounds=[];
 let initialRound=[];
 let loadingTimer=null;
+
+/* ====== VERSUS ====== */
+
+let versusA=[], versusB=[];
+let votedA=[], votedB=[];
+let scoreA=0, scoreB=0;
+let versusIndex=0;
+let versusNames={};
+
+/* ====== TEXTOS ====== */
 
 const loadingTexts=[
   "Conferindo se o director’s cut é melhor mesmo",
@@ -282,7 +371,7 @@ const loadingTexts=[
 
 function shuffle(a){ return a.sort(()=>Math.random()-.5); }
 
-/* ================= LOADING ================= */
+/* ====== LOADING ====== */
 
 function startLoading(){
   document.getElementById("status").style.display="flex";
@@ -299,7 +388,7 @@ function stopLoading(){
   document.getElementById("status").style.display="none";
 }
 
-/* ================= ENTRY ================= */
+/* ====== ENTRY ====== */
 
 function startUser(){
   const u=document.getElementById("user").value.trim();
@@ -311,7 +400,7 @@ function startList(key){
   start(`/api/list/${key}`, false);
 }
 
-/* ================= CORE ================= */
+/* ====== TORNEIO NORMAL ====== */
 
 async function start(endpoint, isUser){
   document.getElementById("home").style.display="none";
@@ -320,16 +409,12 @@ async function start(endpoint, isUser){
 
   try{
     const res = await fetch(endpoint);
-    if(!res.ok) throw new Error("INVALID_USER");
+    if(!res.ok) throw new Error("INVALID");
 
     const data = await res.json();
-    const valid = Array.isArray(data)
-      ? data.filter(f=>f && f.poster)
-      : [];
+    const valid = Array.isArray(data) ? data.filter(f=>f && f.poster) : [];
 
-    if(valid.length < 16){
-      throw new Error("NOT_ENOUGH");
-    }
+    if(valid.length < 16) throw new Error("NOT_ENOUGH");
 
     pool = shuffle(valid);
     filmes = pool.splice(0,16);
@@ -343,7 +428,7 @@ async function start(endpoint, isUser){
   }catch(e){
     stopLoading();
     showError(
-      e.message === "NOT_ENOUGH"
+      e.message==="NOT_ENOUGH"
         ? "Esse usuário não tem filmes suficientes para a batalha."
         : isUser
           ? "Usuário inexistente ou erro ao carregar os filmes."
@@ -351,18 +436,6 @@ async function start(endpoint, isUser){
     );
   }
 }
-
-/* ================= UI ERROR ================= */
-
-function showError(msg){
-  document.getElementById("duel").innerHTML=
-    `<div>
-      <b>${msg}</b><br>
-      <button onclick="location.reload()">Voltar</button>
-    </div>`;
-}
-
-/* ================= DUELOS ================= */
 
 function next(){
   if(idx>=filmes.length){
@@ -383,55 +456,23 @@ function card(f,i){
   </div>`;
 }
 
-function choose(i){
-  winners.push(atual[i]);
-  next();
-}
-
-/* ================= RESULTADO ================= */
+function choose(i){ winners.push(atual[i]); next(); }
 
 function showFinal(champ){
-  const r1=initialRound, r2=rounds[0], r3=rounds[1], r4=rounds[2];
-  const left8=r1.slice(0,8), right8=r1.slice(8);
-  const left4=r2.slice(0,4), right4=r2.slice(4);
-  const left2=r3.slice(0,2), right2=r3.slice(2);
-
   document.getElementById("duel").innerHTML=`
-  <div class="bracket">
-    <div class="side">
-      <div class="round r1">${left8.map(f=>`<img src="${f.poster}">`).join("")}</div>
-      <div class="round r2">${left4.map(f=>`<img src="${f.poster}">`).join("")}</div>
-      <div class="round r3">${left2.map(f=>`<img src="${f.poster}">`).join("")}</div>
-      <div class="round r4"><img src="${r4[0].poster}"></div>
-    </div>
-
     <div class="champion">
       <img src="${champ.poster}">
-      <div class="title">
-        Campeão<br>${champ.title} (${champ.year})
-      </div>
-      <button id="again" onclick="location.reload()">Jogar novamente</button>
-    </div>
-
-    <div class="side">
-      <div class="round r4"><img src="${r4[1].poster}"></div>
-      <div class="round r3">${right2.map(f=>`<img src="${f.poster}">`).join("")}</div>
-      <div class="round r2">${right4.map(f=>`<img src="${f.poster}">`).join("")}</div>
-      <div class="round r1">${right8.map(f=>`<img src="${f.poster}">`).join("")}</div>
-    </div>
-  </div>`;
+      <div class="title">Campeão<br>${champ.title} (${champ.year})</div>
+      <button onclick="location.reload()">Jogar novamente</button>
+    </div>`;
 }
 
-let versusA=[], versusB=[];
-let scoreA=0, scoreB=0;
-let versusIndex=0;
-let versusNames={};
+/* ====== VERSUS MODE ====== */
 
 async function startVersus(){
-  const a = document.getElementById("listA").value;
-  const b = document.getElementById("listB").value;
-
-  if(!a || !b || a===b) return;
+  const a=document.getElementById("listA").value;
+  const b=document.getElementById("listB").value;
+  if(!a||!b||a===b) return;
 
   document.getElementById("home").style.display="none";
   document.getElementById("game").style.display="flex";
@@ -443,12 +484,12 @@ async function startVersus(){
       fetch(`/api/list/${b}`).then(r=>r.json())
     ]);
 
-    versusA = shuffle(ra).slice(0,11);
-    versusB = shuffle(rb).slice(0,11);
+    versusA=shuffle(ra).slice(0,11);
+    versusB=shuffle(rb).slice(0,11);
 
-    if(versusA.length<11 || versusB.length<11)
-      throw new Error();
+    if(versusA.length<11||versusB.length<11) throw new Error();
 
+    votedA=[]; votedB=[];
     scoreA=0; scoreB=0; versusIndex=0;
     versusNames={a,b};
 
@@ -461,63 +502,81 @@ async function startVersus(){
   }
 }
 
-  function nextVersus(){
-  if(versusIndex>=11){
-    return showVersusResult();
-  }
+function nextVersus(){
+  if(versusIndex>=11) return showVersusResult();
 
-  const fa = versusA[versusIndex];
-  const fb = versusB[versusIndex];
+  const fa=versusA[versusIndex];
+  const fb=versusB[versusIndex];
 
   document.getElementById("duel").innerHTML=`
-    <div class="versus-duel">
-      <div class="card">
+    <div class="versus-container">
+      <div class="versus-card">
         <img src="${fa.poster}" onclick="voteA()">
         <div class="title">${fa.title}</div>
       </div>
 
-      <div class="score">
-        ${scoreA} x ${scoreB}<br>
-        <small>${versusIndex+1}/11</small>
+      <div class="versus-center">
+        <div class="score">${scoreA} x ${scoreB}</div>
+        <div class="progress">${versusIndex+1}/11</div>
       </div>
 
-      <div class="card">
+      <div class="versus-card">
         <img src="${fb.poster}" onclick="voteB()">
         <div class="title">${fb.title}</div>
       </div>
-    </div>
-  `;
+    </div>`;
 }
 
 function voteA(){
-  scoreA++;
-  versusIndex++;
-  nextVersus();
+  votedA.push(versusA[versusIndex]);
+  scoreA++; versusIndex++; nextVersus();
 }
 
 function voteB(){
-  scoreB++;
-  versusIndex++;
-  nextVersus();
+  votedB.push(versusB[versusIndex]);
+  scoreB++; versusIndex++; nextVersus();
 }
 
-  function showVersusResult(){
-  let result;
-  if(scoreA>scoreB) result=`${versusNames.a} venceu`;
-  else if(scoreB>scoreA) result=`${versusNames.b} venceu`;
-  else result="Empate";
+function showVersusResult(){
+  let result =
+    scoreA>scoreB ? `${versusNames.a} venceu` :
+    scoreB>scoreA ? `${versusNames.b} venceu` :
+    "Empate";
 
   document.getElementById("duel").innerHTML=`
-    <div class="final">
+    <div class="versus-result">
       <h2>${result}</h2>
       <p>Placar final: ${scoreA} x ${scoreB}</p>
+
+      <div class="versus-votes">
+        <div>
+          <h4>${versusNames.a}</h4>
+          <div class="mini-posters">
+            ${votedA.map(f=>`<img src="${f.poster}">`).join("")}
+          </div>
+        </div>
+
+        <div>
+          <h4>${versusNames.b}</h4>
+          <div class="mini-posters">
+            ${votedB.map(f=>`<img src="${f.poster}">`).join("")}
+          </div>
+        </div>
+      </div>
+
       <button onclick="location.reload()">Novo duelo</button>
-    </div>
-  `;
+    </div>`;
 }
 
+/* ====== ERROR ====== */
 
+function showError(msg){
+  document.getElementById("duel").innerHTML=
+    `<div><b>${msg}</b><br>
+     <button onclick="location.reload()">Voltar</button></div>`;
+}
 </script>
+
 
 
 </body>
