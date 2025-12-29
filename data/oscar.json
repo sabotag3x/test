@@ -1,0 +1,463 @@
+{
+  "oscar": {
+    "name": "Oscar",
+    "updated_at": "2025-12-29",
+    "films": [
+      {
+        "title": "Anora",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/xmFdNzbUiT5XmH6rbIVGYDQHGeo.jpg"
+      },
+      {
+        "title": "Oppenheimer",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/1OsQJEoSXBjduuCvDOlRhoEUaHu.jpg"
+      },
+      {
+        "title": "Tudo em Todo o Lugar ao Mesmo Tempo",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/2dSZQGwijlXvMSyuGe0FSgrXnv0.jpg"
+      },
+      {
+        "title": "No Ritmo do Coração",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/fXeWSHLlAEsINva6SJgb5hCLBzy.jpg"
+      },
+      {
+        "title": "Nomadland",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/pLwarSuyUjw6vF0U6JhlHzAa1Gp.jpg"
+      },
+      {
+        "title": "Parasita",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/igw938inb6Fy0YVcwIyxQ7Lu5FO.jpg"
+      },
+      {
+        "title": "Green Book: O Guia",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/u9dldwRwQjTZGlIxKaAtAPLAjOv.jpg"
+      },
+      {
+        "title": "A Forma da Água",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/4ezwRuc1iKlaWTi16qrr44Nzinr.jpg"
+      },
+      {
+        "title": "Moonlight: Sob a Luz do Luar",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/AekOkoT88EhDHikUQXQcKri2q4B.jpg"
+      },
+      {
+        "title": "Spotlight: Segredos Revelados",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/wHNzfrfK8M4WIq3XDUqAFdKKY5Z.jpg"
+      },
+      {
+        "title": "Birdman ou (A Inesperada Virtude da Ignorância)",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/7gwtDnEJ39QarOyzt9bSxEj3SkD.jpg"
+      },
+      {
+        "title": "12 Anos de Escravidão",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/o5t8fqcNDyfojYwwlECZEgyD96T.jpg"
+      },
+      {
+        "title": "Argo",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/dZqmn3vr80UeSSj4QbVEUI8D7yb.jpg"
+      },
+      {
+        "title": "O Artista",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/sVBZ45hWFuzZtQc57TUf323R4VF.jpg"
+      },
+      {
+        "title": "Guerra ao Terror",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/dIhJVr5kFdEC1spmNs3w6uKESKH.jpg"
+      },
+      {
+        "title": "Quem Quer Ser um Milionário?",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/timJSy64zR0BM2xhkXwIyvDG6MM.jpg"
+      },
+      {
+        "title": "Onde os Fracos Não Têm Vez",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/jdlY8Bhcb4Qzfldr1JaexYBgyW3.jpg"
+      },
+      {
+        "title": "Os Infiltrados",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/qtnAwzDapzOML4Q9p7lv2bk5gvz.jpg"
+      },
+      {
+        "title": "Crash: No Limite",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/4pwHDsYeOVsdLT8TykM047hIkKA.jpg"
+      },
+      {
+        "title": "Menina de Ouro",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/edzbBaAHoJGvmNtY2Qck936AgnI.jpg"
+      },
+      {
+        "title": "O Senhor dos Anéis: O Retorno do Rei",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/rU4oIKv5I4C59DpcXKmT7kNwGI0.jpg"
+      },
+      {
+        "title": "Chicago",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/r3ZluYmNgfow3HokBDmIp9GLFE2.jpg"
+      },
+      {
+        "title": "Uma Mente Brilhante",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/8K5W9QnNT7r1V9GuJ5z5KlrROkd.jpg"
+      },
+      {
+        "title": "Gladiador",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/4DUClyGA6OqjXv6yC0Imf6THGfp.jpg"
+      },
+      {
+        "title": "Beleza Americana",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/9PJKsH7Btz2xjYIvLLtJ7qcJlL3.jpg"
+      },
+      {
+        "title": "Shakespeare Apaixonado",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/3wC7QCcjvT9vRMlWyXoJCbqIuXb.jpg"
+      },
+      {
+        "title": "Titanic",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/As0zX43h3w6kD2NS4uVHu9HKdEh.jpg"
+      },
+      {
+        "title": "O Paciente Inglês",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/yBnEL8I7MXUvOvdcZV1MJJQDoxU.jpg"
+      },
+      {
+        "title": "Coração Valente",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/cfnhpDzEV5zTsuaa4dCHFRzPHXx.jpg"
+      },
+      {
+        "title": "Forrest Gump: O Contador de Histórias",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/d74WpIsH8379TIL4wUxDneRCYv2.jpg"
+      },
+      {
+        "title": "Os Imperdoáveis",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/kmMDDCOB8xPCrmFW7w9zqgymCWJ.jpg"
+      },
+      {
+        "title": "O Silêncio dos Inocentes",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/aXkldTJlGzqjoaAHBOuAEpXNTCf.jpg"
+      },
+      {
+        "title": "Dança com Lobos",
+        "year": "1990",
+        "poster": "https://image.tmdb.org/t/p/w500/uWsXlrzsHKCwI2fPrrpW0QFwjMZ.jpg"
+      },
+      {
+        "title": "Conduzindo Miss Daisy",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/4FB6xnmvtW2vT1t4mKb5vs7JiE.jpg"
+      },
+      {
+        "title": "Rain Man",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/7KCKWFrsohIBIuNgKCmbilB49eq.jpg"
+      },
+      {
+        "title": "O Último Imperador",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/K1azzBrv3CnvPDWd1p5InRh63Q.jpg"
+      },
+      {
+        "title": "Platoon",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/ceX6cYVY8u4TH1zNPvsApRx64CN.jpg"
+      },
+      {
+        "title": "Entre Dois Amores",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/rCV5JYKzXLkED4cyTq6Xwkea0yx.jpg"
+      },
+      {
+        "title": "Amadeus",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/8YKjrBwZjaudr4IsVg9U0ZNC8si.jpg"
+      },
+      {
+        "title": "Laços de Ternura",
+        "year": "1983",
+        "poster": "https://image.tmdb.org/t/p/w500/9IZsFM6IowOVEGSa8mG1QDGcaZ7.jpg"
+      },
+      {
+        "title": "Gandhi",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/uFNrAcnRbaDgi1D9VM0NLMLAwgX.jpg"
+      },
+      {
+        "title": "Carruagens de Fogo",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/ceKjMhvsa98MbdLYoHsO3wH3uFh.jpg"
+      },
+      {
+        "title": "Gente Como a Gente",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/recsjwsZkRAkOxMMkm7SMoqlQoM.jpg"
+      },
+      {
+        "title": "Kramer vs. Kramer",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/eJ0LagzKBCV9EVFxta0j7gUlPok.jpg"
+      },
+      {
+        "title": "O Franco Atirador",
+        "year": "1978",
+        "poster": "https://image.tmdb.org/t/p/w500/xjeaIyoZOWnPCX5E1JvzmkNv4QC.jpg"
+      },
+      {
+        "title": "Noivo Neurótico, Noiva Nervosa",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/u6N75JTpwdBJeQwCkNz9E05Yuj0.jpg"
+      },
+      {
+        "title": "Rocky: Um Lutador",
+        "year": "1976",
+        "poster": "https://image.tmdb.org/t/p/w500/b9B1DXcPNsJfTtc4x2LKA3bykoJ.jpg"
+      },
+      {
+        "title": "O Poderoso Chefão: Parte II",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/3ViYPhSAPwH2avQjdMl49F8PklB.jpg"
+      },
+      {
+        "title": "Golpe de Mestre",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/jEJ0ZucEdSe2nk6OSHFVQkxYZXG.jpg"
+      },
+      {
+        "title": "O Poderoso Chefão",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/oJagOzBu9Rdd9BrciseCm3U3MCU.jpg"
+      },
+      {
+        "title": "Operação França",
+        "year": "1971",
+        "poster": "https://image.tmdb.org/t/p/w500/1fpcpWAzTYsuXEeEHEc1ZQedRLt.jpg"
+      },
+      {
+        "title": "Patton, Rebelde ou Herói?",
+        "year": "1970",
+        "poster": "https://image.tmdb.org/t/p/w500/wxDAG0bWf7ytbE1tmR5iN8v2Zdf.jpg"
+      },
+      {
+        "title": "Perdidos na Noite",
+        "year": "1969",
+        "poster": "https://image.tmdb.org/t/p/w500/95F9mJEXJNcsrlVNKQ9BwN7cXpj.jpg"
+      },
+      {
+        "title": "Oliver!",
+        "year": "1968",
+        "poster": "https://image.tmdb.org/t/p/w500/1XJgoaOWKrqxkKeBKWLKSigqG8c.jpg"
+      },
+      {
+        "title": "No Calor da Noite",
+        "year": "1967",
+        "poster": "https://image.tmdb.org/t/p/w500/5mBQShfR0qE8vhHbK68ug5Om8vQ.jpg"
+      },
+      {
+        "title": "O Homem Que Não Vendeu Sua Alma",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/nlS8n2miCLdG0LSrxdZ9vyE68ea.jpg"
+      },
+      {
+        "title": "A Noviça Rebelde",
+        "year": "1965",
+        "poster": "https://image.tmdb.org/t/p/w500/nF9wgSkAvjzJi6fF4oa8GcojTof.jpg"
+      },
+      {
+        "title": "Minha Bela Dama",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/lePZjXwcUHzQt5OA1VgUCE5ygRl.jpg"
+      },
+      {
+        "title": "As Aventuras de Tom Jones",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/lr96HlpD2lGCNwHiddCu0WRKJZh.jpg"
+      },
+      {
+        "title": "Lawrence da Arábia",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/r0xZR5ENEc8Pp2ULhkP4lgUWk8Y.jpg"
+      },
+      {
+        "title": "Amor, Sublime Amor",
+        "year": "1961",
+        "poster": "https://image.tmdb.org/t/p/w500/kYJtH81D1wvUB1jKNKe11sIJ2H2.jpg"
+      },
+      {
+        "title": "Se Meu Apartamento Falasse",
+        "year": "1960",
+        "poster": "https://image.tmdb.org/t/p/w500/omZs5505ceaHXhh4FL2TpmpVC94.jpg"
+      },
+      {
+        "title": "Ben-Hur",
+        "year": "1959",
+        "poster": "https://image.tmdb.org/t/p/w500/m4WQ1dBIrEIHZNCoAjdpxwSKWyH.jpg"
+      },
+      {
+        "title": "Gigi",
+        "year": "1958",
+        "poster": "https://image.tmdb.org/t/p/w500/7GyIXp4IfTbLvx4XIc0z2zt4ome.jpg"
+      },
+      {
+        "title": "A Ponte do Rio Kwai",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/z4NWsLsLogVh2XfLXbPaaGrX8Zz.jpg"
+      },
+      {
+        "title": "A Volta ao Mundo em 80 Dias",
+        "year": "1956",
+        "poster": "https://image.tmdb.org/t/p/w500/5Gc6zKgg7NWtXE00NWbkuomJSrL.jpg"
+      },
+      {
+        "title": "Marty",
+        "year": "1955",
+        "poster": "https://image.tmdb.org/t/p/w500/8tnGO5VoAQII4DbE3hozWKhV4BY.jpg"
+      },
+      {
+        "title": "Sindicato de Ladrões",
+        "year": "1954",
+        "poster": "https://image.tmdb.org/t/p/w500/3TdYtavJfl1JCL1rmTwcUI9yFMr.jpg"
+      },
+      {
+        "title": "A Um Passo da Eternidade",
+        "year": "1953",
+        "poster": "https://image.tmdb.org/t/p/w500/i6QXGhmrBskJav7KzGhwlqyx0t3.jpg"
+      },
+      {
+        "title": "O Maior Espetáculo da Terra",
+        "year": "1952",
+        "poster": "https://image.tmdb.org/t/p/w500/3ZCqDLfa9uegCuHCm4rbgkgNbA2.jpg"
+      },
+      {
+        "title": "Sinfonia de Paris",
+        "year": "1951",
+        "poster": "https://image.tmdb.org/t/p/w500/7YM95QXNeupbjOyYCacHWm1Dwnb.jpg"
+      },
+      {
+        "title": "A Malvada",
+        "year": "1950",
+        "poster": "https://image.tmdb.org/t/p/w500/rkVfbw7S3ijwGNBU0v0odznfKk1.jpg"
+      },
+      {
+        "title": "Hamlet",
+        "year": "1948",
+        "poster": "https://image.tmdb.org/t/p/w500/woO9SgU2vTRMZeG0YqOLeoIqlzC.jpg"
+      },
+      {
+        "title": "Os Melhores Anos de Nossas Vidas",
+        "year": "1946",
+        "poster": "https://image.tmdb.org/t/p/w500/lgVHQE0fUHTd8Tgo2uIDQ2Lk0S3.jpg"
+      },
+      {
+        "title": "Farrapo Humano",
+        "year": "1945",
+        "poster": "https://image.tmdb.org/t/p/w500/3rXzGi1BqzSPMeIjvu8WxXDQGLa.jpg"
+      },
+      {
+        "title": "O Bom Pastor",
+        "year": "1944",
+        "poster": "https://image.tmdb.org/t/p/w500/j7OxlZLu4m1r6Ur1inB3DoTi7Ct.jpg"
+      },
+      {
+        "title": "Casablanca",
+        "year": "1943",
+        "poster": "https://image.tmdb.org/t/p/w500/g8dt5DAhICrzSxH0v67ADS3259O.jpg"
+      },
+      {
+        "title": "Rosa de Esperança",
+        "year": "1942",
+        "poster": "https://image.tmdb.org/t/p/w500/8EaKyKp3lW5YCDHDnF4wZ5lqIqo.jpg"
+      },
+      {
+        "title": "Como Era Verde o Meu Vale",
+        "year": "1941",
+        "poster": "https://image.tmdb.org/t/p/w500/1D2linQi2VWojXn7SkHyKxT1z3m.jpg"
+      },
+      {
+        "title": "Rebecca, A Mulher Inesquecível",
+        "year": "1940",
+        "poster": "https://image.tmdb.org/t/p/w500/f9McnICkCJGtWM01MW1cKJC9yO.jpg"
+      },
+      {
+        "title": "...E o Vento Levou",
+        "year": "1939",
+        "poster": "https://image.tmdb.org/t/p/w500/jYNxBGPznKSJjNqp1N713oTli0m.jpg"
+      },
+      {
+        "title": "A Vida de Emile Zola",
+        "year": "1937",
+        "poster": "https://image.tmdb.org/t/p/w500/ylSFT2IltnDFhN9DqxsTcYZRdxw.jpg"
+      },
+      {
+        "title": "Ziegfeld - O Criador de Estrelas",
+        "year": "1936",
+        "poster": "https://image.tmdb.org/t/p/w500/im03JvbiNoLpUvRwmtQcyW0HqY6.jpg"
+      },
+      {
+        "title": "O Grande Motim",
+        "year": "1935",
+        "poster": "https://image.tmdb.org/t/p/w500/je0S06bZLoydneL6Cz9Lm6hAvtq.jpg"
+      },
+      {
+        "title": "Aconteceu Naquela Noite",
+        "year": "1934",
+        "poster": "https://image.tmdb.org/t/p/w500/2xQmVVitVLJJSaK3FN1d9ezs6D.jpg"
+      },
+      {
+        "title": "Cavalgada",
+        "year": "1933",
+        "poster": "https://image.tmdb.org/t/p/w500/a6yld4HmB49b9CP9wmv3wcwk65K.jpg"
+      },
+      {
+        "title": "Grande Hotel",
+        "year": "1932",
+        "poster": "https://image.tmdb.org/t/p/w500/iAyFPvjOEHTpeTcW5z40Y5s5aPm.jpg"
+      },
+      {
+        "title": "Cimarron",
+        "year": "1931",
+        "poster": "https://image.tmdb.org/t/p/w500/cqvfhi9s1VsTgXcV1B7vX0Cb1qA.jpg"
+      },
+      {
+        "title": "Sem Novidade no Front",
+        "year": "1930",
+        "poster": "https://image.tmdb.org/t/p/w500/7kJgNZaRAOYM3HJIP5eTZ8PWVv4.jpg"
+      },
+      {
+        "title": "Melodia da Broadway",
+        "year": "1929",
+        "poster": "https://image.tmdb.org/t/p/w500/giq8GJs8YGMzHxeKxNSuwzAdd1c.jpg"
+      },
+      {
+        "title": "Asas",
+        "year": "1927",
+        "poster": "https://image.tmdb.org/t/p/w500/ph9XddobrOuQIEERe9ObssI5P7u.jpg"
+      }
+    ]
+  }
+}
