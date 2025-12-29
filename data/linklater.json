@@ -1,0 +1,129 @@
+{
+  "films": [
+    {
+      "title": "Jovens, Loucos e Rebeldes",
+      "year": "1993",
+      "poster": "https://image.tmdb.org/t/p/w500/xOJDGjtNfm8kmDqIUvN9NrlXJeM.jpg"
+    },
+    {
+      "title": "Slacker",
+      "year": "1991",
+      "poster": "https://image.tmdb.org/t/p/w500/8cEWYiKJgVWCgO1aOQItifZBQOw.jpg"
+    },
+    {
+      "title": "Bernie - Quase Um Anjo",
+      "year": "2012",
+      "poster": "https://image.tmdb.org/t/p/w500/kIMMe4abFKHP0pCDUTRJ3fwWFHX.jpg"
+    },
+    {
+      "title": "Escola de Rock",
+      "year": "2003",
+      "poster": "https://image.tmdb.org/t/p/w500/13Yfl9rgkipRAZriIpcm21sjySz.jpg"
+    },
+    {
+      "title": "Jovens, Loucos e Mais Rebeldes",
+      "year": "2016",
+      "poster": "https://image.tmdb.org/t/p/w500/cyl3brbs7oR70HLN5gNZueG337o.jpg"
+    },
+    {
+      "title": "Waking Life",
+      "year": "2001",
+      "poster": "https://image.tmdb.org/t/p/w500/2MRM4PL6H7yraAkwyUEe2EqoQH3.jpg"
+    },
+    {
+      "title": "Boyhood: Da Infância à Juventude",
+      "year": "2014",
+      "poster": "https://image.tmdb.org/t/p/w500/rr1rlDZXOeLqtYMEC6xEunxqsD3.jpg"
+    },
+    {
+      "title": "Antes do Pôr do Sol",
+      "year": "2004",
+      "poster": "https://image.tmdb.org/t/p/w500/pU7Q1s4wgmD46QoDToqcQZDGLy9.jpg"
+    },
+    {
+      "title": "Nação Fast Food: Uma Rede de Corrupção",
+      "year": "2006",
+      "poster": "https://image.tmdb.org/t/p/w500/vcRgWIj4p6FtezgZTl4YoxYbSJ7.jpg"
+    },
+    {
+      "title": "O Homem Duplo",
+      "year": "2006",
+      "poster": "https://image.tmdb.org/t/p/w500/znYzC1cP1DEiGJEuMk8GcPR7SKj.jpg"
+    },
+    {
+      "title": "Antes da Meia-Noite",
+      "year": "2013",
+      "poster": "https://image.tmdb.org/t/p/w500/mo5hzbw0xofhFsBpnDWlnniCbFl.jpg"
+    },
+    {
+      "title": "Blue Moon",
+      "year": "2025",
+      "poster": "https://image.tmdb.org/t/p/w500/dVU7SNc6dgStTVdtbPLQncWxsyZ.jpg"
+    },
+    {
+      "title": "Antes do Amanhecer",
+      "year": "1995",
+      "poster": "https://image.tmdb.org/t/p/w500/gUD2xpkiWaCUabnwMgopECylsKc.jpg"
+    },
+    {
+      "title": "Assassino por Acaso",
+      "year": "2024",
+      "poster": "https://image.tmdb.org/t/p/w500/gWrdBimWApP3bm2Sk0CSJvjrj0r.jpg"
+    },
+    {
+      "title": "Nouvelle Vague",
+      "year": "2025",
+      "poster": "https://image.tmdb.org/t/p/w500/ELz7r5UZByGKt460yJWBZs6jfX.jpg"
+    },
+    {
+      "title": "Apollo 10 e Meio: Aventura na Era Espacial",
+      "year": "2022",
+      "poster": "https://image.tmdb.org/t/p/w500/2OkOOZN5aGj7LjbRdHazGPfGejJ.jpg"
+    },
+    {
+      "title": "A Melhor Escolha",
+      "year": "2017",
+      "poster": "https://image.tmdb.org/t/p/w500/kM39QLCMDqcdxg4LsPvalv9s2dO.jpg"
+    },
+    {
+      "title": "Eu e Orson Welles",
+      "year": "2008",
+      "poster": "https://image.tmdb.org/t/p/w500/jU7KFn4O1HLgzj9WkkmBkzJNPlN.jpg"
+    },
+    {
+      "title": "Woodshock",
+      "year": "1985",
+      "poster": "https://image.tmdb.org/t/p/w500/z8W56O0i0h3UVKZrIxJU3gbzJvM.jpg"
+    },
+    {
+      "title": "Une journée au bureau",
+      "year": "2019",
+      "poster": "https://image.tmdb.org/t/p/w500/vZ3ZH2L1G5l8WqRNOgpwmkbu6CH.jpg"
+    },
+    {
+      "title": "Sujou... Chegaram os Bears",
+      "year": "2005",
+      "poster": "https://image.tmdb.org/t/p/w500/phwdf3XCrt3C7gmwwR3g3WlJiNg.jpg"
+    },
+    {
+      "title": "SubUrbia",
+      "year": "1997",
+      "poster": "https://image.tmdb.org/t/p/w500/7PdRbG09K9JHYyOwwCSn3OdJb0N.jpg"
+    },
+    {
+      "title": "Newton Boys: Os Irmãos Fora-da-Lei",
+      "year": "1998",
+      "poster": "https://image.tmdb.org/t/p/w500/iUEuS1f90dNeiCs6vchxUedMp1z.jpg"
+    },
+    {
+      "title": "Inning by Inning: A Portrait of a Coach",
+      "year": "2008",
+      "poster": "https://image.tmdb.org/t/p/w500/izlgnFQkltNwMX9EkgUk60NvEYo.jpg"
+    },
+    {
+      "title": "Amargo Reencontro",
+      "year": "2001",
+      "poster": "https://image.tmdb.org/t/p/w500/4Flz17KOjGdGqJ2dFRhKnB7eg5.jpg"
+    }
+  ]
+}
