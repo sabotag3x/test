@@ -1,7 +1,4 @@
 {
-  "disney": {
-    "name": "Disney",
-    "updated_at": "2025-12-29",
     "films": [
       {
         "title": "Branca de Neve e os Sete Anões",
@@ -3195,4 +3192,3 @@
       }
     ]
   }
-}
