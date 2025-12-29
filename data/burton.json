@@ -1,0 +1,94 @@
+{
+  "films": [
+    {
+      "title": "Ed Wood",
+      "year": "1994",
+      "poster": "https://image.tmdb.org/t/p/w500/jNao464ZTwWUWr3uJJ8swVgaKd9.jpg"
+    },
+    {
+      "title": "Os Fantasmas se Divertem",
+      "year": "1988",
+      "poster": "https://image.tmdb.org/t/p/w500/mLSJNejuGDegsMDiWWwIP7VDiyz.jpg"
+    },
+    {
+      "title": "Batman: O Retorno",
+      "year": "1992",
+      "poster": "https://image.tmdb.org/t/p/w500/26sGagPdqYIax64N4R3ekyWhAWW.jpg"
+    },
+    {
+      "title": "Edward Mãos de Tesoura",
+      "year": "1990",
+      "poster": "https://image.tmdb.org/t/p/w500/8vmYMcvWaqqhEWt9EnTPdXDdy2F.jpg"
+    },
+    {
+      "title": "Batman",
+      "year": "1989",
+      "poster": "https://image.tmdb.org/t/p/w500/sn2j2DKkE0LnSpmJLHytH8SQUQL.jpg"
+    },
+    {
+      "title": "A Lenda do Cavaleiro Sem Cabeça",
+      "year": "1999",
+      "poster": "https://image.tmdb.org/t/p/w500/zxOuNnW2qrOOFtiPVJtx5aRAJoX.jpg"
+    },
+    {
+      "title": "Marte Ataca!",
+      "year": "1996",
+      "poster": "https://image.tmdb.org/t/p/w500/koIxmF4RUofBWYhcpekQCbjefXY.jpg"
+    },
+    {
+      "title": "Sweeney Todd: O Barbeiro Demoníaco da Rua Fleet",
+      "year": "2007",
+      "poster": "https://image.tmdb.org/t/p/w500/ldAJTuMoOacIXKj3gsPPFHENBWj.jpg"
+    },
+    {
+      "title": "Peixe Grande e Suas Histórias Maravilhosas",
+      "year": "2003",
+      "poster": "https://image.tmdb.org/t/p/w500/2IVwZB2necwjAmnw14Wxi7isYq4.jpg"
+    },
+    {
+      "title": "Os Fantasmas Ainda se Divertem: Beetlejuice Beetlejuice",
+      "year": "2024",
+      "poster": "https://image.tmdb.org/t/p/w500/v33dHteDj03HLtAgUb9CFgA2to1.jpg"
+    },
+    {
+      "title": "Dumbo",
+      "year": "2019",
+      "poster": "https://image.tmdb.org/t/p/w500/4EoFz2i2h2OYtv51dAddVYeZXcj.jpg"
+    },
+    {
+      "title": "Grandes Olhos",
+      "year": "2014",
+      "poster": "https://image.tmdb.org/t/p/w500/tIj505bIktRgCrdgl0TBQQ02dmg.jpg"
+    },
+    {
+      "title": "A Fantástica Fábrica de Chocolate",
+      "year": "2005",
+      "poster": "https://image.tmdb.org/t/p/w500/vSl1u0z4TCKL4VPVyr6KDtZibYT.jpg"
+    },
+    {
+      "title": "Frankenweenie",
+      "year": "2012",
+      "poster": "https://image.tmdb.org/t/p/w500/wiZdvpoT7y5BRTPkgR3EyNpn4xR.jpg"
+    },
+    {
+      "title": "A Noiva Cadáver",
+      "year": "2005",
+      "poster": "https://image.tmdb.org/t/p/w500/nT7W8LfhzVybfFsnQJ4qQfqn5KX.jpg"
+    },
+    {
+      "title": "Sombras da Noite",
+      "year": "2012",
+      "poster": "https://image.tmdb.org/t/p/w500/9pRJwfuX0GFiJFz3a3FDXUolptB.jpg"
+    },
+    {
+      "title": "Planeta dos Macacos",
+      "year": "2001",
+      "poster": "https://image.tmdb.org/t/p/w500/qmv5Q5rjbO2wMveB1UC31prOCKH.jpg"
+    },
+    {
+      "title": "Alice no País das Maravilhas",
+      "year": "2010",
+      "poster": "https://image.tmdb.org/t/p/w500/bvD0kvICG7hP03vrNvylUINhafM.jpg"
+    }
+  ]
+}
