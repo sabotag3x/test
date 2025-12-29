@@ -488,7 +488,10 @@ function next(){
 function card(f,i){
   return `<div class="card">
     <img src="${f.poster}" onclick="choose(${i})">
-    <div class="title">${f.title} (${f.year})</div>
+    <div class="title">
+  <span class="movie-title">${f.title}</span>
+  <span class="movie-year">${f.year}</span>
+</div>
   </div>`;
 }
 
@@ -558,8 +561,8 @@ async function startVersus(){
       fetch(`/api/list/${b}`).then(r=>r.json())
     ]);
 
-    versusA=shuffle(ra).slice(0,11);
-    versusB=shuffle(rb).slice(0,11);
+versusA = shuffle(ra.filter(f => f && f.poster)).slice(0,11);
+versusB = shuffle(rb.filter(f => f && f.poster)).slice(0,11);
 
     if(versusA.length<11||versusB.length<11) throw new Error();
 
