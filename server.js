@@ -147,3 +147,35 @@ app.listen(PORT, "0.0.0.0", () => {
   console.log("FilmDuel rodando na porta", PORT);
 });
 
+app.get("/api/music/artist", async (req, res) => {
+  const name = req.query.name;
+  if (!name) return res.status(400).json({ error: "missing name" });
+
+  try {
+    const url =
+      "https://musicbrainz.org/ws/2/artist" +
+      `?query=${encodeURIComponent(name)}` +
+      "&fmt=json&limit=1";
+
+    const r = await fetch(url, {
+      headers: {
+        "User-Agent": "MusicDuel/1.0 ( contact@example.com )"
+      }
+    });
+
+    const j = await r.json();
+    const a = j.artists?.[0];
+    if (!a) return res.json(null);
+
+    res.json({
+      name: a.name,
+      country: a.country || null,
+      type: a.type || null,
+      id: a.id
+    });
+  } catch {
+    res.status(500).json(null);
+  }
+});
+
+
