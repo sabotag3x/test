@@ -2,7 +2,8 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>MusicDuel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MusicDuel – Batalha de Bandas</title>
 
 <style>
 *{box-sizing:border-box}
@@ -19,46 +20,47 @@ body{
 
 .container{
   width:100%;
-  max-width:1600px;
-  padding:20px;
+  max-width:1400px;
+  padding:24px;
   text-align:center;
 }
 
-#home{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:24px;
-}
-
 h1{font-size:44px;margin:0}
+.subtitle{opacity:.8;margin:10px 0 30px}
+
+/* ===== HOME ===== */
+
+.lists{
+  display:flex;
+  justify-content:center;
+}
 
 button{
   background:#ffbf2f;
   border:none;
-  padding:16px 40px;
+  padding:16px 38px;
   border-radius:40px;
   font-size:16px;
   font-weight:bold;
   cursor:pointer;
 }
 
-#game{
-  display:none;
-  min-height:85vh;
-  flex-direction:column;
-  justify-content:center;
-}
+/* ===== GAME ===== */
+
+#game{display:none}
+
+/* ===== DUELO ===== */
 
 .duel{
   display:flex;
   justify-content:center;
   align-items:center;
   gap:120px;
+  min-height:60vh;
 }
 
 .card{
-  width:300px;
+  width:280px;
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -68,162 +70,136 @@ button{
   width:100%;
   border-radius:18px;
   cursor:pointer;
+  transition:.2s;
 }
 
-.title{
-  margin-top:14px;
-  font-size:20px;
-  font-weight:bold;
-}
+.card img:hover{transform:scale(1.05)}
 
-/* ===== BRACKET ===== */
+.title{margin-top:14px;font-size:18px}
+.album{font-size:14px;opacity:.7}
 
-.bracket{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:5%;
-}
+/* ===== RESULTADO ===== */
 
-.side{
-  display:flex;
-  gap:18px;
-}
-
-.round{
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-}
-
-.round img{border-radius:8px}
-.r1 img{width:56px}
-.r2 img{width:80px}
-.r3 img{width:110px}
-.r4 img{width:140px}
-
-.champion{
-  display:flex;
+#winner{
+  display:none;
   flex-direction:column;
   align-items:center;
+  gap:20px;
 }
 
-.champion img{
+#winner img{
   width:320px;
-  border-radius:16px;
+  border-radius:20px;
 }
 
-.champion .title{
-  font-size:24px;
-  margin-top:12px;
+@media(max-width:900px){
+  .duel{flex-direction:column;gap:40px}
+  #winner img{width:220px}
 }
 </style>
 </head>
 
 <body>
-
 <div class="container">
 
+<!-- HOME -->
 <div id="home">
   <h1>MusicDuel</h1>
-  <button onclick="startList('test')">Bandas – Teste</button>
+  <div class="subtitle">Batalha entre bandas e álbuns</div>
+
+  <div class="lists">
+    <button onclick="start()">Bandas – Teste</button>
+  </div>
 </div>
 
+<!-- GAME -->
 <div id="game">
-  <div id="duel"></div>
+  <div id="round" class="subtitle"></div>
+  <div id="duel" class="duel"></div>
+</div>
+
+<!-- WINNER -->
+<div id="winner">
+  <h2>Campeão</h2>
+  <img id="winnerImg">
+  <div class="title" id="winnerName"></div>
+  <div class="album" id="winnerAlbum"></div>
+  <button onclick="location.reload()">Jogar novamente</button>
 </div>
 
 </div>
 
 <script>
-let pool=[], items=[], atual=[], idx=0, winners=[], rounds=[];
-let initialRound=[];
+let pool = [];
+let current = [];
+let round = 16;
 
-function shuffle(a){ return a.sort(()=>Math.random()-.5); }
+function shuffle(a){
+  return a.sort(()=>Math.random()-.5);
+}
 
-async function startList(key){
+async function start(){
   document.getElementById("home").style.display="none";
-  document.getElementById("game").style.display="flex";
+  document.getElementById("game").style.display="block";
 
-  try{
-    const res = await fetch(`/api/music/list/${key}`);
-    const data = await res.json();
+  const res = await fetch("/api/music/list/test");
+  const data = await res.json();
 
-    const artists = data.artists.map(a => ({
-      title: a.name,
-      poster: a.image
-    }));
-
-    if(artists.length < 16) throw new Error();
-
-    pool = shuffle(artists);
-    items = pool.splice(0,16);
-    initialRound=[...items];
-    rounds=[]; winners=[]; idx=0;
-
-    next();
-  }catch{
-    document.getElementById("duel").innerHTML =
-      `<div><b>Erro ao carregar artistas</b>
-       <br><button onclick="location.reload()">Voltar</button></div>`;
-  }
+  pool = shuffle(data.artists).slice(0,16);
+  nextRound();
 }
 
-function next(){
-  if(idx>=items.length){
-    rounds.push([...winners]);
-    items=winners; winners=[]; idx=0;
-    if(items.length===1) return showFinal(items[0]);
+function nextRound(){
+  if(pool.length === 1){
+    showWinner(pool[0]);
+    return;
   }
-  atual=[items[idx],items[idx+1]];
-  idx+=2;
-  document.getElementById("duel").innerHTML=
-    `<div class="duel">
-      ${card(atual[0],0)}
-      ${card(atual[1],1)}
-     </div>`;
+
+  round = pool.length;
+  document.getElementById("round").innerText = `Rodada de ${round}`;
+  nextDuel();
 }
 
-function card(f,i){
-  return `<div class="card">
-    <img src="${f.poster}" onclick="choose(${i})">
-    <div class="title">${f.title}</div>
-  </div>`;
+function nextDuel(){
+  if(pool.length === 0){
+    pool = current;
+    current = [];
+    nextRound();
+    return;
+  }
+
+  const a = pool.pop();
+  const b = pool.pop();
+  showDuel(a,b);
+}
+
+function showDuel(a,b){
+  document.getElementById("duel").innerHTML =
+    card(a,0) + card(b,1);
+  currentPair = [a,b];
+}
+
+function card(a,i){
+  return `
+    <div class="card">
+      <img src="${a.album.cover}" onclick="choose(${i})">
+      <div class="title">${a.name}</div>
+      <div class="album">${a.album.title}</div>
+    </div>
+  `;
 }
 
 function choose(i){
-  winners.push(atual[i]);
-  next();
+  current.push(currentPair[i]);
+  nextDuel();
 }
 
-function showFinal(champ){
-  const r1=initialRound,r2=rounds[0],r3=rounds[1],r4=rounds[2];
-  const left8=r1.slice(0,8), right8=r1.slice(8);
-  const left4=r2.slice(0,4), right4=r2.slice(4);
-  const left2=r3.slice(0,2), right2=r3.slice(2);
-
-  document.getElementById("duel").innerHTML=`
-  <div class="bracket">
-    <div class="side">
-      <div class="round r1">${left8.map(f=>`<img src="${f.poster}">`).join("")}</div>
-      <div class="round r2">${left4.map(f=>`<img src="${f.poster}">`).join("")}</div>
-      <div class="round r3">${left2.map(f=>`<img src="${f.poster}">`).join("")}</div>
-      <div class="round r4"><img src="${r4[0].poster}"></div>
-    </div>
-
-    <div class="champion">
-      <img src="${champ.poster}">
-      <div class="title">Campeão<br>${champ.title}</div>
-      <button onclick="location.reload()">Jogar novamente</button>
-    </div>
-
-    <div class="side">
-      <div class="round r4"><img src="${r4[1].poster}"></div>
-      <div class="round r3">${right2.map(f=>`<img src="${f.poster}">`).join("")}</div>
-      <div class="round r2">${right4.map(f=>`<img src="${f.poster}">`).join("")}</div>
-      <div class="round r1">${right8.map(f=>`<img src="${f.poster}">`).join("")}</div>
-    </div>
-  </div>`;
+function showWinner(a){
+  document.getElementById("game").style.display="none";
+  document.getElementById("winner").style.display="flex";
+  document.getElementById("winnerImg").src = a.album.cover;
+  document.getElementById("winnerName").innerText = a.name;
+  document.getElementById("winnerAlbum").innerText = a.album.title;
 }
 </script>
 
