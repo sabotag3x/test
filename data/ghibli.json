@@ -1,0 +1,113 @@
+{
+  "ghibli": {
+    "name": "Ghibli",
+    "updated_at": "2025-12-29",
+    "films": [
+      {
+        "title": "Túmulo dos Vagalumes",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/kHFUyxNJfhMkKk1FwrNHd62KTEs.jpg"
+      },
+      {
+        "title": "Princesa Mononoke",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/7EadOwHmyQgOnlghRiWBygNtnjl.jpg"
+      },
+      {
+        "title": "A Viagem de Chihiro",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/hhoKhsyJ3hFaxEm5pMdZRiTu2lJ.jpg"
+      },
+      {
+        "title": "As Memórias de Marnie",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/q8dKK0OdBR91gEJWRdo9osvxvM6.jpg"
+      },
+      {
+        "title": "Memórias de Ontem",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/nnQe2jO91wjszUOebEGeJlZeoBP.jpg"
+      },
+      {
+        "title": "Nausicaä do Vale do Vento",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/UkCcG94fX1fKIu6DWzwEfpbxL9.jpg"
+      },
+      {
+        "title": "PomPoko: A Grande Batalha dos Guaxinins",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/80xL89n79KRKjhPWiXzAi8w43ZV.jpg"
+      },
+      {
+        "title": "O Conto da Princesa Kaguya",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/cerV9QJhSdDlnUigrsKZQfOeTpA.jpg"
+      },
+      {
+        "title": "O Mundo dos Pequeninos",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/yovlgDFP53N7IW7O4irM6INBxmp.jpg"
+      },
+      {
+        "title": "Meu Amigo Totoro",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/23KKTxDg6rxZVc66bloQQdPSr29.jpg"
+      },
+      {
+        "title": "Sussurros do Coração",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/5q752lJ1XoRwj6yKVx999avJ8eO.jpg"
+      },
+      {
+        "title": "Contos de Terramar",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/vbiFo47KaGKNoNZARrTbJDZERDt.jpg"
+      },
+      {
+        "title": "Ponyo - Uma Amizade que Veio do Mar",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/cvpsmNWc8nyePJMbyMc9X5lLN6L.jpg"
+      },
+      {
+        "title": "O Menino e a Garça",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/dYwihSnQmCVuIQbuG9n18BK5Iqd.jpg"
+      },
+      {
+        "title": "O Castelo no Céu",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/9y7AZVM0YLIeNzNVCYyo0vcVxr.jpg"
+      },
+      {
+        "title": "宮崎 駿の仕事 「風立ちぬ」1000日の記録/引退宣言 知られざる物語",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/bUbsp6i9WIuRAdSCk28ZsDLzWzS.jpg"
+      },
+      {
+        "title": "Porco Rosso: O Último Herói Romântico",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/mf3UwAH3b2cCFTyw4qKK62Z7AZb.jpg"
+      },
+      {
+        "title": "Eu Posso Ouvir o Oceano",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/7xNEkYR9EkcBG1EjiOwyl0oXLU7.jpg"
+      },
+      {
+        "title": "Da Colina Kokuriko",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/a5zpMbq2dXWFVVLqu91lrjEF3fv.jpg"
+      },
+      {
+        "title": "スーパーテレビ 情報最前線 独占密着15ヶ月！噂の映画『となりの山田くん』の秘密",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/iBdEgLSuL5dvN5bqF7T93hc3vb0.jpg"
+      },
+      {
+        "title": "Aya e a Bruxa",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/3xgAhWu3v78zP6GIAbVHjcaBOR2.jpg"
+      }
+    ]
+  }
+}
