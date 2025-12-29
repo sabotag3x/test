@@ -37,8 +37,6 @@ const res = await fetch(
       });
     }
 
-    if(artists.length === 0) throw new Error();
-
     out.value = JSON.stringify(
       { artists },
       null,
