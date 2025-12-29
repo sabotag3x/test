@@ -556,20 +556,15 @@ async function startVersus(){
   startLoading();
 
   try{
-const [raRaw, rbRaw] = await Promise.all([
-  fetch(`/api/list/${a}`).then(r=>r.json()),
-  fetch(`/api/list/${b}`).then(r=>r.json())
-]);
-
-const ra = Array.isArray(raRaw) ? raRaw : raRaw.films;
-const rb = Array.isArray(rbRaw) ? rbRaw : rbRaw.films;
-
+    const [ra, rb] = await Promise.all([
+      fetch(`/api/list/${a}`).then(r=>r.json()),
+      fetch(`/api/list/${b}`).then(r=>r.json())
     ]);
 
-versusA = shuffle(ra.filter(f => f && f.poster)).slice(0,11);
-versusB = shuffle(rb.filter(f => f && f.poster)).slice(0,11);
+    versusA = shuffle(ra).slice(0,11);
+    versusB = shuffle(rb).slice(0,11);
 
-    if(versusA.length<11||versusB.length<11) throw new Error();
+    if(versusA.length<11 || versusB.length<11) throw new Error();
 
     votedA=[]; votedB=[];
     scoreA=0; scoreB=0; versusIndex=0;
@@ -583,6 +578,7 @@ versusB = shuffle(rb.filter(f => f && f.poster)).slice(0,11);
     showError("Uma das listas não tem filmes suficientes.");
   }
 }
+
 
 function nextVersus(){
   if(versusIndex>=11) return showVersusResult();
