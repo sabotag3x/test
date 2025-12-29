@@ -1,0 +1,169 @@
+{
+  "films": [
+    {
+      "title": "A.I.: Inteligência Artificial",
+      "year": "2001",
+      "poster": "https://image.tmdb.org/t/p/w500/3TFEeUPWgW0c5QsVcP5YyXHXqGS.jpg"
+    },
+    {
+      "title": "E.T.: O Extraterrestre",
+      "year": "1982",
+      "poster": "https://image.tmdb.org/t/p/w500/8j5igb0iuV9TYudw9SuMV5GT9K9.jpg"
+    },
+    {
+      "title": "Minority Report: A Nova Lei",
+      "year": "2002",
+      "poster": "https://image.tmdb.org/t/p/w500/bNOdmraLsJ5DItu1eNLJMyw7a6v.jpg"
+    },
+    {
+      "title": "Tubarão",
+      "year": "1975",
+      "poster": "https://image.tmdb.org/t/p/w500/iD2XVowFgHngYGamCAdq2T44gMr.jpg"
+    },
+    {
+      "title": "Jurassic Park: O Parque dos Dinossauros",
+      "year": "1993",
+      "poster": "https://image.tmdb.org/t/p/w500/mgjJ7FH4V3exsmoHwXrmsUhn0h1.jpg"
+    },
+    {
+      "title": "Indiana Jones e os Caçadores da Arca Perdida",
+      "year": "1981",
+      "poster": "https://image.tmdb.org/t/p/w500/mtf7iKZRdsL6qbbCnd2TAxOfJYg.jpg"
+    },
+    {
+      "title": "O Resgate do Soldado Ryan",
+      "year": "1998",
+      "poster": "https://image.tmdb.org/t/p/w500/hMLxNLCXRDd62acfCBn6mIyW1HU.jpg"
+    },
+    {
+      "title": "Contatos Imediatos do Terceiro Grau",
+      "year": "1977",
+      "poster": "https://image.tmdb.org/t/p/w500/9fab10esBOe3OwarBN531iHwsjF.jpg"
+    },
+    {
+      "title": "Lincoln",
+      "year": "2012",
+      "poster": "https://image.tmdb.org/t/p/w500/Ah8nlXt06HTKfIbMQFGmuJmVIfq.jpg"
+    },
+    {
+      "title": "Os Fabelmans",
+      "year": "2022",
+      "poster": "https://image.tmdb.org/t/p/w500/24iJ52MpvAGJ5UG4EHgmmY40F6K.jpg"
+    },
+    {
+      "title": "Amor, Sublime Amor",
+      "year": "2021",
+      "poster": "https://image.tmdb.org/t/p/w500/4XvvbOFlnC5czMBJd0l7ysMMV4z.jpg"
+    },
+    {
+      "title": "Ponte dos Espiões",
+      "year": "2015",
+      "poster": "https://image.tmdb.org/t/p/w500/gpFbBfFSNWtIDksllfoGP96joI6.jpg"
+    },
+    {
+      "title": "Prenda-Me se For Capaz",
+      "year": "2002",
+      "poster": "https://image.tmdb.org/t/p/w500/pSaqcj3pwTKt34cyn6NrBE7V4eH.jpg"
+    },
+    {
+      "title": "Guerra dos Mundos",
+      "year": "2005",
+      "poster": "https://image.tmdb.org/t/p/w500/aU42RNFpLgXsg0Tsgo8g8RPji0N.jpg"
+    },
+    {
+      "title": "Munique",
+      "year": "2005",
+      "poster": "https://image.tmdb.org/t/p/w500/xCTk5AxrGWZ9bHl6UkL0SCebldw.jpg"
+    },
+    {
+      "title": "Jogador N° 1",
+      "year": "2018",
+      "poster": "https://image.tmdb.org/t/p/w500/sN46sgCsWqwgHMu4mEtKJ19knVr.jpg"
+    },
+    {
+      "title": "Indiana Jones e a Última Cruzada",
+      "year": "1989",
+      "poster": "https://image.tmdb.org/t/p/w500/cJP4wT4RB85E3gbwRe3LWJORXXM.jpg"
+    },
+    {
+      "title": "As Aventuras de Tintim",
+      "year": "2011",
+      "poster": "https://image.tmdb.org/t/p/w500/lSzqfKyzb7nRCZ3qihPhdspZeMA.jpg"
+    },
+    {
+      "title": "The Post: A Guerra Secreta",
+      "year": "2017",
+      "poster": "https://image.tmdb.org/t/p/w500/hOq5Pus5W2IwVcTdveu9tO6yYFB.jpg"
+    },
+    {
+      "title": "Império do Sol",
+      "year": "1987",
+      "poster": "https://image.tmdb.org/t/p/w500/gIQKETrUPIsfgrMlVMSjbHVaozC.jpg"
+    },
+    {
+      "title": "Louca Escapada",
+      "year": "1974",
+      "poster": "https://image.tmdb.org/t/p/w500/eL8dWwfnyoLJy1neDdZPmh38y60.jpg"
+    },
+    {
+      "title": "Encurralado",
+      "year": "1971",
+      "poster": "https://image.tmdb.org/t/p/w500/rJVQ0tKmL029v6SGM4XIXPeJ2EO.jpg"
+    },
+    {
+      "title": "A Cor Púrpura",
+      "year": "1985",
+      "poster": "https://image.tmdb.org/t/p/w500/qaeLYMBqTwfvKqFpIhsh7tlJAtI.jpg"
+    },
+    {
+      "title": "Indiana Jones e o Templo da Perdição",
+      "year": "1984",
+      "poster": "https://image.tmdb.org/t/p/w500/zhcPKAXEWW76ZAjzsEm3XsHxD05.jpg"
+    },
+    {
+      "title": "Amistad",
+      "year": "1997",
+      "poster": "https://image.tmdb.org/t/p/w500/tdxAiqj60WLqaVPfgBDhNGJEe9R.jpg"
+    },
+    {
+      "title": "Indiana Jones e o Reino da Caveira de Cristal",
+      "year": "2008",
+      "poster": "https://image.tmdb.org/t/p/w500/eZpDX7wTxllhVxhc9Qy9xN4G2Nw.jpg"
+    },
+    {
+      "title": "Cavalo de Guerra",
+      "year": "2011",
+      "poster": "https://image.tmdb.org/t/p/w500/8KCu49IhGK5IpqKRO1i2UGLQt6A.jpg"
+    },
+    {
+      "title": "O Mundo Perdido: Jurassic Park",
+      "year": "1997",
+      "poster": "https://image.tmdb.org/t/p/w500/z6kJSvM2tT542uKcNeRN0TJYsXc.jpg"
+    },
+    {
+      "title": "O Bom Gigante Amigo",
+      "year": "2016",
+      "poster": "https://image.tmdb.org/t/p/w500/tAbbJPbRnY8TRwFure08S7SWnM9.jpg"
+    },
+    {
+      "title": "Hook: A Volta do Capitão Gancho",
+      "year": "1991",
+      "poster": "https://image.tmdb.org/t/p/w500/3xvJUSXz9wo97kvgABUDgBCsUNp.jpg"
+    },
+    {
+      "title": "Além da Eternidade",
+      "year": "1989",
+      "poster": "https://image.tmdb.org/t/p/w500/kxHrNBnyCoJFyy1BuhBhaBzxWg1.jpg"
+    },
+    {
+      "title": "O Terminal",
+      "year": "2004",
+      "poster": "https://image.tmdb.org/t/p/w500/79KN5lZ286El2GDjIomyN29jx80.jpg"
+    },
+    {
+      "title": "1941: Uma Guerra Muito Louca",
+      "year": "1979",
+      "poster": "https://image.tmdb.org/t/p/w500/52Bn5yC6IHQuVxPUza3Q6RZCZTu.jpg"
+    }
+  ]
+}
