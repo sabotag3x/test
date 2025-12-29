@@ -590,10 +590,11 @@ function nextVersus(){
     <div class="versus-container">
       <div class="versus-card">
         <img src="${fa.poster}" onclick="voteA()">
-      <div class="title">
-  <span class="movie-title">${f.title}</span>
-  <span class="movie-year">${f.year}</span>
+<div class="title">
+  <span class="movie-title">${fa.title}</span>
+  <span class="movie-year">${fa.year || ""}</span>
 </div>
+
 
       </div>
 
@@ -602,10 +603,14 @@ function nextVersus(){
         <div class="progress">${versusIndex+1}/11</div>
       </div>
 
-      <div class="versus-card">
-        <img src="${fb.poster}" onclick="voteB()">
-        <div class="title">${fb.title}</div>
-      </div>
+<div class="versus-card">
+  <img src="${fb.poster}" onclick="voteB()">
+  <div class="title">
+    <span class="movie-title">${fb.title}</span>
+    <span class="movie-year">${fb.year || ""}</span>
+  </div>
+</div>
+
     </div>`;
 }
 
