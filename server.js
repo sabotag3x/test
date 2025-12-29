@@ -101,8 +101,49 @@ app.get("/api/list/:key", (req, res) => {
   }
 });
 
+/* ================= SCRAPER MANUAL (ADMIN) ================= */
+
+app.get("/api/list", async (req, res) => {
+  const listUrl = req.query.url;
+  if (!listUrl) return res.status(400).json([]);
+
+  try {
+    const films = [];
+    let page = 1;
+    const MAX_PAGES = 20;
+
+    while (page <= MAX_PAGES) {
+      const url = `${listUrl}page/${page}/`;
+      const html = await fetch(url).then(r => r.text());
+
+      const items = html.match(/data-item-full-display-name="([^"]+)"/g);
+      if (!items) break;
+
+      for (const raw of items) {
+        const m = raw.match(/="(.+?)"/)[1];
+        const y = m.match(/\((\d{4})\)/);
+
+        films.push({
+          title: m.replace(/\s*\(\d{4}\)/, "").trim(),
+          year: y ? parseInt(y[1]) : null
+        });
+      }
+
+      page++;
+    }
+
+    const enriched = await tmdbEnrich(films);
+    res.json(enriched);
+
+  } catch {
+    res.status(500).json([]);
+  }
+});
+
+
 /* ================= START ================= */
 
 app.listen(PORT, "0.0.0.0", () => {
   console.log("FilmDuel rodando na porta", PORT);
 });
+
