@@ -1,0 +1,94 @@
+{
+  "films": [
+    {
+      "title": "O Enigma de Outro Mundo",
+      "year": "1982",
+      "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+    },
+    {
+      "title": "Halloween - A Noite do Terror",
+      "year": "1978",
+      "poster": "https://image.tmdb.org/t/p/w500/ozkOzFITxLmp5nkjvuawQaRHNF3.jpg"
+    },
+    {
+      "title": "À Beira da Loucura",
+      "year": "1995",
+      "poster": "https://image.tmdb.org/t/p/w500/cuJz2wJeUmFk3N3eA61cs6iV0T8.jpg"
+    },
+    {
+      "title": "Fuga de Nova York",
+      "year": "1981",
+      "poster": "https://image.tmdb.org/t/p/w500/kvrMjyI5VZiRKP7toOI2ho4t4SY.jpg"
+    },
+    {
+      "title": "Príncipe das Sombras",
+      "year": "1987",
+      "poster": "https://image.tmdb.org/t/p/w500/fMYKpKfwGldre9yuGFAb7IE75xI.jpg"
+    },
+    {
+      "title": "Eles Vivem",
+      "year": "1988",
+      "poster": "https://image.tmdb.org/t/p/w500/eaItFukc7nG2NGz3ZzpTrKSrhgw.jpg"
+    },
+    {
+      "title": "Os Aventureiros do Bairro Proibido",
+      "year": "1986",
+      "poster": "https://image.tmdb.org/t/p/w500/ca1yCHxWCXUn5E9XVIcJ2JveEfv.jpg"
+    },
+    {
+      "title": "A Bruma Assassina",
+      "year": "1980",
+      "poster": "https://image.tmdb.org/t/p/w500/zqg7z8CzTTdC7gVaUwLpIh0Hc1t.jpg"
+    },
+    {
+      "title": "Assalto à 13ª DP",
+      "year": "1976",
+      "poster": "https://image.tmdb.org/t/p/w500/bNoa6uYYkT3LThhaI8BZspmMlVM.jpg"
+    },
+    {
+      "title": "Starman: O Homem das Estrelas",
+      "year": "1984",
+      "poster": "https://image.tmdb.org/t/p/w500/fiLxhWsRsDTUdorvsZFmuyC8aKv.jpg"
+    },
+    {
+      "title": "Christine: O Carro Assassino",
+      "year": "1983",
+      "poster": "https://image.tmdb.org/t/p/w500/lQgflKBffMBXkOsM0PpLl2nWFyn.jpg"
+    },
+    {
+      "title": "Vampiros de John Carpenter",
+      "year": "1998",
+      "poster": "https://image.tmdb.org/t/p/w500/wB4C9JFgI7YHlxeI5QM9GrpTbTf.jpg"
+    },
+    {
+      "title": "Dark Star",
+      "year": "1974",
+      "poster": "https://image.tmdb.org/t/p/w500/aiqLBiH0IWrog2Q78dZTT8Ad9Sp.jpg"
+    },
+    {
+      "title": "Fuga de Los Angeles",
+      "year": "1996",
+      "poster": "https://image.tmdb.org/t/p/w500/tjCah5d0uM3BPRfdmAWVnYB6ZND.jpg"
+    },
+    {
+      "title": "Fantasmas de Marte",
+      "year": "2001",
+      "poster": "https://image.tmdb.org/t/p/w500/gXx65x7j0QsLwQsCjgxSjSuJd66.jpg"
+    },
+    {
+      "title": "Memórias de um Homem Invisível",
+      "year": "1992",
+      "poster": "https://image.tmdb.org/t/p/w500/8gWz0i6Aqn9T7iqhR9kVcqIFGCU.jpg"
+    },
+    {
+      "title": "A Cidade dos Amaldiçoados",
+      "year": "1995",
+      "poster": "https://image.tmdb.org/t/p/w500/eNPnSDXxrd2psC3jer9nxKvwbOQ.jpg"
+    },
+    {
+      "title": "Aterrorizada",
+      "year": "2010",
+      "poster": "https://image.tmdb.org/t/p/w500/6LzsJAsx8M6FBsrDCvUKjSkmmmp.jpg"
+    }
+  ]
+}
