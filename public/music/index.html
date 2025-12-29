@@ -152,7 +152,7 @@ async function startList(key){
   document.getElementById("home").style.display="none";
   document.getElementById("game").style.display="flex";
 
-  const res = await fetch(`/data/music/${key}.json`);
+  const res = await fetch(`/api/music/list/${key}`);
   const data = await res.json();
 
   pool = shuffle(data.artists);
