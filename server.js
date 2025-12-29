@@ -188,7 +188,7 @@ app.get("/api/music/artist-with-album", async (req, res) => {
     if (!artist) return res.json(null);
 
     const relRes = await fetch(
-      `https://musicbrainz.org/ws/2/release-group?artist=${artist.id}&type=album&limit=1&fmt=json`,
+      `https://musicbrainz.org/ws/2/release-group?artist=${artist.id}&type=album&limit=5&fmt=json`,
       { headers: { "User-Agent": "MusicDuel/1.0" } }
     );
 
@@ -233,3 +233,4 @@ app.get("/api/music/list/:key", (req, res) => {
 app.listen(PORT, "0.0.0.0", () => {
   console.log("FilmDuel rodando na porta", PORT);
 });
+
