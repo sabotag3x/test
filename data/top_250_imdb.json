@@ -1,7 +1,4 @@
 {
-  "top_250_imdb": {
-    "name": "Top 250 IMDb",
-    "updated_at": "2025-12-29",
     "films": [
       {
         "title": "Um Sonho de Liberdade",
@@ -1200,4 +1197,3 @@
       }
     ]
   }
-}
