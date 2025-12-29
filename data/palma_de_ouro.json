@@ -1,7 +1,4 @@
 {
-  "palma_de_ouro": {
-    "name": "Palma de Ouro",
-    "updated_at": "2025-12-29",
     "films": [
       {
         "title": "Foi Apenas Um Acidente",
@@ -460,4 +457,3 @@
       }
     ]
   }
-}
