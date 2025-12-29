@@ -18,14 +18,10 @@ async function run(){
     const artists = [];
 
     for(const name of names){
-      const url =
-        "https://musicbrainz.org/ws/2/artist" +
-        "?query=" + encodeURIComponent(name) +
-        "&fmt=json&limit=1";
+const res = await fetch(
+  `/api/music/artist?name=${encodeURIComponent(name)}`
+);
 
-      const res = await fetch(url, {
-        headers: { "Accept": "application/json" }
-      });
 
       const data = await res.json();
       if(!data.artists || !data.artists[0]) continue;
