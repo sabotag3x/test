@@ -1,0 +1,84 @@
+{
+  "films": [
+    {
+      "title": "Barton Fink: Delírios de Hollywood",
+      "year": "1991",
+      "poster": "https://image.tmdb.org/t/p/w500/gScIc40hwbCFE2OWRxbNI547zit.jpg"
+    },
+    {
+      "title": "Fargo: Uma Comédia de Erros",
+      "year": "1996",
+      "poster": "https://image.tmdb.org/t/p/w500/JrnxuijI6XCKyZaiPPrJ3TbZi.jpg"
+    },
+    {
+      "title": "Bravura Indômita",
+      "year": "2010",
+      "poster": "https://image.tmdb.org/t/p/w500/dRFcmou6HSCsMUXVG5GVy9UH7R4.jpg"
+    },
+    {
+      "title": "Um Homem Sério",
+      "year": "2009",
+      "poster": "https://image.tmdb.org/t/p/w500/8qzPIl8dewy1SyVm9HpL6wbtyw6.jpg"
+    },
+    {
+      "title": "O Grande Lebowski",
+      "year": "1998",
+      "poster": "https://image.tmdb.org/t/p/w500/uJNhSEVXNtdZ7Ez5Pye1ZYeMjoe.jpg"
+    },
+    {
+      "title": "Inside Llewyn Davis: Balada de um Homem Comum",
+      "year": "2013",
+      "poster": "https://image.tmdb.org/t/p/w500/8SZPBjEt29cdHv1oAmciu4KhwEL.jpg"
+    },
+    {
+      "title": "Onde os Fracos Não Têm Vez",
+      "year": "2007",
+      "poster": "https://image.tmdb.org/t/p/w500/jdlY8Bhcb4Qzfldr1JaexYBgyW3.jpg"
+    },
+    {
+      "title": "Arizona Nunca Mais",
+      "year": "1987",
+      "poster": "https://image.tmdb.org/t/p/w500/b0YuT50odGkaIH4TozEiQ53x5E1.jpg"
+    },
+    {
+      "title": "Na Roda da Fortuna",
+      "year": "1994",
+      "poster": "https://image.tmdb.org/t/p/w500/nMOKmpkB8mkLf2KeLkprhb5DDNq.jpg"
+    },
+    {
+      "title": "Gosto de Sangue",
+      "year": "1985",
+      "poster": "https://image.tmdb.org/t/p/w500/nYeLF7DKchE6upqyij99fB1U1iU.jpg"
+    },
+    {
+      "title": "E Aí, Meu Irmão, Cadê Você?",
+      "year": "2000",
+      "poster": "https://image.tmdb.org/t/p/w500/aZ9YMtRcTZg0CBsqD2Abr9Up0He.jpg"
+    },
+    {
+      "title": "Ave, César!",
+      "year": "2016",
+      "poster": "https://image.tmdb.org/t/p/w500/osT5RueioIRlOxaE9tSj8JABuFU.jpg"
+    },
+    {
+      "title": "O Amor Custa Caro",
+      "year": "2003",
+      "poster": "https://image.tmdb.org/t/p/w500/x1WAuVhDW7g6WVT2rPLTkF6dpjt.jpg"
+    },
+    {
+      "title": "A Balada de Buster Scruggs",
+      "year": "2018",
+      "poster": "https://image.tmdb.org/t/p/w500/nb4crpD43qLIlNj3k5mqC0izPCk.jpg"
+    },
+    {
+      "title": "Queime Depois de Ler",
+      "year": "2008",
+      "poster": "https://image.tmdb.org/t/p/w500/wN2rg9bTM9o73fFxadmKGKlkOEl.jpg"
+    },
+    {
+      "title": "Matadores de Velhinha",
+      "year": "2004",
+      "poster": "https://image.tmdb.org/t/p/w500/xT3o0tIpUjNsOhhsBUDINUl2wN.jpg"
+    }
+  ]
+}
