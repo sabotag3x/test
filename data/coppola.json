@@ -1,0 +1,119 @@
+{
+  "films": [
+    {
+      "title": "O Poderoso Chefão",
+      "year": "1972",
+      "poster": "https://image.tmdb.org/t/p/w500/oJagOzBu9Rdd9BrciseCm3U3MCU.jpg"
+    },
+    {
+      "title": "Apocalypse Now",
+      "year": "1979",
+      "poster": "https://image.tmdb.org/t/p/w500/veXttPnNe8EZulvmeGTyDUrG9T4.jpg"
+    },
+    {
+      "title": "A Conversação",
+      "year": "1974",
+      "poster": "https://image.tmdb.org/t/p/w500/nHa10YW4PTPnYEkfgQpSLDiR8Xe.jpg"
+    },
+    {
+      "title": "O Poderoso Chefão: Parte II",
+      "year": "1974",
+      "poster": "https://image.tmdb.org/t/p/w500/3ViYPhSAPwH2avQjdMl49F8PklB.jpg"
+    },
+    {
+      "title": "O Selvagem da Motocicleta",
+      "year": "1983",
+      "poster": "https://image.tmdb.org/t/p/w500/lhNdTxG5ah4RFcDjkEJOqAP7gfN.jpg"
+    },
+    {
+      "title": "Tucker, um Homem e seu Sonho",
+      "year": "1988",
+      "poster": "https://image.tmdb.org/t/p/w500/wzfbF6a783uXvfFvujxlGoToV8E.jpg"
+    },
+    {
+      "title": "Megalópolis",
+      "year": "2024",
+      "poster": "https://image.tmdb.org/t/p/w500/4FGqIRue7XlokWU79sMqiYiEHwy.jpg"
+    },
+    {
+      "title": "Tetro",
+      "year": "2009",
+      "poster": "https://image.tmdb.org/t/p/w500/rwvrIw2yie03rJLMAfGQb7TvHpf.jpg"
+    },
+    {
+      "title": "Cotton Club",
+      "year": "1984",
+      "poster": "https://image.tmdb.org/t/p/w500/62SVGRvH3rdzskUedXiH7EbNuqX.jpg"
+    },
+    {
+      "title": "Velha Juventude",
+      "year": "2007",
+      "poster": "https://image.tmdb.org/t/p/w500/vhCQegEQYJqk3Eqq0VCqFyPLRA7.jpg"
+    },
+    {
+      "title": "O Poderoso Chefão: Parte III",
+      "year": "1990",
+      "poster": "https://image.tmdb.org/t/p/w500/y8GROCjgD8amoFufSx2USKrOy7d.jpg"
+    },
+    {
+      "title": "Peggy Sue, seu Passado a Espera",
+      "year": "1986",
+      "poster": "https://image.tmdb.org/t/p/w500/loOEmSDdbZdHdn51hJr2Fona4HV.jpg"
+    },
+    {
+      "title": "Caminhos Mal Traçados",
+      "year": "1969",
+      "poster": "https://image.tmdb.org/t/p/w500/lkLNjjYPFHIrDehPeSHBRvr65JC.jpg"
+    },
+    {
+      "title": "O Homem Que Fazia Chover",
+      "year": "1997",
+      "poster": "https://image.tmdb.org/t/p/w500/iP6GUNprqvyKyQawiiBv426FVXG.jpg"
+    },
+    {
+      "title": "Vidas Sem Rumo",
+      "year": "1983",
+      "poster": "https://image.tmdb.org/t/p/w500/sLy2pym9T8ufnGzxUOky6rzei83.jpg"
+    },
+    {
+      "title": "Demência 13",
+      "year": "1963",
+      "poster": "https://image.tmdb.org/t/p/w500/szEncXgg2YsuY4mltOX50xJnbFs.jpg"
+    },
+    {
+      "title": "Faerie Tale Theatre: Rip Van Winkle",
+      "year": "1987",
+      "poster": "https://image.tmdb.org/t/p/w500/oAsrmxGUSS8cLbJOCGPx0Pd4ODK.jpg"
+    },
+    {
+      "title": "O Fundo do Coração",
+      "year": "1982",
+      "poster": "https://image.tmdb.org/t/p/w500/3SIxnYzM7ZR7UFstbdBdi9hsCmw.jpg"
+    },
+    {
+      "title": "Virgínia",
+      "year": "2011",
+      "poster": "https://image.tmdb.org/t/p/w500/kWWC27DWv4RHv1m32fbNN6KaWGs.jpg"
+    },
+    {
+      "title": "Jardins de Pedra",
+      "year": "1987",
+      "poster": "https://image.tmdb.org/t/p/w500/ppXKbUF7TGEjMTLmwewqbYDqo87.jpg"
+    },
+    {
+      "title": "Jack",
+      "year": "1996",
+      "poster": "https://image.tmdb.org/t/p/w500/9W6UI8UQ4YdLCAaPFd0lcKJ1tX4.jpg"
+    },
+    {
+      "title": "Contos de Nova York",
+      "year": "1989",
+      "poster": "https://image.tmdb.org/t/p/w500/6QeNEbEj5X6JaEBmayXOFgLbAmA.jpg"
+    },
+    {
+      "title": "Os Amantes do Nudismo",
+      "year": "1962",
+      "poster": "https://image.tmdb.org/t/p/w500/lyL2Eon7cmzHlPP5kPX5XYG6geu.jpg"
+    }
+  ]
+}
