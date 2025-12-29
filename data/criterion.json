@@ -1,7 +1,4 @@
 {
-  "criterion": {
-    "name": "Criterion",
-    "updated_at": "2025-12-29",
     "films": [
       {
         "title": "The Blade: A Lenda",
@@ -7519,5 +7516,4 @@
         "poster": "https://image.tmdb.org/t/p/w500/jnKGqtWvIX7gVCqyI1ugBq0EqLb.jpg"
       }
     ]
-  }
 }
