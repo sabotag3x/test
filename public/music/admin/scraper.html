@@ -14,7 +14,7 @@ body{
   margin:auto;
 }
 
-input, textarea, button{
+textarea, button{
   width:100%;
   padding:14px;
   margin-top:14px;
@@ -30,7 +30,7 @@ button{
 }
 
 textarea{
-  min-height:340px;
+  min-height:220px;
   font-family:monospace;
   white-space:pre;
 }
@@ -41,9 +41,9 @@ textarea{
 
 <h1>Scraping manual – MusicDuel</h1>
 
-<input
-  id="query"
-  placeholder="Nome da banda ou artista (ex: Radiohead)"
+<textarea
+  id="input"
+  placeholder="Cole os nomes das bandas/artistas, um por linha"
 />
 
 <button onclick="run()">Gerar JSON</button>
