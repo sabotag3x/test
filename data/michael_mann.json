@@ -1,0 +1,69 @@
+{
+  "films": [
+    {
+      "title": "Fogo Contra Fogo",
+      "year": "1995",
+      "poster": "https://image.tmdb.org/t/p/w500/kqT6z0L0ArfUyEks4oJUFcz8hYa.jpg"
+    },
+    {
+      "title": "Miami Vice",
+      "year": "2006",
+      "poster": "https://image.tmdb.org/t/p/w500/1KGD2g0wOc7WBfHc5G19reLHQxk.jpg"
+    },
+    {
+      "title": "O Informante",
+      "year": "1999",
+      "poster": "https://image.tmdb.org/t/p/w500/rCh7g3aAnVo0PjOmPpSvzICJyOx.jpg"
+    },
+    {
+      "title": "Colateral",
+      "year": "2004",
+      "poster": "https://image.tmdb.org/t/p/w500/xJ6dDSQYDZeEGgSu2b0NMif3UMX.jpg"
+    },
+    {
+      "title": "Profissão - Ladrão",
+      "year": "1981",
+      "poster": "https://image.tmdb.org/t/p/w500/vu0CEvqH3pKN2nIrvDISJJiuDok.jpg"
+    },
+    {
+      "title": "Caçador de Assassinos",
+      "year": "1986",
+      "poster": "https://image.tmdb.org/t/p/w500/sg9lS8hb7JHjv24LDLyPjYLZ3Ab.jpg"
+    },
+    {
+      "title": "Ali",
+      "year": "2001",
+      "poster": "https://image.tmdb.org/t/p/w500/llPt4CAJITlr8syt5STAY1hVVLl.jpg"
+    },
+    {
+      "title": "O Último dos Moicanos",
+      "year": "1992",
+      "poster": "https://image.tmdb.org/t/p/w500/fvC4Z4kO62V3vKD230V8jmOEzE7.jpg"
+    },
+    {
+      "title": "Ferrari",
+      "year": "2023",
+      "poster": "https://image.tmdb.org/t/p/w500/gwvIirDw4fKy491PpjSMda28SoN.jpg"
+    },
+    {
+      "title": "Hacker",
+      "year": "2015",
+      "poster": "https://image.tmdb.org/t/p/w500/dNDBzk6JRqDnpwGwBBKx7dGEFcd.jpg"
+    },
+    {
+      "title": "Inimigos Públicos",
+      "year": "2009",
+      "poster": "https://image.tmdb.org/t/p/w500/rMWhTePeEYlcZ8NA3BA4IKsaACb.jpg"
+    },
+    {
+      "title": "Maratona Final",
+      "year": "1980",
+      "poster": "https://image.tmdb.org/t/p/w500/cinQBqd5K5jDqEJ0ECbXA58dXt4.jpg"
+    },
+    {
+      "title": "A Fortaleza Maldita",
+      "year": "1983",
+      "poster": "https://image.tmdb.org/t/p/w500/yd9wU3oajNxwaFHQ02rtTBuSFJD.jpg"
+    }
+  ]
+}
