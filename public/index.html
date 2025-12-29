@@ -461,6 +461,62 @@ async function startVersus(){
   }
 }
 
+  function nextVersus(){
+  if(versusIndex>=11){
+    return showVersusResult();
+  }
+
+  const fa = versusA[versusIndex];
+  const fb = versusB[versusIndex];
+
+  document.getElementById("duel").innerHTML=`
+    <div class="versus-duel">
+      <div class="card">
+        <img src="${fa.poster}" onclick="voteA()">
+        <div class="title">${fa.title}</div>
+      </div>
+
+      <div class="score">
+        ${scoreA} x ${scoreB}<br>
+        <small>${versusIndex+1}/11</small>
+      </div>
+
+      <div class="card">
+        <img src="${fb.poster}" onclick="voteB()">
+        <div class="title">${fb.title}</div>
+      </div>
+    </div>
+  `;
+}
+
+function voteA(){
+  scoreA++;
+  versusIndex++;
+  nextVersus();
+}
+
+function voteB(){
+  scoreB++;
+  versusIndex++;
+  nextVersus();
+}
+
+  function showVersusResult(){
+  let result;
+  if(scoreA>scoreB) result=`${versusNames.a} venceu`;
+  else if(scoreB>scoreA) result=`${versusNames.b} venceu`;
+  else result="Empate";
+
+  document.getElementById("duel").innerHTML=`
+    <div class="final">
+      <h2>${result}</h2>
+      <p>Placar final: ${scoreA} x ${scoreB}</p>
+      <button onclick="location.reload()">Novo duelo</button>
+    </div>
+  `;
+}
+
+
 </script>
 
 
