@@ -24,24 +24,14 @@ body{
   text-align:center;
 }
 
-/* ===== HOME ===== */
-
 #home{
   display:flex;
   flex-direction:column;
   align-items:center;
-  gap:26px;
+  gap:24px;
 }
 
 h1{font-size:44px;margin:0}
-
-.subtitle{opacity:.85;font-size:18px}
-
-.lists{
-  display:flex;
-  justify-content:center;
-  margin-top:30px;
-}
 
 button{
   background:#ffbf2f;
@@ -52,8 +42,6 @@ button{
   font-weight:bold;
   cursor:pointer;
 }
-
-/* ===== GAME ===== */
 
 #game{
   display:none;
@@ -67,7 +55,6 @@ button{
   justify-content:center;
   align-items:center;
   gap:120px;
-  min-height:520px;
 }
 
 .card{
@@ -81,9 +68,7 @@ button{
   width:100%;
   border-radius:18px;
   cursor:pointer;
-  transition:.2s;
 }
-.card img:hover{transform:scale(1.05)}
 
 .title{
   margin-top:14px;
@@ -91,22 +76,18 @@ button{
   font-weight:bold;
 }
 
-/* ===== RESULTADO (BRACKET) ===== */
+/* ===== BRACKET ===== */
 
 .bracket{
   display:flex;
   justify-content:center;
   align-items:center;
   gap:5%;
-  width:100%;
-  max-width:1400px;
-  margin:auto;
 }
 
 .side{
   display:flex;
   gap:18px;
-  align-items:center;
 }
 
 .round{
@@ -125,29 +106,16 @@ button{
   display:flex;
   flex-direction:column;
   align-items:center;
-  width:40%;
-  max-width:420px;
 }
 
 .champion img{
-  width:100%;
-  max-width:360px;
+  width:320px;
   border-radius:16px;
 }
 
 .champion .title{
   font-size:24px;
-  font-weight:bold;
-  margin-top:10px;
-}
-
-#again{margin-top:20px}
-
-/* ===== MOBILE ===== */
-
-@media(max-width:900px){
-  .bracket{flex-direction:column;gap:16px}
-  .side{flex-direction:column}
+  margin-top:12px;
 }
 </style>
 </head>
@@ -156,17 +124,11 @@ button{
 
 <div class="container">
 
-<!-- ===== HOME ===== -->
 <div id="home">
   <h1>MusicDuel</h1>
-  <div class="subtitle">Batalha entre bandas e artistas</div>
-
-  <div class="lists">
-    <button onclick="startList('test')">Bandas – Teste</button>
-  </div>
+  <button onclick="startList('test')">Bandas – Teste</button>
 </div>
 
-<!-- ===== GAME ===== -->
 <div id="game">
   <div id="duel"></div>
 </div>
@@ -177,7 +139,7 @@ button{
 let pool=[], items=[], atual=[], idx=0, winners=[], rounds=[];
 let initialRound=[];
 
-function shuffle(a){return a.sort(()=>Math.random()-.5)}
+function shuffle(a){ return a.sort(()=>Math.random()-.5); }
 
 async function startList(key){
   document.getElementById("home").style.display="none";
@@ -187,22 +149,14 @@ async function startList(key){
     const res = await fetch(`/api/music/list/${key}`);
     const data = await res.json();
 
-    const seen = new Set();
-    const clean = data.artists
-      .filter(a => a && a.image)
-      .filter(a => {
-        if(seen.has(a.id)) return false;
-        seen.add(a.id);
-        return true;
-      })
-      .map(a => ({
-        title: a.name,
-        poster: a.image
-      }));
+    const artists = data.artists.map(a => ({
+      title: a.name,
+      poster: a.image
+    }));
 
-    if(clean.length < 16) throw new Error();
+    if(artists.length < 16) throw new Error();
 
-    pool = shuffle(clean);
+    pool = shuffle(artists);
     items = pool.splice(0,16);
     initialRound=[...items];
     rounds=[]; winners=[]; idx=0;
@@ -210,8 +164,8 @@ async function startList(key){
     next();
   }catch{
     document.getElementById("duel").innerHTML =
-      `<div><b>Erro ao carregar artistas</b><br>
-       <button onclick="location.reload()">Voltar</button></div>`;
+      `<div><b>Erro ao carregar artistas</b>
+       <br><button onclick="location.reload()">Voltar</button></div>`;
   }
 }
 
@@ -224,7 +178,10 @@ function next(){
   atual=[items[idx],items[idx+1]];
   idx+=2;
   document.getElementById("duel").innerHTML=
-    card(atual[0],0)+card(atual[1],1);
+    `<div class="duel">
+      ${card(atual[0],0)}
+      ${card(atual[1],1)}
+     </div>`;
 }
 
 function card(f,i){
@@ -257,7 +214,7 @@ function showFinal(champ){
     <div class="champion">
       <img src="${champ.poster}">
       <div class="title">Campeão<br>${champ.title}</div>
-      <button id="again" onclick="location.reload()">Jogar novamente</button>
+      <button onclick="location.reload()">Jogar novamente</button>
     </div>
 
     <div class="side">
