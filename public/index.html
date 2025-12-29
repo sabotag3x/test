@@ -278,34 +278,37 @@ function stopLoading(){
   document.getElementById("status").style.display="none";
 }
 
-/* ================= ENTRY POINTS ================= */
+/* ================= ENTRY ================= */
 
 function startUser(){
   const u=document.getElementById("user").value.trim();
   if(!u) return;
-  start(`/api/user/${u}`);
+  start(`/api/user/${u}`, true);
 }
 
 function startList(key){
-  start(`/api/list/${key}`);
+  start(`/api/list/${key}`, false);
 }
 
 /* ================= CORE ================= */
 
-async function start(endpoint){
+async function start(endpoint, isUser){
   document.getElementById("home").style.display="none";
   document.getElementById("game").style.display="flex";
   startLoading();
 
   try{
     const res = await fetch(endpoint);
-    const data = await res.json();
+    if(!res.ok) throw new Error("INVALID_USER");
 
+    const data = await res.json();
     const valid = Array.isArray(data)
       ? data.filter(f=>f && f.poster)
       : [];
 
-    if(valid.length < 16) throw new Error("Lista insuficiente");
+    if(valid.length < 16){
+      throw new Error("NOT_ENOUGH");
+    }
 
     pool = shuffle(valid);
     filmes = pool.splice(0,16);
@@ -318,12 +321,24 @@ async function start(endpoint){
 
   }catch(e){
     stopLoading();
-    document.getElementById("duel").innerHTML=
-      `<div>
-        <b>Erro ao carregar filmes</b><br>
-        <button onclick="location.reload()">Voltar</button>
-      </div>`;
+    showError(
+      e.message === "NOT_ENOUGH"
+        ? "Esse usuário não tem filmes suficientes para a batalha."
+        : isUser
+          ? "Usuário inexistente ou erro ao carregar os filmes."
+          : "Erro ao carregar a lista."
+    );
   }
+}
+
+/* ================= UI ERROR ================= */
+
+function showError(msg){
+  document.getElementById("duel").innerHTML=
+    `<div>
+      <b>${msg}</b><br>
+      <button onclick="location.reload()">Voltar</button>
+    </div>`;
 }
 
 /* ================= DUELOS ================= */
