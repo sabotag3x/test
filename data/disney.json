@@ -1,0 +1,3312 @@
+{
+  "disney": {
+    "name": "Disney",
+    "updated_at": "2025-12-29",
+    "films": [
+      {
+        "title": "Branca de Neve e os Sete Anões",
+        "year": "1938",
+        "poster": "https://image.tmdb.org/t/p/w500/5l0dsoLXP2eifLQ0lFCYNC5Lcv0.jpg"
+      },
+      {
+        "title": "Pinóquio",
+        "year": "1940",
+        "poster": "https://image.tmdb.org/t/p/w500/rJTpz9LJFmDflvibkY2Y7IFOGua.jpg"
+      },
+      {
+        "title": "Fantasia",
+        "year": "1940",
+        "poster": "https://image.tmdb.org/t/p/w500/hKg8Zpm4fMOy7KmrBHdo4YCT5dS.jpg"
+      },
+      {
+        "title": "O Dragão Relutante",
+        "year": "1941",
+        "poster": "https://image.tmdb.org/t/p/w500/igCdaYGRq16qkNX7XEAf3DlrQRJ.jpg"
+      },
+      {
+        "title": "Dumbo",
+        "year": "1941",
+        "poster": "https://image.tmdb.org/t/p/w500/nGvMq9dEQwYrIbZe2N9OvVMBVSL.jpg"
+      },
+      {
+        "title": "Bambi",
+        "year": "1942",
+        "poster": "https://image.tmdb.org/t/p/w500/dpgRyhfvS2ieJbS50z7vDrHrTXb.jpg"
+      },
+      {
+        "title": "Alô, Amigos",
+        "year": "1942",
+        "poster": "https://image.tmdb.org/t/p/w500/dWWITF02c1M1w6Q4jTFuC5KqTc7.jpg"
+      },
+      {
+        "title": "Victory Through Air Power",
+        "year": "1943",
+        "poster": "https://image.tmdb.org/t/p/w500/7uHtN8sAlVsSbTZOvhGV8iTEfGk.jpg"
+      },
+      {
+        "title": "Você Já Foi à Bahia?",
+        "year": "1944",
+        "poster": "https://image.tmdb.org/t/p/w500/wllGcOAeh4bVNVNLK5H0thC74Cx.jpg"
+      },
+      {
+        "title": "Música, Maestro!",
+        "year": "1946",
+        "poster": "https://image.tmdb.org/t/p/w500/aAyaP3wyy7eer5MCfLsE61VUaJJ.jpg"
+      },
+      {
+        "title": "A Canção do Sul",
+        "year": "1946",
+        "poster": "https://image.tmdb.org/t/p/w500/en2EQM7Iv5VMcCN3tWPV5mf7plh.jpg"
+      },
+      {
+        "title": "Willie the Operatic Whale",
+        "year": "1946",
+        "poster": "https://image.tmdb.org/t/p/w500/1RI4ATApf5nlLlNUmOBTdB6OH5G.jpg"
+      },
+      {
+        "title": "Pedro e o Lobo",
+        "year": "1946",
+        "poster": "https://image.tmdb.org/t/p/w500/jjXh8JWgWXVXKfNOdY2915yyPQD.jpg"
+      },
+      {
+        "title": "Como é Bom se Divertir",
+        "year": "1947",
+        "poster": "https://image.tmdb.org/t/p/w500/tGOVtD7F6WYb0n3dR4PLauS6wj.jpg"
+      },
+      {
+        "title": "Tempo de Melodia",
+        "year": "1948",
+        "poster": "https://image.tmdb.org/t/p/w500/jDL1blSkW7L4TPOgH4wA12cD4uk.jpg"
+      },
+      {
+        "title": "Meu Querido Carneirinho",
+        "year": "1948",
+        "poster": "https://image.tmdb.org/t/p/w500/sWoOc4tkxlTf0i8YYia25sPRinY.jpg"
+      },
+      {
+        "title": "As Aventuras de Ichabod e Sr. Sapo",
+        "year": "1949",
+        "poster": "https://image.tmdb.org/t/p/w500/mK6JBRA9g7g4dzejndEp2j346Ap.jpg"
+      },
+      {
+        "title": "Cinderela",
+        "year": "1950",
+        "poster": "https://image.tmdb.org/t/p/w500/Acj5mmoZQ5lKLNpU2y0XQCt5rNb.jpg"
+      },
+      {
+        "title": "A Ilha do Tesouro",
+        "year": "1950",
+        "poster": "https://image.tmdb.org/t/p/w500/3fnyLPpW6wE9zAGMyEA2o7qTGJY.jpg"
+      },
+      {
+        "title": "Alice no País das Maravilhas",
+        "year": "1951",
+        "poster": "https://image.tmdb.org/t/p/w500/lgnBkVe1PNLgFRgaeBeB2Vgb63M.jpg"
+      },
+      {
+        "title": "Robin Hood: O Justiceiro",
+        "year": "1952",
+        "poster": "https://image.tmdb.org/t/p/w500/A7HbdpmJk82Bw0g5oOBliXeucQH.jpg"
+      },
+      {
+        "title": "As Aventuras de Peter Pan",
+        "year": "1953",
+        "poster": "https://image.tmdb.org/t/p/w500/bcmbrRVVs0RxNczCFC57onjHmkJ.jpg"
+      },
+      {
+        "title": "Entre a Espada e a Rosa",
+        "year": "1953",
+        "poster": "https://image.tmdb.org/t/p/w500/cFDClsUSr3ZlkQMKQ8ZEPiFFfpO.jpg"
+      },
+      {
+        "title": "O Deserto Vivo",
+        "year": "1953",
+        "poster": "https://image.tmdb.org/t/p/w500/Av1A5smWvVfAfS5GnuNgAVXyais.jpg"
+      },
+      {
+        "title": "Rob Roy, O Grande Rebelde",
+        "year": "1953",
+        "poster": "https://image.tmdb.org/t/p/w500/ebNAkZDzKFj0cfpqcJdeY5R6hzS.jpg"
+      },
+      {
+        "title": "A Planície Imensa",
+        "year": "1954",
+        "poster": "https://image.tmdb.org/t/p/w500/xuRZqU1N5mCrF9O0LwT2Ca8vo8O.jpg"
+      },
+      {
+        "title": "20.000 Léguas Submarinas",
+        "year": "1954",
+        "poster": "https://image.tmdb.org/t/p/w500/t6IkR2Ol5vVbMIJm9r2BJmhOkW1.jpg"
+      },
+      {
+        "title": "Davy Crockett, O Rei das Fronteiras",
+        "year": "1955",
+        "poster": "https://image.tmdb.org/t/p/w500/dXUIoUgrUPhWT68WKyC9wp5YE1Z.jpg"
+      },
+      {
+        "title": "A Dama e o Vagabundo",
+        "year": "1955",
+        "poster": "https://image.tmdb.org/t/p/w500/qKBA03V9LvfpvcNfUgAwdydRSA1.jpg"
+      },
+      {
+        "title": "O Leão Africano",
+        "year": "1955",
+        "poster": "https://image.tmdb.org/t/p/w500/umzKA31cNEzBcStzisURGbVorB2.jpg"
+      },
+      {
+        "title": "O Indomável Vagabundo",
+        "year": "1955",
+        "poster": "https://image.tmdb.org/t/p/w500/zL64NjedV7cVxCyWyCQikv1Mm4x.jpg"
+      },
+      {
+        "title": "Têmpera de Bravos",
+        "year": "1956",
+        "poster": "https://image.tmdb.org/t/p/w500/tbU8ECQEhWhMx3rEVaBulmId4s0.jpg"
+      },
+      {
+        "title": "Davy Crockett e Os Piratas do Rio",
+        "year": "1956",
+        "poster": "https://image.tmdb.org/t/p/w500/5aKDC36MfFwnBPe0NmqrJdsJ37c.jpg"
+      },
+      {
+        "title": "Segredos da Vida",
+        "year": "1956",
+        "poster": "https://image.tmdb.org/t/p/w500/Ymf7Z11r3oyXAen95cs1uIHE3m.jpg"
+      },
+      {
+        "title": "A Odisseia do Oeste",
+        "year": "1956",
+        "poster": "https://image.tmdb.org/t/p/w500/oSGHzJ28UMZulHVQkHnaDSMLvOm.jpg"
+      },
+      {
+        "title": "Audácia de um Rebelde",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/cQKl3B4lfqKB9hoO8EGYRQiWZfm.jpg"
+      },
+      {
+        "title": "No Coração da Floresta",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/noMED4xZM33foUaZvJWbo7SvcaP.jpg"
+      },
+      {
+        "title": "O Meu Melhor Companheiro",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/cAywXQWKv0QgjrKQPHGY6Qle3Zn.jpg"
+      },
+      {
+        "title": "O Tratado dos Moicanos",
+        "year": "1958",
+        "poster": "https://image.tmdb.org/t/p/w500/sF1NfBxJwAHx6ryRXqpxz0lKaRn.jpg"
+      },
+      {
+        "title": "Paul Bunyan",
+        "year": "1958",
+        "poster": "https://image.tmdb.org/t/p/w500/9DtpX8vi3o5kB5R537hClAbTbQ7.jpg"
+      },
+      {
+        "title": "From All of Us, To All of You",
+        "year": "1958",
+        "poster": "https://image.tmdb.org/t/p/w500/664zGUmaPp8vskmfh3XZvDIG4IO.jpg"
+      },
+      {
+        "title": "Tonka e o Bravo Comanche",
+        "year": "1958",
+        "poster": "https://image.tmdb.org/t/p/w500/mssy2ljyEnIoe26EqS6qm5vHGkD.jpg"
+      },
+      {
+        "title": "A Bela Adormecida",
+        "year": "1959",
+        "poster": "https://image.tmdb.org/t/p/w500/2MjuCYa6RkhNHmNDl4MqktxK8XH.jpg"
+      },
+      {
+        "title": "Felpudo, O Cão Feiticeiro",
+        "year": "1959",
+        "poster": "https://image.tmdb.org/t/p/w500/dqd1HsNwLtVj4h1X0YKDe8lYMID.jpg"
+      },
+      {
+        "title": "Donald no País da Matemágica",
+        "year": "1959",
+        "poster": "https://image.tmdb.org/t/p/w500/dKyvrSVysFobPPmMHqyStvrJRqc.jpg"
+      },
+      {
+        "title": "O Terceiro Homem na Montanha",
+        "year": "1959",
+        "poster": "https://image.tmdb.org/t/p/w500/qlWgcBEXz9KrnHYZf6CL0m2ENiW.jpg"
+      },
+      {
+        "title": "O Gato da Floresta",
+        "year": "1960",
+        "poster": "https://image.tmdb.org/t/p/w500/gXOT7xkwQ3U78QSJmI6zx5CLTmh.jpg"
+      },
+      {
+        "title": "O Mundo Maravilhoso do Circo",
+        "year": "1960",
+        "poster": "https://image.tmdb.org/t/p/w500/onzLMi7TBBHgV4XIOT74nfII2O2.jpg"
+      },
+      {
+        "title": "O Signo do Zorro",
+        "year": "1958",
+        "poster": "https://image.tmdb.org/t/p/w500/hcsoK9bCizKIHTPUSSpLITgd4dc.jpg"
+      },
+      {
+        "title": "101 Dálmatas: A Guerra dos Dálmatas",
+        "year": "1961",
+        "poster": "https://image.tmdb.org/t/p/w500/yvNjHSpg6uhwmrMXdJczMRsBKQn.jpg"
+      },
+      {
+        "title": "O Fantástico Super-Homem",
+        "year": "1961",
+        "poster": "https://image.tmdb.org/t/p/w500/9nu5V6GvvN6BxPxbOh8RVkjcm2i.jpg"
+      },
+      {
+        "title": "O Grande Amor de Nossas Vidas",
+        "year": "1961",
+        "poster": "https://image.tmdb.org/t/p/w500/eN7c9my5w2FCLGEIPIibOxZdQtD.jpg"
+      },
+      {
+        "title": "Nikki, O Cão Selvagem do Norte",
+        "year": "1961",
+        "poster": "https://image.tmdb.org/t/p/w500/6jPamu9qm0gME0TlYXJswAMRy9k.jpg"
+      },
+      {
+        "title": "Meu Leal Companheiro",
+        "year": "1961",
+        "poster": "https://image.tmdb.org/t/p/w500/2gfMU9s6EUzoA0vCNT7G2JTzzE0.jpg"
+      },
+      {
+        "title": "Uma Aventura na Terra dos Brinquedos",
+        "year": "1961",
+        "poster": "https://image.tmdb.org/t/p/w500/sV4vgq1jrKGHIcgsTh556ANMIQh.jpg"
+      },
+      {
+        "title": "Escapade in Florence",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/v7cvQuw0jGY4ztqTbBYpHLIeJLj.jpg"
+      },
+      {
+        "title": "O Incrível Homem do Espaço",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/2dR84EmpreVavzGbB3V2JqeTJaP.jpg"
+      },
+      {
+        "title": "Bon Voyage, Enfim Paris!",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/l2fkjhsGMft4XLDwXJsXA5qSATg.jpg"
+      },
+      {
+        "title": "Astúcia de um Rebelde",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/oFE9DlcfKkOUxQMa3LLLPVomxRk.jpg"
+      },
+      {
+        "title": "Viena dos Meus Sonhos",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/yEGiFbXRTnSKtZ3RmpkxJSJxJP2.jpg"
+      },
+      {
+        "title": "Sammy, a Foca Fora do Comum",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/brZgdHlRlY1YrNLO6kse0hdciuF.jpg"
+      },
+      {
+        "title": "A Montanha do Lobo Solitário",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/1PqlCYQVhvwwXzlNk7uZ5vX4SP9.jpg"
+      },
+      {
+        "title": "As Grandes Aventuras do Capitão Grant",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/27hbGwIAmvcB9X9FdXSwvU05frt.jpg"
+      },
+      {
+        "title": "Inimigos da Lua",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/jn3XxnIBBtIl0jovyrrEL2a9MeS.jpg"
+      },
+      {
+        "title": "O Fabuloso Criador de Encrencas",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/9k3DwDpQeLN4sZ7hWnWII9DcQXA.jpg"
+      },
+      {
+        "title": "Ao Passar do Vendaval",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/g0YbdO6RB167iRT4SESoD11itCe.jpg"
+      },
+      {
+        "title": "Na Trilha dos Apaches",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/lWHdfGKfVzn7dBxKgvXHljxNKUw.jpg"
+      },
+      {
+        "title": "Um Verão Mágico",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/12GBF0hH9DWSaTBPZpCCKq4DiA6.jpg"
+      },
+      {
+        "title": "A Incrível Jornada",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/rZ3BaUmeKhjywSwwxJI8GMJIbvN.jpg"
+      },
+      {
+        "title": "As Três Vidas de Thomasina",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/kmzys3i2XyCHyvUzNIpUivWeMub.jpg"
+      },
+      {
+        "title": "A Espada Era a Lei",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/skbkDIP7QW1QJzT8P778bmqxp2Y.jpg"
+      },
+      {
+        "title": "As Fiandeiras da Lua",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/zSLOgfQ09eoomaveyel2aLKLmaY.jpg"
+      },
+      {
+        "title": "As Desventuras de Merlin Jones",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/mzayW3AacpmxyTbnlQCh5Y9qQbY.jpg"
+      },
+      {
+        "title": "Um Tigre Caminha pela Noite",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/nGEYLZOJLAyYzMCgfFen9eDag23.jpg"
+      },
+      {
+        "title": "Mary Poppins",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/pHyWpWn2pRIfhS3Arcn4SKtKKW4.jpg"
+      },
+      {
+        "title": "Em Busca da Aventura",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/lBGWRrI3lyf0QGyeiect1ooupsX.jpg"
+      },
+      {
+        "title": "Somente os Fracos Se Rendem",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/mbCPOPbTInGViSRKOKfoiRB0sGU.jpg"
+      },
+      {
+        "title": "Aquele Gato Danado",
+        "year": "1965",
+        "poster": "https://image.tmdb.org/t/p/w500/vJCOiHs7GhHEUYbRycqJ2OMCSmm.jpg"
+      },
+      {
+        "title": "Um Amor de Companheiro",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/1WmKES9yTthsIoA6AO5wXoCYDai.jpg"
+      },
+      {
+        "title": "O Fantástico Robin Crusoé",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/uJi1gIvXAl0ars7VRTrBL7IctPr.jpg"
+      },
+      {
+        "title": "O Valente Príncipe de Donegal",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/hqPcWf4YXObkLB5LERd4a2n6eKu.jpg"
+      },
+      {
+        "title": "Nunca é Tarde para Amar",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/yM5WgOJNxW2eXqZVYDZeHF5OzfW.jpg"
+      },
+      {
+        "title": "A Francesa e o Americano",
+        "year": "1967",
+        "poster": "https://image.tmdb.org/t/p/w500/p76W3vGEjRfjmWReejVmIw0eibt.jpg"
+      },
+      {
+        "title": "Califórnia, Terra do Ouro",
+        "year": "1967",
+        "poster": "https://image.tmdb.org/t/p/w500/ds4P2zHA7yLWUEJras5xdasvBRP.jpg"
+      },
+      {
+        "title": "Quando o Coração Não Envelhece",
+        "year": "1967",
+        "poster": "https://image.tmdb.org/t/p/w500/xPePeB56IdkQOwMz8niiFhePOsq.jpg"
+      },
+      {
+        "title": "Eu Acredito em Gnomos",
+        "year": "1967",
+        "poster": "https://image.tmdb.org/t/p/w500/oeugD3jvHaNCaSc6r3NK1EcYvty.jpg"
+      },
+      {
+        "title": "Mogli: O Menino Lobo",
+        "year": "1967",
+        "poster": "https://image.tmdb.org/t/p/w500/ikqAxUAEH4BloLjVgR8MWNX3qtU.jpg"
+      },
+      {
+        "title": "Charlie, the Lonesome Cougar",
+        "year": "1967",
+        "poster": "https://image.tmdb.org/t/p/w500/7Nx00VscGdcPsa1PmjmwwMxLe3F.jpg"
+      },
+      {
+        "title": "A Banda da Família Bower",
+        "year": "1968",
+        "poster": "https://image.tmdb.org/t/p/w500/ehE9DsE9boVIJ5CGfeu3vmih6mn.jpg"
+      },
+      {
+        "title": "Como Roubar Milhões Sem Fazer Força",
+        "year": "1968",
+        "poster": "https://image.tmdb.org/t/p/w500/10UlHQMSLdUE7s3QQDC33THXjbo.jpg"
+      },
+      {
+        "title": "A Sorte Tem Quatro Patas",
+        "year": "1968",
+        "poster": "https://image.tmdb.org/t/p/w500/chOwOYnJ3ct76mqP5SK1TS4au7r.jpg"
+      },
+      {
+        "title": "Se Meu Fusca Falasse",
+        "year": "1968",
+        "poster": "https://image.tmdb.org/t/p/w500/fAPiPlFQwBTYPIq30fxFKlTZ24d.jpg"
+      },
+      {
+        "title": "A Esperança dos Índios",
+        "year": "1969",
+        "poster": "https://image.tmdb.org/t/p/w500/mzYe4LHgqjvwSomOrTUZqIoQp2e.jpg"
+      },
+      {
+        "title": "Rascal",
+        "year": "1969",
+        "poster": "https://image.tmdb.org/t/p/w500/iPisTYhKjtxjek6TL50AnBmh6ga.jpg"
+      },
+      {
+        "title": "O Computador de Tênis",
+        "year": "1969",
+        "poster": "https://image.tmdb.org/t/p/w500/mAuvnGjGVx67ZkzTKhXJSAYuzF7.jpg"
+      },
+      {
+        "title": "O Gigantesco Rei das Florestas",
+        "year": "1970",
+        "poster": "https://image.tmdb.org/t/p/w500/himI10dGezpxvj3wj5urgywi4xW.jpg"
+      },
+      {
+        "title": "S.O.S: Gatunos ao Mar!",
+        "year": "1970",
+        "poster": "https://image.tmdb.org/t/p/w500/lcLnRdk7BtdTSKGJPjzIYQRANs8.jpg"
+      },
+      {
+        "title": "A Vida É Um Desafio",
+        "year": "1970",
+        "poster": "https://image.tmdb.org/t/p/w500/lD3wamyGdWuGCjBZTmLKWDFa8OV.jpg"
+      },
+      {
+        "title": "Aristogatas",
+        "year": "1970",
+        "poster": "https://image.tmdb.org/t/p/w500/A2tgpsGTa28TAosyngMprBnXyG9.jpg"
+      },
+      {
+        "title": "Dinheiro, Poder e Bananas",
+        "year": "1971",
+        "poster": "https://image.tmdb.org/t/p/w500/l80GlJCOFM6rE2uwiW0EMD6jAPd.jpg"
+      },
+      {
+        "title": "John Escandaloso",
+        "year": "1971",
+        "poster": "https://image.tmdb.org/t/p/w500/4PT6wldzvuQacyqPsybWHTz3nf3.jpg"
+      },
+      {
+        "title": "A Pata de Um Milhão de Dólares",
+        "year": "1971",
+        "poster": "https://image.tmdb.org/t/p/w500/8pFtpO9XKMEvKyieLNOjxqBHypz.jpg"
+      },
+      {
+        "title": "Se Minha Cama Voasse",
+        "year": "1971",
+        "poster": "https://image.tmdb.org/t/p/w500/AtfzAzkMyB6DM6dE0iH0xagCJf0.jpg"
+      },
+      {
+        "title": "Folias na Neve",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/i6IST0VniVWaZIbGCkZ3nThjbpO.jpg"
+      },
+      {
+        "title": "O Comedor de Biscoitos",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/acZIvwWsRortdwfCNs9sxXpsKWa.jpg"
+      },
+      {
+        "title": "Napoleão e Samantha",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/mOjTiTeNYPQzUdRiBkQMUB1iRwP.jpg"
+      },
+      {
+        "title": "Fuja, Puma, Fuja",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/5QMUJmnCWmdt1hy6Aqy9EvNbWwk.jpg"
+      },
+      {
+        "title": "Chandar, the Black Leopard of Ceylon",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/xcrYwVN5OfMovSnKMy7Qceh5wQO.jpg"
+      },
+      {
+        "title": "Um Anjo da Guarda Muito Especial",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/lrRCt8z8RhnNcHDiPaTMwOJk61h.jpg"
+      },
+      {
+        "title": "O Pequeno Índio",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/fPwJ82UoWF1NvC3prhlQ3WMNhKN.jpg"
+      },
+      {
+        "title": "Mustang",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/akoULm9w5xm4o6rCTlXsrSA0G12.jpg"
+      },
+      {
+        "title": "Robin Hood",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/xWxrRsgHxmdPKtZg6f5Mftvvjw9.jpg"
+      },
+      {
+        "title": "Super Pai",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/a6KXXd9LZuAs0iLUUesVOQlOxPq.jpg"
+      },
+      {
+        "title": "A Ilha no Topo do Mundo",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/oGKpRh9a08Vbpv7EirRaSViuumF.jpg"
+      },
+      {
+        "title": "As Novas Aventuras do Fusca",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/2owUFcJsLJw7e6k6CliDRWkoGX4.jpg"
+      },
+      {
+        "title": "Os Ursos e Eu",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/gINGpoL9KHee6yRSn1Vnf5nnoy6.jpg"
+      },
+      {
+        "title": "Um Cowboy no Havaí",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/cVCDUICV8M3He7XLqJe4Rw4REG6.jpg"
+      },
+      {
+        "title": "O Homem Mais Forte do Mundo",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/tw7ajktCorMTh3jNEQ8aXxLdmp1.jpg"
+      },
+      {
+        "title": "A Montanha Enfeitiçada",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/rYPR61n0Q2pT8IDqoHo801AH75g.jpg"
+      },
+      {
+        "title": "A Gangue da Tortinha de Maça",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/jtH1cXvZ0MERiytCm1MsqQ5laW5.jpg"
+      },
+      {
+        "title": "Está Faltando Um de Nossos Dinossauros",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/TD03DZvWSOKRJx6KLogMMDcqll.jpg"
+      },
+      {
+        "title": "O Pônei Selvagem",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/a4reYhc8NUi9MM1BYOc8GNEjFVd.jpg"
+      },
+      {
+        "title": "Garotos Travessos",
+        "year": "1976",
+        "poster": "https://image.tmdb.org/t/p/w500/fodDFwLTQMFRCHPo8scc5DDM3vo.jpg"
+      },
+      {
+        "title": "O Pequeno Ladrão de Cavalos",
+        "year": "1976",
+        "poster": "https://image.tmdb.org/t/p/w500/y4sVg2mS9OQfN3wmDRxJvDV3x7.jpg"
+      },
+      {
+        "title": "O Tesouro de Matecumbe",
+        "year": "1976",
+        "poster": "https://image.tmdb.org/t/p/w500/asJk0EnGrn1xyGodThFTPt4iZZK.jpg"
+      },
+      {
+        "title": "Gus: Uma Mula Fora de Série",
+        "year": "1976",
+        "poster": "https://image.tmdb.org/t/p/w500/f0m31kxnYw92UNDzGKAWCF9djC0.jpg"
+      },
+      {
+        "title": "Se Eu Fosse a Minha Mãe",
+        "year": "1976",
+        "poster": "https://image.tmdb.org/t/p/w500/8ypXAhRBZgH3nrz9EFAkBCjgBPt.jpg"
+      },
+      {
+        "title": "Felpudo - O  Cachorro Promotor",
+        "year": "1976",
+        "poster": "https://image.tmdb.org/t/p/w500/hIMYGxGKhjrtGdEU7XXpq8UGQoJ.jpg"
+      },
+      {
+        "title": "As Muitas Aventuras do Ursinho Pooh",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/drmonezw1z24j1LD5haP56QRIbs.jpg"
+      },
+      {
+        "title": "Um Conto de Dois Animais",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/sFERwERk6W7ZeVrtjb79RCMoNQT.jpg"
+      },
+      {
+        "title": "Bernardo e Bianca",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/wQzrtMYlWgiirWSx9Sf19UUtkV0.jpg"
+      },
+      {
+        "title": "Herbie: Um Fusca em Monte Carlo",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/1clBIEF4yfPDm0malqbmZIAO9kw.jpg"
+      },
+      {
+        "title": "Candleshoe, O Segredo da Mansão",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/fMsBGxL3P1jLDbog8KXacDFVY3Z.jpg"
+      },
+      {
+        "title": "A Volta da Montanha Enfeitiçada",
+        "year": "1978",
+        "poster": "https://image.tmdb.org/t/p/w500/l2HCYrEFtcIaYX8Eus1EBsdJ91t.jpg"
+      },
+      {
+        "title": "O Gato Que Veio do Espaço",
+        "year": "1978",
+        "poster": "https://image.tmdb.org/t/p/w500/1S6yRq0BX76QDbZx2rV8W95rUMq.jpg"
+      },
+      {
+        "title": "As Malucas da Avenida",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/gyEaTIil42yWyLoYVKzWJWzDN9J.jpg"
+      },
+      {
+        "title": "A Gangue da Tortinha de Maçã Ataca Novamente",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/pa6OKnJstZnU5klsYp665gCFnnU.jpg"
+      },
+      {
+        "title": "O Estranho Aliado do Rei Arthur",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/hD9h9V5GcBtRH39zN1U9iP3tfcO.jpg"
+      },
+      {
+        "title": "O Buraco Negro",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/bUavSAHaHZ4EDvyYOltmzEMZtme.jpg"
+      },
+      {
+        "title": "Loucuras em Plena Madrugada",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/m8v4GTKjmbzBBmSSGNuhrO4dAxS.jpg"
+      },
+      {
+        "title": "Olhos na Floresta",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/3jDif2trUYMw3lfzIKPhbez2iUS.jpg"
+      },
+      {
+        "title": "A Última Cruzada do Fusca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/4HizgXDEUCdihhSXnsBJbM6Nc92.jpg"
+      },
+      {
+        "title": "Popeye",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/hCCp4pESgYY6uTFARYf4UYV1BdU.jpg"
+      },
+      {
+        "title": "Max Devlin e o Diabo",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/b5XOONi82ThL4r5K20BKsWIhmi6.jpg"
+      },
+      {
+        "title": "Amy: Uma Vida pelas Crianças",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/3n9UJZV1k1aMmAzukKVdHV7iyve.jpg"
+      },
+      {
+        "title": "O Dragão e o Feiticeiro",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/zCWSMavOruKE11nWGOw5CtB61pK.jpg"
+      },
+      {
+        "title": "Condorman - O Homem Pássaro",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/wRe9kAvjN5IGAjPd0oCKhjyQDt0.jpg"
+      },
+      {
+        "title": "O Cão e a Raposa",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/efIxA3aIzYaKamMUbIC4I8hJTAL.jpg"
+      },
+      {
+        "title": "Dramática Travessia",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/t0m54hI5yUK5lFJENP4yMoyrFfi.jpg"
+      },
+      {
+        "title": "Além da Montanha Enfeitiçada",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/ArOMADPkSMgwfeYTDG3zblSDaty.jpg"
+      },
+      {
+        "title": "Annie",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/xopqD99S1GqQOG8UAeSElsX9MeP.jpg"
+      },
+      {
+        "title": "Tron: Uma Odisseia Eletrônica",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/1xTQHQxApZnnA7yPU31VgEggO6f.jpg"
+      },
+      {
+        "title": "Tex: Um Retrato da Juventude",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/rcDrPgiri9xcf8LxhHlxDPIJzC0.jpg"
+      },
+      {
+        "title": "O Cristal Encantado",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/4XvmHnJdjcvd2OYBqylEQs2q6IY.jpg"
+      },
+      {
+        "title": "Se viver, Mande um postal",
+        "year": "1983",
+        "poster": "https://image.tmdb.org/t/p/w500/zqHQRT0TZkDaLgJerIyK6qhOmwg.jpg"
+      },
+      {
+        "title": "No Templo das Tentações",
+        "year": "1983",
+        "poster": "https://image.tmdb.org/t/p/w500/94dMO6kAawyFUk0sCDGIjAnchED.jpg"
+      },
+      {
+        "title": "A Disney Halloween",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/1a87wsPOisBU0fF0HbgDi0v0m9H.jpg"
+      },
+      {
+        "title": "Os Lobos Nunca Choram",
+        "year": "1983",
+        "poster": "https://image.tmdb.org/t/p/w500/e61tGxVtobTQuFPmAC7xWwdC4O1.jpg"
+      },
+      {
+        "title": "A Força da Esperança",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/mzmTsEjdqqxCnM276Ja1fanwIdK.jpg"
+      },
+      {
+        "title": "Running Brave",
+        "year": "1983",
+        "poster": "https://image.tmdb.org/t/p/w500/pcvTmz4ea0C1NiMt2my3FPgFgIg.jpg"
+      },
+      {
+        "title": "Gone Are the Dayes",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/4SkWBlFzNulfzAULcRwN9udItpg.jpg"
+      },
+      {
+        "title": "Frankenweenie",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/10MHgLe0ZEX0xSLHghgy6mvUyIF.jpg"
+      },
+      {
+        "title": "O Mundo Fantástico de Oz",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/bu72dwzvfXN8BaeBiV9FS0HjYpe.jpg"
+      },
+      {
+        "title": "O Caldeirão Mágico",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/3ZADXxqb4qMEZ1MAanujQ4GZzTf.jpg"
+      },
+      {
+        "title": "Viagem Clandestina",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/xc3efB3JJig0dBRqZNGSnp6LCgb.jpg"
+      },
+      {
+        "title": "Além do Céu Azul",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/cwThf1Zj0JulbEZJa16vk5nEunz.jpg"
+      },
+      {
+        "title": "O Natal Mágico",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/iBo1K3bZRay2bsOQbXjCQGGxXpr.jpg"
+      },
+      {
+        "title": "O Gato Mais Rico do Mundo",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/9jpf1mvqHChBW7cocySy0BRkMOO.jpg"
+      },
+      {
+        "title": "O Espectro do Sr. Boogedy",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/aUqZcmoWZvZcDkFpAZY6t7h93QB.jpg"
+      },
+      {
+        "title": "Fuzzbucket",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/lYdNkBk5GomNxsCk2CpO0atk9XD.jpg"
+      },
+      {
+        "title": "As Peripécias do Ratinho Detetive",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/2V4c6xPivHkFp2n0U6Y6AGZz2WI.jpg"
+      },
+      {
+        "title": "O Vôo do Navegador",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/b5JF37cP5Hj7AeNdBevDpjy1aOf.jpg"
+      },
+      {
+        "title": "A Estrela de Natal",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/l3pBKlZXOMLhtIpfxz0TYHLKCo7.jpg"
+      },
+      {
+        "title": "A Noiva de Boogedy",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/kYsQSZFFELiUgxu7vjQGYSuXW0R.jpg"
+      },
+      {
+        "title": "Benji - Um Cão Desafia a Selva",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/tTqPFRq3zKaEdssojDEf5ghGJKI.jpg"
+      },
+      {
+        "title": "Adorável Andróide",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/7W9CyqfOJ06Oi5rXm8uQ4Yi9OSW.jpg"
+      },
+      {
+        "title": "A Torradeira Valente",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/mEZcPMNRqTcotOZSttN5MtmJbu1.jpg"
+      },
+      {
+        "title": "Intercâmbio de Alunos",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/h9POi2A1XDcgf7ART0yMP67H81l.jpg"
+      },
+      {
+        "title": "Totally Minnie",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/ocZvbSFDBol6Pfscoy61r0XQeSA.jpg"
+      },
+      {
+        "title": "Fúria Indomável",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/6I94myoMi28trV8lxDq2DWhzLFe.jpg"
+      },
+      {
+        "title": "Madison - A Sereia",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/tC9NKhBL2QFEDnOt8itmOh7z5OZ.jpg"
+      },
+      {
+        "title": "Uma Cilada para Roger Rabbit",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/1sNM9NOJrdVhJUkWQkbcekoLiic.jpg"
+      },
+      {
+        "title": "A Friendship in Vienna",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/vnapN6GRZEawe77Ih4ixQFyy2Lf.jpg"
+      },
+      {
+        "title": "Querida, Encolhi as Crianças",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/mU8FZkP0xMmpuavLkdh4OLDsw8G.jpg"
+      },
+      {
+        "title": "Cheetah - Uma Aventura na África",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/h2xj3S7VotlrKAm61WfsfFLP1fX.jpg"
+      },
+      {
+        "title": "Lantern Hill",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/e4juQ5ddsaoukQwjTc2ISGi8fAk.jpg"
+      },
+      {
+        "title": "Adorável Andróide 2",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/q8zKCS4Lwi7Yraij5yZAHPJFikF.jpg"
+      },
+      {
+        "title": "A Pequena Sereia",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/5SLa56lfNinhVgqpMIHvsOKG775.jpg"
+      },
+      {
+        "title": "DuckTales, O Filme: O Tesouro da Lâmpada Perdida",
+        "year": "1990",
+        "poster": "https://image.tmdb.org/t/p/w500/wsLP8ULSWhauYHynFn3n8zU03Io.jpg"
+      },
+      {
+        "title": "めぞん一刻番外編 一刻島ナンパ始末記",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/ccEPVQ2t9SXm2fsbfoxBvk2qalv.jpg"
+      },
+      {
+        "title": "Bernardo e Bianca na Terra dos Cangurus",
+        "year": "1990",
+        "poster": "https://image.tmdb.org/t/p/w500/uRYhDfnXrkRhUr76bBUO0AqXN9p.jpg"
+      },
+      {
+        "title": "O Príncipe e o Mendigo",
+        "year": "1990",
+        "poster": "https://image.tmdb.org/t/p/w500/iOWKs8X75oCMn6Z1fYEBRavyN4P.jpg"
+      },
+      {
+        "title": "Uma Mãe Pelo Natal",
+        "year": "1990",
+        "poster": "https://image.tmdb.org/t/p/w500/5FPRqHffN16IyIjZQPrPG6M8D1e.jpg"
+      },
+      {
+        "title": "Caninos Brancos",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/b2UKezk9tzGRc9lAjvDcapjFuKj.jpg"
+      },
+      {
+        "title": "Os Caçadores das Jóias Perdidas",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/nk98FuJdHXTuWxD8FEg3qMUUqzC.jpg"
+      },
+      {
+        "title": "Entre Baladas & Blues",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/rlFrE47ioLdeMIpFclT6LCiyzGj.jpg"
+      },
+      {
+        "title": "Rocketeer",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/iN3I8XDaoGKAMgGidGzJOCnfh8i.jpg"
+      },
+      {
+        "title": "A Bela e a Fera",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/is4c02QuP70BCVLp27SSlDeByoe.jpg"
+      },
+      {
+        "title": "Adorável Andróide 3",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/lADreDHwDnzgBlUeWHXifnjfYIu.jpg"
+      },
+      {
+        "title": "Extra! Extra!",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/o2aBhascjKBR8kFOzCWm1P50mk2.jpg"
+      },
+      {
+        "title": "Querida, Estiquei o Bebê",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/gbFeKn4lNwASNlHLWXW0nmhBA1B.jpg"
+      },
+      {
+        "title": "Nós Somos os Campeões",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/qnDtm74JkcAlqzPaTfO0ChwRNZJ.jpg"
+      },
+      {
+        "title": "Aladdin",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/qYB8MwE6AgLFe5ruBUmPA0RWRPY.jpg"
+      },
+      {
+        "title": "O Conto de Natal dos Muppets",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/19cvLHClTd0lbxjt7NKPoR9N6v3.jpg"
+      },
+      {
+        "title": "The Ernest Green Story",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/1ATDULNZrgDVYZvm4WyOfne6mOd.jpg"
+      },
+      {
+        "title": "A Incrível Jornada",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/rc5kUxRYVKXb4ja98ffUp6ytnEW.jpg"
+      },
+      {
+        "title": "Viagem ao Grande Deserto",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/tc01TDkZlzOr0TjM6hRlYV5pzo2.jpg"
+      },
+      {
+        "title": "As Aventuras de Huck Finn",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/fuL5N5HCM029Cf1UkFlF1Tr7z78.jpg"
+      },
+      {
+        "title": "Super Mario Bros.",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/yt5bbMfKpg1nRr4k5edxs7tPK2m.jpg"
+      },
+      {
+        "title": "Abracadabra",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/kIzKIA43hE26HRV77RTYtZwjOSM.jpg"
+      },
+      {
+        "title": "Heidi",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/2BkeefesG6KrsNGMeqYgYICsVNO.jpg"
+      },
+      {
+        "title": "Jamaica Abaixo de Zero",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/kd00JwQlamiCRm2AylUPgsXcxYx.jpg"
+      },
+      {
+        "title": "O Estranho Mundo de Jack",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/g6zcll9bcAmoVNiMxt4wmVwTl5f.jpg"
+      },
+      {
+        "title": "Os Três Mosqueteiros",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/36oQSvihSmp3xznpwyC3M0z9l3t.jpg"
+      },
+      {
+        "title": "Iron Will: O Grande Desafio",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/4Jr4xLsi3Zt5KHAh8MHH97PlT7V.jpg"
+      },
+      {
+        "title": "Cheque em Branco",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/kjoLpAN1MtU4rzfiGgMGsCGm0Oa.jpg"
+      },
+      {
+        "title": "D2 - Nós Somos os Campeões",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/1mxurJNKvQujUVm1yKkYCZ28fmo.jpg"
+      },
+      {
+        "title": "Caninos Brancos 2: A Lenda do Lobo Branco",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/26Nq0VH8HDs0QtOjSpfYcKatviJ.jpg"
+      },
+      {
+        "title": "O Rei Leão",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/8aIvm8OaJISOpVTt7rMIh7X35G5.jpg"
+      },
+      {
+        "title": "Aladdin - O Retorno de Jafar",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/f7cOd8UI3QJepdIU26Pi300fjs3.jpg"
+      },
+      {
+        "title": "Os Anjos Entram em Campo",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/7WRt6l7tiXVPG9zLco1rwy5Ffw9.jpg"
+      },
+      {
+        "title": "The Whipping Boy",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/vs57MGHMVpUXR7AHRnBYNRh3qbL.jpg"
+      },
+      {
+        "title": "Meu Papai é Noel",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/h39EEkZCT6K6k9uwkO3G2fk0UfV.jpg"
+      },
+      {
+        "title": "O Livro da Selva",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/nH3dP3RS0ZdMOHKfPjZYZ3VP5j3.jpg"
+      },
+      {
+        "title": "Gargoyles the Movie: The Heroes Awaken",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/nBmvDbG5xauUHssAr7PWf90nbbW.jpg"
+      },
+      {
+        "title": "Pesos Pesados",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/9asfY7y9qhonc888JdTrYRNXjE8.jpg"
+      },
+      {
+        "title": "O Homem da Casa",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/uDf2IgyE7flYRAycliPw3LIcPfi.jpg"
+      },
+      {
+        "title": "Super-Heróis do Oeste",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/4JqaJbGyPDV3MHOoTaTDLEpQzEQ.jpg"
+      },
+      {
+        "title": "Pateta: O Filme",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/mxwh5kE32hARoAo7rABSD82AVYT.jpg"
+      },
+      {
+        "title": "Fuga Para a Montanha Enfeitiçada",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/pe1VE1Sxhwar4lS5mtkA2Y7ygRN.jpg"
+      },
+      {
+        "title": "Pocahontas: O Encontro de Dois Mundos",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/q5MYFXVy8UQ1ds76fdJs6AJbMzv.jpg"
+      },
+      {
+        "title": "Operação Dumbo",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/anl5Ix5inJ3GvXp01sOrCPpEAih.jpg"
+      },
+      {
+        "title": "Runaway Brain",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/cEB4K6YavRvrfiAp83cJCgg91Df.jpg"
+      },
+      {
+        "title": "Pisando na Bola",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/7zyOEJjBOHFpDhvybnvJOhXKP1c.jpg"
+      },
+      {
+        "title": "Frank e Ollie",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/aRoVjmnDBhimsvgrvKyik687cCc.jpg"
+      },
+      {
+        "title": "Toy Story: Um Mundo de Aventuras",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/6AafgfifXkFS4g2xGJZIwsPQK6P.jpg"
+      },
+      {
+        "title": "Tom e Huck: Em Busca do Grande Tesouro",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/rl9dOgbCgVzRf8azMtnom7M11D4.jpg"
+      },
+      {
+        "title": "Ursinho Pooh: Um Susto Para Você Também!",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/u6FPt7WvGfjs5e6WsqE47ZyVn4C.jpg"
+      },
+      {
+        "title": "Os Muppets na Ilha do Tesouro",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/p5SS99cIFwX4Xubg8yJ9svNqquX.jpg"
+      },
+      {
+        "title": "A Incrível Jornada II: Perdidos em São Francisco",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/jLXVbePFwsDthEFRmmThUV4A9R0.jpg"
+      },
+      {
+        "title": "James e o Pêssego Gigante",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/nojnXRyJzw7vRR8zXIDlkjCoIcX.jpg"
+      },
+      {
+        "title": "Aladdin e os 40 Ladrões",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/qOXlD75Is9T11tdDxfzrsIFg10w.jpg"
+      },
+      {
+        "title": "O Corcunda de Notre Dame",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/9bhwBtct6jc3Nzqtx6j3xlZXAza.jpg"
+      },
+      {
+        "title": "Sinbad - Enlouquecendo Meu Guarda-Costas",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/qxmiakRkO5tIougshCwPIzlU1O0.jpg"
+      },
+      {
+        "title": "The Paper Brigade",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/qV8wZhGUAm6WJ0V5XeIJgScAIYW.jpg"
+      },
+      {
+        "title": "Susie Q",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/vqn0vSAK30DNZxCvQ6H0IPmoicH.jpg"
+      },
+      {
+        "title": "D3 - Nós Somos os Campeões",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/7o4BTRgXWRL56QtnqAlBj6uwsXs.jpg"
+      },
+      {
+        "title": "O Vento nos Salgueiros",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/oDXSed3TihGrQsNUbns5oIE8Urj.jpg"
+      },
+      {
+        "title": "Estrela Cadente",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/5vgfcw4y4UVE2BUA4RTauUX62jQ.jpg"
+      },
+      {
+        "title": "101 Dálmatas",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/wUgVfahHvlz8AIwJoNUAaFDtb7O.jpg"
+      },
+      {
+        "title": "O Mundo Encantado dos Brinquedos",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/pkzVNVm0MG4mJ1bJe0rFxz3rzDd.jpg"
+      },
+      {
+        "title": "O Diabólico Agente D.C.",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/lPQuyy0oW6xU520f5CpLphrdN4g.jpg"
+      },
+      {
+        "title": "Meu Filho das Selvas",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/akB4suWiUHzGxWdVvEUzgMLTDua.jpg"
+      },
+      {
+        "title": "Querida, Encolhi a Gente",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/txUoJzA5MQjIDB9fJ6TJr0NKBby.jpg"
+      },
+      {
+        "title": "Hércules",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/gjWApgKrmg6s10GxIcni64dDzOE.jpg"
+      },
+      {
+        "title": "George, o Rei da Floresta",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/txoCXWx2X582EXfSpiwBGio2QDa.jpg"
+      },
+      {
+        "title": "Bud: O Cão Amigo",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/4awmAcJ8Ics7HUSZHHTgmYbgmk7.jpg"
+      },
+      {
+        "title": "Redux Riding Hood",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/iad01q2TbSmiHc9JztYSnsdNbAg.jpg"
+      },
+      {
+        "title": "Luzes do Norte",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/ihbttaRj7eN90e745Km4Gf6Vef8.jpg"
+      },
+      {
+        "title": "Fada por Acaso",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/9hIEmHraSssH6NOYzWPXGklVmc0.jpg"
+      },
+      {
+        "title": "Pirado no Espaço",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/17Rzbr10y9JWwoxz8TMNpRtAP0h.jpg"
+      },
+      {
+        "title": "Um Amor de Múmia",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/8bH2vI2Ab0ddcHzNVIUBxnmuHU7.jpg"
+      },
+      {
+        "title": "A Torradeira Valente e a Missão de Salvamento",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/yBaNyyR6KW2oX06yWsoqRrZJHaX.jpg"
+      },
+      {
+        "title": "A Bela e a Fera: O Natal Encantado",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/bkNjZN0gQtlsA0ZkAr3weIh9m7C.jpg"
+      },
+      {
+        "title": "Flubber: Uma Invenção Desmiolada",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/pJ18ETvucIFsn9O0l2Ziyhc0yzx.jpg"
+      },
+      {
+        "title": "Mr. Magoo",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/po5CfSBmmATuCNIt7M1G7xOPuUK.jpg"
+      },
+      {
+        "title": "O Fenômeno da Filadélfia",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/aauEHRHy0yhLgmgrPmdxDQQd5k6.jpg"
+      },
+      {
+        "title": "Os Irmãos Id & Ota",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/5IS0PH7ERLLNWnfubgADKDP6tbI.jpg"
+      },
+      {
+        "title": "A Torradeira Valente Vai à Marte",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/fDq5kGtFqNAldiDOubKYy3LTH0s.jpg"
+      },
+      {
+        "title": "Mulan",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/bj3iSjLlkwHtJrPmvHXa8P7edI9.jpg"
+      },
+      {
+        "title": "Minha Vida com Lucky",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/oGQLhtrG8kY6jxrVA9h7TwWG5IY.jpg"
+      },
+      {
+        "title": "Operação Cupido",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/3VUKjD23w6nnmTTjCc2AqBefQzt.jpg"
+      },
+      {
+        "title": "Endurance",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/hGsUeyPzF59otWNdTYlnzvsfIKW.jpg"
+      },
+      {
+        "title": "Pocahontas II: Uma Jornada Para o Novo Mundo",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/xNsHnGRoGYziVpz0D6hS4x78y2A.jpg"
+      },
+      {
+        "title": "Bud 2: O Atleta de Ouro",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/g7YFpdlbN1fSQo5Qkfs8Y9gTKAW.jpg"
+      },
+      {
+        "title": "Brink! Patinadores de Alma",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/usLXGeW5ST3JbuYzJQSpUUHEc4t.jpg"
+      },
+      {
+        "title": "A Cidade do Halloween",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/y9RJCxJMbWqhXjkBgC0VXETmHj6.jpg"
+      },
+      {
+        "title": "Uma Ação de Graças do Ursinho Pooh",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/nom4BRv0azYlZh3IZemrnaLk51w.jpg"
+      },
+      {
+        "title": "Poderoso Joe",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/d5s4IxeF83h9Gz5b1F096nPGZov.jpg"
+      },
+      {
+        "title": "Hércules: De Zero a Herói",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/4eJW4Ly71CRu7o2KEspNK1Chv5z.jpg"
+      },
+      {
+        "title": "As Aventuras de Hubert, O Cão Herdeiro",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/f5ASqTPuOqErAaZ9RP3qxhJ2cnk.jpg"
+      },
+      {
+        "title": "Zenon: A Garota do Século 21",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/gAc5GC9rykHlJOW3pZxQEdytw4u.jpg"
+      },
+      {
+        "title": "Meu Marciano Favorito",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/sID4XmvKTJ50C8r1cxvAssLsBTq.jpg"
+      },
+      {
+        "title": "Ursinho Pooh: O Dia dos Namorados",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/2tZtLsCEFLH1nZ2eBPv93bgLq6F.jpg"
+      },
+      {
+        "title": "A Fazenda dos Balões",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/6CxEDv29kHEGRFxXl1nQVFBQ1ea.jpg"
+      },
+      {
+        "title": "A Caixa de Pandora",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/a23XMtL3AXzlzp436myKfE2iTpI.jpg"
+      },
+      {
+        "title": "O 13º Aniversário",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/cKbA1iYh9oL63BbZie1YWxqcWpB.jpg"
+      },
+      {
+        "title": "Uma História Real",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/yruYuk7bzXGSrRaH9qT1JCqrJgw.jpg"
+      },
+      {
+        "title": "Tarzan",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/ce4mU4yyubjP1uXcz48fMndCZni.jpg"
+      },
+      {
+        "title": "A Casa Inteligente",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/qIOzpyrKc62uY4RZYcH3s4RsM5P.jpg"
+      },
+      {
+        "title": "Inspetor Bugiganga",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/hyx5A5jmHOyiBkovVbrgWl3D2iS.jpg"
+      },
+      {
+        "title": "Johnny Tsunami: O Surfista da Neve",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/drit4z9xXOZYPyaiffbAszWK13v.jpg"
+      },
+      {
+        "title": "Madeline - Uma Aventura em Paris",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/At086SD9Nd50OxEbhMWsVRAPNb3.jpg"
+      },
+      {
+        "title": "Gênio Desafiando a Gravidade e o Amor",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/h53ESIVF4VboUgnyR1pWleXKqee.jpg"
+      },
+      {
+        "title": "The Hand Behind the Mouse: The Ub Iwerks Story",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/5fEKwYFUvbUyT4R7N5Lxl79nA0R.jpg"
+      },
+      {
+        "title": "Toy Story 2",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/2MFIhZAW0CVlEQrFyqwa4U6zqJP.jpg"
+      },
+      {
+        "title": "Annie",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/y0XWZC1A7PbWf1gwmvbvhY9uWM2.jpg"
+      },
+      {
+        "title": "Ursinho Pooh: É Tempo de Dividir",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/espdkA0As9l7RUF3Sj1F1B29sR.jpg"
+      },
+      {
+        "title": "Um Jeito Especial com Cavalos",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/A5c6SaMOA7dx5UEESJ1I5Y5ed5H.jpg"
+      },
+      {
+        "title": "Fantasia 2000",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/b9KkELlbgobWyb0dyTUrZar9Aaw.jpg"
+      },
+      {
+        "title": "Subir, Subir e Voar",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/nqj0SnJ2yViImihb1qIZeflChxc.jpg"
+      },
+      {
+        "title": "A Pequena Sereia II: O Retorno para o Mar",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/jMRyt4mMKRJhiW62yvznQeKNJd4.jpg"
+      },
+      {
+        "title": "A Cor da Amizade",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/7m1uNiiiElz2a3Ye19toyjCYDPG.jpg"
+      },
+      {
+        "title": "Tigrão: O Filme",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/q4oIYMOXIpCXveO218AVrvRPA40.jpg"
+      },
+      {
+        "title": "Pateta 2: Radicalmente Pateta",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/6R9fbKe3A3cyVdNO9G1HPtysFrH.jpg"
+      },
+      {
+        "title": "A Boneca Que Virou Gente",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/pClXHiv9UMWZBN6OjnNk10h0qPw.jpg"
+      },
+      {
+        "title": "A Turma do Boliche",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/aQBBm4oib3gyHasD67jL9fNNAzu.jpg"
+      },
+      {
+        "title": "Raízes no Surf",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/8i8kDTnUgS9QfH5uF1LGaskYS2t.jpg"
+      },
+      {
+        "title": "Gepeto",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/8nrVXtdbZMzOAdYGXJhPBI6nSFj.jpg"
+      },
+      {
+        "title": "Milagre na Pista 2",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/9FULIrubI6yB0O7Acxfh4dky0fh.jpg"
+      },
+      {
+        "title": "Dinossauro",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/9aYipPdXLJO2d7Aoa9gnLXHlQfz.jpg"
+      },
+      {
+        "title": "Minha Irmã é um Extraterrestre",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/6zQJjlg5W08vj6qAC6bqbz4d3fK.jpg"
+      },
+      {
+        "title": "Duas Vidas",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/5N2lniI07omhti7Oxa3THrCrPhs.jpg"
+      },
+      {
+        "title": "Pronto pra Corrida",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/A2Xvbzf4a9okLMakaRsTkqRSUK.jpg"
+      },
+      {
+        "title": "Buzz Lightyear do Comando Estelar - A Aventura Começa",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/oHy4sKgA7foQ8Hofo456gCnFN9a.jpg"
+      },
+      {
+        "title": "Quíntuplos",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/l6ckrEZiYSygXTLDsWT66WMvp59.jpg"
+      },
+      {
+        "title": "O Outro Eu",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/10Vimagv71BuJJHvfdbWXfa5dVm.jpg"
+      },
+      {
+        "title": "Duelo de Titãs",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/kuKyp6Owly8yWXeqdi4H8NAXhU6.jpg"
+      },
+      {
+        "title": "102 Dálmatas",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/yOiw3ssvgWkc9Kp1v4onuIIuE0a.jpg"
+      },
+      {
+        "title": "O Fantasma do Megaplex",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/lLb3MEh5EiZGUhzcnKwOFMLzCTM.jpg"
+      },
+      {
+        "title": "O Presente de Natal Perfeito",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/4vbdALW21bdrmvJezM7r9wn2hhM.jpg"
+      },
+      {
+        "title": "Bud 3: Jogando Futebol",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/bYtxJ7Dq3zzKB14ZKWpAGtCqcsC.jpg"
+      },
+      {
+        "title": "O Perseguido",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/2VggwzUUv9uZBEFdYROyzmX17PI.jpg"
+      },
+      {
+        "title": "Zenon: A Zequência",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/ht3w8or5cfGzP9zxZAvrGXF29q7.jpg"
+      },
+      {
+        "title": "Garota Motocross",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/hu2JaD1PhkMtoYz2FjZ98snFh6r.jpg"
+      },
+      {
+        "title": "A Sorte dos Irlandeses",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/x16X6eOJnp3bWnkh6nQBByUGecU.jpg"
+      },
+      {
+        "title": "A Princesa dos Ladrões",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/53A3XgzJOTSWQfJFI3FjPMWTt0L.jpg"
+      },
+      {
+        "title": "O Outro Lado do Céu",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/oVghb1iiBMUth0I1viekeznyQC.jpg"
+      },
+      {
+        "title": "Atlantis: O Reino Perdido",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/w1vzOcucm5O2SrIQZDmhb0RCioh.jpg"
+      },
+      {
+        "title": "Jett Jackson: O Filme",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/k2FTsRl5AM0CiavgwbNyJwRS1Sr.jpg"
+      },
+      {
+        "title": "O Projeto Jennie",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/ws7iXxdIJbyefkQ2ydLa8V5yyKp.jpg"
+      },
+      {
+        "title": "O Diário da Princesa",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/7oYNvPAPSFBDh4o7NdRc58ICzUR.jpg"
+      },
+      {
+        "title": "Piratas Modernos",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/uCS0MVcn56ETYrbCe8YOczJ1xrQ.jpg"
+      },
+      {
+        "title": "Ponto Nulo: Razão e Regressão",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/7jKUL5U1IDM7ZV69O2Vj8mfmZxI.jpg"
+      },
+      {
+        "title": "Monstros S.A.",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/5p6cdAeUevsLOX0oI1T4JIul4QO.jpg"
+      },
+      {
+        "title": "Seguindo as Pistas",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/1M205QdDbtEbx6CTA1AoyNcUOS8.jpg"
+      },
+      {
+        "title": "As Gêmeas Entram na Quadra",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/rxvqeeo0j13i63mMKEiGVss5ot0.jpg"
+      },
+      {
+        "title": "Neve pra Cachorro",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/5fotEfHCJnIj6SE4ybg493A9mkJ.jpg"
+      },
+      {
+        "title": "O Corcunda de Notre Dame II: O Segredo do Sino",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/rveweT36Sv05MMvOrviu09WhNJ8.jpg"
+      },
+      {
+        "title": "Peter Pan: De Volta à Terra do Nunca",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/4kUlxkWZ2GaMBNf85yEkIxIJ9Qg.jpg"
+      },
+      {
+        "title": "Cinderela II: Os Sonhos Se Realizam",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/vZRdNagaEzgZh7UXOm1I0rZ3v5K.jpg"
+      },
+      {
+        "title": "Cadete Kelly",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/leeIXPxv3qtU7KKwwATBuELP0kv.jpg"
+      },
+      {
+        "title": "Confissões de uma Irmã de Cinderela",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/fMNs21AcuQYQIhU41LTDlq21ftH.jpg"
+      },
+      {
+        "title": "Desafio do Destino",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/lNB0paBNvexdpSOOIQEt6ilEcm9.jpg"
+      },
+      {
+        "title": "Confissões de Tru",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/zuToJXLB62fsIlfvfOUBxD6iAMq.jpg"
+      },
+      {
+        "title": "Bud 4: É Uma Jogada Perfeita!",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/q39bjNCRT12SDmoHVep3GVmqPIe.jpg"
+      },
+      {
+        "title": "O Anel da Luz Eterna",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/b6TdmMXsBGdHH1yhFcPfFX1KwVX.jpg"
+      },
+      {
+        "title": "Beary e os Ursos Caipiras",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/FYAyxFhbBBzPPE4THnWC9kyYYX.jpg"
+      },
+      {
+        "title": "Dançando pra Valer",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/7t7ubhxo9EeCZgXQmemzFQhuElS.jpg"
+      },
+      {
+        "title": "A Patrulha das Almas",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/maAQ6mCdqZW0bRgWo5HL7mmZgQQ.jpg"
+      },
+      {
+        "title": "Vivendo na Eternidade",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/ahvmDquJV5IP5QaTvlgV3zhDNAx.jpg"
+      },
+      {
+        "title": "Meu Papai é Noel 2",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/iKtcT1pZIR3eY8JkItZyuaQc72y.jpg"
+      },
+      {
+        "title": "Planeta do Tesouro",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/4GJnKM1CLylmp8phkyiITiwu7L.jpg"
+      },
+      {
+        "title": "A Moedinha da Sorte!",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/p3dYcAios5WEs6geBL5f4l8xXn1.jpg"
+      },
+      {
+        "title": "Mogli: O Menino Lobo 2",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/zstbgvIgwtwzynBnHBGORDloFbf.jpg"
+      },
+      {
+        "title": "Inspetor Bugiganga 2",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/iIy2CIWZbclTSfHRV3fYmLnbpzA.jpg"
+      },
+      {
+        "title": "Rodas de Fogo",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/xna6n3ZrZPpQka4eNOxfWSWZI07.jpg"
+      },
+      {
+        "title": "Fantasmas do Abismo",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/4iJG3uN4DvtX9vZ5kE5XUdqfB6b.jpg"
+      },
+      {
+        "title": "O Mistério dos Escavadores",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/kxdmkyKXS31wOjGAhJFYkj2KnBg.jpg"
+      },
+      {
+        "title": "Lizzie McGuire: Um Sonho Popstar",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/qgPaGDE00m895H8DjkvHVL1W7XU.jpg"
+      },
+      {
+        "title": "Amigos de Caça",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/6AkvUzU5smoVdqwuHxfDQzKtlYB.jpg"
+      },
+      {
+        "title": "Procurando Nemo",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/djbivExXSZb0sTO8uYaaQC5vMRM.jpg"
+      },
+      {
+        "title": "Mano a Mana: O Filme",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/dY5Q4E5GJwi0nJXLWGvVdUgUjnH.jpg"
+      },
+      {
+        "title": "Piratas do Caribe: A Maldição do Pérola Negra",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/xsAlxvMCRzyreLxdZL1dOUSbonV.jpg"
+      },
+      {
+        "title": "Bud 5: Arrasando no Vôlei!",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/fGvYcHZXQgSi0vfUi18vKYQZXgK.jpg"
+      },
+      {
+        "title": "Sexta-Feira Muito Louca",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/zcCZ7LaN6Ly20Tu6Hdw44RRiBEI.jpg"
+      },
+      {
+        "title": "Destino",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/A4HxxjQNLAEskd8RL413beTK23Y.jpg"
+      },
+      {
+        "title": "As Feras da Música",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/rZpwnXQpkFskq1SFNTn5vQ5JO9N.jpg"
+      },
+      {
+        "title": "George, o Rei da Floresta 2",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/kP9hHoY8DfpRn0uO9jQW07fugfo.jpg"
+      },
+      {
+        "title": "Stitch! O Filme",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/rnTWmgv2o0pS6FcZTDHzjFNeI7X.jpg"
+      },
+      {
+        "title": "Irmão Urso",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/pFRQgHiZwHTX7LmHEI0hwocuBC3.jpg"
+      },
+      {
+        "title": "Um Time de Fé",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/q896UpNFeblEkln50teAhPHvz5l.jpg"
+      },
+      {
+        "title": "Mansão Mal-Assombrada",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/ndeNgda3Lc6rjyTK5Tor3CAos0X.jpg"
+      },
+      {
+        "title": "Kim Possible: Um Passeio pelo Tempo",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/3XAMrWxsqqQI5HNJfegbUXtXiEG.jpg"
+      },
+      {
+        "title": "O Jovem Corcel Negro",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/adCZqppp9nZxOHfaOhujqFRenIe.jpg"
+      },
+      {
+        "title": "Pixel: A Garota Perfeita",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/ozYJ7QMI5jweoM2lQzWHGFbzaUh.jpg"
+      },
+      {
+        "title": "Desafio no Gelo",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/dGxGB9bDgzTlnOowHy20XclZJgi.jpg"
+      },
+      {
+        "title": "O Rei Leão 3: Hakuna Matata",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/vtX3wirmv2VkQi1u4C9cSdHTXQn.jpg"
+      },
+      {
+        "title": "Confissões de uma Adolescente em Crise",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/fYE56DTY3jAVfb3dErEtyLu0YVa.jpg"
+      },
+      {
+        "title": "Lorenzo",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/7WVOEdtqNWxk2e7MT3LCzJYZmeP.jpg"
+      },
+      {
+        "title": "Ursinho Pooh: A Páscoa de Guru",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/q0ksJtAVsdzpkskqRbo82V1qhur.jpg"
+      },
+      {
+        "title": "Nem Que a Vaca Tussa",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/h6Sm61aFV7UVFMHWrzrSRRjVhiD.jpg"
+      },
+      {
+        "title": "Uma História de Luta",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/jGZrlpcLIiOzgYuctuuXnOuHFNZ.jpg"
+      },
+      {
+        "title": "Planeta Sagrado",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/saFHXxTkeNQPdlj1aPYeCnAsEGA.jpg"
+      },
+      {
+        "title": "Zenon: A Corrida para a Lua",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/ay9KFDcVsNHDkzTFNJJvfu3gIIS.jpg"
+      },
+      {
+        "title": "A Volta ao Mundo em 80 Dias: Uma Aposta Muito Louca",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/xcy62czpO413jOCrBnwa5AF1Wrd.jpg"
+      },
+      {
+        "title": "Presas no Subúrbio",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/wSK9j5hbg6H07Y8FcZFhawIEJCy.jpg"
+      },
+      {
+        "title": "Mickey, Donald e Pateta: Os Três Mosqueteiros",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/euce4fzdZOLM0ytoQJv5ZJCorhy.jpg"
+      },
+      {
+        "title": "O Diário da Princesa 2: Casamento Real",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/5MoDnvPW64Sfw3QZ6ADnCYopnTv.jpg"
+      },
+      {
+        "title": "O Cruzeiro dos Tigres",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/2k3gj25h90DJC3Ua0ctuaGWf1gN.jpg"
+      },
+      {
+        "title": "Halloweentown: O Portal",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/8WShZb5lfu7GMyCm4keBg7dSXNH.jpg"
+      },
+      {
+        "title": "Os Incríveis",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/z8k5EhZZTLsCRF8NWjSe6snWNZg.jpg"
+      },
+      {
+        "title": "Mulan 2: A Lenda Continua",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/lWcoRhckk3F1v1HvaMvIyc9faZA.jpg"
+      },
+      {
+        "title": "A Lenda do Tesouro Perdido",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/4UDjy5GkxPCdZHhc0F7Gq0KIaEz.jpg"
+      },
+      {
+        "title": "Cãofusões",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/1Rft8KYJCCPngqHIlBbQ1NhnzNT.jpg"
+      },
+      {
+        "title": "Agora Você Vê...",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/9JseJyOqdOXpCgTJaxMHwL1x8n8.jpg"
+      },
+      {
+        "title": "Criaturas das Profundezas",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/7y1GwllIuURJDA1rtPxRhw03pf2.jpg"
+      },
+      {
+        "title": "Operação Babá",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/K1DaD3dlJTnpj8q6f64mb58DgN.jpg"
+      },
+      {
+        "title": "Sonhando com Búfalos",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/7sjRSqOInE19w9QV6P4jvw5wLqX.jpg"
+      },
+      {
+        "title": "Sonhos no Gelo",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/m07qLRm1YHnd50NyiCtmtBhl8pN.jpg"
+      },
+      {
+        "title": "Valiant: Um Herói que Vale a Pena",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/r9VNtY1qUflzWIWgOvPe3PUKMi0.jpg"
+      },
+      {
+        "title": "Kim Possible: O Drama do Amor",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/lDiHT88cSQnhca3s2wTEHFE8IFW.jpg"
+      },
+      {
+        "title": "Minha Vida é Vencer",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/hOUg7NFyUu96l9P7glFhPQKIcJb.jpg"
+      },
+      {
+        "title": "Tarzan 2: A Lenda Começa",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/8gpBvzDwph6GAmdFmx0K5HDhidk.jpg"
+      },
+      {
+        "title": "Herbie: Meu Fusca Turbinado",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/z3dDSU387L19TNEJkYhYAMjU4Sr.jpg"
+      },
+      {
+        "title": "Sky High: Super Escola de Heróis",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/mUVPAWrszwEy1TNblitVkuYyb7I.jpg"
+      },
+      {
+        "title": "A Família Radical: O Filme",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/h49hMQRoEUoLOBAQvfYrXpWIxqc.jpg"
+      },
+      {
+        "title": "O Melhor Jogo da História",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/rjddt0WqH1FU1im0ur19PKpXDeU.jpg"
+      },
+      {
+        "title": "Twitches: As Bruxinhas Gêmeas",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/gh38WKlXn3GX3ujh8gxsGvCC4iV.jpg"
+      },
+      {
+        "title": "O Galinho Chicken Little",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/fUCBkuNWpAIfH6yhuRzujy5Zjv0.jpg"
+      },
+      {
+        "title": "As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/sDBziWxSTavCNjbayaXaDDwmTiQ.jpg"
+      },
+      {
+        "title": "Era Uma Vez um Colchão",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/ncmIJ9b3sTxoFzvGks7GZvJj3Sr.jpg"
+      },
+      {
+        "title": "Estrada para a Glória",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/l1Y9t2TDhkE8Q1sLThnsAJtmAnF.jpg"
+      },
+      {
+        "title": "High School Musical: O Show",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/76NXy9HqTr05lKZunr86jKm239f.jpg"
+      },
+      {
+        "title": "Bambi 2: O Grande Príncipe da Floresta",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/wpvRZcuWVT8LxQGzT5PJPWKiB5r.jpg"
+      },
+      {
+        "title": "Explorando Marte",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/4Xx1gXeD7SS7FEHfGysRLVNdZJx.jpg"
+      },
+      {
+        "title": "Resgate Abaixo de Zero",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/zosoSArQi0hxH3RJMe9u63XtVgs.jpg"
+      },
+      {
+        "title": "Selvagem",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/4wGRFTR5zOzAnEt0MGnR81JeTSY.jpg"
+      },
+      {
+        "title": "Soltando os Cachorros",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/tqnHWmp3GtFDchkn6L9UaGeDES6.jpg"
+      },
+      {
+        "title": "Carros",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/A7nssMRIPauZhEVf2dzwsf4EALO.jpg"
+      },
+      {
+        "title": "Belas e Mimadas",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/dqmWcg7NHzlDLAHIWYptFowe0zf.jpg"
+      },
+      {
+        "title": "Wendy Wu: A Garota Kung-Fu",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/2ei5u8UP4GqMzoIO3qtZ0uayMsX.jpg"
+      },
+      {
+        "title": "Diário de uma Adolescente",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/gy67QGOQotQBbWTcfWnFmF5Xxir.jpg"
+      },
+      {
+        "title": "The Cheetah Girls 2: As Feras da Música",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/otR1PwUd6I4EDkY2wgM5CZdaGl0.jpg"
+      },
+      {
+        "title": "Irmão Urso 2",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/r4kOIrwYMXInmFH8eaJ6kDoAkUW.jpg"
+      },
+      {
+        "title": "Invencível",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/47IqeypJmXilXFxHM1N1EiqZ1jA.jpg"
+      },
+      {
+        "title": "Regresso a Halloweentown",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/2mWboWDHtq1H3NdZXy4Kfpyr0ig.jpg"
+      },
+      {
+        "title": "Meu Papai é Noel 3: A Fuga do Papai Noel",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/1jRii32GjujV7VCnwMrx3LBCWmy.jpg"
+      },
+      {
+        "title": "O Cão e a Raposa 2",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/p7tPn2knHDMTlgr63L5bdPBPZf7.jpg"
+      },
+      {
+        "title": "Bud: Uma Nova Cãofusão",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/d97FUvWwMgMLSPck5qGCKktZofO.jpg"
+      },
+      {
+        "title": "Cinderela III: Uma Volta no Tempo",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/7fr4MYy91VmZMLl0soPK7z82wxI.jpg"
+      },
+      {
+        "title": "Ponte para Terabítia",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/oWGPG1i9mUEyeQ01KJMQBt6KrhC.jpg"
+      },
+      {
+        "title": "A Família do Futuro",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/uR9rV69x4saB2vh9yfgQ5PA5E0r.jpg"
+      },
+      {
+        "title": "Terra",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/xybnXW6E28W9agiwUeGLbTYS454.jpg"
+      },
+      {
+        "title": "Jump In!",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/bC15nPOGIOXohhqzC2GTg0DlqIy.jpg"
+      },
+      {
+        "title": "Johnny Kapahala: De Volta ao Havaí",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/XX2EtPG60Nf3om61HVH7A5sVCR.jpg"
+      },
+      {
+        "title": "Ratatouille",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/41Co0TRUJNyvjr2vHBEcAKAEFpX.jpg"
+      },
+      {
+        "title": "A Abóbora Mágica",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/r3UFTDPSRU7E3WXRi6rXrnQWUU7.jpg"
+      },
+      {
+        "title": "Vira-Lata",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/lcedkHKYYatdNrUE91CMDahxAg9.jpg"
+      },
+      {
+        "title": "High School Musical 2",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/la2kiVWDm2vuB4APZDgCCmuBh4K.jpg"
+      },
+      {
+        "title": "Contos Encantados da Disney Princesas: Siga Seus Sonhos",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/beAvTAhMQpTRxmlgGgpfg9F2rc1.jpg"
+      },
+      {
+        "title": "Treinando o Papai",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/ikQBghrihLICc1E9CjvNkek0MQw.jpg"
+      },
+      {
+        "title": "Twitches: As Bruxinhas Gêmeas 2",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/wMNyYhudpTM1cZj7GTyI7lsRcM7.jpg"
+      },
+      {
+        "title": "Seu Amigo o Rato",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/h2tpOBDFPc2j5TZndqN3qCUV3gO.jpg"
+      },
+      {
+        "title": "The Prince and the Pauper: The Movie",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/vXKDMH96Af8cF4Rf4tsUuvY55i5.jpg"
+      },
+      {
+        "title": "Encantada",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/dv3I9Zhn6Y1CGDyyrNEX9KFFdXR.jpg"
+      },
+      {
+        "title": "A Lenda do Tesouro Perdido: Livro dos Segredos",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/9B4vP6EbfDqh9semKDqeDgMO5GJ.jpg"
+      },
+      {
+        "title": "Minutemen: Viajantes do Tempo",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/7aWTk1pgVddhtRG4stLQBM9KeGY.jpg"
+      },
+      {
+        "title": "Bolt: Supercão",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/puAIiFICbqLehrE8X884ZbNxI8N.jpg"
+      },
+      {
+        "title": "Snow Buddies: Uma Aventura no Gelo",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/1BCIWKuyHx7xCHr3C2JFT7EfIP7.jpg"
+      },
+      {
+        "title": "Como Viajar Com o 'Mala' do Seu Pai",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/zQaaYUMaMdiA3cslt0DhIRtz7dx.jpg"
+      },
+      {
+        "title": "Morning Light: Desafio em Mar Aberto",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/bsm77sFA42HtQkE8nNOg3E6MRdx.jpg"
+      },
+      {
+        "title": "As Crônicas de Nárnia: Príncipe Caspian",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/ylf6hzCN4MU8Xt9xlypEySd75Z2.jpg"
+      },
+      {
+        "title": "Camp Rock",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/7IXMqZnwccogptThay3togKIFWw.jpg"
+      },
+      {
+        "title": "WALL-E",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/qNiwJPVCO4cgiM8LVtxwPV2HxHS.jpg"
+      },
+      {
+        "title": "As Feras da Música 3: Um Mundo",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/pR7dcmH631XUZZJScGjoR7o5qtj.jpg"
+      },
+      {
+        "title": "Perdido pra Cachorro",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/aKpkqpVYyUYqV8ahTAspbu7cCJw.jpg"
+      },
+      {
+        "title": "High School Musical 3: Ano da Formatura",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/njFge8HpADMmpY1CDgxQu9BMr5I.jpg"
+      },
+      {
+        "title": "Tinker Bell: Uma Aventura no Mundo das Fadas",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/ulNCLIjwiH3QpO1HeQa89HpapRo.jpg"
+      },
+      {
+        "title": "Grande Balé Vermelho: O Mistério dos Flamingos",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/pVfqBJK48myxQvl4MzRaNw4sMPA.jpg"
+      },
+      {
+        "title": "Um Faz de Conta Que Acontece",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/7FSdMPfs8GEFTcW0HVymB7jmBFN.jpg"
+      },
+      {
+        "title": "O Resgate do Papai",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/4YCwMaKlryc3Lq7F0cWATga2YrF.jpg"
+      },
+      {
+        "title": "Space Buddies: Uma Aventura no Espaço",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/5gIDqST1ikTlAHU4aDT7TbYWlI1.jpg"
+      },
+      {
+        "title": "Jonas Brothers: O Show",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/lKhdey1R1sbSFETgQ8Zcin5ncOs.jpg"
+      },
+      {
+        "title": "A Montanha Enfeitiçada",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/ej1pY47zGJwFlywEgfITT1HJDR6.jpg"
+      },
+      {
+        "title": "Hannah Montana: O Filme",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/1FEkw7MaYoB4eCffDcJAhutthSc.jpg"
+      },
+      {
+        "title": "Um Mascote Chocante",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/6yClReGRYAZzKleiULPIwXi0vYq.jpg"
+      },
+      {
+        "title": "Up: Altas Aventuras",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/oo5gvGDIiPwbXc3R0snZIuOc517.jpg"
+      },
+      {
+        "title": "Programa de Proteção para Princesas",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/zuQDHKbFgtBMtFqUMX0J8orEfAT.jpg"
+      },
+      {
+        "title": "Força-G",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/mebBWpOzmwEwdMfcQV8NjKXL5Ff.jpg"
+      },
+      {
+        "title": "Os Feiticeiros de Waverly Place - O Filme",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/iLH4qYOgfpSrvZAnGAKuIS2feqN.jpg"
+      },
+      {
+        "title": "Tinker Bell e o Tesouro Perdido",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/bKTfGR1ksZGusE1fsqr7WqzUGuw.jpg"
+      },
+      {
+        "title": "Acordando a Bela Adormecida",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/5WvirKxdwFGurWELISbMFw0O1CX.jpg"
+      },
+      {
+        "title": "Oceanos",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/3IivnJBV9Q76dVo24FA5dRK7AhJ.jpg"
+      },
+      {
+        "title": "Os Fantasmas de Scrooge",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/1qhU3VJo10sISkHIyANLsHioq0Y.jpg"
+      },
+      {
+        "title": "Santa Buddies: Uma Aventura de Natal",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/ikynAK6zcvmJNXFcWXil051uk59.jpg"
+      },
+      {
+        "title": "Surpresa em Dobro",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/tv2wLc1iu1YeootT3fn6AdQzoMm.jpg"
+      },
+      {
+        "title": "Phineas e Ferb - Especial de Natal",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/Aar7MBqBZ65S4RKH231MZz0SxQ7.jpg"
+      },
+      {
+        "title": "A Princesa e o Sapo",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/5JQbaVcFd9x5snwWT9gquNKmDC.jpg"
+      },
+      {
+        "title": "Harriet, a Espiã: Guerra de Blogs",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/4BcTKMicCLI3egami0KbBuHzJ6A.jpg"
+      },
+      {
+        "title": "StarStruck: Meu Namorado é uma Superestrela",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/zeWTqj0ENq6MneTaUt4VCWnpIFQ.jpg"
+      },
+      {
+        "title": "Alice no País das Maravilhas",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/bvD0kvICG7hP03vrNvylUINhafM.jpg"
+      },
+      {
+        "title": "Príncipe da Pérsia: As Areias do Tempo",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/wVSZu71HqvJ2cQUZklvOEJ6HXBw.jpg"
+      },
+      {
+        "title": "Toy Story 3",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/rf67AeS9nP8DD7dZYbvhjEVoIBf.jpg"
+      },
+      {
+        "title": "16 Desejos",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/cl8nemnK7RZ9U9wxOTEGnzKiU4t.jpg"
+      },
+      {
+        "title": "Tinker Bell e o Resgate da Fada",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/yY69Kxm9QP9mHL9Awswxgqr3q1C.jpg"
+      },
+      {
+        "title": "Irmão Escoteiro",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/zz2i9PBemplCSWNSGx1Xa96hJZ2.jpg"
+      },
+      {
+        "title": "Secretariat: Uma História Impossível",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/1Jg9V13Kyw2Z7YEvLOgP16iCtsY.jpg"
+      },
+      {
+        "title": "Camp Rock 2: The Final Jam",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/8RSdWqC259zR72Jjo6ANAM4ndhM.jpg"
+      },
+      {
+        "title": "Do Dooni Chaar - Duas Vezes Dois São Quatro",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/LeCB4YVGeabEEs0iuI4OapKrrX.jpg"
+      },
+      {
+        "title": "O Melhor Amigo do Papai Noel",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/6FjMtP8sLM8SKgmuQXGlM5iokE2.jpg"
+      },
+      {
+        "title": "Avalon High",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/4YOjeyfItVmMbMJe0jrEnWTiYi9.jpg"
+      },
+      {
+        "title": "Phineas and Ferb: Summer Belongs to You!",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/ocd0NrUHnp73OdH8tklxMICOHUU.jpg"
+      },
+      {
+        "title": "Enrolados",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/wZzVkdnc0kw20lSJc13ZmgTPah3.jpg"
+      },
+      {
+        "title": "Tron: O Legado",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/rd2httnVcBiu1tmFUDdcxZtenhz.jpg"
+      },
+      {
+        "title": "Era Uma Vez Um Guerreiro",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/k6jyFVvOxJT3oxOnDRcDZEKiIkh.jpg"
+      },
+      {
+        "title": "Perdido pra Cachorro 2",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/czTdyOQmxRmziru9e4ZElHM7rhB.jpg"
+      },
+      {
+        "title": "Marte Precisa de Mães",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/uCT6HwfN2xPvmrIT7OCxpKnNFtQ.jpg"
+      },
+      {
+        "title": "Asas da Vida",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/sx7KXqjfcCOampuhuY5aIhaBjis.jpg"
+      },
+      {
+        "title": "Zack e Cody: O Filme",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/ajy3ALNpFhC4S1BHoBQq8tWPvlt.jpg"
+      },
+      {
+        "title": "Zokkomon",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/ub1NcqnUrXfRbRudmehCoUa2aix.jpg"
+      },
+      {
+        "title": "O Ursinho Pooh",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/7uXSJt8x0rvloSFdardAxQC3wSN.jpg"
+      },
+      {
+        "title": "Lemonade Mouth: Uma Banda Diferente",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/q5OCL75RKk4D21u4QkGCJVYpEyH.jpg"
+      },
+      {
+        "title": "Reino dos Felinos",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/93FP6NeQv6tD9WzrmqrJfheszQ2.jpg"
+      },
+      {
+        "title": "A Melhor Festa do Ano",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/lE02F7PlNrODq5mrJBzWncGDOfY.jpg"
+      },
+      {
+        "title": "Piratas do Caribe: Navegando em Águas Misteriosas",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/blt7kBXEk1HgJjCTusaUMQ7BCTY.jpg"
+      },
+      {
+        "title": "Carros 2",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/fIKaabvE40T39nOIngcZPcPJeYe.jpg"
+      },
+      {
+        "title": "Toy Story Toons: Férias no Havaí",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/kKpwfOZ0IhyDXjQ3KTQlmbznD16.jpg"
+      },
+      {
+        "title": "Phineas e Ferb: O Filme: Através da 2ª Dimensão",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/nSvJH6ledaE7Um5hbulNKD1wXzi.jpg"
+      },
+      {
+        "title": "Spooky Buddies: A Casa Mal-Assombrada",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/7vTF5sxsUGPaKvuQki1WU0pE2OQ.jpg"
+      },
+      {
+        "title": "Os Muppets",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/A4nLttpOU7FK2KhjNdapRZ45jVt.jpg"
+      },
+      {
+        "title": "Um Geek Encantador",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/9k9Ky1iCxRLiEjYpgAtoxtVMa92.jpg"
+      },
+      {
+        "title": "Os Jogos no Refúgio das Fadas",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/uAC5CuzOjfKbSmBoEmzYYWZjtnl.jpg"
+      },
+      {
+        "title": "Toy Story Toons: Um Pequeno Grande Erro",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/bxKBgZE9RFPvPGUTgygJK7I83La.jpg"
+      },
+      {
+        "title": "Aminimigos",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/v0jVmmTjnKUpP5GKKJQzpiV87IE.jpg"
+      },
+      {
+        "title": "Enrolados para Sempre",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/gm8i0RvcDCbqjHWZNzTxONlNxWo.jpg"
+      },
+      {
+        "title": "Treasure Buddies: Caça ao Tesouro",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/qXJaPj8JusHymVUNhau2SkNlS5y.jpg"
+      },
+      {
+        "title": "Rebelde da Rádio",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/bfpbrUhOJ5tER1j4oolnvqd4nOC.jpg"
+      },
+      {
+        "title": "John Carter: Entre Dois Mundos",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/uv6RHSX6cvlCOUDgqcscxChyofj.jpg"
+      },
+      {
+        "title": "Chimpanzé",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/myMv40rttZCp25XY05eiAUQrYQU.jpg"
+      },
+      {
+        "title": "Arjun: The Warrior Prince",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/oKItRQ3sp96BGHYS7pV45DfUgq9.jpg"
+      },
+      {
+        "title": "O Avião de Papel",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/unBSS0uO7GZWT4TdmUPZFgnhnAv.jpg"
+      },
+      {
+        "title": "Let It Shine",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/h0tbtqdPPCe7gYSuNppOd066xBL.jpg"
+      },
+      {
+        "title": "Valente",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/gYbCpjAsyJ0uO0rKcvJ295INZZp.jpg"
+      },
+      {
+        "title": "A Estranha Vida de Timothy Green",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/yDXXtI8ocUkQ8O95XLEdPE5qArp.jpg"
+      },
+      {
+        "title": "Tinker Bell: O Segredo das Fadas",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/a4XtmRHjpcN8r4ZUn7g3kGEE3F4.jpg"
+      },
+      {
+        "title": "Perdido pra Cachorro 3",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/hcvzgsNPoS2ImrSkWCRl2bxMdbA.jpg"
+      },
+      {
+        "title": "Toy Story Toons: Festa-Sauro Rex",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/rnCVDSbSju6MPQO2LRDiz5ZRZ4q.jpg"
+      },
+      {
+        "title": "Frankenweenie",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/wiZdvpoT7y5BRTPkgR3EyNpn4xR.jpg"
+      },
+      {
+        "title": "Garota vs. Monstro",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/nJxRRX2IaBF5tpzTrpPTRFXX2bY.jpg"
+      },
+      {
+        "title": "Detona Ralph",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/9OGpoSaGGwbWSFQVFaVGakLyaoK.jpg"
+      },
+      {
+        "title": "Os Filhotes da Mamãe Noel",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/x07UZ6nvbuFQEY8hyUxsCI1gCoX.jpg"
+      },
+      {
+        "title": "Princesinha Sofia: Era Uma Vez",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/5MGUoGtlOK646iHo8sJLyDSrpDC.jpg"
+      },
+      {
+        "title": "Oz: Mágico e Poderoso",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/oh4J8VEdORbZkajRlJDQqHvM5tj.jpg"
+      },
+      {
+        "title": "Universidade Monstros",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/uHiklaxCoZcQqzsj5l1IgyieWgp.jpg"
+      },
+      {
+        "title": "Tinker Bell: Confeitaria das Fadas",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/6iXYe7AkQ1QIfMFuvXsSCT2zF7s.jpg"
+      },
+      {
+        "title": "O Cavaleiro Solitário",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/oz7euNg7BmA5aYjcjKIzIAMT8V6.jpg"
+      },
+      {
+        "title": "Teen Beach: O Filme",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/sKrGe5EmDSyVaWM0uj7rJDQHRjB.jpg"
+      },
+      {
+        "title": "Super Buddies",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/u7sMtMLSe5CrsLqOPVnYseJj7wE.jpg"
+      },
+      {
+        "title": "Aviões",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/4KrnsveRY7O6YR2X0j1vGrEksIZ.jpg"
+      },
+      {
+        "title": "Phineas e Ferb: Missão Marvel",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/ehms1HYfvHnA379PlF16UXlcPdL.jpg"
+      },
+      {
+        "title": "Os Feiticeiros Retornam: Alex vs. Alex",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/sU12jcCSN3sT4ehQsxrSn4NP5OI.jpg"
+      },
+      {
+        "title": "Toy Story de Terror",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/l322MKyX8QDXd0ndsXKf8YObfl2.jpg"
+      },
+      {
+        "title": "Walt nos Bastidores de Mary Poppins",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/7sjEjyYeOsrM1Iri2u5j43bVJMf.jpg"
+      },
+      {
+        "title": "Frozen: Uma Aventura Congelante",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/hOZKUJGN0m717LRSQDxhgABqWrf.jpg"
+      },
+      {
+        "title": "Cloud 9: Desafio Final",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/gYUafHxFc5irfZa1oKK2kFxXYPl.jpg"
+      },
+      {
+        "title": "Tinker Bell: Fadas e Piratas",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/e9OYTVqqQRWWeTur8MExfFvtIkq.jpg"
+      },
+      {
+        "title": "Muppets 2: Procurados e Amados",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/aiEWfjDgYnCe5Nvvd6KnaEXgu5g.jpg"
+      },
+      {
+        "title": "Ursos",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/43cPwhgBGD8eHePB9tC3fnab5vH.jpg"
+      },
+      {
+        "title": "Arremesso de Ouro",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/iaBVWGCjg6C1QQTXafjDVaPI2Ny.jpg"
+      },
+      {
+        "title": "Malévola",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/ga1I9MwWnqXpbVBwE5NO1xTrpZS.jpg"
+      },
+      {
+        "title": "Zapped",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/nWKpZ4RY7IPjWDH4KHOH2zIEpWX.jpg"
+      },
+      {
+        "title": "Phineas e Ferb: Star Wars",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/7ThOPqXvlFZjvGyRGcvutjfFYpX.jpg"
+      },
+      {
+        "title": "Como Criar o Garoto Perfeito",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/s1yzmxUhRiyJ5fqZGQfVcW1zukM.jpg"
+      },
+      {
+        "title": "Alexandre e o Dia Terrível, Horrível, Espantoso e Horroroso",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/7DhdFeIxE9zCnjF7qGkjNxHQIr9.jpg"
+      },
+      {
+        "title": "Operação Big Hero",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/5EodFesjReSDlX1c0I5ANZijBFy.jpg"
+      },
+      {
+        "title": "Toy Story: Esquecidos Pelo Tempo",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/qNxLl8aRtbkJLLd0UQn8i41D7W8.jpg"
+      },
+      {
+        "title": "Caminhos da Floresta",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/lV9VadnnXvv8qxoHkT9XWwGesQw.jpg"
+      },
+      {
+        "title": "Tinker Bell e o Monstro da Terra do Nunca",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/rWC9LUDVrGNRZvzFEqrSt9mJcBA.jpg"
+      },
+      {
+        "title": "Magia Estranha",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/4VQcLPXlJJZhNDYdjvOcw2KylUF.jpg"
+      },
+      {
+        "title": "Bad Hair Day",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/8DbX6kHYPQlzwSpO876Be6x5JNO.jpg"
+      },
+      {
+        "title": "Cinderela",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/x8MnNc8zaKMPo5W4TuWN0xVIbNy.jpg"
+      },
+      {
+        "title": "Frozen: Febre Congelante",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/gowwCKxLvqnkMzlImDW3ONJWMu1.jpg"
+      },
+      {
+        "title": "McFarland dos EUA",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/gRUt7qBLmtFMNIE4aJVleHZghlO.jpg"
+      },
+      {
+        "title": "Walt Antes do Mickey",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/1cbUzGAF3WcykjsdqIhDxzDN1KY.jpg"
+      },
+      {
+        "title": "O Reino dos Primatas",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/6h0CDIEJ5KldUqe0xQjI310D74G.jpg"
+      },
+      {
+        "title": "Tomorrowland: Um Lugar Onde Nada É Impossível",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/i7vf2ByJw8V7FLQNc2HYxHTNned.jpg"
+      },
+      {
+        "title": "Divertida Mente",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/62SAZfLfzhxJWUFJvfIPMw6QUpE.jpg"
+      },
+      {
+        "title": "Phineas and Ferb: Last Day of Summer",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/uflT8qpkv4YsLH7MPAL0wDQ4luY.jpg"
+      },
+      {
+        "title": "ABCD 2",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/7S0heTpQydVBSYl6yBxmqVyentQ.jpg"
+      },
+      {
+        "title": "Teen Beach 2",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/dw6MPw55CKQWhme6nv2LmX6mNYK.jpg"
+      },
+      {
+        "title": "Descendentes",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/i36xiPRiRgy8x261fk80CyVcaYF.jpg"
+      },
+      {
+        "title": "Minha Irmã Invisível",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/ga2BbbiW3fsBangPZxDvEbJKVcf.jpg"
+      },
+      {
+        "title": "Borrowed Time",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/p2FoxeUWAKwS9LbCzXszfV2er4j.jpg"
+      },
+      {
+        "title": "O Bom Dinossauro",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/h85jXVapDFhsDvlsrmuMJkfvXSj.jpg"
+      },
+      {
+        "title": "A Guarda do Leão: Um Novo Rugido",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/cHBE11YIWes6N0iKzdK8HpGGhJj.jpg"
+      },
+      {
+        "title": "Horas Decisivas",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/8VTYz8SkU8DcBgKNprMjqPNZBgt.jpg"
+      },
+      {
+        "title": "Mãe e Filha: Sonhos na Califórnia",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/nbFL6ygpymRtbOhWL1BbFOIwoQB.jpg"
+      },
+      {
+        "title": "Zootopia: Essa Cidade é o Bicho",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/ncqVGCX9P3EKQfsOXiB3XxQ0Dip.jpg"
+      },
+      {
+        "title": "Mogli: O Menino Lobo",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/kNbTwTn0YLm03XrCMa2XUgcyKm8.jpg"
+      },
+      {
+        "title": "O Bom Gigante Amigo",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/tAbbJPbRnY8TRwFure08S7SWnM9.jpg"
+      },
+      {
+        "title": "Alice Através do Espelho",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/xHANJfW7hk2weM532IpUthgAQfo.jpg"
+      },
+      {
+        "title": "Procurando Dory",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/5MOyKnmtE2hd778bIybw9v8HkiP.jpg"
+      },
+      {
+        "title": "Piper: Descobrindo o Mundo",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/45aUXGecIQKawGXfLchHJaYcF2F.jpg"
+      },
+      {
+        "title": "Uma Aventura de Babás",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/5Q2MceOewWKwvfkkgBvIzqKnHDv.jpg"
+      },
+      {
+        "title": "Nascidos na China",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/9NmeqFGnmaIrTZJBnqemF5uGUlb.jpg"
+      },
+      {
+        "title": "Dangal",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/cJRPOLEexI7qp2DKtFfCh7YaaUG.jpg"
+      },
+      {
+        "title": "Rainha de Katwe",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/dYOzbMAJ9xwS3OUDVVbKaBa5h7u.jpg"
+      },
+      {
+        "title": "Swap: A Troca",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/80DWrYatvqtmLxE2oZurIueaVad.jpg"
+      },
+      {
+        "title": "Moana: Um Mar de Aventuras",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/4rxEeTzN1oZPJo1GBoPOnA3NeJv.jpg"
+      },
+      {
+        "title": "Elena e o Segredo de Avalor",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/6dknXo3Ny4J97eBRs9XKVwQc8fH.jpg"
+      },
+      {
+        "title": "Crescendo Livres",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/quet7IulyTWK6QffbnUDqqfqiDR.jpg"
+      },
+      {
+        "title": "Tini: Depois de Violetta",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/bLu1MLkVGxaweqfcu0XOQEhsCLX.jpg"
+      },
+      {
+        "title": "A Marcha dos Pinguins 2",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/s6wAqqtukk7dPgN12c918Buvggb.jpg"
+      },
+      {
+        "title": "A Bela e a Fera",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/8JkXzfzwpZNZV72vSbG5c3Vn6Tt.jpg"
+      },
+      {
+        "title": "Enrolados Outra Vez: O Especial",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/nvixnsPbL5msfmwwqrUWtdBnhdH.jpg"
+      },
+      {
+        "title": "Carros 3",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/oEmdfjqQnAWe1t23WiiW0icFhGv.jpg"
+      },
+      {
+        "title": "Piratas do Caribe: A Vingança de Salazar",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/1bXv1lIkXE1TXYsyd6HHQr4dfw4.jpg"
+      },
+      {
+        "title": "Os Fantasmas das Montanhas",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/lntHYkwAwA3fmpNHcZRBrshsSOt.jpg"
+      },
+      {
+        "title": "Descendentes 2",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/5jGEBYg13Sa1J3D6KOlQ2EH8Uxg.jpg"
+      },
+      {
+        "title": "Viva: A Vida é uma Festa",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/6oNm06TPz2vGiPc2I52oXW3JwPS.jpg"
+      },
+      {
+        "title": "Detetive Jagga",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/qXZCEyFkNe5cm7xfkUDvV41Xnfh.jpg"
+      },
+      {
+        "title": "Z-O-M-B-I-E-S",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/snGVInrnUBK6LrfLZkOdbj5PpJo.jpg"
+      },
+      {
+        "title": "Uma Dobra no Tempo",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/wbevoY1JitEd1EmSAaZOsozCUND.jpg"
+      },
+      {
+        "title": "Aventuras no Fundo do Mar",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/nZp3wSY9VaDYAFjFuKPyThVy8Xa.jpg"
+      },
+      {
+        "title": "Os Incríveis 2",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/6et98yxnctR6uH16x3uJuIVKsPf.jpg"
+      },
+      {
+        "title": "Christopher Robin: Um Reencontro Inesquecível",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/zTlGXx2A1JwdaLvLQXmb0lYBdDt.jpg"
+      },
+      {
+        "title": "Freaky Friday: Sexta-Feira Muito Louca",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/zhu2Qy6S7dX204NXsUxToY2Njv.jpg"
+      },
+      {
+        "title": "Un Amore così grande",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/9SuL4KepPxc2UnMYvIyW0RFtu8O.jpg"
+      },
+      {
+        "title": "Aqui no Mar: Descendentes 2.5",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/gl1SLReURobGVsFxoG7LySnQhZH.jpg"
+      },
+      {
+        "title": "O Quebra-Nozes e os Quatro Reinos",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/qQziRQeYUIc9I3lVEcdwQJGy5dS.jpg"
+      },
+      {
+        "title": "WiFi Ralph: Quebrando a Internet",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/uZCR7Vt3gTpj8hCNybFcNThFYTA.jpg"
+      },
+      {
+        "title": "O Retorno de Mary Poppins",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/8g1P4sxOitwFaf3UBeT8n4F5sBy.jpg"
+      },
+      {
+        "title": "Dumbo",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/4EoFz2i2h2OYtv51dAddVYeZXcj.jpg"
+      },
+      {
+        "title": "Aladdin",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/1d8HShFOmSWDwvqtvPEZqzlZbYl.jpg"
+      },
+      {
+        "title": "Toy Story 4",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/csiyO6q8rR74pfgJDjwINzhoick.jpg"
+      },
+      {
+        "title": "O Rei Leão",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/wrHr8eEJYDAA7WYybyH162s4oZ4.jpg"
+      },
+      {
+        "title": "Kim Possible",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/dmYNXdrYPZcQhR03oqE01TbvVL8.jpg"
+      },
+      {
+        "title": "Descendentes 3",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/moyDQs4U4D4b0kG7vfqt8DKskkI.jpg"
+      },
+      {
+        "title": "A Dama e o Vagabundo",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/vnBl7huZPEPsxD2ZmqZqRBI3efr.jpg"
+      },
+      {
+        "title": "Frozen 2",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/yK9wazsgpZ9QfmITC96biaMzndV.jpg"
+      },
+      {
+        "title": "Noelle",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/18VK2h2TUQRTnWRMn9ecqFGXov0.jpg"
+      },
+      {
+        "title": "Malévola: Dona do Mal",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/llHTFUeUCWmkW5fR4J9kpa6Asep.jpg"
+      },
+      {
+        "title": "Mulan",
+        "year": "2020",
+        "poster": "https://image.tmdb.org/t/p/w500/72I82eKXCadZWEYygV9GkJOQNEq.jpg"
+      },
+      {
+        "title": "Dois Irmãos: Uma Jornada Fantástica",
+        "year": "2020",
+        "poster": "https://image.tmdb.org/t/p/w500/jsi2UM64Mhr6NmY1LKeeCuZOaCo.jpg"
+      },
+      {
+        "title": "Artemis Fowl: O Mundo Secreto",
+        "year": "2020",
+        "poster": "https://image.tmdb.org/t/p/w500/avb3THg1FTxBc79h2QECsuwjujY.jpg"
+      },
+      {
+        "title": "Soul",
+        "year": "2020",
+        "poster": "https://image.tmdb.org/t/p/w500/1G7QNn1sUShae0Rf9k9D99wVFg5.jpg"
+      },
+      {
+        "title": "O Grande Ivan",
+        "year": "2020",
+        "poster": "https://image.tmdb.org/t/p/w500/iLqOH0SSJ1hy3Y1POl5cr6H1RtL.jpg"
+      },
+      {
+        "title": "Upside-Down Magic: Escola de Magia",
+        "year": "2020",
+        "poster": "https://image.tmdb.org/t/p/w500/1WXhpygouqZ0eOAUKhrlSVonyBi.jpg"
+      },
+      {
+        "title": "Z-O-M-B-I-E-S 2",
+        "year": "2020",
+        "poster": "https://image.tmdb.org/t/p/w500/cOnxoQ3kx4mgmWb7yRi6GBWssOh.jpg"
+      },
+      {
+        "title": "Jungle Cruise",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/ufdAY5IfR916oDuZ02qSBYUSucJ.jpg"
+      },
+      {
+        "title": "Raya e o Último Dragão",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/w3fnXZoHK9aFuvC9566SAtZuhAp.jpg"
+      },
+      {
+        "title": "Cruella",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/rRYNGhcAZlTfIUS7iFoF4H9iDbc.jpg"
+      },
+      {
+        "title": "Desencantada",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/8tuvxhScKT6qs8Js7ghLCLG5gxD.jpg"
+      },
+      {
+        "title": "A Pequena Sereia",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/7simQIdUaltmbV8LB8n3kHDIUBf.jpg"
+      },
+      {
+        "title": "Muppets Haunted Mansion: A Festa Aterrorizante",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/hctd04c3kD7TppVA577C3L51yqg.jpg"
+      },
+      {
+        "title": "Segredos Mágicos",
+        "year": "2020",
+        "poster": "https://image.tmdb.org/t/p/w500/nrgX73kXgYxeFRFUr0e6t245y7b.jpg"
+      },
+      {
+        "title": "From Our Family to Yours",
+        "year": "2020",
+        "poster": "https://image.tmdb.org/t/p/w500/qcwsbATgY8aMQYlW9o4LbhKLvuM.jpg"
+      }
+    ]
+  }
+}
+
+{
+  "ghibli": {
+    "name": "Ghibli",
+    "updated_at": "2025-12-29",
+    "films": [
+      {
+        "title": "Túmulo dos Vagalumes",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/kHFUyxNJfhMkKk1FwrNHd62KTEs.jpg"
+      },
+      {
+        "title": "Princesa Mononoke",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/7EadOwHmyQgOnlghRiWBygNtnjl.jpg"
+      },
+      {
+        "title": "A Viagem de Chihiro",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/hhoKhsyJ3hFaxEm5pMdZRiTu2lJ.jpg"
+      },
+      {
+        "title": "As Memórias de Marnie",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/q8dKK0OdBR91gEJWRdo9osvxvM6.jpg"
+      },
+      {
+        "title": "Memórias de Ontem",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/nnQe2jO91wjszUOebEGeJlZeoBP.jpg"
+      },
+      {
+        "title": "Nausicaä do Vale do Vento",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/UkCcG94fX1fKIu6DWzwEfpbxL9.jpg"
+      },
+      {
+        "title": "PomPoko: A Grande Batalha dos Guaxinins",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/80xL89n79KRKjhPWiXzAi8w43ZV.jpg"
+      },
+      {
+        "title": "O Conto da Princesa Kaguya",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/cerV9QJhSdDlnUigrsKZQfOeTpA.jpg"
+      },
+      {
+        "title": "O Mundo dos Pequeninos",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/yovlgDFP53N7IW7O4irM6INBxmp.jpg"
+      },
+      {
+        "title": "Meu Amigo Totoro",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/23KKTxDg6rxZVc66bloQQdPSr29.jpg"
+      },
+      {
+        "title": "Sussurros do Coração",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/5q752lJ1XoRwj6yKVx999avJ8eO.jpg"
+      },
+      {
+        "title": "Contos de Terramar",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/vbiFo47KaGKNoNZARrTbJDZERDt.jpg"
+      },
+      {
+        "title": "Ponyo - Uma Amizade que Veio do Mar",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/cvpsmNWc8nyePJMbyMc9X5lLN6L.jpg"
+      },
+      {
+        "title": "O Menino e a Garça",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/dYwihSnQmCVuIQbuG9n18BK5Iqd.jpg"
+      },
+      {
+        "title": "O Castelo no Céu",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/9y7AZVM0YLIeNzNVCYyo0vcVxr.jpg"
+      },
+      {
+        "title": "宮崎 駿の仕事 「風立ちぬ」1000日の記録/引退宣言 知られざる物語",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/bUbsp6i9WIuRAdSCk28ZsDLzWzS.jpg"
+      },
+      {
+        "title": "Porco Rosso: O Último Herói Romântico",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/mf3UwAH3b2cCFTyw4qKK62Z7AZb.jpg"
+      },
+      {
+        "title": "Eu Posso Ouvir o Oceano",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/7xNEkYR9EkcBG1EjiOwyl0oXLU7.jpg"
+      },
+      {
+        "title": "Da Colina Kokuriko",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/a5zpMbq2dXWFVVLqu91lrjEF3fv.jpg"
+      },
+      {
+        "title": "スーパーテレビ 情報最前線 独占密着15ヶ月！噂の映画『となりの山田くん』の秘密",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/iBdEgLSuL5dvN5bqF7T93hc3vb0.jpg"
+      },
+      {
+        "title": "Aya e a Bruxa",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/3xgAhWu3v78zP6GIAbVHjcaBOR2.jpg"
+      }
+    ]
+  }
+}
