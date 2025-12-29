@@ -16,11 +16,11 @@ body{
 
 input, textarea, button{
   width:100%;
-  padding:12px;
-  margin-top:10px;
-  border-radius:8px;
+  padding:14px;
+  margin-top:14px;
+  border-radius:10px;
   border:none;
-  font-size:14px;
+  font-size:15px;
 }
 
 button{
@@ -30,7 +30,7 @@ button{
 }
 
 textarea{
-  min-height:320px;
+  min-height:340px;
   font-family:monospace;
   white-space:pre;
 }
@@ -41,13 +41,17 @@ textarea{
 
 <h1>Scraping manual – FilmDuel</h1>
 
-<input id="name" placeholder="Nome da lista (ex: IMDb Top 250)">
-<input id="key" placeholder="Slug (ex: imdb_top_250)">
-<input id="url" placeholder="URL da lista Letterboxd">
+<input
+  id="url"
+  placeholder="URL da lista do Letterboxd"
+/>
 
 <button onclick="run()">Gerar JSON</button>
 
-<textarea id="output" placeholder="O JSON vai aparecer aqui..."></textarea>
+<textarea
+  id="output"
+  placeholder="O JSON final vai aparecer aqui..."
+></textarea>
 
 <script src="scraper.js"></script>
 </body>
