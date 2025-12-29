@@ -2,55 +2,63 @@
   "films": [
     {
       "title": "Barry Lyndon",
-      "year": "1975"
+      "year": "1975",
+      "poster": "https://image.tmdb.org/t/p/w500/dOJtBSyI30wWc08UmyEKLsu4Rfk.jpg"
     },
     {
-      "title": "Eyes Wide Shut",
-      "year": "1999"
+      "title": "De Olhos Bem Fechados",
+      "year": "1999",
+      "poster": "https://image.tmdb.org/t/p/w500/pmU8WQ2fOdxLuYaNe1kHE2L8SlI.jpg"
     },
     {
-      "title": "2001: A Space Odyssey",
-      "year": "1968"
+      "title": "2001: Uma Odisséia no Espaço",
+      "year": "1968",
+      "poster": "https://image.tmdb.org/t/p/w500/9jPHKChBVWfWxXYO1yN4FZF1U2S.jpg"
     },
     {
-      "title": "The Shining",
-      "year": "1980"
+      "title": "O Iluminado",
+      "year": "1980",
+      "poster": "https://image.tmdb.org/t/p/w500/47BdQqDWnj3VIzpH9bd2agho2PN.jpg"
     },
     {
-      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
-      "year": "1964"
+      "title": "Dr. Fantástico",
+      "year": "1964",
+      "poster": "https://image.tmdb.org/t/p/w500/lFcwVewzDwmJjIIjNIWwST4ctaC.jpg"
     },
     {
-      "title": "Paths of Glory",
-      "year": "1957"
+      "title": "Glória Feita de Sangue",
+      "year": "1957",
+      "poster": "https://image.tmdb.org/t/p/w500/3tn73tCktCnZ9CkiUms2cJC4BKt.jpg"
     },
     {
-      "title": "A Clockwork Orange",
-      "year": "1971"
+      "title": "Laranja Mecânica",
+      "year": "1971",
+      "poster": "https://image.tmdb.org/t/p/w500/e8jIwfP8jr81UTFbh2qJVjBhIUL.jpg"
     },
     {
-      "title": "The Killing",
-      "year": "1956"
+      "title": "O Grande Golpe",
+      "year": "1956",
+      "poster": "https://image.tmdb.org/t/p/w500/AuS9SvcilPmvaGo099ZU0DEKErf.jpg"
     },
     {
-      "title": "Full Metal Jacket",
-      "year": "1987"
+      "title": "Nascido Para Matar",
+      "year": "1987",
+      "poster": "https://image.tmdb.org/t/p/w500/qHm54HjL1F6CFVyYOz6Q2HAPTfS.jpg"
     },
     {
       "title": "Spartacus",
-      "year": "1960"
-    },
-    {
-      "title": "Killer&#039;s Kiss",
-      "year": "1955"
+      "year": "1960",
+      "poster": "https://image.tmdb.org/t/p/w500/7Ia2ziy1juSFsl3ZCaaRn15Yo2A.jpg"
     },
     {
       "title": "Lolita",
-      "year": "1962"
+      "year": "1962",
+      "poster": "https://image.tmdb.org/t/p/w500/gZPg4bU9acbLdTLgO8GebK1LrBH.jpg"
     },
     {
-      "title": "Fear and Desire",
-      "year": "1952"
+      "title": "Medo e Desejo",
+      "year": "1953",
+      "poster": "https://image.tmdb.org/t/p/w500/zheHPfKeLCh4ktsfBNjvCNuaPNt.jpg"
     }
   ]
 }
