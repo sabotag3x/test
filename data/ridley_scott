@@ -1,0 +1,144 @@
+{
+  "films": [
+    {
+      "title": "Alien: O Oitavo Passageiro",
+      "year": "1979",
+      "poster": "https://image.tmdb.org/t/p/w500/rFHzJrkO1kNIezb6rFog5oCJUEn.jpg"
+    },
+    {
+      "title": "Blade Runner: O Caçador de Andróides",
+      "year": "1982",
+      "poster": "https://image.tmdb.org/t/p/w500/y5ibL0vFnzsRiIHosw0WOfHtIj1.jpg"
+    },
+    {
+      "title": "Prometheus",
+      "year": "2012",
+      "poster": "https://image.tmdb.org/t/p/w500/k1GZVllOORTiN0XTPdumt9CSAcc.jpg"
+    },
+    {
+      "title": "Falcão Negro em Perigo",
+      "year": "2001",
+      "poster": "https://image.tmdb.org/t/p/w500/mwlZSgXxX0XrRGP7gMLdJxlrOTY.jpg"
+    },
+    {
+      "title": "O Conselheiro do Crime",
+      "year": "2013",
+      "poster": "https://image.tmdb.org/t/p/w500/buoEIf1LSmq7duxJkQ48aseLeP6.jpg"
+    },
+    {
+      "title": "Gladiador",
+      "year": "2000",
+      "poster": "https://image.tmdb.org/t/p/w500/4DUClyGA6OqjXv6yC0Imf6THGfp.jpg"
+    },
+    {
+      "title": "O Último Duelo",
+      "year": "2021",
+      "poster": "https://image.tmdb.org/t/p/w500/mhrzzNauB1PKrwnqVbLQODNNTJN.jpg"
+    },
+    {
+      "title": "Perdido em Marte",
+      "year": "2015",
+      "poster": "https://image.tmdb.org/t/p/w500/fG3S4zdgnsaF77tJGK3rA9tHBu4.jpg"
+    },
+    {
+      "title": "Alien: Covenant",
+      "year": "2017",
+      "poster": "https://image.tmdb.org/t/p/w500/wm8L1D3YMT0auLQiPXY3H1CUDg8.jpg"
+    },
+    {
+      "title": "Os Duelistas",
+      "year": "1977",
+      "poster": "https://image.tmdb.org/t/p/w500/gdyHx1tra3SjPx4aD2x9DE9K0UN.jpg"
+    },
+    {
+      "title": "Os Vigaristas",
+      "year": "2003",
+      "poster": "https://image.tmdb.org/t/p/w500/8Lbn5XQua5cKdYqhVGr9nF9JT7S.jpg"
+    },
+    {
+      "title": "Napoleão",
+      "year": "2023",
+      "poster": "https://image.tmdb.org/t/p/w500/2UY2xfkgw9EgOOyA7ro3eyGJ9V9.jpg"
+    },
+    {
+      "title": "O Gângster",
+      "year": "2007",
+      "poster": "https://image.tmdb.org/t/p/w500/Avd0i7NPlt3w4z1pJFlc0jYbqWu.jpg"
+    },
+    {
+      "title": "Robin Hood",
+      "year": "2010",
+      "poster": "https://image.tmdb.org/t/p/w500/cCzqyuZxvJ38E8DXMbW9q4qgUVa.jpg"
+    },
+    {
+      "title": "Cruzada",
+      "year": "2005",
+      "poster": "https://image.tmdb.org/t/p/w500/spTYIlLCCWL4yG9OhzmTSccoCU3.jpg"
+    },
+    {
+      "title": "Casa Gucci",
+      "year": "2021",
+      "poster": "https://image.tmdb.org/t/p/w500/dAPdK3L2STpHo4DFKwtL2gdo89L.jpg"
+    },
+    {
+      "title": "Rede de Mentiras",
+      "year": "2008",
+      "poster": "https://image.tmdb.org/t/p/w500/wIUBj0wIcTsqcFsxGFUdx6e5Lhp.jpg"
+    },
+    {
+      "title": "A Lenda",
+      "year": "1985",
+      "poster": "https://image.tmdb.org/t/p/w500/dsPVbw8763gl8qX0Z6w9jt9xe82.jpg"
+    },
+    {
+      "title": "Um Bom Ano",
+      "year": "2006",
+      "poster": "https://image.tmdb.org/t/p/w500/8b0w6UUKtQf1C4HIdEl4oNqdGZa.jpg"
+    },
+    {
+      "title": "Chuva Negra",
+      "year": "1989",
+      "poster": "https://image.tmdb.org/t/p/w500/5zIfDzy6P8g4FKnzb0bApZ0DLMF.jpg"
+    },
+    {
+      "title": "Tormenta",
+      "year": "1996",
+      "poster": "https://image.tmdb.org/t/p/w500/ofYYQ8AJuYVbi8ElIqzCf0yHyvh.jpg"
+    },
+    {
+      "title": "Gladiador 2",
+      "year": "2024",
+      "poster": "https://image.tmdb.org/t/p/w500/342bly9MqveL65TnEFzx8TTUxcL.jpg"
+    },
+    {
+      "title": "Até o Limite da Honra",
+      "year": "1997",
+      "poster": "https://image.tmdb.org/t/p/w500/2Z5w1GVHSU6qPTGMnGuoIQWKtNO.jpg"
+    },
+    {
+      "title": "Todo o Dinheiro do Mundo",
+      "year": "2017",
+      "poster": "https://image.tmdb.org/t/p/w500/hv78Iq8L9pfieAKQzaomeSJAu21.jpg"
+    },
+    {
+      "title": "Hannibal",
+      "year": "2001",
+      "poster": "https://image.tmdb.org/t/p/w500/v5wAZwRqpGWmyAaaJ8BBHYuNXnj.jpg"
+    },
+    {
+      "title": "Perigo na Noite",
+      "year": "1987",
+      "poster": "https://image.tmdb.org/t/p/w500/7Vqw29y8pkoHaVtwkQcQhBK9oTY.jpg"
+    },
+    {
+      "title": "Êxodo: Deuses e Reis",
+      "year": "2014",
+      "poster": "https://image.tmdb.org/t/p/w500/mhycVihAv8htYR1rApGYB9HyRYr.jpg"
+    },
+    {
+      "title": "1492 - A Conquista do Paraíso",
+      "year": "1992",
+      "poster": "https://image.tmdb.org/t/p/w500/vLQMpD6eAvs0DOGZdgpTYHTP4Mu.jpg"
+    }
+  ]
+}
