@@ -1,27 +1,30 @@
 async function run(){
-  const name = document.getElementById("name").value.trim();
-  const key  = document.getElementById("key").value.trim();
+  const slug = document.getElementById("key").value.trim();
   const url  = document.getElementById("url").value.trim();
   const out  = document.getElementById("output");
 
-  if(!name || !key || !url){
-    alert("Preencha todos os campos");
+  if(!slug || !url){
+    alert("Preencha o slug e a URL");
     return;
   }
 
   out.value = "Carregando...\n";
 
-  const res = await fetch(`/api/list?url=${encodeURIComponent(url)}`);
-  const films = await res.json();
+  try{
+    const res = await fetch(`/api/list?url=${encodeURIComponent(url)}`);
+    const films = await res.json();
 
-  const json = {
-    [key]: {
-      name,
-      source: url,
-      updated_at: new Date().toISOString().slice(0,10),
-      films
-    }
-  };
+    const valid = films.filter(f => f && f.poster);
 
-  out.value = JSON.stringify(json, null, 2);
+    const json = {
+      films: valid
+    };
+
+    out.value =
+`// Salvar como: data/${slug}.json
+${JSON.stringify(json, null, 2)}`;
+
+  }catch(e){
+    out.value = "Erro ao gerar lista";
+  }
 }
