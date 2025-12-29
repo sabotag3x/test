@@ -1101,8 +1101,6 @@
     ]
   }
 },
-
-{
   "top_250_imdb": {
     "name": "Top 250 IMDb",
     "updated_at": "2025-12-29",
@@ -2305,8 +2303,6 @@
     ]
   }
 },
-
-{
   "populares": {
     "name": "Populares",
     "updated_at": "2025-12-29",
@@ -3489,8 +3485,6 @@
     ]
   }
 },
-
-{
   "animacao": {
     "name": "Animação",
     "updated_at": "2025-12-29",
@@ -3958,8 +3952,6 @@
     ]
   }
 },
-
-{
   "disney": {
     "name": "Disney",
     "updated_at": "2025-12-29",
@@ -7157,8 +7149,6 @@
     ]
   }
 },
-
-{
   "ghibli": {
     "name": "Ghibli",
     "updated_at": "2025-12-29",
@@ -7271,8 +7261,6 @@
     ]
   }
 },
-
-{
   "brasileiros": {
     "name": "Brasileiros",
     "updated_at": "2025-12-29",
@@ -7705,8 +7693,6 @@
     ]
   }
 },
-
-{
   "documentarios": {
     "name": "Documentários",
     "updated_at": "2025-12-29",
@@ -8824,8 +8810,6 @@
     ]
   }
 },
-
-{
   "ficcao": {
     "name": "Ficção",
     "updated_at": "2025-12-29",
@@ -10433,8 +10417,6 @@
     ]
   }
 },
-
-{
   "estrangeiros": {
     "name": "Estrangeiros",
     "updated_at": "2025-12-29",
@@ -11537,8 +11519,6 @@
     ]
   }
 },
-
-{
   "oscar": {
     "name": "Oscar",
     "updated_at": "2025-12-29",
@@ -12001,8 +11981,6 @@
     ]
   }
 },
-
-{
   "palma_de_ouro": {
     "name": "Palma de Ouro",
     "updated_at": "2025-12-29",
@@ -12465,8 +12443,6 @@
     ]
   }
 },
-
-{
   "bafta": {
     "name": "BAFTA",
     "updated_at": "2025-12-29",
@@ -12839,8 +12815,6 @@
     ]
   }
 },
-
-{
   "criterion": {
     "name": "Criterion",
     "updated_at": "2025-12-29",
@@ -20363,8 +20337,6 @@
     ]
   }
 },
-
-{
   "a24": {
     "name": "A24",
     "films": [
@@ -21271,8 +21243,6 @@
     ]
   }
 },
-
-{
   "2010": {
     "name": "2010",
     "updated_at": "2025-12-29",
@@ -22465,8 +22435,6 @@
     ]
   }
 },
-
-{
   "universo_marvel": {
     "name": "Universo Marvel",
     "updated_at": "2025-12-29",
@@ -22674,8 +22642,6 @@
     ]
   }
 },
-
-{
   "terror": {
     "name": "Terror",
     "updated_at": "2025-12-29",
