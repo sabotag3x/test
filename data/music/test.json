@@ -78,13 +78,6 @@
       }
     },
     {
-      "name": "Rihanna",
-      "id": "73e5e69d-3554-40d8-8516-00cb38737a1c",
-      "country": "US",
-      "type": "Person",
-      "album": null
-    },
-    {
       "name": "AC/DC",
       "id": "66c662b6-6e2f-4930-8610-912e24c63ed1",
       "country": "AU",
@@ -160,13 +153,6 @@
         "year": "2008",
         "cover": "https://coverartarchive.org/release-group/1c1b50ec-828b-3d7c-9b1b-54cb1fe97d55/front-250"
       }
-    },
-    {
-      "name": "Coldplay",
-      "id": "cc197bad-dc9c-440d-a5b5-d52ba2e14234",
-      "country": "GB",
-      "type": "Group",
-      "album": null
     },
     {
       "name": "U2",
@@ -246,13 +232,6 @@
       }
     },
     {
-      "name": "Chris Brown",
-      "id": "c234fa42-e6a6-443e-937e-2f4b073538a3",
-      "country": "US",
-      "type": "Person",
-      "album": null
-    },
-    {
       "name": "Journey",
       "id": "abd506e1-6f2b-4d6f-b937-92c267f6f88b",
       "country": "US",
@@ -328,13 +307,6 @@
         "year": "1978",
         "cover": "https://coverartarchive.org/release-group/0640fc0b-9713-3f17-8d4f-6c0365bfe5ba/front-250"
       }
-    },
-    {
-      "name": "Pink Floyd",
-      "id": "83d91898-7763-47d7-b03b-b92132375c47",
-      "country": null,
-      "type": "Group",
-      "album": null
     },
     {
       "name": "George Michael",
@@ -414,13 +386,6 @@
       }
     },
     {
-      "name": "Cher",
-      "id": "bfcc6d75-a6a5-4bc6-8282-47aec8531818",
-      "country": "US",
-      "type": "Person",
-      "album": null
-    },
-    {
       "name": "Shakira",
       "id": "bf24ca37-25f4-4e34-9aec-460b94364cfc",
       "country": "CO",
@@ -498,13 +463,6 @@
       }
     },
     {
-      "name": "Shakira",
-      "id": "bf24ca37-25f4-4e34-9aec-460b94364cfc",
-      "country": "CO",
-      "type": "Person",
-      "album": null
-    },
-    {
       "name": "Tom Petty",
       "id": "5ca3f318-d028-4151-ac73-78e2b2d6cdcc",
       "country": "US",
@@ -580,13 +538,6 @@
         "year": "1976",
         "cover": "https://coverartarchive.org/release-group/49fdf34b-9a32-496c-87e8-1e2477dbc8f2/front-250"
       }
-    },
-    {
-      "name": "The Weeknd",
-      "id": "c8b03190-306c-4120-bb0b-6f2ebfc06ea9",
-      "country": "CA",
-      "type": "Person",
-      "album": null
     },
     {
       "name": "The Police",
