@@ -1,14 +1,8 @@
 async function run(){
-  const inputEl = document.getElementById("artists");
+  const input = document.getElementById("artists").value.trim();
   const out = document.getElementById("output");
 
-  if (!inputEl || !out) {
-    alert("IDs do HTML não conferem");
-    return;
-  }
-
-  const input = inputEl.value.trim();
-  if (!input) {
+  if(!input){
     alert("Cole os nomes dos artistas, um por linha");
     return;
   }
@@ -20,25 +14,20 @@ async function run(){
 
   out.value = "Carregando...\n";
 
-  try {
+  try{
     const artists = [];
 
-    for (const name of names) {
+    for(const name of names){
       const res = await fetch(
-        `/api/music/artist?name=${encodeURIComponent(name)}`
+        `/api/music/artist-with-album?name=${encodeURIComponent(name)}`
       );
 
-      if (!res.ok) continue;
+      if(!res.ok) continue;
 
       const artist = await res.json();
-      if (!artist) continue;
+      if(!artist) continue;
 
-      artists.push({
-        name: artist.name,
-        id: artist.id,
-        country: artist.country || null,
-        type: artist.type || null
-      });
+      artists.push(artist);
     }
 
     out.value = JSON.stringify(
@@ -47,7 +36,7 @@ async function run(){
       2
     );
 
-  } catch (e) {
+  }catch{
     out.value = "Erro ao gerar lista";
   }
 }
