@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>MusicDuel – Scraping Manual</title>
 
+<style>
+body{
+  background:#111;
+  color:#fff;
+  font-family:Arial,sans-serif;
+  padding:40px;
+  max-width:900px;
+  margin:auto;
+}
+
+input, textarea, button{
+  width:100%;
+  padding:14px;
+  margin-top:14px;
+  border-radius:10px;
+  border:none;
+  font-size:15px;
+}
+
+button{
+  background:#ffbf2f;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+textarea{
+  min-height:340px;
+  font-family:monospace;
+  white-space:pre;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Scraping manual – MusicDuel</h1>
+
+<input
+  id="query"
+  placeholder="Nome da banda ou artista (ex: Radiohead)"
+/>
+
+<button onclick="run()">Gerar JSON</button>
+
+<textarea
+  id="output"
+  placeholder="O JSON final vai aparecer aqui..."
+></textarea>
+
+<script src="scraper.js"></script>
+</body>
+</html>
