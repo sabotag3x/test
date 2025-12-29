@@ -1,7 +1,4 @@
 {
-  "ghibli": {
-    "name": "Ghibli",
-    "updated_at": "2025-12-29",
     "films": [
       {
         "title": "Túmulo dos Vagalumes",
@@ -110,4 +107,3 @@
       }
     ]
   }
-}
