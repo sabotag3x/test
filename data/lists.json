@@ -1,7 +1,6 @@
 {
   "top_250_letterboxd": {
     "name": "Top 250 Letterboxd",
-    "source": "https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/",
     "updated_at": "2025-12-28",
     "films": [
       {
@@ -1106,7 +1105,6 @@
 {
   "top_250_imdb": {
     "name": "Top 250 IMDb",
-    "source": "https://letterboxd.com/dave/list/imdb-top-250/",
     "updated_at": "2025-12-29",
     "films": [
       {
@@ -2311,7 +2309,6 @@
 {
   "populares": {
     "name": "Populares",
-    "source": "https://letterboxd.com/jack/list/official-top-250-films-with-the-most-fans/",
     "updated_at": "2025-12-29",
     "films": [
       {
@@ -3496,7 +3493,6 @@
 {
   "animacao": {
     "name": "Animação",
-    "source": "https://letterboxd.com/lifeasfiction/list/letterboxd-100-animation/",
     "updated_at": "2025-12-29",
     "films": [
       {
@@ -3966,7 +3962,6 @@
 {
   "disney": {
     "name": "Disney",
-    "source": "https://letterboxd.com/petitebutfierce/list/disney/",
     "updated_at": "2025-12-29",
     "films": [
       {
@@ -7166,7 +7161,6 @@
 {
   "ghibli": {
     "name": "Ghibli",
-    "source": "https://letterboxd.com/jaywill/list/ghibli/",
     "updated_at": "2025-12-29",
     "films": [
       {
@@ -7281,7 +7275,6 @@
 {
   "brasileiros": {
     "name": "Brasileiros",
-    "source": "https://letterboxd.com/purecinema1/list/brazil/",
     "updated_at": "2025-12-29",
     "films": [
       {
@@ -7716,7 +7709,6 @@
 {
   "documentarios": {
     "name": "Documentários",
-    "source": "https://letterboxd.com/jack/list/official-top-250-documentary-films/",
     "updated_at": "2025-12-29",
     "films": [
       {
@@ -8836,7 +8828,6 @@
 {
   "ficcao": {
     "name": "Ficção",
-    "source": "https://letterboxd.com/chris_coke/list/letterboxds-top-250-science-fiction-films/",
     "updated_at": "2025-12-29",
     "films": [
       {
@@ -10446,7 +10437,6 @@
 {
   "estrangeiros": {
     "name": "Estrangeiros",
-    "source": "https://letterboxd.com/brsan/list/letterboxds-top-250-international-films/",
     "updated_at": "2025-12-29",
     "films": [
       {
@@ -11551,7 +11541,6 @@
 {
   "oscar": {
     "name": "Oscar",
-    "source": "https://letterboxd.com/oscars/list/oscar-winning-films-best-picture/",
     "updated_at": "2025-12-29",
     "films": [
       {
@@ -12016,7 +12005,6 @@
 {
   "palma_de_ouro": {
     "name": "Palma de Ouro",
-    "source": "https://letterboxd.com/festival_cannes/list/70-years-of-the-palme-dor-70-ans-de-la-palme/",
     "updated_at": "2025-12-29",
     "films": [
       {
@@ -12481,7 +12469,6 @@
 {
   "bafta": {
     "name": "BAFTA",
-    "source": "https://letterboxd.com/bafta/list/all-bafta-best-film-award-winners/",
     "updated_at": "2025-12-29",
     "films": [
       {
@@ -12856,7 +12843,6 @@
 {
   "criterion": {
     "name": "Criterion",
-    "source": "https://letterboxd.com/jbutts15/list/the-complete-criterion-collection/",
     "updated_at": "2025-12-29",
     "films": [
       {
@@ -20381,8 +20367,6 @@
 {
   "a24": {
     "name": "A24",
-    "source": "https://letterboxd.com/a24/list/every-a24-movie-ever/",
-    "updated_at": "2025-12-29",
     "films": [
       {
         "title": "Eternidade",
@@ -21291,7 +21275,6 @@
 {
   "2010": {
     "name": "2010",
-    "source": "https://letterboxd.com/crew/list/the-2010s-top-250-narrative-features/",
     "updated_at": "2025-12-29",
     "films": [
       {
@@ -22486,7 +22469,6 @@
 {
   "universo_marvel": {
     "name": "Universo Marvel",
-    "source": "https://letterboxd.com/victorp26/list/mcu/",
     "updated_at": "2025-12-29",
     "films": [
       {
@@ -22696,7 +22678,6 @@
 {
   "terror": {
     "name": "Terror",
-    "source": "https://letterboxd.com/darrencb/list/letterboxds-top-250-horror-films/",
     "updated_at": "2025-12-29",
     "films": [
       {
