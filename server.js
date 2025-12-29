@@ -92,21 +92,28 @@ app.get("/api/user/:user", async (req, res) => {
 /* ================= LISTAS LOCAIS ================= */
 
 app.get("/api/list/:key", (req, res) => {
-  const key = req.params.key;
+  try {
+    const key = req.params.key;
+    const file = path.join(__dirname, "data", "lists.json");
 
-  const db = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "data/lists.json"), "utf8")
-  );
+    const raw = fs.readFileSync(file, "utf8");
+    const db = JSON.parse(raw);
 
-  if (!db[key]) {
-    return res.status(404).json({ error: "Lista não encontrada" });
+    if (!db[key]) {
+      return res.status(404).json({ error: "Lista não encontrada" });
+    }
+
+    res.json(db[key].films);
+  } catch (err) {
+    console.error("ERRO LISTA:", err.message);
+    res.status(500).json({ error: err.message });
   }
-
-  res.json(db[key].films);
 });
 
 /* ================= START ================= */
 
+
 app.listen(PORT, "0.0.0.0", () => {
   console.log("FilmDuel rodando na porta", PORT);
 });
+
