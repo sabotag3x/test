@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const fs = require("fs");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -53,7 +54,7 @@ async function tmdbEnrich(films, lang = "pt-BR") {
   return enriched;
 }
 
-/* ================= LETTERBOXD USER ================= */
+/* ================= USER (SCRAPING CONTINUA) ================= */
 
 app.get("/api/user/:user", async (req, res) => {
   const user = req.params.user.toLowerCase();
@@ -63,9 +64,8 @@ app.get("/api/user/:user", async (req, res) => {
 
   const films = [];
   let page = 1;
-  const MAX_PAGES = 20;
 
-  while (page <= MAX_PAGES) {
+  while (page <= 20) {
     const url = `https://letterboxd.com/${user}/films/page/${page}/`;
     const html = await fetch(url).then(r => r.text());
 
@@ -89,40 +89,20 @@ app.get("/api/user/:user", async (req, res) => {
   res.json(enriched);
 });
 
-/* ================= LETTERBOXD LIST ================= */
+/* ================= LISTAS LOCAIS ================= */
 
-app.get("/api/list", async (req, res) => {
-  const listUrl = req.query.url;
-  const key = `list:${listUrl}`;
+app.get("/api/list/:key", (req, res) => {
+  const key = req.params.key;
 
-  if (cache.has(key)) return res.json(cache.get(key));
+  const db = JSON.parse(
+    fs.readFileSync(path.join(__dirname, "data/lists.json"), "utf8")
+  );
 
-  const films = [];
-  let page = 1;
-  const MAX_PAGES = 20;
-
-  while (page <= MAX_PAGES) {
-    const url = `${listUrl}page/${page}/`;
-    const html = await fetch(url).then(r => r.text());
-
-    const items = html.match(/data-item-full-display-name="([^"]+)"/g);
-    if (!items) break;
-
-    for (const raw of items) {
-      const m = raw.match(/="(.+?)"/)[1];
-      const y = m.match(/\((\d{4})\)/);
-      films.push({
-        title: m.replace(/\s*\(\d{4}\)/, "").trim(),
-        year: y ? parseInt(y[1]) : null
-      });
-    }
-
-    page++;
+  if (!db[key]) {
+    return res.status(404).json({ error: "Lista não encontrada" });
   }
 
-  const enriched = await tmdbEnrich(films);
-  cache.set(key, enriched);
-  res.json(enriched);
+  res.json(db[key].films);
 });
 
 /* ================= START ================= */
