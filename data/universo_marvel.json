@@ -1,7 +1,4 @@
 {
-  "universo_marvel": {
-    "name": "Universo Marvel",
-    "updated_at": "2025-12-29",
     "films": [
       {
         "title": "Homem de Ferro",
@@ -205,4 +202,3 @@
       }
     ]
   }
-}
