@@ -1,0 +1,69 @@
+{
+  "films": [
+    {
+      "title": "O Grande Hotel Budapeste",
+      "year": "2014",
+      "poster": "https://image.tmdb.org/t/p/w500/yabOguSrb8ffUXCkI6t8Rw7xtSh.jpg"
+    },
+    {
+      "title": "Asteroid City",
+      "year": "2023",
+      "poster": "https://image.tmdb.org/t/p/w500/p96FGZyKF4wv6DOnQkw0loa5ZlN.jpg"
+    },
+    {
+      "title": "Os Excêntricos Tenenbaums",
+      "year": "2001",
+      "poster": "https://image.tmdb.org/t/p/w500/zRzBGrncDZADU1x6jqSHz6z5uLc.jpg"
+    },
+    {
+      "title": "Três é Demais",
+      "year": "1998",
+      "poster": "https://image.tmdb.org/t/p/w500/yRER92EIcVnyZhexav3EZNiPpeN.jpg"
+    },
+    {
+      "title": "Moonrise Kingdom",
+      "year": "2012",
+      "poster": "https://image.tmdb.org/t/p/w500/3Vo4SrfuYYRcvQX02PqZJAaOZJt.jpg"
+    },
+    {
+      "title": "A Vida Marinha com Steve Zissou",
+      "year": "2004",
+      "poster": "https://image.tmdb.org/t/p/w500/3uIr6KAAkZ4cQfMA8UJUW00nJpa.jpg"
+    },
+    {
+      "title": "Pura Adrenalina",
+      "year": "1996",
+      "poster": "https://image.tmdb.org/t/p/w500/zoMyTTiVloNBMHe9dco2CrewraQ.jpg"
+    },
+    {
+      "title": "O Esquema Fenício",
+      "year": "2025",
+      "poster": "https://image.tmdb.org/t/p/w500/jY8TTgRSJfrBQCPZTUAlJTGN1JK.jpg"
+    },
+    {
+      "title": "O Fantástico Sr. Raposo",
+      "year": "2009",
+      "poster": "https://image.tmdb.org/t/p/w500/1Ey4LYUzTqzizPNjcBi20pU9joC.jpg"
+    },
+    {
+      "title": "A Incrível História de Henry Sugar",
+      "year": "2023",
+      "poster": "https://image.tmdb.org/t/p/w500/nfbHWkyrNKFGkOS0FtjiFNgnFS2.jpg"
+    },
+    {
+      "title": "A Crônica Francesa",
+      "year": "2021",
+      "poster": "https://image.tmdb.org/t/p/w500/9ZtRZe4Mai1z7F8QLZBN7yYfRnc.jpg"
+    },
+    {
+      "title": "Viagem a Darjeeling",
+      "year": "2007",
+      "poster": "https://image.tmdb.org/t/p/w500/8oZ8lqD3hebzHb5SUz3eKb0Z01C.jpg"
+    },
+    {
+      "title": "Ilha dos Cachorros",
+      "year": "2018",
+      "poster": "https://image.tmdb.org/t/p/w500/4k4sjRXGMTfIDkfVi7lHccatnWk.jpg"
+    }
+  ]
+}
