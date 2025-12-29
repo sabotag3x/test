@@ -1,0 +1,433 @@
+{
+  "brasileiros": {
+    "name": "Brasileiros",
+    "updated_at": "2025-12-29",
+    "films": [
+      {
+        "title": "Cidade de Deus",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/gfnXixcGC060QcG6JPxN6AMdVsq.jpg"
+      },
+      {
+        "title": "Pixote: A Lei do Mais Fraco",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/g5NxPFGcoUCXOrHx9DHi6AAQWQu.jpg"
+      },
+      {
+        "title": "Central do Brasil",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/qfyWFhUhqeNRU9HmCaBDAxVKRZ9.jpg"
+      },
+      {
+        "title": "Aquarius",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/tEHOKQVW7Hw7T68uvJEUiJy13CR.jpg"
+      },
+      {
+        "title": "Bacurau",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/qvmLAVqNB5TbGUa9QqQvXiFC4UR.jpg"
+      },
+      {
+        "title": "Deus e o Diabo na Terra do Sol",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/qE7iccDSq7NImjFrV0tcm7BrDgX.jpg"
+      },
+      {
+        "title": "Terra em Transe",
+        "year": "1967",
+        "poster": "https://image.tmdb.org/t/p/w500/9BkOcHY7BWf7fW5Aaiqk1mbehTE.jpg"
+      },
+      {
+        "title": "O Som ao Redor",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/7HQ9q3JicyaWSY0iKd5f3S2FOHE.jpg"
+      },
+      {
+        "title": "두 번째 엄마",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/9kDfafssklEYICgYzAPnG6TV3I9.jpg"
+      },
+      {
+        "title": "Limite",
+        "year": "1931",
+        "poster": "https://image.tmdb.org/t/p/w500/cnpkG0xCnjA2NcNSKhW1A66pyte.jpg"
+      },
+      {
+        "title": "Things Behind the Sun",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/gKS56IJ8BF4lr6Fa6eGATfJcWmg.jpg"
+      },
+      {
+        "title": "O Pagador de Promessas",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/udIwjCpsorFKdn1XHJgV1Zc7Joe.jpg"
+      },
+      {
+        "title": "Vidas Secas",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/Ag7TYDyQ1IoHzaegGr0cooiy8Xu.jpg"
+      },
+      {
+        "title": "São Paulo, Sociedade Anônima",
+        "year": "1965",
+        "poster": "https://image.tmdb.org/t/p/w500/4kFgmsA9iAyHIzThw00ovOfNjE9.jpg"
+      },
+      {
+        "title": "Cabra Marcado Para Morrer",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/fdll4h8DHM4W1AXDh44WlfvY1rC.jpg"
+      },
+      {
+        "title": "A Vida Invisível",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/p5Ia6cQXeJRjnHMBmZx0JF9JSwc.jpg"
+      },
+      {
+        "title": "O Bandido da Luz Vermelha",
+        "year": "1968",
+        "poster": "https://image.tmdb.org/t/p/w500/lqSH7PJpfJghd01SdaV0kqlO2gy.jpg"
+      },
+      {
+        "title": "Tropa de Elite",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/wFMkqerSlifIae2cja6K1fdvz2G.jpg"
+      },
+      {
+        "title": "Boi Neon",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/lCJAHuqbmDzcjbUjlXnaMohHqi5.jpg"
+      },
+      {
+        "title": "O Beijo da Mulher-Aranha",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/zrZHJzjN4Z4ElAyroobVbI6SqqD.jpg"
+      },
+      {
+        "title": "Ilha das Flores",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/sGLv72iYI46tNldBSjYp4GIz1sw.jpg"
+      },
+      {
+        "title": "Amarelo Manga",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/jPpO7RQQQ9pHGowyhLdyX0Koeoh.jpg"
+      },
+      {
+        "title": "Role Playing with Rebecca",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/uuFwxBQHbysVnTUNqickfvYHMiw.jpg"
+      },
+      {
+        "title": "As Boas Maneiras",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/rZsXwlpYluOAiWRDO1SQq4ddad6.jpg"
+      },
+      {
+        "title": "Macunaíma",
+        "year": "1969",
+        "poster": "https://image.tmdb.org/t/p/w500/sljH9IqGlLGybyGahoaCQzWg8uq.jpg"
+      },
+      {
+        "title": "Dona Flor e Seus Dois Maridos",
+        "year": "1976",
+        "poster": "https://image.tmdb.org/t/p/w500/kwktJBPNMyYuMvR6x2bH6bXUFuh.jpg"
+      },
+      {
+        "title": "Lúcio Flávio, o Passageiro da Agonia",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/qOz85UV8C5naowbO8ZjvRDd3jjJ.jpg"
+      },
+      {
+        "title": "O Que é Isso, Companheiro?",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/kQq5RPqMQd9eHhlBMncWkovDmHE.jpg"
+      },
+      {
+        "title": "Madame Satã",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/73wB0Z8UlmVoOKbBZj5yhgsxK3U.jpg"
+      },
+      {
+        "title": "Carandiru",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/bkq8RsbCb7ugW0ZmsD8SYEvQWSp.jpg"
+      },
+      {
+        "title": "O Cheiro do Ralo",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/6HdXOlKdtB2eRawMkliz638a7vc.jpg"
+      },
+      {
+        "title": "O Céu de Suely",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/e6vgJi5kae4awfI6uyzU1hLiiLK.jpg"
+      },
+      {
+        "title": "O Ano em que Meus Pais Saíram de Férias",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/bFs27H1Grxh30j655VDQhwywTTU.jpg"
+      },
+      {
+        "title": "Tropa de Elite 2: O Inimigo Agora é Outro",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/ldCCmRdBPk5FR13W975zXAM1dGi.jpg"
+      },
+      {
+        "title": "Hoje Eu Quero Voltar Sozinho",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/mMSZyYMy1jMeeCWcD44RBJZAe2k.jpg"
+      },
+      {
+        "title": "Carnaval Atlântida",
+        "year": "1952",
+        "poster": "https://image.tmdb.org/t/p/w500/5zuwRajgu2zbqa37KS18zpDu6se.jpg"
+      },
+      {
+        "title": "Rio, 40 Graus",
+        "year": "1955",
+        "poster": "https://image.tmdb.org/t/p/w500/bgNYhX1hFFhp4IMjcVlIWomtipl.jpg"
+      },
+      {
+        "title": "Jéca Tatu",
+        "year": "1959",
+        "poster": "https://image.tmdb.org/t/p/w500/zFd1IzwexpicNpfndRYBALcC6Qn.jpg"
+      },
+      {
+        "title": "Tristeza do Jeca",
+        "year": "1961",
+        "poster": "https://image.tmdb.org/t/p/w500/vjCBeW5tJGX1CdO7jlePqSN7u0b.jpg"
+      },
+      {
+        "title": "O Assalto ao Trem Pagador",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/tLdxavZ6BsnjA5BRMRBTCCX5fL6.jpg"
+      },
+      {
+        "title": "A Falecida",
+        "year": "1965",
+        "poster": "https://image.tmdb.org/t/p/w500/qhNI3ldWsrj4YKTASOTjQoA14o1.jpg"
+      },
+      {
+        "title": "O Padre e a Moça",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/dfgGDXw92g1P5B3qUJ0M7M7p3vo.jpg"
+      },
+      {
+        "title": "O Corintiano",
+        "year": "1967",
+        "poster": "https://image.tmdb.org/t/p/w500/6m3Q4lzp6rPNQjr5rw1xY8ul56C.jpg"
+      },
+      {
+        "title": "O Dragão da Maldade contra o Santo Guerreiro",
+        "year": "1969",
+        "poster": "https://image.tmdb.org/t/p/w500/r8ckA7b8uhjmAjcZT5GtYS9jPIW.jpg"
+      },
+      {
+        "title": "Copacabana Mon Amour",
+        "year": "1970",
+        "poster": "https://image.tmdb.org/t/p/w500/rK8MkVUHV3rPZSLLn21EAkCSV26.jpg"
+      },
+      {
+        "title": "S. Bernardo",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/fsUzxVgGvnLjvdXzp7dvEKyLpKO.jpg"
+      },
+      {
+        "title": "Alma no Olho",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/6FNJxdRXIMCj3OwxviYf3ldyAO3.jpg"
+      },
+      {
+        "title": "Iracema: Uma Transa Amazônica",
+        "year": "1976",
+        "poster": "https://image.tmdb.org/t/p/w500/wlnPtm37GK5Cv7Pu1QbW7IKDVbQ.jpg"
+      },
+      {
+        "title": "Mar de Rosas",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/oLdzbuvF5dfgagZJmRWj9NKOzGi.jpg"
+      },
+      {
+        "title": "Bye Bye Brasil",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/vQSgyhGPRE7eu5n5CRyDHAMGaRP.jpg"
+      },
+      {
+        "title": "Das Tripas Coração",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/cnwGHUcQCfDLjfgsITrcfR43Ijd.jpg"
+      },
+      {
+        "title": "Memórias do Cárcere",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/VXhIqTk4rBLqAq3BmopxKkz1ef.jpg"
+      },
+      {
+        "title": "Sonho de Valsa",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/15aFVd2CXu0KavODuo1fHy10zw4.jpg"
+      },
+      {
+        "title": "Amélia",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/moyB6dB3MoR8f1xrTrrBZLYJU49.jpg"
+      },
+      {
+        "title": "Lavoura Arcaica",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/orRApy2BHy99HyWf7PwzHtoZRd1.jpg"
+      },
+      {
+        "title": "Ônibus 174",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/3AYrrZ03Rmp3XxAD2xYZEeSDdBc.jpg"
+      },
+      {
+        "title": "Durval Discos",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/hNjKlfnPKvmElGBAj8QgIoRmpP1.jpg"
+      },
+      {
+        "title": "Edifício Master",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/n3Nf5XD3PjoQoX0z41bNBwOC8Kx.jpg"
+      },
+      {
+        "title": "O Invasor",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/eToltyeAuwv9SMKdX9n9QQvdR1G.jpg"
+      },
+      {
+        "title": "O Homem Que Copiava",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/a7cP7NqFuD745Gdw4nKFQMtJ6lZ.jpg"
+      },
+      {
+        "title": "Cinema, Aspirinas e Urubus",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/dJc05ctqZrffQPQ2vFKjjRpIfFE.jpg"
+      },
+      {
+        "title": "Baixio das Bestas",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/sOkGy5yg5jSJJvmSuKDddUqzmkd.jpg"
+      },
+      {
+        "title": "Saneamento Básico, o Filme",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/aJezYo8k9Wvit2TZGu0mOy9Wgck.jpg"
+      },
+      {
+        "title": "Cleópatra",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/Up3ezuBDMV8b4PK5eFpxZmDtu1.jpg"
+      },
+      {
+        "title": "Os Famosos e os Duendes da Morte",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/iM3tHsDSpw56dSFkyAkVajWgA25.jpg"
+      },
+      {
+        "title": "Viajo Porque Preciso, Volto Porque Te Amo",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/moL7AWgl5o50ChwSxTQ6YBPCM0.jpg"
+      },
+      {
+        "title": "Reflexões de um Liquidificador",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/wVIbeWPhyGJE5rGRbUWeLyNJ6JX.jpg"
+      },
+      {
+        "title": "Trabalhar Cansa",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/2qRBohwJok395E6xr7L6VhMEhq.jpg"
+      },
+      {
+        "title": "Elena",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/41lsqOhF67DfTXZ2i77dtWQFI8U.jpg"
+      },
+      {
+        "title": "Educação Sentimental",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/6jNg7eGFBsMuowv458VYdJ07Um7.jpg"
+      },
+      {
+        "title": "Ventos de Agosto",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/rD0oPN5d6dzvSTr2WOMACeUheWc.jpg"
+      },
+      {
+        "title": "Praia do Futuro",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/u0svu7MxWp4OryaEqXDbDXX0q4r.jpg"
+      },
+      {
+        "title": "A Luneta do Tempo",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/gl1Dw9IHNotcblyraZSoecn7kGu.jpg"
+      },
+      {
+        "title": "Mate-me Por Favor",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/lWMj9UGqwel6DJFPtG3b8nyArO7.jpg"
+      },
+      {
+        "title": "Political Animals",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/4lvfi9V1p1e3ajbe26kpQNaNgDM.jpg"
+      },
+      {
+        "title": "Bingo: O Rei das Manhãs",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/fqIF4ERm1tmBRHZQs32DdIAM9OS.jpg"
+      },
+      {
+        "title": "Gabriel e a Montanha",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/wS4CN3Yc5tVLikxJFZHd988SH40.jpg"
+      },
+      {
+        "title": "No Intenso Agora",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/oQooO01POzU5suQjFFflTBdzan3.jpg"
+      },
+      {
+        "title": "Pendular",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/6yU9lmNDBihsPpxxdHAi8PbiqmB.jpg"
+      },
+      {
+        "title": "Nossa Chape",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/5GGuNaJECQQs2uxDeMXa3i9XpEA.jpg"
+      },
+      {
+        "title": "Sol Alegria",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/xbEkZORp3RYzDWs1t6XHYWSTyeY.jpg"
+      },
+      {
+        "title": "Deslembro",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/auMydRBqEJBVJz8D3kQDehU4PPI.jpg"
+      },
+      {
+        "title": "Democracia em Vertigem",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/z2aPe57jyW0TPYLVBXb8T0yBFGQ.jpg"
+      },
+      {
+        "title": "No Coração do Mundo",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/3joNfpbBYLZo81FkU12jRfjVqRw.jpg"
+      },
+      {
+        "title": "Turma da Mônica: Laços",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/4TbHNFN6Ez4JB9AoiRYVoJosd7D.jpg"
+      }
+    ]
+  }
+}
