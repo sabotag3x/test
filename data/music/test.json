@@ -1,1 +1,676 @@
-
+{
+  "artists": [
+    {
+      "name": "The Beatles",
+      "id": "b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d",
+      "country": "GB",
+      "type": "Group",
+      "album": {
+        "title": "Please Please Me",
+        "year": "1963",
+        "cover": "https://coverartarchive.org/release-group/de208292-8db5-3aed-a14a-b37a84d8c521/front-250"
+      }
+    },
+    {
+      "name": "Michael Jackson",
+      "id": "f27ec8db-af05-4f36-916e-3d57f91ecf5e",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Got to Be There",
+        "year": "1972",
+        "cover": "https://coverartarchive.org/release-group/97e0014d-a267-33a0-a868-bb4e2552918a/front-250"
+      }
+    },
+    {
+      "name": "Elvis Presley",
+      "id": "01809552-4f87-45b0-afff-2c6f0730a3be",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Elvis Presley",
+        "year": "1956",
+        "cover": "https://coverartarchive.org/release-group/2ebeec96-6ef7-3d4d-943c-0b4a2af1d7cc/front-250"
+      }
+    },
+    {
+      "name": "Elton John",
+      "id": "b83bc61f-8451-4a5d-8b8e-7e9ed295e822",
+      "country": "GB",
+      "type": "Person",
+      "album": {
+        "title": "Empty Sky",
+        "year": "1969",
+        "cover": "https://coverartarchive.org/release-group/73924e33-3fe3-3dd4-94cf-b97529f6e9af/front-250"
+      }
+    },
+    {
+      "name": "Queen",
+      "id": "0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+      "country": "GB",
+      "type": "Group",
+      "album": {
+        "title": "Queen",
+        "year": "1973",
+        "cover": "https://coverartarchive.org/release-group/810068af-2b3c-3e9c-b2ab-68a3f3e3787d/front-250"
+      }
+    },
+    {
+      "name": "Madonna",
+      "id": "79239441-bfd5-4981-a70c-55c3f15c1287",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Madonna",
+        "year": "1983",
+        "cover": "https://coverartarchive.org/release-group/cf44c73c-650d-3c67-9327-c99426ce464f/front-250"
+      }
+    },
+    {
+      "name": "Led Zeppelin",
+      "id": "678d88b2-87b0-403b-b63d-5da7465aecc3",
+      "country": "GB",
+      "type": "Group",
+      "album": {
+        "title": "Led Zeppelin",
+        "year": "1969",
+        "cover": "https://coverartarchive.org/release-group/0f18ec88-aa87-38a9-8a65-f03d81763560/front-250"
+      }
+    },
+    {
+      "name": "Rihanna",
+      "id": "73e5e69d-3554-40d8-8516-00cb38737a1c",
+      "country": "US",
+      "type": "Person",
+      "album": null
+    },
+    {
+      "name": "AC/DC",
+      "id": "66c662b6-6e2f-4930-8610-912e24c63ed1",
+      "country": "AU",
+      "type": "Group",
+      "album": {
+        "title": "High Voltage",
+        "year": "1975",
+        "cover": "https://coverartarchive.org/release-group/2b81e645-4586-4456-843a-9bc19a217470/front-250"
+      }
+    },
+    {
+      "name": "Eagles",
+      "id": "f46bd570-5768-462e-b84c-c7c993bbf47e",
+      "country": "US",
+      "type": "Group",
+      "album": {
+        "title": "Eagles",
+        "year": "1972",
+        "cover": "https://coverartarchive.org/release-group/23eafc30-3978-37fb-bfa0-8058aa1eb81a/front-250"
+      }
+    },
+    {
+      "name": "Céline Dion",
+      "id": "847e8a0c-cc20-4213-9e16-975515c2a926",
+      "country": "CA",
+      "type": "Person",
+      "album": {
+        "title": "La Voix du bon Dieu",
+        "year": "1981",
+        "cover": "https://coverartarchive.org/release-group/c3db9e05-4f49-3d31-9086-1611a300d3e7/front-250"
+      }
+    },
+    {
+      "name": "The Rolling Stones",
+      "id": "b071f9fa-14b0-4217-8e97-eb41da73f598",
+      "country": "GB",
+      "type": "Group",
+      "album": {
+        "title": "England’s Newest Hit Makers",
+        "year": "1964",
+        "cover": "https://coverartarchive.org/release-group/919b8534-f40f-3a07-be48-0a9095ab5ada/front-250"
+      }
+    },
+    {
+      "name": "Drake",
+      "id": "9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+      "country": "CA",
+      "type": "Person",
+      "album": {
+        "title": "Thank Me Later",
+        "year": "2010",
+        "cover": "https://coverartarchive.org/release-group/7c0efd43-6023-400d-8d5c-d808b1cb4094/front-250"
+      }
+    },
+    {
+      "name": "Garth Brooks",
+      "id": "b76645c5-78b0-4e4c-8f95-003f40013a45",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Garth Brooks",
+        "year": "1989",
+        "cover": "https://coverartarchive.org/release-group/52bab202-d3af-3f77-9de7-06302791ab80/front-250"
+      }
+    },
+    {
+      "name": "Ye",
+      "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "The College Dropout",
+        "year": "2004",
+        "cover": "https://coverartarchive.org/release-group/8a01217e-6947-3927-a39b-6691104694f1/front-250"
+      }
+    },
+    {
+      "name": "Coldplay",
+      "id": "cc197bad-dc9c-440d-a5b5-d52ba2e14234",
+      "country": "GB",
+      "type": "Group",
+      "album": null
+    },
+    {
+      "name": "Bruce Springsteen",
+      "id": "70248960-cb53-4ea4-943a-edb18f7d336f",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Greetings From Asbury Park, N.J.",
+        "year": "1973",
+        "cover": "https://coverartarchive.org/release-group/c497fc44-ddaf-3cce-a9b4-bfec958a0f3c/front-250"
+      }
+    },
+    {
+      "name": "U2",
+      "id": "a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432",
+      "country": "IE",
+      "type": "Group",
+      "album": {
+        "title": "Boy",
+        "year": "1980",
+        "cover": "https://coverartarchive.org/release-group/53b0d89e-f856-3015-a3a6-a70e1e935fd6/front-250"
+      }
+    },
+    {
+      "name": "Aerosmith",
+      "id": "3d2b98e5-556f-4451-a3ff-c50ea18d57cb",
+      "country": "US",
+      "type": "Group",
+      "album": {
+        "title": "Aerosmith",
+        "year": "1973",
+        "cover": "https://coverartarchive.org/release-group/8a58cc1a-be0d-3b1b-8d0d-aa8f467a59da/front-250"
+      }
+    },
+    {
+      "name": "Phil Collins",
+      "id": "401c3991-b76b-499d-8082-9f2df958ef78",
+      "country": "GB",
+      "type": "Person",
+      "album": {
+        "title": "Face Value",
+        "year": "1981",
+        "cover": "https://coverartarchive.org/release-group/1cbc1a5a-5512-3f8e-997b-d9281b83722b/front-250"
+      }
+    },
+    {
+      "name": "Barbra Streisand",
+      "id": "56cd15a1-0d74-438b-8244-c96ffe1cae03",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "The Barbra Streisand Album",
+        "year": "1963",
+        "cover": "https://coverartarchive.org/release-group/60d0803e-0b5c-3fd3-9ebb-0a876f5a6bf7/front-250"
+      }
+    },
+    {
+      "name": "ABBA",
+      "id": "d87e52c5-bb8d-4da8-b941-9f4928627dc8",
+      "country": "SE",
+      "type": "Group",
+      "album": {
+        "title": "Ring Ring",
+        "year": "1973",
+        "cover": "https://coverartarchive.org/release-group/506764b9-89d4-357a-8c66-a9d0bf526fd1/front-250"
+      }
+    },
+    {
+      "name": "Julio Iglesias",
+      "id": "3be4099e-f180-4038-af84-ae18a09eab02",
+      "country": "ES",
+      "type": "Person",
+      "album": {
+        "title": "Yo canto",
+        "year": "1969",
+        "cover": "https://coverartarchive.org/release-group/a39b533a-fc1e-37be-9db8-e883ae64f449/front-250"
+      }
+    },
+    {
+      "name": "Frank Sinatra",
+      "id": "197450cd-0124-4164-b723-3c22dd16494d",
+      "country": "US",
+      "type": "Person",
+      "album": null
+    },
+    {
+      "name": "George Strait",
+      "id": "5ab2cf34-517e-48eb-b3a5-34e1cbcd600a",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Strait Country",
+        "year": "1981",
+        "cover": "https://coverartarchive.org/release-group/1c3d3031-1933-3b53-8711-3f4cf8ec5d30/front-250"
+      }
+    },
+    {
+      "name": "Journey",
+      "id": "abd506e1-6f2b-4d6f-b937-92c267f6f88b",
+      "country": "US",
+      "type": "Group",
+      "album": {
+        "title": "Journey",
+        "year": "1975",
+        "cover": "https://coverartarchive.org/release-group/32c89ed6-85fd-3f8c-aca9-d9dada759436/front-250"
+      }
+    },
+    {
+      "name": "Pink Floyd",
+      "id": "83d91898-7763-47d7-b03b-b92132375c47",
+      "country": null,
+      "type": "Group",
+      "album": {
+        "title": "The Piper at the Gates of Dawn",
+        "year": "1967",
+        "cover": "https://coverartarchive.org/release-group/6792b6d1-4e65-3c3c-9d20-d08aa1dcfc60/front-250"
+      }
+    },
+    {
+      "name": "Shania Twain",
+      "id": "faabb55d-3c9e-4c23-8779-732ac2ee2c0d",
+      "country": "CA",
+      "type": "Person",
+      "album": {
+        "title": "Shania Twain",
+        "year": "1993",
+        "cover": "https://coverartarchive.org/release-group/0419ba7c-f4a3-39d9-8741-fb26322ed89c/front-250"
+      }
+    },
+    {
+      "name": "Nicki Minaj",
+      "id": "1036b808-f58c-4a3e-b461-a2c4492ecf1b",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Pink Friday",
+        "year": "2010",
+        "cover": "https://coverartarchive.org/release-group/c91d9596-dfa8-482d-b3ab-706e937fd3ec/front-250"
+      }
+    },
+    {
+      "name": "Linkin Park",
+      "id": "f59c5520-5f46-4d2c-b2c4-822eabf53419",
+      "country": "US",
+      "type": "Group",
+      "album": {
+        "title": "Hybrid Theory",
+        "year": "2000",
+        "cover": "https://coverartarchive.org/release-group/b5b4bb4b-8ba5-3acf-88cb-4cae2699d8da/front-250"
+      }
+    },
+    {
+      "name": "George Strait",
+      "id": "5ab2cf34-517e-48eb-b3a5-34e1cbcd600a",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Strait Country",
+        "year": "1981",
+        "cover": "https://coverartarchive.org/release-group/1c3d3031-1933-3b53-8711-3f4cf8ec5d30/front-250"
+      }
+    },
+    {
+      "name": "Journey",
+      "id": "abd506e1-6f2b-4d6f-b937-92c267f6f88b",
+      "country": "US",
+      "type": "Group",
+      "album": null
+    },
+    {
+      "name": "The Doors",
+      "id": "9efff43b-3b29-4082-824e-bc82f646f93d",
+      "country": "US",
+      "type": "Group",
+      "album": {
+        "title": "The Doors",
+        "year": "1967",
+        "cover": "https://coverartarchive.org/release-group/8ebffd15-06c3-3b88-a761-ec18c5513287/front-250"
+      }
+    },
+    {
+      "name": "George Michael",
+      "id": "ccb8f30e-4d71-40c4-8b1d-846dafe73e2c",
+      "country": "GB",
+      "type": "Person",
+      "album": {
+        "title": "Faith",
+        "year": "1987",
+        "cover": "https://coverartarchive.org/release-group/4e61585f-f341-3174-85cf-afad8df46fbe/front-250"
+      }
+    },
+    {
+      "name": "Dire Straits",
+      "id": "614e3804-7d34-41ba-857f-811bad7c2b7a",
+      "country": "GB",
+      "type": "Group",
+      "album": {
+        "title": "Dire Straits",
+        "year": "1978",
+        "cover": "https://coverartarchive.org/release-group/0c9bc273-a9e9-3290-b423-c61b9f8d20bc/front-250"
+      }
+    },
+    {
+      "name": "Foreigner",
+      "id": "160629ab-ec18-4931-8c95-02cb92d06186",
+      "country": "US",
+      "type": "Group",
+      "album": {
+        "title": "Foreigner",
+        "year": "1977",
+        "cover": "https://coverartarchive.org/release-group/edb7bc18-e4f1-33c0-ad9e-ef748664dfde/front-250"
+      }
+    },
+    {
+      "name": "Chicago",
+      "id": "3f5be744-e867-42fb-8913-5fd69e4099b5",
+      "country": "US",
+      "type": "Group",
+      "album": {
+        "title": "Chicago Transit Authority",
+        "year": "1969",
+        "cover": "https://coverartarchive.org/release-group/1eeb1e2c-ae11-3b2e-80fc-22233f0ca648/front-250"
+      }
+    },
+    {
+      "name": "Bob Dylan",
+      "id": "72c536dc-7137-4477-a521-567eeb840fa8",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Bob Dylan",
+        "year": "1962",
+        "cover": "https://coverartarchive.org/release-group/6ac612a5-e815-3fed-b341-8b3faa351df4/front-250"
+      }
+    },
+    {
+      "name": "Meat Loaf",
+      "id": "b134d1bf-c7c7-4427-93ac-9fdbc2b59ef1",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Bat Out of Hell",
+        "year": "1977",
+        "cover": "https://coverartarchive.org/release-group/47616c4c-5d4b-30f6-83bc-60e1c696b099/front-250"
+      }
+    },
+    {
+      "name": "Carpenters",
+      "id": "4580d83b-093e-4241-91fb-2dd71f5f1f3f",
+      "country": "US",
+      "type": "Group",
+      "album": null
+    },
+    {
+      "name": "Donna Summer",
+      "id": "b60527cc-54f3-4bbe-a01b-dcf34c95ae14",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Lady of the Night",
+        "year": "1974",
+        "cover": "https://coverartarchive.org/release-group/4a052040-fa9e-38a6-9f0b-40b63e81e15f/front-250"
+      }
+    },
+    {
+      "name": "Diana Ross",
+      "id": "60d41417-feda-4734-bbbf-7dcc30e08a83",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Diana Ross",
+        "year": "1970",
+        "cover": "https://coverartarchive.org/release-group/f58a6d13-51b3-3219-be3e-94b8aefc1202/front-250"
+      }
+    },
+    {
+      "name": "The Supremes",
+      "id": "c1aa2ec9-53e7-4d90-8d36-bac75832e986",
+      "country": "US",
+      "type": "Group",
+      "album": {
+        "title": "Meet the Supremes",
+        "year": "1962",
+        "cover": "https://coverartarchive.org/release-group/151f1003-bb57-3a2e-baf0-ae34ab4a2c05/front-250"
+      }
+    },
+    {
+      "name": "Shakira",
+      "id": "bf24ca37-25f4-4e34-9aec-460b94364cfc",
+      "country": "CO",
+      "type": "Person",
+      "album": {
+        "title": "Magia",
+        "year": "1991",
+        "cover": "https://coverartarchive.org/release-group/5ed9b609-a5a9-3cc2-af2c-af83bab00e71/front-250"
+      }
+    },
+    {
+      "name": "Ariana Grande",
+      "id": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Yours Truly",
+        "year": "2013",
+        "cover": "https://coverartarchive.org/release-group/1237b040-fb8f-4f23-8000-fb6909486c83/front-250"
+      }
+    },
+    {
+      "name": "Alicia Keys",
+      "id": "8ef1df30-ae4f-4dbd-9351-1a32b208a01e",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Songs in A minor",
+        "year": "2001",
+        "cover": "https://coverartarchive.org/release-group/5701e04b-efc2-3429-b8af-c6596f1d08cf/front-250"
+      }
+    },
+    {
+      "name": "Tim McGraw",
+      "id": "7e5cfc9a-e9e1-46f1-b81a-861b12049488",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Tim McGraw",
+        "year": "1993",
+        "cover": "https://coverartarchive.org/release-group/6ebdd8d5-3f2b-344c-bc28-817e1f535782/front-250"
+      }
+    },
+    {
+      "name": "Lionel Richie",
+      "id": "3cb25fb2-5547-4b05-adec-1a5e37830d46",
+      "country": "US",
+      "type": "Person",
+      "album": null
+    },
+    {
+      "name": "Usher",
+      "id": "3414d446-735a-443c-931f-10634f57e5b9",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Usher",
+        "year": "1994",
+        "cover": "https://coverartarchive.org/release-group/07deb7f4-9789-37fa-a70d-c8716c7c9824/front-250"
+      }
+    },
+    {
+      "name": "Black Eyed Peas",
+      "id": "d5be5333-4171-427e-8e12-732087c6b78e",
+      "country": "US",
+      "type": "Group",
+      "album": {
+        "title": "Behind the Front",
+        "year": "1998",
+        "cover": "https://coverartarchive.org/release-group/14cc6ad3-2b3e-3aa0-87a1-e67fb6066868/front-250"
+      }
+    },
+    {
+      "name": "Van Halen",
+      "id": "b665b768-0d83-4363-950c-31ed39317c15",
+      "country": "US",
+      "type": "Group",
+      "album": {
+        "title": "Van Halen",
+        "year": "1978",
+        "cover": "https://coverartarchive.org/release-group/43a0e8b5-6059-397f-81e6-b8df5a648496/front-250"
+      }
+    },
+    {
+      "name": "浜崎あゆみ",
+      "id": "2b615bcf-baa0-4657-b9a5-1a5f34c386c4",
+      "country": "JP",
+      "type": "Person",
+      "album": {
+        "title": "A Song for ××",
+        "year": "1999",
+        "cover": "https://coverartarchive.org/release-group/a662197c-7d65-3f5b-b6a0-e59de1ae2364/front-250"
+      }
+    },
+    {
+      "name": "Tom Petty",
+      "id": "5ca3f318-d028-4151-ac73-78e2b2d6cdcc",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Full Moon Fever",
+        "year": "1989",
+        "cover": "https://coverartarchive.org/release-group/ffbef03e-3651-39db-8a2f-e140dc5aa219/front-250"
+      }
+    },
+    {
+      "name": "Johnny Hallyday",
+      "id": "323ed974-8bf6-4f54-9525-b774a659f805",
+      "country": "FR",
+      "type": "Person",
+      "album": {
+        "title": "Hello Johnny",
+        "year": "1960",
+        "cover": "https://coverartarchive.org/release-group/b46b77ef-0f3d-4bfc-83f2-c4c6918098af/front-250"
+      }
+    },
+    {
+      "name": "The Weeknd",
+      "id": "c8b03190-306c-4120-bb0b-6f2ebfc06ea9",
+      "country": "CA",
+      "type": "Person",
+      "album": {
+        "title": "Kiss Land",
+        "year": "2013",
+        "cover": "https://coverartarchive.org/release-group/de9470f4-f4a3-4ddf-967b-ac77c886ad49/front-250"
+      }
+    },
+    {
+      "name": "Imagine Dragons",
+      "id": "012151a8-0f9a-44c9-997f-ebd68b5389f9",
+      "country": "US",
+      "type": "Group",
+      "album": null
+    },
+    {
+      "name": "Robbie Williams",
+      "id": "db4624cf-0e44-481e-a9dc-2142b833ec2f",
+      "country": "GB",
+      "type": "Person",
+      "album": {
+        "title": "Life Thru a Lens",
+        "year": "1997",
+        "cover": "https://coverartarchive.org/release-group/1cd3a513-be39-373c-b56d-54a3fed5b928/front-250"
+      }
+    },
+    {
+      "name": "Bob Seger",
+      "id": "4382b934-64c3-47ac-98db-65f26d845c48",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Brand New Morning",
+        "year": "1971",
+        "cover": "https://coverartarchive.org/release-group/e1c90b72-c83c-3183-9c75-ecbb5fcf4413/front-250"
+      }
+    },
+    {
+      "name": "Kenny G",
+      "id": "4cd556a5-db82-43f6-8d55-99598b42da8f",
+      "country": "US",
+      "type": "Person",
+      "album": {
+        "title": "Kenny G",
+        "year": "1982",
+        "cover": "https://coverartarchive.org/release-group/de918452-2faf-4bbe-952e-d588a4d65471/front-250"
+      }
+    },
+    {
+      "name": "Enya",
+      "id": "4967c0a1-b9f3-465e-8440-4598fd9fc33c",
+      "country": "IE",
+      "type": "Person",
+      "album": {
+        "title": "Enya",
+        "year": "1986",
+        "cover": "https://coverartarchive.org/release-group/a1e948b1-808f-35f8-a799-c5322670aab9/front-250"
+      }
+    },
+    {
+      "name": "Bryan Adams",
+      "id": "4dbf5678-7a31-406a-abbe-232f8ac2cd63",
+      "country": "CA",
+      "type": "Person",
+      "album": {
+        "title": "Bryan Adams",
+        "year": "1980",
+        "cover": "https://coverartarchive.org/release-group/c67d84d5-8032-36be-91e2-2db9af081a51/front-250"
+      }
+    },
+    {
+      "name": "Bob Marley",
+      "id": "ed2ac1e9-d51d-4eff-a2c2-85e81abd6360",
+      "country": "JM",
+      "type": "Person",
+      "album": {
+        "title": "Kinky Reggae",
+        "year": "1991",
+        "cover": "https://coverartarchive.org/release-group/a8d68f6f-9e09-4b5c-a44d-5a3d69378baa/front-250"
+      }
+    },
+    {
+      "name": "The Police",
+      "id": "9e0e2b01-41db-4008-bd8b-988977d6019a",
+      "country": "GB",
+      "type": "Group",
+      "album": {
+        "title": "Outlandos d’Amour",
+        "year": "1978",
+        "cover": "https://coverartarchive.org/release-group/3d55b5a4-a81f-3b8e-8d7e-802ce1c86596/front-250"
+      }
+    },
+    {
+      "name": "Barry Manilow",
+      "id": "7bb60591-46f3-4147-b692-1814a87e832e",
+      "country": "US",
+      "type": "Person",
+      "album": null
+    }
+  ]
+}
