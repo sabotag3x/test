@@ -1,8 +1,7 @@
 {
-  "2010": {
-    "name": "2010",
-    "updated_at": "2025-12-29",
-    "films": [
+  "name": "2010",
+  "updated_at": "2025-12-29",
+  "films": [
       {
         "title": "Parasita",
         "year": "2019",
