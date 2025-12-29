@@ -1,0 +1,109 @@
+{
+  "films": [
+    {
+      "title": "Uma Cilada para Roger Rabbit",
+      "year": "1988",
+      "poster": "https://image.tmdb.org/t/p/w500/1sNM9NOJrdVhJUkWQkbcekoLiic.jpg"
+    },
+    {
+      "title": "De Volta para o Futuro",
+      "year": "1985",
+      "poster": "https://image.tmdb.org/t/p/w500/jIq6VLvkl3APntb552IFhSq3VEg.jpg"
+    },
+    {
+      "title": "Contato",
+      "year": "1997",
+      "poster": "https://image.tmdb.org/t/p/w500/h0gZKEAFCjVUhvRf33lHHSxKFWu.jpg"
+    },
+    {
+      "title": "Náufrago",
+      "year": "2000",
+      "poster": "https://image.tmdb.org/t/p/w500/eaJRnsUIxOeMgpY81iIgGr372vp.jpg"
+    },
+    {
+      "title": "Febre de Juventude",
+      "year": "1978",
+      "poster": "https://image.tmdb.org/t/p/w500/e0nQ966IWh6leXPWGx3UeOeNMJZ.jpg"
+    },
+    {
+      "title": "A Morte lhe Cai Bem",
+      "year": "1992",
+      "poster": "https://image.tmdb.org/t/p/w500/wk9eHXLV8xvk8MQA5l7GMeTJUV7.jpg"
+    },
+    {
+      "title": "De Volta para o Futuro III",
+      "year": "1990",
+      "poster": "https://image.tmdb.org/t/p/w500/8KgDjwaoNvVDp5eET4VsGSwXnUO.jpg"
+    },
+    {
+      "title": "Carros Usados",
+      "year": "1980",
+      "poster": "https://image.tmdb.org/t/p/w500/6KMrmkglJLZYCyHBG78iTSW4TAF.jpg"
+    },
+    {
+      "title": "De Volta para o Futuro II",
+      "year": "1989",
+      "poster": "https://image.tmdb.org/t/p/w500/pbX7hM03cHmpMPbpZ3lYmF2aABK.jpg"
+    },
+    {
+      "title": "Tudo Por Uma Esmeralda",
+      "year": "1984",
+      "poster": "https://image.tmdb.org/t/p/w500/25nFgND8g8YLoqUB19SgoQNZEgz.jpg"
+    },
+    {
+      "title": "O Voo",
+      "year": "2012",
+      "poster": "https://image.tmdb.org/t/p/w500/vlWHFsqzRUWHk1G9T4wyfCVYLFI.jpg"
+    },
+    {
+      "title": "Aliados",
+      "year": "2016",
+      "poster": "https://image.tmdb.org/t/p/w500/57FDGagZiTxJdj56605UJM9cY4D.jpg"
+    },
+    {
+      "title": "Revelação",
+      "year": "2000",
+      "poster": "https://image.tmdb.org/t/p/w500/fXUaXaOYwgWdNwzxhDdgUiJnEUA.jpg"
+    },
+    {
+      "title": "Forrest Gump: O Contador de Histórias",
+      "year": "1994",
+      "poster": "https://image.tmdb.org/t/p/w500/d74WpIsH8379TIL4wUxDneRCYv2.jpg"
+    },
+    {
+      "title": "A Lenda de Beowulf",
+      "year": "2007",
+      "poster": "https://image.tmdb.org/t/p/w500/oVjkoLfiR8fScXQAS7nMiu6RxH.jpg"
+    },
+    {
+      "title": "Bem-vindos a Marwen",
+      "year": "2018",
+      "poster": "https://image.tmdb.org/t/p/w500/tId0ADoE5geJy4jGWAzZMWCMa8t.jpg"
+    },
+    {
+      "title": "A Travessia",
+      "year": "2015",
+      "poster": "https://image.tmdb.org/t/p/w500/8F78yefPAMVuIxYosXby3GfPsiK.jpg"
+    },
+    {
+      "title": "O Expresso Polar",
+      "year": "2004",
+      "poster": "https://image.tmdb.org/t/p/w500/5JfuyhzCDxlBwmJnqLAoswshdLk.jpg"
+    },
+    {
+      "title": "Aqui",
+      "year": "2024",
+      "poster": "https://image.tmdb.org/t/p/w500/rmqBc3qRXeSgzCcWY2H4l9M8eIT.jpg"
+    },
+    {
+      "title": "Os Fantasmas de Scrooge",
+      "year": "2009",
+      "poster": "https://image.tmdb.org/t/p/w500/1qhU3VJo10sISkHIyANLsHioq0Y.jpg"
+    },
+    {
+      "title": "Pinóquio",
+      "year": "2022",
+      "poster": "https://image.tmdb.org/t/p/w500/hVPMjz4GXxxS4dMcaxTComi3KzR.jpg"
+    }
+  ]
+}
