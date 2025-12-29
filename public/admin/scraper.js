@@ -10,22 +10,43 @@ async function run(){
   out.value = "Carregando...\n";
 
   try{
-    const res = await fetch(`/api/list?url=${encodeURIComponent(url)}`);
-    const films = await res.json();
+    const films = [];
+    let page = 1;
+    const MAX_PAGES = 20;
 
-    if(!Array.isArray(films)) throw new Error();
+    while(page <= MAX_PAGES){
+      const pageUrl = `${url}page/${page}/`;
+      const proxyUrl =
+        "https://api.allorigins.win/raw?url=" +
+        encodeURIComponent(pageUrl);
 
-    const valid = films.filter(f => f && f.poster);
+      const html = await fetch(proxyUrl).then(r => r.text());
 
-    if(valid.length < 5) throw new Error();
+      const items = html.match(/data-item-full-display-name="([^"]+)"/g);
+      if(!items) break;
+
+      for(const raw of items){
+        const m = raw.match(/="(.+?)"/)[1];
+        const y = m.match(/\((\d{4})\)/);
+
+        films.push({
+          title: m.replace(/\s*\(\d{4}\)/, "").trim(),
+          year: y ? y[1] : null
+        });
+      }
+
+      page++;
+    }
+
+    if(films.length === 0) throw new Error();
 
     out.value = JSON.stringify(
-      { films: valid },
+      { films },
       null,
       2
     );
 
-  }catch(e){
+  }catch{
     out.value = "Erro ao gerar lista";
   }
 }
