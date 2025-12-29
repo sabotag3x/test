@@ -421,6 +421,46 @@ function showFinal(champ){
     </div>
   </div>`;
 }
+
+let versusA=[], versusB=[];
+let scoreA=0, scoreB=0;
+let versusIndex=0;
+let versusNames={};
+
+async function startVersus(){
+  const a = document.getElementById("listA").value;
+  const b = document.getElementById("listB").value;
+
+  if(!a || !b || a===b) return;
+
+  document.getElementById("home").style.display="none";
+  document.getElementById("game").style.display="flex";
+  startLoading();
+
+  try{
+    const [ra, rb] = await Promise.all([
+      fetch(`/api/list/${a}`).then(r=>r.json()),
+      fetch(`/api/list/${b}`).then(r=>r.json())
+    ]);
+
+    versusA = shuffle(ra).slice(0,11);
+    versusB = shuffle(rb).slice(0,11);
+
+    if(versusA.length<11 || versusB.length<11)
+      throw new Error();
+
+    scoreA=0; scoreB=0; versusIndex=0;
+    versusNames={a,b};
+
+    stopLoading();
+    nextVersus();
+
+  }catch{
+    stopLoading();
+    showError("Uma das listas não tem filmes suficientes.");
+  }
+}
+
 </script>
 
 
