@@ -263,6 +263,67 @@ button{
   }
 }
 
+  /* ===== RESULTADO VERSUS ===== */
+
+.versus-result{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
+
+.winner-posters,
+.loser-posters{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.winner-posters img{
+  width:80px;
+  border-radius:10px;
+}
+
+.loser-posters img{
+  width:56px;
+  border-radius:8px;
+  opacity:.85;
+}
+
+.winner-title{
+  margin:20px 0 10px;
+  font-size:28px;
+}
+
+.final-score{
+  font-size:16px;
+  opacity:.8;
+  margin-bottom:20px;
+}
+
+.loser-title{
+  margin:10px 0;
+  font-weight:normal;
+  opacity:.9;
+}
+
+button.again{
+  margin-top:30px;
+  padding:14px 36px;
+  border-radius:40px;
+  border:none;
+  background:#ffbf2f;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+@media(max-width:700px){
+  .winner-posters img{ width:64px; }
+  .loser-posters img{ width:46px; }
+}
+
+
 
 /* ================= MOBILE ================= */
 
@@ -345,6 +406,31 @@ button{
 </div>
 
 <script>
+
+  const prettyNames = {
+  ghibli: "Studio Ghibli",
+  a24: "A24",
+  disney: "Disney",
+  oscar: "Oscar",
+  bafta: "BAFTA",
+  animacao: "Animação",
+  terror: "Terror",
+  ficcao: "Ficção Científica",
+  brasileiros: "Brasil",
+  estrangeiros: "Estrangeiros",
+  "2010": "Década de 2010",
+  top_250_imdb: "IMDb Top 250",
+  top_250_letterboxd: "Letterboxd Top 250",
+  universo_marvel: "Universo Marvel",
+  criterion: "Criterion Collection",
+  palma_de_ouro: "Palma de Ouro",
+  populares: "Populares"
+};
+
+function pretty(slug){
+  return prettyNames[slug] || slug;
+}
+
 /* ====== VARIÁVEIS GERAIS ====== */
 
 let pool=[], filmes=[], atual=[], idx=0, winners=[], rounds=[];
@@ -538,35 +624,40 @@ function voteB(){
 }
 
 function showVersusResult(){
-  let result =
-    scoreA>scoreB ? `${versusNames.a} venceu` :
-    scoreB>scoreA ? `${versusNames.b} venceu` :
-    "Empate";
+  const aName = pretty(versusNames.a);
+  const bName = pretty(versusNames.b);
+
+  const winnerIsA = scoreA > scoreB;
+  const winnerName = winnerIsA ? aName : bName;
+  const loserName  = winnerIsA ? bName : aName;
+
+  const winnerPosters = winnerIsA ? votedA : votedB;
+  const loserPosters  = winnerIsA ? votedB : votedA;
 
   document.getElementById("duel").innerHTML=`
     <div class="versus-result">
-      <h2>${result}</h2>
-      <p>Placar final: ${scoreA} x ${scoreB}</p>
-
-      <div class="versus-votes">
-        <div>
-          <h4>${versusNames.a}</h4>
-          <div class="mini-posters">
-            ${votedA.map(f=>`<img src="${f.poster}">`).join("")}
-          </div>
-        </div>
-
-        <div>
-          <h4>${versusNames.b}</h4>
-          <div class="mini-posters">
-            ${votedB.map(f=>`<img src="${f.poster}">`).join("")}
-          </div>
-        </div>
+      
+      <div class="winner-posters">
+        ${winnerPosters.map(f=>`<img src="${f.poster}">`).join("")}
       </div>
 
-      <button onclick="location.reload()">Novo duelo</button>
-    </div>`;
+      <h1 class="winner-title">${winnerName} venceu!</h1>
+
+      <div class="final-score">
+        Placar final: ${scoreA} x ${scoreB}
+      </div>
+
+      <h3 class="loser-title">${loserName}</h3>
+
+      <div class="loser-posters">
+        ${loserPosters.map(f=>`<img src="${f.poster}">`).join("")}
+      </div>
+
+      <button class="again" onclick="location.reload()">Novo duelo</button>
+    </div>
+  `;
 }
+
 
 /* ====== ERROR ====== */
 
