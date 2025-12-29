@@ -17,7 +17,7 @@ async function run(){
     while(page <= MAX_PAGES){
       const pageUrl = `${url}page/${page}/`;
       const proxyUrl =
-        "https://api.allorigins.win/raw?url=" +
+        "https://corsproxy.io?url=" +
         encodeURIComponent(pageUrl);
 
       const html = await fetch(proxyUrl).then(r => r.text());
