@@ -1,7 +1,4 @@
 {
-  "oscar": {
-    "name": "Oscar",
-    "updated_at": "2025-12-29",
     "films": [
       {
         "title": "Anora",
@@ -460,4 +457,3 @@
       }
     ]
   }
-}
