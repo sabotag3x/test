@@ -89,35 +89,20 @@ app.get("/api/user/:user", async (req, res) => {
   res.json(enriched);
 });
 
-/* ================= LISTAS LOCAIS ================= */
+/* ================= LISTAS LOCAIS (1 ARQUIVO POR LISTA) ================= */
 
 app.get("/api/list/:key", (req, res) => {
   try {
-    const key = req.params.key;
-    const file = path.join(__dirname, "data", "lists.json");
-
-    const raw = fs.readFileSync(file, "utf8");
-    console.log("RAW JSON INICIO:", raw.slice(0, 200));
-
-    const db = JSON.parse(raw);
-
-    if (!db[key]) {
-      return res.status(404).json({ error: "Lista não encontrada" });
-    }
-
-    res.json(db[key].films);
-  } catch (err) {
-    console.error("ERRO LISTA:", err);
-    res.status(500).json({ error: err.message });
+    const file = path.join(__dirname, "data", `${req.params.key}.json`);
+    const json = JSON.parse(fs.readFileSync(file, "utf8"));
+    res.json(json.films);
+  } catch {
+    res.status(404).json({ error: "Lista não encontrada" });
   }
 });
 
-
 /* ================= START ================= */
-
 
 app.listen(PORT, "0.0.0.0", () => {
   console.log("FilmDuel rodando na porta", PORT);
 });
-
-
