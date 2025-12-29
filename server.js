@@ -97,6 +97,8 @@ app.get("/api/list/:key", (req, res) => {
     const file = path.join(__dirname, "data", "lists.json");
 
     const raw = fs.readFileSync(file, "utf8");
+    console.log("RAW JSON INICIO:", raw.slice(0, 200));
+
     const db = JSON.parse(raw);
 
     if (!db[key]) {
@@ -105,10 +107,11 @@ app.get("/api/list/:key", (req, res) => {
 
     res.json(db[key].films);
   } catch (err) {
-    console.error("ERRO LISTA:", err.message);
+    console.error("ERRO LISTA:", err);
     res.status(500).json({ error: err.message });
   }
 });
+
 
 /* ================= START ================= */
 
@@ -116,4 +119,5 @@ app.get("/api/list/:key", (req, res) => {
 app.listen(PORT, "0.0.0.0", () => {
   console.log("FilmDuel rodando na porta", PORT);
 });
+
 
