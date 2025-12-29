@@ -1,0 +1,84 @@
+{
+  "films": [
+    {
+      "title": "A Vila",
+      "year": "2004",
+      "poster": "https://image.tmdb.org/t/p/w500/rKPMAssCxiioVrwQqMBJbsou9zN.jpg"
+    },
+    {
+      "title": "O Sexto Sentido",
+      "year": "1999",
+      "poster": "https://image.tmdb.org/t/p/w500/ds7jw0WYCd6k7hBzMnzgFsTfg96.jpg"
+    },
+    {
+      "title": "Tempo",
+      "year": "2021",
+      "poster": "https://image.tmdb.org/t/p/w500/czVBkHRaZu8rOnCNTd0t7EHYj97.jpg"
+    },
+    {
+      "title": "Corpo Fechado",
+      "year": "2000",
+      "poster": "https://image.tmdb.org/t/p/w500/hChypogemWXQ2AU7uKut0gXqcBT.jpg"
+    },
+    {
+      "title": "Armadilha",
+      "year": "2024",
+      "poster": "https://image.tmdb.org/t/p/w500/ArVwz2CXHiY2SuCRYRsfRlG2Fac.jpg"
+    },
+    {
+      "title": "Fragmentado",
+      "year": "2017",
+      "poster": "https://image.tmdb.org/t/p/w500/ztYvYWpSpFtzM2w5MwsmNzzQbJg.jpg"
+    },
+    {
+      "title": "Sinais",
+      "year": "2002",
+      "poster": "https://image.tmdb.org/t/p/w500/AuhN7XArMW0HvCrULjkvX8MIrY3.jpg"
+    },
+    {
+      "title": "A Visita",
+      "year": "2015",
+      "poster": "https://image.tmdb.org/t/p/w500/zRjwHqHG36ZZ96PAuDNFWwaFVQy.jpg"
+    },
+    {
+      "title": "Vidro",
+      "year": "2019",
+      "poster": "https://image.tmdb.org/t/p/w500/d8rvXqqZ3hzrWfFGS47jU7sCx69.jpg"
+    },
+    {
+      "title": "Batem à Porta",
+      "year": "2023",
+      "poster": "https://image.tmdb.org/t/p/w500/94Gfu9vxUAVeL8EHc9toT9nGLkv.jpg"
+    },
+    {
+      "title": "A Dama na Água",
+      "year": "2006",
+      "poster": "https://image.tmdb.org/t/p/w500/wNGKdj46mM4Uyl1PLcYquX97Vo5.jpg"
+    },
+    {
+      "title": "Fim dos Tempos",
+      "year": "2008",
+      "poster": "https://image.tmdb.org/t/p/w500/4miUoIJADDOY4MXrnpoRxHX670Z.jpg"
+    },
+    {
+      "title": "Praying with Anger",
+      "year": "1993",
+      "poster": "https://image.tmdb.org/t/p/w500/8CrWxYHGQCtwFwA5CZShh30VvxN.jpg"
+    },
+    {
+      "title": "Olhos Abertos",
+      "year": "1998",
+      "poster": "https://image.tmdb.org/t/p/w500/xnqLUL2l71KVSaqiz9fbFpXtEFe.jpg"
+    },
+    {
+      "title": "Depois da Terra",
+      "year": "2013",
+      "poster": "https://image.tmdb.org/t/p/w500/1Kcjf0DXimg44Z1bEuzXUjJHNqi.jpg"
+    },
+    {
+      "title": "O Último Mestre do Ar",
+      "year": "2010",
+      "poster": "https://image.tmdb.org/t/p/w500/sQGFIDDScR6tX3KXotHaQywewYU.jpg"
+    }
+  ]
+}
