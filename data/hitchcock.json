@@ -1,148 +1,184 @@
 {
   "films": [
     {
-      "title": "Vertigo",
-      "year": "1958"
+      "title": "Um Corpo Que Cai",
+      "year": "1958",
+      "poster": "https://image.tmdb.org/t/p/w500/lzyh1lsD4Qaid6bG5zk57Y3bEM.jpg"
     },
     {
-      "title": "Psycho",
-      "year": "1960"
+      "title": "Psicose",
+      "year": "1960",
+      "poster": "https://image.tmdb.org/t/p/w500/A89NmGOdz26aQo97UwVSLrFhA1t.jpg"
     },
     {
-      "title": "North by Northwest",
-      "year": "1959"
+      "title": "Intriga Internacional",
+      "year": "1959",
+      "poster": "https://image.tmdb.org/t/p/w500/fYMQBR5SXqMoOYsOBxgZYEtXTr7.jpg"
     },
     {
-      "title": "Rear Window",
-      "year": "1954"
+      "title": "Janela Indiscreta",
+      "year": "1954",
+      "poster": "https://image.tmdb.org/t/p/w500/ckYI4gqqKlSWAVwtLfZSUfwoquW.jpg"
     },
     {
-      "title": "Rebecca",
-      "year": "1940"
+      "title": "Rebecca, A Mulher Inesquecível",
+      "year": "1940",
+      "poster": "https://image.tmdb.org/t/p/w500/f9McnICkCJGtWM01MW1cKJC9yO.jpg"
     },
     {
-      "title": "Strangers on a Train",
-      "year": "1951"
+      "title": "Pacto Sinistro",
+      "year": "1951",
+      "poster": "https://image.tmdb.org/t/p/w500/k69OBIOY2EtK33A8cicI0nCtuB2.jpg"
     },
     {
-      "title": "Shadow of a Doubt",
-      "year": "1943"
+      "title": "A Sombra de uma Dúvida",
+      "year": "1943",
+      "poster": "https://image.tmdb.org/t/p/w500/k1lISSdqtJbFtn49tz8iGiyEDm8.jpg"
     },
     {
-      "title": "Notorious",
-      "year": "1946"
+      "title": "Interlúdio",
+      "year": "1946",
+      "poster": "https://image.tmdb.org/t/p/w500/aGlxyjWBNWN2PnMnQdPpFn8qEij.jpg"
     },
     {
-      "title": "The 39 Steps",
-      "year": "1935"
+      "title": "Os 39 Degraus",
+      "year": "1935",
+      "poster": "https://image.tmdb.org/t/p/w500/ufQjhMJdaIzuMQ5kDyYbLQC1lW7.jpg"
     },
     {
-      "title": "The Birds",
-      "year": "1963"
+      "title": "Os Pássaros",
+      "year": "1963",
+      "poster": "https://image.tmdb.org/t/p/w500/oY6n1y79rLp7yjfJpOehrL3dMUI.jpg"
     },
     {
-      "title": "The Lady Vanishes",
-      "year": "1938"
+      "title": "A Dama Oculta",
+      "year": "1938",
+      "poster": "https://image.tmdb.org/t/p/w500/b3irLoYLiMoSyts4dQfsf7MfRHa.jpg"
     },
     {
-      "title": "Spellbound",
-      "year": "1945"
+      "title": "Quando Fala o Coração",
+      "year": "1945",
+      "poster": "https://image.tmdb.org/t/p/w500/uA3wo3f7wWAfAadStQsmHtqDURO.jpg"
     },
     {
-      "title": "The Wrong Man",
-      "year": "1956"
+      "title": "O Homem Errado",
+      "year": "1956",
+      "poster": "https://image.tmdb.org/t/p/w500/zVM9auCbCUJLxyfot1GjHrwTnM6.jpg"
     },
     {
-      "title": "Lifeboat",
-      "year": "1944"
+      "title": "Um Barco e Nove Destinos",
+      "year": "1944",
+      "poster": "https://image.tmdb.org/t/p/w500/mmKsqsG89JS1kqTUhV1LmhRNFRy.jpg"
     },
     {
-      "title": "The Lodger: A Story of the London Fog",
-      "year": "1927"
+      "title": "O Inquilino",
+      "year": "1927",
+      "poster": "https://image.tmdb.org/t/p/w500/tD84zwFeFRf3zG98x558N3PBMV.jpg"
     },
     {
-      "title": "I Confess",
-      "year": "1953"
+      "title": "A Tortura do Silêncio",
+      "year": "1953",
+      "poster": "https://image.tmdb.org/t/p/w500/bHdjpaH9zf6QphLuKad9HxmXTjv.jpg"
     },
     {
-      "title": "Dial M for Murder",
-      "year": "1954"
+      "title": "Disque M para Matar",
+      "year": "1954",
+      "poster": "https://image.tmdb.org/t/p/w500/e5lycUI9xh7p1m3zBExoz5AVghs.jpg"
     },
     {
-      "title": "Frenzy",
-      "year": "1972"
+      "title": "Frenesi",
+      "year": "1972",
+      "poster": "https://image.tmdb.org/t/p/w500/ihG3hAsUIOeRg3yHPCE2g7HoPNQ.jpg"
     },
     {
-      "title": "Rope",
-      "year": "1948"
+      "title": "Festim Diabólico",
+      "year": "1948",
+      "poster": "https://image.tmdb.org/t/p/w500/qcWwUcjB6yoxYcjCtRYOMuFc6pH.jpg"
     },
     {
-      "title": "Suspicion",
-      "year": "1941"
+      "title": "Suspeita",
+      "year": "1941",
+      "poster": "https://image.tmdb.org/t/p/w500/5Ne7fRLaQ79Z0ECVPu0x8Yufc5g.jpg"
     },
     {
-      "title": "The Man Who Knew Too Much",
-      "year": "1956"
+      "title": "O Homem que Sabia Demais",
+      "year": "1956",
+      "poster": "https://image.tmdb.org/t/p/w500/okDmsjDW8BakqbMajVPzaYh4uKm.jpg"
     },
     {
-      "title": "To Catch a Thief",
-      "year": "1955"
+      "title": "Ladrão de Casaca",
+      "year": "1955",
+      "poster": "https://image.tmdb.org/t/p/w500/rVjzPVgk8HdnbeMrMVMJI1YBlOJ.jpg"
     },
     {
-      "title": "Family Plot",
-      "year": "1976"
+      "title": "Trama Macabra",
+      "year": "1976",
+      "poster": "https://image.tmdb.org/t/p/w500/de5prvx1JAoqad4xvNBnRtsjWTj.jpg"
     },
     {
-      "title": "The Trouble with Harry",
-      "year": "1955"
+      "title": "O Terceiro Tiro",
+      "year": "1955",
+      "poster": "https://image.tmdb.org/t/p/w500/heYJNrxNGXnLHs4UUPYB7JNepIh.jpg"
     },
     {
-      "title": "Torn Curtain",
-      "year": "1966"
+      "title": "Cortina Rasgada",
+      "year": "1966",
+      "poster": "https://image.tmdb.org/t/p/w500/s30otKC2PPOkkK4YmmNFQlee2W0.jpg"
     },
     {
-      "title": "Sabotage",
-      "year": "1936"
+      "title": "Sabotagem",
+      "year": "1937",
+      "poster": "https://image.tmdb.org/t/p/w500/A6cyOt9mhmvWA2uHcVsGkcCaHCz.jpg"
     },
     {
-      "title": "Young and Innocent",
-      "year": "1937"
+      "title": "Jovem e Inocente",
+      "year": "1938",
+      "poster": "https://image.tmdb.org/t/p/w500/6lTHDxknYjWROLUb2pEegyAcSob.jpg"
     },
     {
-      "title": "The Man Who Knew Too Much",
-      "year": "1934"
+      "title": "O Homem que Sabia Demais",
+      "year": "1934",
+      "poster": "https://image.tmdb.org/t/p/w500/m5mBPIaRBUYGPrH4UYRn6ZAVnnd.jpg"
     },
     {
-      "title": "Topaz",
-      "year": "1969"
+      "title": "Topázio",
+      "year": "1969",
+      "poster": "https://image.tmdb.org/t/p/w500/ojizjzpSQvdqTXPzmXTbUW0i4cF.jpg"
     },
     {
-      "title": "Stage Fright",
-      "year": "1950"
+      "title": "Pavor nos Bastidores",
+      "year": "1950",
+      "poster": "https://image.tmdb.org/t/p/w500/l43OTqhib8do1WwXig8JI8Y68Fd.jpg"
     },
     {
-      "title": "Blackmail",
-      "year": "1929"
+      "title": "Chantagem e Confissão",
+      "year": "1929",
+      "poster": "https://image.tmdb.org/t/p/w500/7ioNEKouUkkWyv5tUDwVUd7BDRR.jpg"
     },
     {
-      "title": "Saboteur",
-      "year": "1942"
+      "title": "Sabotador",
+      "year": "1942",
+      "poster": "https://image.tmdb.org/t/p/w500/a4THOPB6bxWRsXNUU8VrNkt9g46.jpg"
     },
     {
-      "title": "Downhill",
-      "year": "1927"
+      "title": "Decadência",
+      "year": "1927",
+      "poster": "https://image.tmdb.org/t/p/w500/s6AppTbM34sNB9FASwezhIyesn5.jpg"
     },
     {
-      "title": "Secret Agent",
-      "year": "1936"
+      "title": "O Agente Secreto",
+      "year": "1936",
+      "poster": "https://image.tmdb.org/t/p/w500/vHfEuqttHs2fXLGgkSxC5nh7AHz.jpg"
     },
     {
-      "title": "Marnie",
-      "year": "1964"
+      "title": "Marnie, Confissões de uma Ladra",
+      "year": "1964",
+      "poster": "https://image.tmdb.org/t/p/w500/zSU2Njt3NjHOOQInpyY1iupjAmD.jpg"
     },
     {
-      "title": "The Paradine Case",
-      "year": "1947"
+      "title": "Agonia de Amor",
+      "year": "1947",
+      "poster": "https://image.tmdb.org/t/p/w500/bFHfvy9dyhHQsO1KTcRZAmDJ8lW.jpg"
     }
   ]
-}Hitchcock
+}
