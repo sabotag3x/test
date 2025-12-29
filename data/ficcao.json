@@ -1,7 +1,4 @@
 {
-  "ficcao": {
-    "name": "Ficção",
-    "updated_at": "2025-12-29",
     "films": [
       {
         "title": "Neon Genesis Evangelion: O Fim do Evangelho",
@@ -1604,5 +1601,4 @@
         "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
       }
     ]
-  }
 }
