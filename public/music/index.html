@@ -1,1 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MusicDuel – Batalha de Bandas</title>
 
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  min-height:100vh;
+  background:#000;
+  color:#fff;
+  font-family:Arial,sans-serif;
+  display:flex;
+  justify-content:center;
+}
+
+.container{
+  width:100%;
+  max-width:1400px;
+  padding:20px;
+  text-align:center;
+}
+
+h1{
+  font-size:44px;
+  margin:0;
+}
+
+.subtitle{
+  opacity:.85;
+  font-size:18px;
+  margin-bottom:20px;
+}
+
+button{
+  background:#ffbf2f;
+  border:none;
+  padding:16px 38px;
+  border-radius:40px;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* ===== LISTAS ===== */
+
+.lists{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px 22px;
+  margin-top:30px;
+  max-width:900px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* ===== GAME ===== */
+
+#game{
+  display:none;
+  min-height:80vh;
+  align-items:center;
+  justify-content:center;
+}
+
+.duel{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:120px;
+}
+
+.card{
+  width:280px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.card img{
+  width:100%;
+  border-radius:18px;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.card img:hover{
+  transform:scale(1.05);
+}
+
+.title{
+  margin-top:14px;
+  font-size:18px;
+  line-height:1.3;
+}
+
+.album{
+  font-size:14px;
+  opacity:.75;
+  margin-top:4px;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:900px){
+  .lists{
+    grid-template-columns:1fr;
+  }
+  .duel{
+    flex-direction:column;
+    gap:40px;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div id="home">
+  <h1>MusicDuel</h1>
+  <div class="subtitle">Batalha entre bandas e álbuns</div>
+
+  <div class="subtitle">Listas prontas</div>
+
+  <div class="lists">
+    <button onclick="startList('test')">Bandas – Teste</button>
+    <!-- futuras listas -->
+    <!-- <button onclick="startList('rock')">Rock</button> -->
+    <!-- <button onclick="startList('pop')">Pop</button> -->
+  </div>
+</div>
+
+<div id="game">
+  <div id="duel" class="duel"></div>
+</div>
+
+</div>
+
+<script>
+let pool=[], atual=[];
+
+function shuffle(a){
+  return a.sort(()=>Math.random()-.5);
+}
+
+async function startList(key){
+  document.getElementById("home").style.display="none";
+  document.getElementById("game").style.display="flex";
+
+  const res = await fetch(`/data/music/${key}.json`);
+  const data = await res.json();
+
+  pool = shuffle(data.artists);
+
+  next();
+}
+
+function next(){
+  if(pool.length < 2){
+    document.getElementById("duel").innerHTML =
+      `<h2>Fim da batalha</h2>
+       <button onclick="location.reload()">Voltar</button>`;
+    return;
+  }
+
+  atual = [pool.pop(), pool.pop()];
+
+  document.getElementById("duel").innerHTML =
+    card(atual[0],0) + card(atual[1],1);
+}
+
+function card(a,i){
+  const cover = a.album?.cover || "";
+  return `
+    <div class="card">
+      <img src="${cover}" onclick="choose(${i})">
+      <div class="title">${a.name}</div>
+      <div class="album">${a.album?.title || ""}</div>
+    </div>
+  `;
+}
+
+function choose(i){
+  pool.unshift(atual[i]);
+  next();
+}
+</script>
+
+</body>
+</html>
