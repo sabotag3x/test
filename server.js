@@ -178,4 +178,49 @@ app.get("/api/music/artist", async (req, res) => {
   }
 });
 
+app.get("/api/music/artist-with-album", async (req, res) => {
+  const name = req.query.name;
+  if (!name) return res.json(null);
+
+  try {
+    // 1) buscar artista
+    const artistRes = await fetch(
+      `https://musicbrainz.org/ws/2/artist?query=${encodeURIComponent(name)}&fmt=json&limit=1`,
+      { headers: { "User-Agent": "MusicDuel/1.0" } }
+    );
+    const artistJson = await artistRes.json();
+    const artist = artistJson.artists?.[0];
+    if (!artist) return res.json(null);
+
+    // 2) buscar 1 álbum oficial
+    const relRes = await fetch(
+      `https://musicbrainz.org/ws/2/release-group?artist=${artist.id}&type=album&limit=1&fmt=json`,
+      { headers: { "User-Agent": "MusicDuel/1.0" } }
+    );
+    const relJson = await relRes.json();
+    const album = relJson["release-groups"]?.[0];
+
+    let cover = null;
+    if (album) {
+      cover = `https://coverartarchive.org/release-group/${album.id}/front-250`;
+    }
+
+    res.json({
+      name: artist.name,
+      id: artist.id,
+      country: artist.country || null,
+      type: artist.type || null,
+      album: album
+        ? {
+            title: album.title,
+            year: album["first-release-date"]?.slice(0, 4) || null,
+            cover
+          }
+        : null
+    });
+  } catch {
+    res.json(null);
+  }
+});
+
 
