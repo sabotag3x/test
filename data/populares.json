@@ -1,0 +1,1183 @@
+{
+  "populares": {
+    "name": "Populares",
+    "updated_at": "2025-12-29",
+    "films": [
+      {
+        "title": "Interestelar",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/6ricSDD83BClJsFdGB6x7cM0MFQ.jpg"
+      },
+      {
+        "title": "La La Land: Cantando Estações",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/AvMietG6xuobpSSdmVnKuTjv4bL.jpg"
+      },
+      {
+        "title": "Sociedade dos Poetas Mortos",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/gMmbJEqEzupp4BYTcRkNsPDPvQE.jpg"
+      },
+      {
+        "title": "Brilho Eterno de uma Mente sem Lembranças",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/zqbwK2ugTPauBQwzcNAM3PxVoww.jpg"
+      },
+      {
+        "title": "Clube da Luta",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/mCICnh7QBH0gzYaTQChBDDVIKdm.jpg"
+      },
+      {
+        "title": "Whiplash: Em Busca da Perfeição",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/z693uKD7j3zcdX0zVMQPIA3cSZf.jpg"
+      },
+      {
+        "title": "Tudo em Todo o Lugar ao Mesmo Tempo",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/2dSZQGwijlXvMSyuGe0FSgrXnv0.jpg"
+      },
+      {
+        "title": "Adoráveis Mulheres",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/1dwhsiuvNyQmA9ytp3T40uz4MOv.jpg"
+      },
+      {
+        "title": "10 Coisas Que Eu Odeio em Você",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/lRy6impzDHOqTX3A2T5dxI6Lwfu.jpg"
+      },
+      {
+        "title": "Gênio Indomável",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/dTe3EpJGnfUeR5swLbWv61iRyFc.jpg"
+      },
+      {
+        "title": "As Vantagens de Ser Invisível",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/pUYWbq0I6oCrysxuL0OCxwB8wFp.jpg"
+      },
+      {
+        "title": "Parasita",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/igw938inb6Fy0YVcwIyxQ7Lu5FO.jpg"
+      },
+      {
+        "title": "Coraline e o Mundo Secreto",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/rranXmvqPT4NoXzmxhFtXr9nNYT.jpg"
+      },
+      {
+        "title": "Me Chame Pelo Seu Nome",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/qnf5Onsk236CdE5Lff93IX69gHf.jpg"
+      },
+      {
+        "title": "O Fantástico Sr. Raposo",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/1Ey4LYUzTqzizPNjcBi20pU9joC.jpg"
+      },
+      {
+        "title": "Batman: O Cavaleiro das Trevas",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/4lj1ikfsSmMZNyfdi8R8Tv5tsgb.jpg"
+      },
+      {
+        "title": "A Viagem de Chihiro",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/hhoKhsyJ3hFaxEm5pMdZRiTu2lJ.jpg"
+      },
+      {
+        "title": "Um Sonho de Liberdade",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/umX3lBhHoTV7Lsci140Yr8VpXyN.jpg"
+      },
+      {
+        "title": "Seven - Os Sete Crimes Capitais",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/dZXYPSEaXCeigR2GEuZoukNmLTf.jpg"
+      },
+      {
+        "title": "Pulp Fiction: Tempo de Violência",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/tptjnB2LDbuUWya9Cx5sQtv5hqb.jpg"
+      },
+      {
+        "title": "Cisne Negro",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/tqlmLBt2i5SHNpXEj2nqk10Crwa.jpg"
+      },
+      {
+        "title": "O Poderoso Chefão",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/oJagOzBu9Rdd9BrciseCm3U3MCU.jpg"
+      },
+      {
+        "title": "Star Wars: Episódio III - A Vingança dos Sith",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/nuF5yWtTJEEAd4Qa6cVkYz1XCST.jpg"
+      },
+      {
+        "title": "Pânico",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/cJj2gYzkPFSqYGGOhfLgeANlXkB.jpg"
+      },
+      {
+        "title": "Pequena Miss Sunshine",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/gwLPVYqe1efIxkx6LQT7piZweH2.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Bastardos Inglórios",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/fM7cHZc9WK9yU47kiiyMS4tW0uw.jpg"
+      },
+      {
+        "title": "Donnie Darko",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg"
+      },
+      {
+        "title": "A Origem",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/9e3Dz7aCANy5aRUQF745IlNloJ1.jpg"
+      },
+      {
+        "title": "Aftersun",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/kXk5veq5oOh6SefMyXq6xtUBevw.jpg"
+      },
+      {
+        "title": "O Senhor dos Anéis: O Retorno do Rei",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/rU4oIKv5I4C59DpcXKmT7kNwGI0.jpg"
+      },
+      {
+        "title": "Mamma Mia!",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/xb3SnxHBLYUjpYU78C0qv0RLLtd.jpg"
+      },
+      {
+        "title": "Os Bons Companheiros",
+        "year": "1990",
+        "poster": "https://image.tmdb.org/t/p/w500/sTReXuaND1AjkXUfjl1gqRcuGfI.jpg"
+      },
+      {
+        "title": "Forrest Gump: O Contador de Histórias",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/d74WpIsH8379TIL4wUxDneRCYv2.jpg"
+      },
+      {
+        "title": "Antes do Amanhecer",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/gUD2xpkiWaCUabnwMgopECylsKc.jpg"
+      },
+      {
+        "title": "Scott Pilgrim Contra o Mundo",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/l7EGWWmBiXsL7L2yBV69shGUclH.jpg"
+      },
+      {
+        "title": "De Volta para o Futuro",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/jIq6VLvkl3APntb552IFhSq3VEg.jpg"
+      },
+      {
+        "title": "O Show de Truman: O Show da Vida",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/rbPTCnxQgEsWdetEcPiaKstX7mp.jpg"
+      },
+      {
+        "title": "Duna: Parte Dois",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/8LJJjLjAzAwXS40S5mx79PJ2jSs.jpg"
+      },
+      {
+        "title": "Diário de uma Paixão",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/A07izLVyZCrmq0HTvFg6qdqiZE5.jpg"
+      },
+      {
+        "title": "Kill Bill: Volume 1",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/kU3fVSwiAw9pBsFaUTfLtXnTIAB.jpg"
+      },
+      {
+        "title": "Batman",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/wd7b4Nv9QBHDTIjc2m7sr0IUMoh.jpg"
+      },
+      {
+        "title": "O Grande Hotel Budapeste",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/yabOguSrb8ffUXCkI6t8Rw7xtSh.jpg"
+      },
+      {
+        "title": "O Senhor dos Anéis: A Sociedade do Anel",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/tlvsNCwWEIgwAM23aNzTmMIcPEZ.jpg"
+      },
+      {
+        "title": "Homem-Aranha: Através do Aranhaverso",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/4CwKj1fw33BXYzxvrpM3GlAhK4L.jpg"
+      },
+      {
+        "title": "Questão de Tempo",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/uqEzxvGDYNzoQE7rayv7gRXBomt.jpg"
+      },
+      {
+        "title": "Lady Bird - A Hora de Voar",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/wxfKcpFPmK9isnxXyvCMbqmBtdg.jpg"
+      },
+      {
+        "title": "O Fabuloso Destino de Amélie Poulain",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/oAYKYALxamhAB1wKUGmOo05Vf92.jpg"
+      },
+      {
+        "title": "Retrato de uma Jovem em Chamas",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/c3OkDxs7PQuLB12qiwZUDg7ZMO6.jpg"
+      },
+      {
+        "title": "O Ódio",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/75WjFRiElQaEGRqNKJdTSB47rMR.jpg"
+      },
+      {
+        "title": "O Silêncio dos Inocentes",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/aXkldTJlGzqjoaAHBOuAEpXNTCf.jpg"
+      },
+      {
+        "title": "O Iluminado",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/47BdQqDWnj3VIzpH9bd2agho2PN.jpg"
+      },
+      {
+        "title": "Princesa Mononoke",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/7EadOwHmyQgOnlghRiWBygNtnjl.jpg"
+      },
+      {
+        "title": "A Chegada",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/3rDwbFpn6z5HJUgDjpfhEePx8VI.jpg"
+      },
+      {
+        "title": "12 Homens e uma Sentença",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/aiHIhV8c45FzIlbqYlswrrNyQD6.jpg"
+      },
+      {
+        "title": "Querido Menino",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/ut5sNIXsNb9tHnVJ090V13im4A8.jpg"
+      },
+      {
+        "title": "Cidade dos Sonhos",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/nLAE1zU4jLX3qxx4d87Nz7DsqQg.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "Django Livre",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/ar63Sx8jeqk0OOu2uchS477S2zE.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Ilha do Medo",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/9JHlzQyzyXcsGgl0htYfsm8AnfS.jpg"
+      },
+      {
+        "title": "Jurassic Park: O Parque dos Dinossauros",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/mgjJ7FH4V3exsmoHwXrmsUhn0h1.jpg"
+      },
+      {
+        "title": "Taxi Driver: Motorista de Táxi",
+        "year": "1976",
+        "poster": "https://image.tmdb.org/t/p/w500/hvJvOYRrF9xxvNzg2Jd9PYWu7c3.jpg"
+      },
+      {
+        "title": "@ in the mood for love",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/c6Xh8CqkKbaVRsmYfJGGiZXSjtn.jpg"
+      },
+      {
+        "title": "Cidade de Deus",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/gfnXixcGC060QcG6JPxN6AMdVsq.jpg"
+      },
+      {
+        "title": "Harry Potter e o Prisioneiro de Azkaban",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/1HdMUghqlgOIvbsU9ZtO40IPRzl.jpg"
+      },
+      {
+        "title": "Garota, Interrompida",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/wUO6W6DVF5x5ppQ2X2YXi7HIm1.jpg"
+      },
+      {
+        "title": "Como Perder um Homem em 10 Dias",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/qxwgxjFUtZ3qf7vib9na6tdPfwT.jpg"
+      },
+      {
+        "title": "As Virgens Suicidas",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/aqiLCE1DN61gXKJrmAOZftw1fqg.jpg"
+      },
+      {
+        "title": "2001: Uma Odisséia no Espaço",
+        "year": "1968",
+        "poster": "https://image.tmdb.org/t/p/w500/9jPHKChBVWfWxXYO1yN4FZF1U2S.jpg"
+      },
+      {
+        "title": "Alien: O Oitavo Passageiro",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/rFHzJrkO1kNIezb6rFog5oCJUEn.jpg"
+      },
+      {
+        "title": "Blade Runner 2049",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/49pANIZXRAdHUiWjjBv4vxPeqRC.jpg"
+      },
+      {
+        "title": "Blade Runner: O Caçador de Andróides",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/y5ibL0vFnzsRiIHosw0WOfHtIj1.jpg"
+      },
+      {
+        "title": "O Segredo de Brokeback Mountain",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/qZ7fvWbPABjdU8JciIS9f9jCRCb.jpg"
+      },
+      {
+        "title": "Ratatouille",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/41Co0TRUJNyvjr2vHBEcAKAEFpX.jpg"
+      },
+      {
+        "title": "Trainspotting: Sem Limites",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/y2eJoZx7s79Azq0AwwSImyG8tB1.jpg"
+      },
+      {
+        "title": "Enrolados",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/wZzVkdnc0kw20lSJc13ZmgTPah3.jpg"
+      },
+      {
+        "title": "Oldboy",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/vHHxEpNwnHNJTPFxaSfSF0b2kBH.jpg"
+      },
+      {
+        "title": "Jogos Vorazes: Em Chamas",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/m1lky5ftnhLRpkoYWKssH8qvlRU.jpg"
+      },
+      {
+        "title": "Midsommar: O Mal Não Espera a Noite",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/hR4dXPlWq5Nekwjqbp3gFGeiiZS.jpg"
+      },
+      {
+        "title": "Matrix",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/qFHE09iQDbpHUBXJ8cFZu9v2ViO.jpg"
+      },
+      {
+        "title": "Até os Ossos",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/h06Kkpav1k4wBKcMHBsIve9tuqm.jpg"
+      },
+      {
+        "title": "Os Suspeitos",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/30YtzPOimO7eG30r8K8rUkqTGNj.jpg"
+      },
+      {
+        "title": "O Diabo Veste Prada",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/clsvqIWM5ZILUcHjobQd4WtHZdu.jpg"
+      },
+      {
+        "title": "Vidas Passadas",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/toSI71gFF11VnLfz2uiNx6jjNUF.jpg"
+      },
+      {
+        "title": "Perfect Blue",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/79vujbsWEbX4dzffBV541QXN6sf.jpg"
+      },
+      {
+        "title": "Garota Exemplar",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/54nI3vSKlPp42WhJmKVRdmMbkzl.jpg"
+      },
+      {
+        "title": "Onde os Fracos Não Têm Vez",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/jdlY8Bhcb4Qzfldr1JaexYBgyW3.jpg"
+      },
+      {
+        "title": "Crepúsculo",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/o4ki1gYHkP6IWNdwjHvI9vzfpuC.jpg"
+      },
+      {
+        "title": "Titanic",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/As0zX43h3w6kD2NS4uVHu9HKdEh.jpg"
+      },
+      {
+        "title": "Paris, Texas",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/m9LAmYN699kB7zfDmtx2Nk4gYn9.jpg"
+      },
+      {
+        "title": "(500) Dias com Ela",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/lYA0g5vS43u9fqzoqOhA2sKwi0z.jpg"
+      },
+      {
+        "title": "Pecadores",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/a9kYEboW1TQaeilGYUAx1MO0DUp.jpg"
+      },
+      {
+        "title": "A Princesa Prometida",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/9tXM8AR7BZ8cu6JkI9FlBl98Vao.jpg"
+      },
+      {
+        "title": "Oppenheimer",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/1OsQJEoSXBjduuCvDOlRhoEUaHu.jpg"
+      },
+      {
+        "title": "O Grande Truque",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/4AUW2bGbQjWACUREckGJWXmyF0d.jpg"
+      },
+      {
+        "title": "Hereditário",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/wonYMeHauhrxSi5UTOtj5L479mS.jpg"
+      },
+      {
+        "title": "Réquiem para um Sonho",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/1XoWfP4l4X7sQMH8dhVQOWc91Pd.jpg"
+      },
+      {
+        "title": "Sangue Negro",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/cOEbxHAm8CfbpAE9fKv9vTZaWeL.jpg"
+      },
+      {
+        "title": "Como Treinar o Seu Dragão",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/spZbO7Ss6U9W5zSHjtH6FvXvCF7.jpg"
+      },
+      {
+        "title": "Quase Famosos",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/mgHxgT0TKaFBv3cAIMxAxe8lR6z.jpg"
+      },
+      {
+        "title": "Scarface",
+        "year": "1983",
+        "poster": "https://image.tmdb.org/t/p/w500/b089YkBDJjOGDQxXkOXBR06Lz2Y.jpg"
+      },
+      {
+        "title": "Laranja Mecânica",
+        "year": "1971",
+        "poster": "https://image.tmdb.org/t/p/w500/e8jIwfP8jr81UTFbh2qJVjBhIUL.jpg"
+      },
+      {
+        "title": "Conta Comigo",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/w77Y4Bdgfi2emYaAkKIDcH0jfjP.jpg"
+      },
+      {
+        "title": "Harry & Sally: Feitos um para o Outro",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/BTW9p26mVqckpq3f9kYxB4RELp.jpg"
+      },
+      {
+        "title": "Amores Expressos",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/2M4UmyOsxYInkmpiCCDFbfAUGHG.jpg"
+      },
+      {
+        "title": "O Poderoso Chefão: Parte II",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/3ViYPhSAPwH2avQjdMl49F8PklB.jpg"
+      },
+      {
+        "title": "Encontros e Desencontros",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/gXrA8NMHAs3X9kegmoqtqNF8mXW.jpg"
+      },
+      {
+        "title": "Psicopata Americano",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/4AiFo2MwU62mTtuZ7VH16tlZcmo.jpg"
+      },
+      {
+        "title": "Ela",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/yyDGhBY8RYXyXYADeFq1BDxpLkl.jpg"
+      },
+      {
+        "title": "Your name.",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/zteJkqfL00XsneIqgrUEeDIuY9k.jpg"
+      },
+      {
+        "title": "Mad Max: Estrada da Fúria",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/tH64gzAHDFg7EFcgfkkZyHdGM5P.jpg"
+      },
+      {
+        "title": "Em Ritmo de Fuga",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/1rYTtQ14rPB3KOgk5TjkUqiQFch.jpg"
+      },
+      {
+        "title": "Apocalypse Now",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/veXttPnNe8EZulvmeGTyDUrG9T4.jpg"
+      },
+      {
+        "title": "A Criada",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/q6ngYthHXCvA2ZubO4FHTFNRrmc.jpg"
+      },
+      {
+        "title": "Shrek 2",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/2yYP0PQjG8zVqturh1BAqu2Tixl.jpg"
+      },
+      {
+        "title": "O Lobo de Wall Street",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/sIy0jXDkaMf3SDZGaWcmkC2IOl.jpg"
+      },
+      {
+        "title": "Gladiador",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/4DUClyGA6OqjXv6yC0Imf6THGfp.jpg"
+      },
+      {
+        "title": "Entre Facas e Segredos",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/9H8PNc4JJRjPnfSh8gGukD0CbqQ.jpg"
+      },
+      {
+        "title": "A Rede Social",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/3FULGtzNuDSYkc4Ndopn21UC3M9.jpg"
+      },
+      {
+        "title": "O Grande Lebowski",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/uJNhSEVXNtdZ7Ez5Pye1ZYeMjoe.jpg"
+      },
+      {
+        "title": "Cinema Paradiso",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/kkmwHNAiCea2QGX6kgPmdDKaWyp.jpg"
+      },
+      {
+        "title": "Moonlight: Sob a Luz do Luar",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/AekOkoT88EhDHikUQXQcKri2q4B.jpg"
+      },
+      {
+        "title": "Corra!",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/A0RoSZh8PEYJgDMgM2EV7Ycz3dR.jpg"
+      },
+      {
+        "title": "Rivais",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/w1j3evHiwrGiQ6e9h1l9r66uo29.jpg"
+      },
+      {
+        "title": "The Rocky Horror Picture Show",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/kamLDqtDJWCSqyPATb3b2kVIXeh.jpg"
+      },
+      {
+        "title": "O Senhor dos Anéis: As Duas Torres",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/mCs8vxvScCqVM3YFMQIdbrdFEhu.jpg"
+      },
+      {
+        "title": "Dias Perfeitos",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/p4oCDJgtYPg8lWqmeNIsqPwzZ7X.jpg"
+      },
+      {
+        "title": "Memórias de um Assassino",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/hT5TIl0YjjJQNGhPM84k2jzL7Jv.jpg"
+      },
+      {
+        "title": "A Noiva Cadáver",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/nT7W8LfhzVybfFsnQJ4qQfqn5KX.jpg"
+      },
+      {
+        "title": "Wicked",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/qcaKkLwIXCAxJtpetVYHniCvLZj.jpg"
+      },
+      {
+        "title": "Amnésia",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/7leBWM27Q0TUnvmhw6WnFNgGn4G.jpg"
+      },
+      {
+        "title": "A Vida Secreta de Walter Mitty",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/73lIe9OZjKvF5Cn78RPeiIot8q7.jpg"
+      },
+      {
+        "title": "Clube da Luta para Meninas",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/1quLTLv1f7Qpt3gJVyXfEU4oTEU.jpg"
+      },
+      {
+        "title": "Juno",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/hbNYIjJN7bDTk0pngpoWARvjHRH.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Superbad: É Hoje",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/rABcQMa8m67EJslknSlMfE3BP8L.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/dw7X9YPjjAfIxKHW04V64Bb9TB0.jpg"
+      },
+      {
+        "title": "Vingadores: Ultimato",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/9fRX8UKlIW7Lb9GqNsJVakWWFCi.jpg"
+      },
+      {
+        "title": "Fogo Contra Fogo",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/kqT6z0L0ArfUyEks4oJUFcz8hYa.jpg"
+      },
+      {
+        "title": "WALL-E",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/qNiwJPVCO4cgiM8LVtxwPV2HxHS.jpg"
+      },
+      {
+        "title": "Meninas Malvadas",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/iV7YxvjdmRZo0amjGA2BZW5kkAu.jpg"
+      },
+      {
+        "title": "Três Homens em Conflito",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/16z08yn82sTmdSS7nsGvRNDIVnz.jpg"
+      },
+      {
+        "title": "Os Excêntricos Tenenbaums",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/zRzBGrncDZADU1x6jqSHz6z5uLc.jpg"
+      },
+      {
+        "title": "Drive",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/602vevIURmpDfzbnv5Ubi6wIkQm.jpg"
+      },
+      {
+        "title": "Babilônia",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/qZUmMxJbGmkIYwnS7qRfSOREmvC.jpg"
+      },
+      {
+        "title": "Mistérios da Carne",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/wyPeInMXP55GwLmh45s6faaERBg.jpg"
+      },
+      {
+        "title": "Ponyo - Uma Amizade que Veio do Mar",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/cvpsmNWc8nyePJMbyMc9X5lLN6L.jpg"
+      },
+      {
+        "title": "Era Uma Vez em… Hollywood",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/zgr02U2Fh0sR5JtaAXY5yBU1wka.jpg"
+      },
+      {
+        "title": "Carros",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/A7nssMRIPauZhEVf2dzwsf4EALO.jpg"
+      },
+      {
+        "title": "A Noviça Rebelde",
+        "year": "1965",
+        "poster": "https://image.tmdb.org/t/p/w500/nF9wgSkAvjzJi6fF4oa8GcojTof.jpg"
+      },
+      {
+        "title": "As Ondas",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/dXHO1tPfv5rXQQOfu9Ji6EcAFbE.jpg"
+      },
+      {
+        "title": "Os Rejeitados",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/iCQJpODGR1i1st71xgMiS7w1ujp.jpg"
+      },
+      {
+        "title": "Pearl: Uma História de Origem 'X'",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/cTgLkhIMmzwH1NAaq7NDbFN20zi.jpg"
+      },
+      {
+        "title": "Superman",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/xeZ8oG6W60fEPf9yCjERUXiHRBF.jpg"
+      },
+      {
+        "title": "Duna",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/uzERcfV2rSHNhW5eViQiO9hNiA7.jpg"
+      },
+      {
+        "title": "O Farol",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/zdowK9GrOxK0YddhXuMPyxnTA02.jpg"
+      },
+      {
+        "title": "Twin Peaks: Os Últimos Dias de Laura Palmer",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/69GrIEaBRM4YxdTfr1mazm9yUDE.jpg"
+      },
+      {
+        "title": "Avatar",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/iNMP8uzV2Ing6ZCw0IICgEFVNfC.jpg"
+      },
+      {
+        "title": "Clube dos Cinco",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/zw0mZVGem821we1Is7ObEmL23pN.jpg"
+      },
+      {
+        "title": "Edward Mãos de Tesoura",
+        "year": "1990",
+        "poster": "https://image.tmdb.org/t/p/w500/8vmYMcvWaqqhEWt9EnTPdXDdy2F.jpg"
+      },
+      {
+        "title": "O Estranho Mundo de Jack",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/g6zcll9bcAmoVNiMxt4wmVwTl5f.jpg"
+      },
+      {
+        "title": "Jogos Vorazes",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/l6jn53LMu07uPt8A42JWIKi1Beb.jpg"
+      },
+      {
+        "title": "Pobres Criaturas",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/iOdcXYSVzBgmBJzNIlIMOZ6fz0F.jpg"
+      },
+      {
+        "title": "A Voz do Silêncio",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/haMUCn5bNgeKb2EkILvhYGoHXZX.jpg"
+      },
+      {
+        "title": "Os Infiltrados",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/qtnAwzDapzOML4Q9p7lv2bk5gvz.jpg"
+      },
+      {
+        "title": "Antes do Pôr do Sol",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/pU7Q1s4wgmD46QoDToqcQZDGLy9.jpg"
+      },
+      {
+        "title": "Vingadores: Guerra Infinita",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/A4kvp7vY1BDLrrQIagRCffLKj1t.jpg"
+      },
+      {
+        "title": "A Escolha Perfeita",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/pRpCQyiylNYcCzyyYHUCyf4yLm6.jpg"
+      },
+      {
+        "title": "Coringa",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/xLxgVxFWvb9hhUyCDDXxRPPnFck.jpg"
+      },
+      {
+        "title": "Um Lugar Chamado Notting Hill",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/9yFgNvFK870icK6SvTdeVyEjXN4.jpg"
+      },
+      {
+        "title": "A Substância",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/pGn0yJFe1AoyWM33tWcPQ2TfMvL.jpg"
+      },
+      {
+        "title": "De Olhos Bem Fechados",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/pmU8WQ2fOdxLuYaNe1kHE2L8SlI.jpg"
+      },
+      {
+        "title": "O Profissional",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/lNyuX5XibtzRImuhACGy42jHXIs.jpg"
+      },
+      {
+        "title": "Homem-Aranha 2",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/ulY3TIeF3cNZKmLmrnQueNYZ0gn.jpg"
+      },
+      {
+        "title": "De Repente 30",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/wTIZLDE1tXAl8jTm8CuvjHDUwgi.jpg"
+      },
+      {
+        "title": "Manchester à Beira-Mar",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/cy7fOIXX0MO2HXnTE3Lf0NwjQfN.jpg"
+      },
+      {
+        "title": "Projeto Flórida",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/3NoSjGM6OCcN5tUCo3RjZ1Y47pZ.jpg"
+      },
+      {
+        "title": "Tubarão",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/iD2XVowFgHngYGamCAdq2T44gMr.jpg"
+      },
+      {
+        "title": "Operação Cupido",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/3VUKjD23w6nnmTTjCc2AqBefQzt.jpg"
+      },
+      {
+        "title": "Jojo Rabbit",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/tW7uzT7lRcBA00NJw2W2SDSKjCv.jpg"
+      },
+      {
+        "title": "As Patricinhas de Beverly Hills",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/sfgpINIXoGEUkA3n6k7of89bP9x.jpg"
+      },
+      {
+        "title": "Meu Amigo Totoro",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/23KKTxDg6rxZVc66bloQQdPSr29.jpg"
+      },
+      {
+        "title": "Frances Ha",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/jrq1NoKvsxWCcffVOjegiYwloFN.jpg"
+      },
+      {
+        "title": "Ilha dos Cachorros",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/4k4sjRXGMTfIDkfVi7lHccatnWk.jpg"
+      },
+      {
+        "title": "Labirinto: A Magia do Tempo",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/aSrFoc9uzaAiwELpqZvLx5GydbQ.jpg"
+      },
+      {
+        "title": "Dirty Dancing: Ritmo Quente",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/mUVIRUpqKQa8uKDgyYrQHs6rlbz.jpg"
+      },
+      {
+        "title": "Barbie",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/yRRuLt7sMBEQkHsd1S3KaaofZn7.jpg"
+      },
+      {
+        "title": "Chumbo Grosso",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/bqT6jMz8J7vhZo7lMd6q5d8ijjd.jpg"
+      },
+      {
+        "title": "O Rei Leão",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/8aIvm8OaJISOpVTt7rMIh7X35G5.jpg"
+      },
+      {
+        "title": "Homem-Aranha: Sem Volta Para Casa",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/lrexJi7P336iIwtogSq2OP7AVGJ.jpg"
+      },
+      {
+        "title": "Moulin Rouge: Amor em Vermelho",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/4GQusiDtkDNFWG5mBNGpFGYQLGd.jpg"
+      },
+      {
+        "title": "Monster",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/OsWKxswXx2TOx87ZRxdOciu0uB.jpg"
+      },
+      {
+        "title": "O Pianista",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/g0s9Yb5tfka73UKxFAPxO9lPHBW.jpg"
+      },
+      {
+        "title": "Akira",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/tbwwTQ3EqSdotbQ3ZcIl6vKBv7q.jpg"
+      },
+      {
+        "title": "Túmulo dos Vagalumes",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/kHFUyxNJfhMkKk1FwrNHd62KTEs.jpg"
+      },
+      {
+        "title": "Lego Batman: O Filme",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/jUZAAKHfHwZj8bEvghaY9MrGCRG.jpg"
+      },
+      {
+        "title": "Grande Menina, Pequena Mulher",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/wCAbCoD5qPyMxrzaAl1os9pPjGK.jpg"
+      },
+      {
+        "title": "Halloween - A Noite do Terror",
+        "year": "1978",
+        "poster": "https://image.tmdb.org/t/p/w500/ozkOzFITxLmp5nkjvuawQaRHNF3.jpg"
+      },
+      {
+        "title": "Jovens, Loucos e Rebeldes",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/xOJDGjtNfm8kmDqIUvN9NrlXJeM.jpg"
+      },
+      {
+        "title": "O Rei do Show",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/NUce1PoO7j0CLLwUQRrBbyKveg.jpg"
+      },
+      {
+        "title": "Legalmente Loira",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/zlieYqoBgbcIhYT8CgSGu4QRXWw.jpg"
+      },
+      {
+        "title": "E Sua Mãe Também",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/cBxIm0aF4MdRD7atLNHryq1WvOW.jpg"
+      },
+      {
+        "title": "Eu Vi o Brilho da TV",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/q01inF0310hkfGL9Z5T6yuneIQI.jpg"
+      },
+      {
+        "title": "Veludo Azul",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/1Nlq42CnLmkXzj7TN58c3VjlwLn.jpg"
+      },
+      {
+        "title": "Moonrise Kingdom",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/3Vo4SrfuYYRcvQX02PqZJAaOZJt.jpg"
+      },
+      {
+        "title": "Top Gun: Maverick",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/2EEaX9eHqgdBQlX4gOCCYSvlxAg.jpg"
+      },
+      {
+        "title": "As Branquelas",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/aJZOcorpgloDLkPP6ED0t9sXjNu.jpg"
+      },
+      {
+        "title": "Amadeus",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/8YKjrBwZjaudr4IsVg9U0ZNC8si.jpg"
+      },
+      {
+        "title": "Invocação do Mal",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/1NxHKZW5DPbUFtbF3MxbdSyxRqU.jpg"
+      },
+      {
+        "title": "It: A Coisa",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/uYxz0lIiNgErrPhQbSjUdwYxtFc.jpg"
+      },
+      {
+        "title": "A Bruxa",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/qqOtwhj8DxOBIwI0u6ThooXEIBR.jpg"
+      },
+      {
+        "title": "À Espera de um Milagre",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/14hEqW67IiHlKpzKMLUXyktzZIV.jpg"
+      },
+      {
+        "title": "Casablanca",
+        "year": "1943",
+        "poster": "https://image.tmdb.org/t/p/w500/g8dt5DAhICrzSxH0v67ADS3259O.jpg"
+      },
+      {
+        "title": "Filhos da Esperança",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/BHTzFqP7hrjicDiSYf6wtS8Xb7.jpg"
+      },
+      {
+        "title": "Cães de Aluguel",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/84dzLDiFiACIqKtqQwzmB6GL7uC.jpg"
+      },
+      {
+        "title": "Tudo sobre Lily Chou Chou",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/ApXbFphUnarqvJjREDCWxZ9fVNw.jpg"
+      },
+      {
+        "title": "Jogos Mortais",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/lwTKflT7UbQCTyImbuq6eamUKwb.jpg"
+      },
+      {
+        "title": "Carol",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/ddjhWoNkwfndMZDjtbniBINO8HN.jpg"
+      },
+      {
+        "title": "Possessão",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/xtH5Kd2eNU08BTCLGOVI488WE6f.jpg"
+      },
+      {
+        "title": "Anos 90",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/gTKHNZT3ntvwN8Sy6DzbUzuTdpt.jpg"
+      },
+      {
+        "title": "Trama Fantasma",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/BCBB2pNxBb1ruNTO5oqjyMNqW4.jpg"
+      },
+      {
+        "title": "Shrek",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/iB64vpL3dIObOtMZgX3RqdVdQDc.jpg"
+      },
+      {
+        "title": "O Massacre da Serra Elétrica",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/p4ASEhC23kteI4pabD3cvFccCgO.jpg"
+      },
+      {
+        "title": "Frankenstein",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/cXsMxClCcAF1oMwoXZvbKwWoNeS.jpg"
+      },
+      {
+        "title": "Até o Último Homem",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/mPnU3yKuZpmLjkVXGplhkpX31LY.jpg"
+      },
+      {
+        "title": "Prenda-Me se For Capaz",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/pSaqcj3pwTKt34cyn6NrBE7V4eH.jpg"
+      },
+      {
+        "title": "Indiana Jones e os Caçadores da Arca Perdida",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/mtf7iKZRdsL6qbbCnd2TAxOfJYg.jpg"
+      },
+      {
+        "title": "Atração Mortal",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/b2V2hDzMSRG4MHCJRdFgfcmjf8C.jpg"
+      },
+      {
+        "title": "Alice no País das Maravilhas",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/bvD0kvICG7hP03vrNvylUINhafM.jpg"
+      },
+      {
+        "title": "Janela Indiscreta",
+        "year": "1954",
+        "poster": "https://image.tmdb.org/t/p/w500/ckYI4gqqKlSWAVwtLfZSUfwoquW.jpg"
+      },
+      {
+        "title": "Viva: A Vida é uma Festa",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/6oNm06TPz2vGiPc2I52oXW3JwPS.jpg"
+      },
+      {
+        "title": "O Espetacular Homem-Aranha",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/gxSsFBCFuDhVQMCuIDoZcmHOqlY.jpg"
+      },
+      {
+        "title": "Desejo e Reparação",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/sFIHg2JAyOe6ua0WM2IvcVplrZj.jpg"
+      },
+      {
+        "title": "Psicose",
+        "year": "1960",
+        "poster": "https://image.tmdb.org/t/p/w500/A89NmGOdz26aQo97UwVSLrFhA1t.jpg"
+      }
+    ]
+  }
+}
