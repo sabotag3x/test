@@ -254,6 +254,20 @@ input{
   opacity:.9;
 }
 
+  .movie-title{
+  display:block;
+  font-size:18px;
+  line-height:1.25;
+}
+
+.movie-year{
+  display:block;
+  margin-top:4px;
+  font-size:14px;
+  opacity:.7;
+}
+
+
 /* ================= MOBILE ================= */
 
 @media(max-width:900px){
@@ -507,9 +521,11 @@ function showFinal(champ){
 
       <div class="champion">
         <img src="${champ.poster}">
-        <div class="title">
-          Campeão<br>${champ.title} (${champ.year})
-        </div>
+<div class="title">
+  Campeão<br>
+  <span class="movie-title">${champ.title}</span>
+  <span class="movie-year">${champ.year}</span>
+</div>
         <button id="again" onclick="location.reload()">Jogar novamente</button>
       </div>
 
@@ -570,7 +586,11 @@ function nextVersus(){
     <div class="versus-container">
       <div class="versus-card">
         <img src="${fa.poster}" onclick="voteA()">
-        <div class="title">${fa.title}</div>
+      <div class="title">
+  <span class="movie-title">${f.title}</span>
+  <span class="movie-year">${f.year}</span>
+</div>
+
       </div>
 
       <div class="versus-center">
