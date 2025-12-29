@@ -556,9 +556,14 @@ async function startVersus(){
   startLoading();
 
   try{
-    const [ra, rb] = await Promise.all([
-      fetch(`/api/list/${a}`).then(r=>r.json()),
-      fetch(`/api/list/${b}`).then(r=>r.json())
+const [raRaw, rbRaw] = await Promise.all([
+  fetch(`/api/list/${a}`).then(r=>r.json()),
+  fetch(`/api/list/${b}`).then(r=>r.json())
+]);
+
+const ra = Array.isArray(raRaw) ? raRaw : raRaw.films;
+const rb = Array.isArray(rbRaw) ? rbRaw : rbRaw.films;
+
     ]);
 
 versusA = shuffle(ra.filter(f => f && f.poster)).slice(0,11);
