@@ -1,0 +1,204 @@
+{
+  "films": [
+    {
+      "title": "Os Imperdoáveis",
+      "year": "1992",
+      "poster": "https://image.tmdb.org/t/p/w500/kmMDDCOB8xPCrmFW7w9zqgymCWJ.jpg"
+    },
+    {
+      "title": "As Pontes de Madison",
+      "year": "1995",
+      "poster": "https://image.tmdb.org/t/p/w500/ahC9ZWvPMXnQhKY8prrS1eq8Gpl.jpg"
+    },
+    {
+      "title": "Sully: O Herói do Rio Hudson",
+      "year": "2016",
+      "poster": "https://image.tmdb.org/t/p/w500/b3jihGgsICgJbwJVvVwshoJ8TjJ.jpg"
+    },
+    {
+      "title": "Bird",
+      "year": "1988",
+      "poster": "https://image.tmdb.org/t/p/w500/rTCp6M98RQAxRl0x0guU9GlH7HS.jpg"
+    },
+    {
+      "title": "Josey Wales: O Fora da Lei",
+      "year": "1976",
+      "poster": "https://image.tmdb.org/t/p/w500/7qhPffMpzmXQKcShsnlf0aln1ej.jpg"
+    },
+    {
+      "title": "Menina de Ouro",
+      "year": "2004",
+      "poster": "https://image.tmdb.org/t/p/w500/edzbBaAHoJGvmNtY2Qck936AgnI.jpg"
+    },
+    {
+      "title": "Coração de Caçador",
+      "year": "1990",
+      "poster": "https://image.tmdb.org/t/p/w500/lOsl27XLMru5zsdsMbuunFTnDYk.jpg"
+    },
+    {
+      "title": "O Cavaleiro Solitário",
+      "year": "1985",
+      "poster": "https://image.tmdb.org/t/p/w500/qINa4QIWMtASsToMVgCcVlomJrB.jpg"
+    },
+    {
+      "title": "Cartas de Iwo Jima",
+      "year": "2006",
+      "poster": "https://image.tmdb.org/t/p/w500/bePSUYRqxtQrLNGdx3E3BFxqiHT.jpg"
+    },
+    {
+      "title": "Além da Vida",
+      "year": "2010",
+      "poster": "https://image.tmdb.org/t/p/w500/xNnd2jFEV9KjNU6M31HoOosloDI.jpg"
+    },
+    {
+      "title": "Perversa Paixão",
+      "year": "1971",
+      "poster": "https://image.tmdb.org/t/p/w500/aIcXXH4hBL2XqeWLNHlR85bGr6.jpg"
+    },
+    {
+      "title": "Um Mundo Perfeito",
+      "year": "1993",
+      "poster": "https://image.tmdb.org/t/p/w500/ysJgoGsNxV5ZCWMh5dlCNxaMIEv.jpg"
+    },
+    {
+      "title": "O Estranho Sem Nome",
+      "year": "1973",
+      "poster": "https://image.tmdb.org/t/p/w500/qgHizq7I3TZWWZc22bSpLDbpLY3.jpg"
+    },
+    {
+      "title": "A Mula",
+      "year": "2018",
+      "poster": "https://image.tmdb.org/t/p/w500/kE9pO1utmOD5nQAcn7tyoUAldkX.jpg"
+    },
+    {
+      "title": "Dívida de Sangue",
+      "year": "2002",
+      "poster": "https://image.tmdb.org/t/p/w500/zcQwUsOUwg286tuvj8CtyH2dzBL.jpg"
+    },
+    {
+      "title": "Jurado Nº2",
+      "year": "2024",
+      "poster": "https://image.tmdb.org/t/p/w500/bFYI0NarSDbxPbdLd4I5v2hbZEu.jpg"
+    },
+    {
+      "title": "O Caso Richard Jewell",
+      "year": "2019",
+      "poster": "https://image.tmdb.org/t/p/w500/koGknmSPrlDxzb5hvqn7CT5Uqt.jpg"
+    },
+    {
+      "title": "Sobre Meninos e Lobos",
+      "year": "2003",
+      "poster": "https://image.tmdb.org/t/p/w500/sCqLLudKYZA4oToKivEG6ytiHIA.jpg"
+    },
+    {
+      "title": "Escalado para Morrer",
+      "year": "1975",
+      "poster": "https://image.tmdb.org/t/p/w500/7IeH4yVJ7qqHlnWqiE68d2PYS7t.jpg"
+    },
+    {
+      "title": "Interlúdio de Amor",
+      "year": "1973",
+      "poster": "https://image.tmdb.org/t/p/w500/3F233tP6kUqPKNezwIuBGlG0t33.jpg"
+    },
+    {
+      "title": "A Conquista da Honra",
+      "year": "2006",
+      "poster": "https://image.tmdb.org/t/p/w500/qk93n9lLFsb1dn3KEBLkuFIDGGm.jpg"
+    },
+    {
+      "title": "A Troca",
+      "year": "2008",
+      "poster": "https://image.tmdb.org/t/p/w500/feBAF48a6hmOr3KMlrxwGzlHCbK.jpg"
+    },
+    {
+      "title": "Sniper Americano",
+      "year": "2014",
+      "poster": "https://image.tmdb.org/t/p/w500/mAXzc2oDTTYcnn6IGHlSXvmXloG.jpg"
+    },
+    {
+      "title": "Rota Suicida",
+      "year": "1977",
+      "poster": "https://image.tmdb.org/t/p/w500/sWoHp3ZNcQryzWYgejFNTBmRyRh.jpg"
+    },
+    {
+      "title": "Cry Macho: O Caminho para a Redenção",
+      "year": "2021",
+      "poster": "https://image.tmdb.org/t/p/w500/qj6NMf7CXgidcjgR3IhmZIfr780.jpg"
+    },
+    {
+      "title": "Impacto Fulminante",
+      "year": "1983",
+      "poster": "https://image.tmdb.org/t/p/w500/9fShwt1Bu940fZScCP4A72VFX3.jpg"
+    },
+    {
+      "title": "Poder Absoluto",
+      "year": "1997",
+      "poster": "https://image.tmdb.org/t/p/w500/qxh8ri5txxJLi6Izw6430sa3DYf.jpg"
+    },
+    {
+      "title": "Meia-Noite no Jardim do Bem e do Mal",
+      "year": "1997",
+      "poster": "https://image.tmdb.org/t/p/w500/9xoJ4IS1PApBFbE7KWs1WFh7IBz.jpg"
+    },
+    {
+      "title": "Bronco Billy",
+      "year": "1980",
+      "poster": "https://image.tmdb.org/t/p/w500/qiWVmWUq4M9Hc2Ui4jPkAnX6oAz.jpg"
+    },
+    {
+      "title": "Honkytonk Man: A Última Canção",
+      "year": "1982",
+      "poster": "https://image.tmdb.org/t/p/w500/80QObZAootNcJYL5R4EOEaY7rR3.jpg"
+    },
+    {
+      "title": "O Destemido Senhor da Guerra",
+      "year": "1986",
+      "poster": "https://image.tmdb.org/t/p/w500/ztSXQQXnBkMPo6hBqZFuIcs0UbB.jpg"
+    },
+    {
+      "title": "Rookie: Um Profissional do Perigo",
+      "year": "1990",
+      "poster": "https://image.tmdb.org/t/p/w500/abnGPeBcYxoV1HVBETFaf9Kq0vr.jpg"
+    },
+    {
+      "title": "Raposa de Fogo",
+      "year": "1982",
+      "poster": "https://image.tmdb.org/t/p/w500/hG8cvRON30sWwiCUibcv2TboQ9A.jpg"
+    },
+    {
+      "title": "Gran Torino",
+      "year": "2008",
+      "poster": "https://image.tmdb.org/t/p/w500/lnguNPnsaC4siq4TlzM2QEsTLsa.jpg"
+    },
+    {
+      "title": "Crime Verdadeiro",
+      "year": "1999",
+      "poster": "https://image.tmdb.org/t/p/w500/gt2dUGfvHesjrOGBLZBoVZPXZUA.jpg"
+    },
+    {
+      "title": "Jersey Boys: Em Busca da Música",
+      "year": "2014",
+      "poster": "https://image.tmdb.org/t/p/w500/9T81abBEruMAE1e3RfCzHECXBvv.jpg"
+    },
+    {
+      "title": "Cowboys do Espaço",
+      "year": "2000",
+      "poster": "https://image.tmdb.org/t/p/w500/404i5MudhZwElz8XogmkCvngbKo.jpg"
+    },
+    {
+      "title": "15h17: Trem Para Paris",
+      "year": "2018",
+      "poster": "https://image.tmdb.org/t/p/w500/bLfcN4pTbG78sxS4rQGciJCoNAb.jpg"
+    },
+    {
+      "title": "J. Edgar",
+      "year": "2011",
+      "poster": "https://image.tmdb.org/t/p/w500/hWHFPhGvCvfHbZCxJSR3n6GsXIf.jpg"
+    },
+    {
+      "title": "Invictus",
+      "year": "2009",
+      "poster": "https://image.tmdb.org/t/p/w500/auIEpnjc5T8bPkb0Dnx6hLENycu.jpg"
+    }
+  ]
+}
