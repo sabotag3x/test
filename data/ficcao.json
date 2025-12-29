@@ -1,0 +1,1608 @@
+{
+  "ficcao": {
+    "name": "Ficção",
+    "updated_at": "2025-12-29",
+    "films": [
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Nirvanna the Band the Show the Movie",
+        "year": "2026",
+        "poster": "https://image.tmdb.org/t/p/w500/dVRKt0XbHihEvijLn17a5yg4Kv0.jpg"
+      },
+      {
+        "title": "Interestelar",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/6ricSDD83BClJsFdGB6x7cM0MFQ.jpg"
+      },
+      {
+        "title": "Homem-Aranha: Através do Aranhaverso",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/4CwKj1fw33BXYzxvrpM3GlAhK4L.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Duna: Parte Dois",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/8LJJjLjAzAwXS40S5mx79PJ2jSs.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Filhos da Esperança",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/BHTzFqP7hrjicDiSYf6wtS8Xb7.jpg"
+      },
+      {
+        "title": "O Exterminador do Futuro 2: O Julgamento Final",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/eTIY2LO5cDclxgKtCHuvIKdF3c3.jpg"
+      },
+      {
+        "title": "Evangelion: 3.0+1.0 A Esperança",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/tQ6P7q6vrH8ym7knYmuA6SKmfFZ.jpg"
+      },
+      {
+        "title": "Akira",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/tbwwTQ3EqSdotbQ3ZcIl6vKBv7q.jpg"
+      },
+      {
+        "title": "O Gigante de Ferro",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/qxPusltlonoWMUD5ClEZfdGW0pt.jpg"
+      },
+      {
+        "title": "O Grande Truque",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/4AUW2bGbQjWACUREckGJWXmyF0d.jpg"
+      },
+      {
+        "title": "2001: Uma Odisséia no Espaço",
+        "year": "1968",
+        "poster": "https://image.tmdb.org/t/p/w500/9jPHKChBVWfWxXYO1yN4FZF1U2S.jpg"
+      },
+      {
+        "title": "Tudo em Todo o Lugar ao Mesmo Tempo",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/2dSZQGwijlXvMSyuGe0FSgrXnv0.jpg"
+      },
+      {
+        "title": "Interstella 5555",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/5h2zae7zxsWnjqeoQ9vdzJMbXlh.jpg"
+      },
+      {
+        "title": "Alien: O Oitavo Passageiro",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/rFHzJrkO1kNIezb6rFog5oCJUEn.jpg"
+      },
+      {
+        "title": "Metrópolis",
+        "year": "1927",
+        "poster": "https://image.tmdb.org/t/p/w500/xBx21HvGJCb15PKWkyb7uc435Wx.jpg"
+      },
+      {
+        "title": "A Face de Um Outro",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/lutxrDJqXlxs6i2GNNhGI9q8Ah5.jpg"
+      },
+      {
+        "title": "Brilho Eterno de uma Mente sem Lembranças",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/zqbwK2ugTPauBQwzcNAM3PxVoww.jpg"
+      },
+      {
+        "title": "The Disappearance of Haruhi Suzumiya",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/nSdZAw8LELV6S1nwWVdF8iYbG2X.jpg"
+      },
+      {
+        "title": "WALL-E",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/qNiwJPVCO4cgiM8LVtxwPV2HxHS.jpg"
+      },
+      {
+        "title": "Solaris",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/xabQ3ljbRpUYbYxJiRfq7WT15p.jpg"
+      },
+      {
+        "title": "A Origem",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/9e3Dz7aCANy5aRUQF745IlNloJ1.jpg"
+      },
+      {
+        "title": "Robô Selvagem",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/gAHNIZKG8fmK7njOTpMmLKJXiag.jpg"
+      },
+      {
+        "title": "De Volta para o Futuro",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/jIq6VLvkl3APntb552IFhSq3VEg.jpg"
+      },
+      {
+        "title": "Matrix",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/qFHE09iQDbpHUBXJ8cFZu9v2ViO.jpg"
+      },
+      {
+        "title": "Mad Max: Estrada da Fúria",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/tH64gzAHDFg7EFcgfkkZyHdGM5P.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/dw7X9YPjjAfIxKHW04V64Bb9TB0.jpg"
+      },
+      {
+        "title": "Patlabor 2 - O Filme",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/5LNUJJaKAaM1Jk3FyphZyTbZyDO.jpg"
+      },
+      {
+        "title": "Vampire Hunter D: Bloodlust",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/l2FyMofnCYoALX8GZ9L9hdH0fEM.jpg"
+      },
+      {
+        "title": "O Segundo Rosto",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/5G3q3OvulFTnFdiouaZdD8wjtIc.jpg"
+      },
+      {
+        "title": "A Chegada",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/3rDwbFpn6z5HJUgDjpfhEePx8VI.jpg"
+      },
+      {
+        "title": "Logan",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/oKlLz9TSSpg1AhjU2pDZ5vDeHch.jpg"
+      },
+      {
+        "title": "Redline",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/xjwGQJr4ycbfu7jfhOUDxjyrrmL.jpg"
+      },
+      {
+        "title": "Jurassic Park: O Parque dos Dinossauros",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/mgjJ7FH4V3exsmoHwXrmsUhn0h1.jpg"
+      },
+      {
+        "title": "Cowboy Bebop: O Filme",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/zgI6Th73JRwATaD0bA3FVVDjUow.jpg"
+      },
+      {
+        "title": "Aliens: O Resgate",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/cORjIMhNxSukd09E6MlvwU5Ev1V.jpg"
+      },
+      {
+        "title": "Laranja Mecânica",
+        "year": "1971",
+        "poster": "https://image.tmdb.org/t/p/w500/e8jIwfP8jr81UTFbh2qJVjBhIUL.jpg"
+      },
+      {
+        "title": "Blade Runner 2049",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/49pANIZXRAdHUiWjjBv4vxPeqRC.jpg"
+      },
+      {
+        "title": "Blade Runner: O Caçador de Andróides",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/y5ibL0vFnzsRiIHosw0WOfHtIj1.jpg"
+      },
+      {
+        "title": "Brazil: O Filme",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/eoWSmEv790Cp6RMJWj8lYfEKthI.jpg"
+      },
+      {
+        "title": "Ghost in the Shell: O Fantasma do Futuro",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/4YgDy47HKxcSwUPQWrg0J39lEZA.jpg"
+      },
+      {
+        "title": "Paprika",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/aD0uIqGX3xdmUF2Ol2nvhJsfL5C.jpg"
+      },
+      {
+        "title": "Memórias de um Amor",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/p9XUuQyDWJn4Tnn9iW2BGRCJf15.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Retorno de Jedi",
+        "year": "1983",
+        "poster": "https://image.tmdb.org/t/p/w500/llaJ35p5e23ygDbqd0H3otJLWsA.jpg"
+      },
+      {
+        "title": "Meu Amigo Robô",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/zmgx7H51Tq9wgpW0DZxSGzXURZy.jpg"
+      },
+      {
+        "title": "Agosto Na Água",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/jRy8kcZD3ynnD9Hq2wS7DVlUErK.jpg"
+      },
+      {
+        "title": "Godzilla Minus One",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/9XSOyim1pivuSHQqlrDj5gj2J5w.jpg"
+      },
+      {
+        "title": "Persona 3 the Movie: #4 Winter of Rebirth",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/zp1qvp5TuJKIQaLY3Vuehs2vgLq.jpg"
+      },
+      {
+        "title": "Godzilla, O Monstro do Mar",
+        "year": "1954",
+        "poster": "https://image.tmdb.org/t/p/w500/2MmLWzSo1DV8nwOE6OVcysId46M.jpg"
+      },
+      {
+        "title": "Swallowtail Butterfly",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/p67xuAENDxee2DZZfRQFiVH3iBR.jpg"
+      },
+      {
+        "title": "2046: Os Segredos do Amor",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/zufI0io1UEDm6CQLAcbUo5cQ37T.jpg"
+      },
+      {
+        "title": "The Rocky Horror Picture Show",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/kamLDqtDJWCSqyPATb3b2kVIXeh.jpg"
+      },
+      {
+        "title": "Sore: Uma Esposa do Futuro",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/u4pNXPmBuYeTtksakUCZgJ1zpSB.jpg"
+      },
+      {
+        "title": "O Globo de Prata",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/3XaTVsni11sNhcOK1WzMrMjoAt5.jpg"
+      },
+      {
+        "title": "Star Wars: Episódio III - A Vingança dos Sith",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/nuF5yWtTJEEAd4Qa6cVkYz1XCST.jpg"
+      },
+      {
+        "title": "Vingadores: Guerra Infinita",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/A4kvp7vY1BDLrrQIagRCffLKj1t.jpg"
+      },
+      {
+        "title": "Planeta Fantástico",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/6zKP4iIb15XsmpF9XxbdSJOvr5Y.jpg"
+      },
+      {
+        "title": "O Visitante do Museu",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/3lilHSgFYCZ8kvULFJvwsuBHOjJ.jpg"
+      },
+      {
+        "title": "Dirty Computer",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/s0DmUmSXuQmlHq83OsX0g13blaK.jpg"
+      },
+      {
+        "title": "Caddyshack: The 19th Hole",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/uQ3H8rO6zBDDvs6QUIv3xEr8NFD.jpg"
+      },
+      {
+        "title": "O Planeta dos Macacos",
+        "year": "1968",
+        "poster": "https://image.tmdb.org/t/p/w500/AfFZBNsQDRGpKoXczB9NSZ0VUl1.jpg"
+      },
+      {
+        "title": "Estrada Para Lugar Nenhum",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/mx5m31p333r3t0U8qDAYeIfmoxZ.jpg"
+      },
+      {
+        "title": "A Mosca",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/dQWmNTzZBRuxDGiLsuKuPXJQES1.jpg"
+      },
+      {
+        "title": "Mars Express",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/JEPbbxkFtRASU1WzeQGRvKqjuO.jpg"
+      },
+      {
+        "title": "Memories",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/3HvAi9ksy6IC2u9DRW277b9gJLu.jpg"
+      },
+      {
+        "title": "Batman: Retorno do Cavaleiro das Trevas",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/jDKq5vGJXabDWNc6NxzJyKi0Gov.jpg"
+      },
+      {
+        "title": "Arco",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/rWvbMnqLTpyTHmNii4TrnmgzpcS.jpg"
+      },
+      {
+        "title": "Иван Васильевич меняет профессию",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/zdchIYA46WPazYjLywUREvmQwIA.jpg"
+      },
+      {
+        "title": "Evangelion: 2.0 Você (Não) Pode Avançar",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/zdbsGUaSx0IIURfqkhi984NXn59.jpg"
+      },
+      {
+        "title": "Ela",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/yyDGhBY8RYXyXYADeFq1BDxpLkl.jpg"
+      },
+      {
+        "title": "Ex_Machina: Instinto Artificial",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/hfpnFtgcYom9Gk9s1IyWiovpZYg.jpg"
+      },
+      {
+        "title": "銀河英雄伝説　わが征くは星の大海",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/7sy4uOMuDOZ2we7JOzN7OmygWvm.jpg"
+      },
+      {
+        "title": "Guardiões da Galáxia: Vol. 3",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/xXQxLeJ1PdgL8k56WGphreTDGk3.jpg"
+      },
+      {
+        "title": "A Noiva de Frankenstein",
+        "year": "1935",
+        "poster": "https://image.tmdb.org/t/p/w500/hrFGL4lABROsLvoC04JSxvlqSlS.jpg"
+      },
+      {
+        "title": "Собачье сердце",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/1XYwOhbalbXMvSsFhFX163AfPtr.jpg"
+      },
+      {
+        "title": "Despertar dos Mortos",
+        "year": "1978",
+        "poster": "https://image.tmdb.org/t/p/w500/z2vbqFu9s0HhWcTRjGc4JbBHhWs.jpg"
+      },
+      {
+        "title": "Nimona",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/4dcysbDOOvgBVxatQjJ89gbGpMT.jpg"
+      },
+      {
+        "title": "Born in Flames",
+        "year": "1983",
+        "poster": "https://image.tmdb.org/t/p/w500/uV8R8B8m5rp1NFvuodWk4ZuCXY0.jpg"
+      },
+      {
+        "title": "うる星やつら2 ビューティフル・ドリーマー",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/m7CFGcwc5HLbHkSlK3JBkayFBGV.jpg"
+      },
+      {
+        "title": "Pobres Criaturas",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/iOdcXYSVzBgmBJzNIlIMOZ6fz0F.jpg"
+      },
+      {
+        "title": "Sangue Ruim",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/4Dcoc3VkkR68GVI12oSCQn0pfzd.jpg"
+      },
+      {
+        "title": "Os Invasores de Corpos",
+        "year": "1978",
+        "poster": "https://image.tmdb.org/t/p/w500/x3hXjVonuaUk9Kb5LvjpRamSFRP.jpg"
+      },
+      {
+        "title": "Vingadores: Ultimato",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/9fRX8UKlIW7Lb9GqNsJVakWWFCi.jpg"
+      },
+      {
+        "title": "Jornada nas Estrelas II: A Ira de Khan",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/iiG4D2LmUkK0gGWnfUzaXHeCnlR.jpg"
+      },
+      {
+        "title": "Resurrection",
+        "year": "2026",
+        "poster": "https://image.tmdb.org/t/p/w500/ws2fq3ek0qRPHfoZ00VRBv3fwNx.jpg"
+      },
+      {
+        "title": "名探偵コナン ベイカー街（ストリート）の亡霊",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/bXSNTMhWnhpOyOUUMe66u5aMtvM.jpg"
+      },
+      {
+        "title": "Gintama, O Filme: Uma Nova Reinterpretação do Arco Benizakura",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/zWJ8SkSzhvZQOQmHBSouDmpyXrw.jpg"
+      },
+      {
+        "title": "Até o Fim do Mundo",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/naP3GzNwagWSKpRPubl3a6t1k9f.jpg"
+      },
+      {
+        "title": "Jin-Roh: A Brigada dos Lobos",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/nC1PUOAWUirtCdnBJ0W34arU18d.jpg"
+      },
+      {
+        "title": "Homem-Aranha 2",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/ulY3TIeF3cNZKmLmrnQueNYZ0gn.jpg"
+      },
+      {
+        "title": "Bugonia",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/vTQ4GUmcU3aOM5IpTkU3fZGs1ja.jpg"
+      },
+      {
+        "title": "Planeta do Tesouro",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/4GJnKM1CLylmp8phkyiITiwu7L.jpg"
+      },
+      {
+        "title": "Jogos Vorazes: Em Chamas",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/m1lky5ftnhLRpkoYWKssH8qvlRU.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "RoboCop - O Policial do Futuro",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/uZ27cWusfoGFh7sOiUsIENxW48S.jpg"
+      },
+      {
+        "title": "Dois Minutos Além do Infinito",
+        "year": "2020",
+        "poster": "https://image.tmdb.org/t/p/w500/ijtTqAguLutxeleSTQLkkq2CnRB.jpg"
+      },
+      {
+        "title": "Wax, or The Discovery of Television Among the Bees",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/jxJeg0K5KmtZeTkJtX2pAqli7Sj.jpg"
+      },
+      {
+        "title": "Тайна третьей планеты",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/7ICu6SPJBMuWixymqtRIIBvc55S.jpg"
+      },
+      {
+        "title": "Doraemon: Nobita e A Revolução dos Robôs",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/rjkT5rWJJdqEosVYpJUb87Awaxp.jpg"
+      },
+      {
+        "title": "G.O.R.A.",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/bxHULJqeW1GlPWr7uvRoWQWsDIe.jpg"
+      },
+      {
+        "title": "Center Jenny",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/eigN8r8IsDcSjQgsHhMf2g4j9qS.jpg"
+      },
+      {
+        "title": "De Volta para o Futuro II",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/pbX7hM03cHmpMPbpZ3lYmF2aABK.jpg"
+      },
+      {
+        "title": "Mad Max 2: A Caçada Continua",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/jmI9M04jZnfgAaA1kSiG2HKHUxt.jpg"
+      },
+      {
+        "title": "Você é o Universo",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/yBkXBIu947ptpwzXxolwPnkImCa.jpg"
+      },
+      {
+        "title": "Separados pelas Estrelas",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/pZ9KqPSN4uv8ByEuFKP1vLyWYU4.jpg"
+      },
+      {
+        "title": "Preso na Escuridão",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/nEZWXLEMoimbgyhGX1JgOQJr7On.jpg"
+      },
+      {
+        "title": "Duna",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/uzERcfV2rSHNhW5eViQiO9hNiA7.jpg"
+      },
+      {
+        "title": "O Exterminador do Futuro",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/fo4SSoNT1ASI4JP7dOLrosWNWKa.jpg"
+      },
+      {
+        "title": "Os 12 Macacos",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/VN4I4PphQCg3MkGwnqHGX65WY0.jpg"
+      },
+      {
+        "title": "Macross: A Batalha Final",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/eULFQw8RuqP3927krZ3SBg5v0KA.jpg"
+      },
+      {
+        "title": "V de Vingança",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/rvrFkBKTrVCT1nVRuCaemQFRn0.jpg"
+      },
+      {
+        "title": "A Invenção Diabólica",
+        "year": "1958",
+        "poster": "https://image.tmdb.org/t/p/w500/onvunOBwnO2PXzPni7BgIUyrAbQ.jpg"
+      },
+      {
+        "title": "Videodrome: A Síndrome do Vídeo",
+        "year": "1983",
+        "poster": "https://image.tmdb.org/t/p/w500/bfXBITvihMWvCb9C6W2niq1SY2r.jpg"
+      },
+      {
+        "title": "O Homem Invisível",
+        "year": "1933",
+        "poster": "https://image.tmdb.org/t/p/w500/4tw6k8EXO7fjW7A4WZSISswgCuT.jpg"
+      },
+      {
+        "title": "Shin Gojira",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/aJnVDeqGvMc2mbwH8DJds652eEo.jpg"
+      },
+      {
+        "title": "A Garota que Conquistou o Tempo",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/k2IlZ60vaHBWMWy32L8soaUhrhl.jpg"
+      },
+      {
+        "title": "Frankenstein",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/cXsMxClCcAF1oMwoXZvbKwWoNeS.jpg"
+      },
+      {
+        "title": "tetsuo: the iron man FIRST CUT",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/li89iDBrXIYpqkEUq0i3SImAK8g.jpg"
+      },
+      {
+        "title": "O Incrível Homem Que Encolheu",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/aG3nY1sN5adP7XhiYEaWvhYXFai.jpg"
+      },
+      {
+        "title": "Superman",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/xeZ8oG6W60fEPf9yCjERUXiHRBF.jpg"
+      },
+      {
+        "title": "Dragon Ball Super: Broly",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/tuay76gZt7kOIb806hTzIktsQDT.jpg"
+      },
+      {
+        "title": "O-bi, O-ba: O Fim da Civilização",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/oLYOVNzPveoJYCHfERO2w20RMdq.jpg"
+      },
+      {
+        "title": "Homem-Aranha",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/RbZQL5hXmydecu82UHw9ZGyytB.jpg"
+      },
+      {
+        "title": "É Difícil Ser Um Deus",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/jelBaA0yNBzN9bUvYB8y3ACGa0l.jpg"
+      },
+      {
+        "title": "Kin-Dza-Dza",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/wBEwCZODMBz9oiPzJo3Qt1awyxr.jpg"
+      },
+      {
+        "title": "Tropas Estelares",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/xb6NkoDkbep6lhn8K6YDPitALpr.jpg"
+      },
+      {
+        "title": "E.T.: O Extraterrestre",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/8j5igb0iuV9TYudw9SuMV5GT9K9.jpg"
+      },
+      {
+        "title": "Transformers: O Início",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/9yPuNAZQd5m5iKpQV2MDAfcwW9N.jpg"
+      },
+      {
+        "title": "Melancolia",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/fi0XkF2GWlSYT4i7AlRTJJzKUY9.jpg"
+      },
+      {
+        "title": "Hombre mirando al sudeste",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/yyqsxtP0GeO77kz4FZQOExGtUpz.jpg"
+      },
+      {
+        "title": "Lunar",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/zQtp0WiTYD9fXf2B1SSue1DZ3Ai.jpg"
+      },
+      {
+        "title": "Estranhos Prazeres",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/kWquQ5xH3TXDi5b3BDXWRnRj80K.jpg"
+      },
+      {
+        "title": "Planeta dos Macacos: O Confronto",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/4vLhF6R3lmhTjTVUdK4gI1s5a8v.jpg"
+      },
+      {
+        "title": "A Vida Depois de Yang",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/qoGVl6ru5JU2pPQkgxm2s2L4uZY.jpg"
+      },
+      {
+        "title": "Batman: O Cavaleiro das Trevas, Parte 1",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/sVj31D8aAkF5bZ860Bx9aybYJJh.jpg"
+      },
+      {
+        "title": "Vampiros de Almas",
+        "year": "1956",
+        "poster": "https://image.tmdb.org/t/p/w500/4eaAZ1UiTz3VzOSny7LzjycqvpU.jpg"
+      },
+      {
+        "title": "Eraserhead",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/mxveW3mGVc0DzLdOmtkZsgd7c3B.jpg"
+      },
+      {
+        "title": "O Dia em que a Terra Parou",
+        "year": "1951",
+        "poster": "https://image.tmdb.org/t/p/w500/2d93VMmOCriN7dxXLjr5JpyZr86.jpg"
+      },
+      {
+        "title": "Eletric Dragon 80.000V",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/hHtpbtX5mhBZy7Awv8NhsKd729q.jpg"
+      },
+      {
+        "title": "Contatos Imediatos do Terceiro Grau",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/9fab10esBOe3OwarBN531iHwsjF.jpg"
+      },
+      {
+        "title": "Homem-Aranha: Sem Volta Para Casa",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/lrexJi7P336iIwtogSq2OP7AVGJ.jpg"
+      },
+      {
+        "title": "Delicatessen",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/75qcR7lvj6TFNzYQ4MSXD6dBwpv.jpg"
+      },
+      {
+        "title": "Miracle Mile - O Suspense Definitivo",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/9qRCVO9L3s3CsPnoUO9c3iZm6aB.jpg"
+      },
+      {
+        "title": "O Vingador do Futuro",
+        "year": "1990",
+        "poster": "https://image.tmdb.org/t/p/w500/cCaj2DvRVnzkb3T4rkwyY56UGNR.jpg"
+      },
+      {
+        "title": "Godzilla VS. Destoroyah",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/oilV4OOGCDZvgsd9ouQa7HGUMOH.jpg"
+      },
+      {
+        "title": "Guardiões da Galáxia",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/xaY92XMToaSnBuvCui3LHzNGqZB.jpg"
+      },
+      {
+        "title": "Guerras de Verão",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/awknSVhfwHdghVUOnFsk4Fjlxmn.jpg"
+      },
+      {
+        "title": "Contato",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/h0gZKEAFCjVUhvRf33lHHSxKFWu.jpg"
+      },
+      {
+        "title": "Gamera 3: A Vingança de Iris",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/6tXXrZK4P8qKiXbIP3HUYOfu0dZ.jpg"
+      },
+      {
+        "title": "Distrito 9",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/ngDzpIMeVlwv0B3JNWqNVTRNfcU.jpg"
+      },
+      {
+        "title": "Nível Cinco",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/vRCWsBmFaPUTHRvQ6GiDaJlrmx8.jpg"
+      },
+      {
+        "title": "The Missing",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/zWJhYmWeHEWpvJxDFNkNYl2rPve.jpg"
+      },
+      {
+        "title": "Planeta dos Macacos: A Guerra",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/n336SuXSxpQkrzWJbSAeWFcKWy4.jpg"
+      },
+      {
+        "title": "Batman do Futuro: O Retorno do Coringa",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/wd9fppMrD3KbH8jAMTqCF28QejD.jpg"
+      },
+      {
+        "title": "Gattaca: A Experiência Genética",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/jRYML3ItfUZOR62AIbGJqt5k53A.jpg"
+      },
+      {
+        "title": "Rogue One: Uma História Star Wars",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/74C2YX0NLWnozVMRS56d5CKDdEv.jpg"
+      },
+      {
+        "title": "Metrópolis",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/4XbTJgz5zADYp4fX6DbdhZga39q.jpg"
+      },
+      {
+        "title": "Mad God",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/105stT9GkiENXiYqvWYKoAuHKQL.jpg"
+      },
+      {
+        "title": "Liga da Justiça: Ponto de Ignição",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/vskdMrZjpNO4iOO3DvKG3iEzvVn.jpg"
+      },
+      {
+        "title": "Promare",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/xSdh3vnM3IC6vslhJHgMecM4oa2.jpg"
+      },
+      {
+        "title": "Dead Leaves",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/793WvrgqnX6Xvz7XNAXmKGLVfiC.jpg"
+      },
+      {
+        "title": "PK",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/z2x2Y4tncefsIU7h82gmUM5vnBJ.jpg"
+      },
+      {
+        "title": "Perdido em Marte",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/fG3S4zdgnsaF77tJGK3rA9tHBu4.jpg"
+      },
+      {
+        "title": "Steins;Gate The Movie – Load Region of Déjà Vu",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/maTEWDbqf09wfZYlJDF5XIQJD84.jpg"
+      },
+      {
+        "title": "Furiosa: Uma Saga Mad Max",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/7qOSKoOAPgemYhBwbJgBWcCxPWZ.jpg"
+      },
+      {
+        "title": "Excitation au soleil",
+        "year": "1978",
+        "poster": "https://image.tmdb.org/t/p/w500/ysKUDDAwHGZLbvAYAkAJABSwmFB.jpg"
+      },
+      {
+        "title": "Frankenstein",
+        "year": "1931",
+        "poster": "https://image.tmdb.org/t/p/w500/mu6wHwH0IwCCaEYtpqujuPJYat1.jpg"
+      },
+      {
+        "title": "Jogos Vorazes",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/l6jn53LMu07uPt8A42JWIKi1Beb.jpg"
+      },
+      {
+        "title": "O Quinto Elemento",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/t2fanPUgCGty1tmU9t3jtYEOEMS.jpg"
+      },
+      {
+        "title": "O Predador",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/obTGuGY7GPhZrcG1gJubuFtXFih.jpg"
+      },
+      {
+        "title": "A Guerra dos Mundos: Próximo Século",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/4V44ZesL4VDJT5il6dfG8lQKSdn.jpg"
+      },
+      {
+        "title": "Memória",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/uZLmf0EF1sYS4yUUqRyZsUFjEJg.jpg"
+      },
+      {
+        "title": "Minority Report: A Nova Lei",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/bNOdmraLsJ5DItu1eNLJMyw7a6v.jpg"
+      },
+      {
+        "title": "Ladrão de Sonhos",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/wnHKvvBH1epZ4CvD31dKwV51weJ.jpg"
+      },
+      {
+        "title": "A Sapatona Galáctica",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/zsaF0h5VntiRvNJagSgSvDoYKpK.jpg"
+      },
+      {
+        "title": "O Homem da Terra",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/10Zu585Eopx3tchb2DnLgjRcteh.jpg"
+      },
+      {
+        "title": "No Limite do Amanhã",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/ibubeKZuo4ZI2Zu2Dm2s0gmMvuk.jpg"
+      },
+      {
+        "title": "Eles Vivem",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/eaItFukc7nG2NGz3ZzpTrKSrhgw.jpg"
+      },
+      {
+        "title": "O Médico e o Monstro",
+        "year": "1932",
+        "poster": "https://image.tmdb.org/t/p/w500/fRKR4HlpPtNBBWbCwJo6rMxKSyy.jpg"
+      },
+      {
+        "title": "Re-Animator: A Hora dos Mortos-Vivos",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/1ZHGvj6OgnNExAxMUx2GW5eiicY.jpg"
+      },
+      {
+        "title": "Galaxy Express 999",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/xe487ijdTKSw4akp9mYjgtHNHZQ.jpg"
+      },
+      {
+        "title": "The Hostage",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/4FYiEot1ERkgUzgCEPueQWnwy7g.jpg"
+      },
+      {
+        "title": "Palm Springs",
+        "year": "2020",
+        "poster": "https://image.tmdb.org/t/p/w500/gnAfqiV7yO3Jq9IntTmwkcaICqc.jpg"
+      },
+      {
+        "title": "As Tartarugas Ninja: Caos Mutante",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/gwrFZLMPox82lsPT8MHpAYmFjw9.jpg"
+      },
+      {
+        "title": "サマータイムマシン・ブルース",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/n6vlk4Rl2k9HRBxUhKg5edv9cJT.jpg"
+      },
+      {
+        "title": "Homem de Ferro",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/6yObhDNEsAmFyMVfWNL64wQGyzj.jpg"
+      },
+      {
+        "title": "Apenas um Show: O Filme",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/7VY8E8COGt8SMN0BMjhuq5pr6eK.jpg"
+      },
+      {
+        "title": "Invasión",
+        "year": "1969",
+        "poster": "https://image.tmdb.org/t/p/w500/U4rFsDAJyt0MM9at7Tew3LURTl.jpg"
+      },
+      {
+        "title": "A Substância",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/pGn0yJFe1AoyWM33tWcPQ2TfMvL.jpg"
+      },
+      {
+        "title": "Megamente",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/iNGifck9VGGVIlpdK3XsfD6Rptk.jpg"
+      },
+      {
+        "title": "Os Mestres do Tempo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/2YyyLLCuVziozFzQhPLBmTilqFW.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Capitão América: O Soldado Invernal",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/9sTDXtIIfHza1rAbmHU2djyzEXA.jpg"
+      },
+      {
+        "title": "Predador: Assassino de Assassinos",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/j9mnvnCP8N9YjpoGiiLqwSTnFs1.jpg"
+      },
+      {
+        "title": "River",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/3SsL1Alebg6NeSxcJ6J2TqRuWO2.jpg"
+      },
+      {
+        "title": "Atlantis: O Reino Perdido",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/w1vzOcucm5O2SrIQZDmhb0RCioh.jpg"
+      },
+      {
+        "title": "Repo Man: A Onda Punk",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/bZ8kG84YQ9ucNDk7IHnFgwmaCxA.jpg"
+      },
+      {
+        "title": "Esposas em Conflito",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/5z1ogJJmQkCoU62VJmut4nnc2qs.jpg"
+      },
+      {
+        "title": "Hot Wheels AcceleRacers: Ignição",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/9l8t1CxLM5Wol341y6lVq6asaRa.jpg"
+      },
+      {
+        "title": "지구를 지켜라!",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/iO2asIPkgzpLNnsKG9qgkfoGmrX.jpg"
+      },
+      {
+        "title": "Heróis Fora de Órbita",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/qkMzVhtxgM6b7wSwFncZufRSPmh.jpg"
+      },
+      {
+        "title": "Coherence",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/d1dGzDYQbLU9BoUb9OAmAgUX59Y.jpg"
+      },
+      {
+        "title": "Jornada nas Estrelas IV: A Volta para Casa",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/1QfHoXsGaMc1OgGcBoPNxcJ9WeI.jpg"
+      },
+      {
+        "title": "Desculpe Te Incomodar",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/765hS3KlZDDUiRmIbcH4Jp0V0s4.jpg"
+      },
+      {
+        "title": "Extermínio",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/pVTtJSvJoOofD1YoyPSGwWEWmJd.jpg"
+      },
+      {
+        "title": "Uma História de Amor e Fúria",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/aqvJxBR3Tpj9semsPYgCZ2tE3UZ.jpg"
+      },
+      {
+        "title": "Kamen Rider ZO",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/lzDXr6naEa4Pcd23B9fZP8zmnMc.jpg"
+      },
+      {
+        "title": "O Segredo do Abismo",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/iUmlHbK05F38QNnVDTDXa5qXFgF.jpg"
+      },
+      {
+        "title": "Ultraman: A Ascensão",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/aQ2MhjWQtVOTDbqKvIkQp0xXjtv.jpg"
+      },
+      {
+        "title": "Sunshine: Alerta Solar",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/sbVPlGjEMlRzRWDfOsT1og4QhHj.jpg"
+      },
+      {
+        "title": "Patlabor: O Filme",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/r7y7XdO9KCLEfsS8AZGOSKKJEbk.jpg"
+      },
+      {
+        "title": "Last and First Men",
+        "year": "2020",
+        "poster": "https://image.tmdb.org/t/p/w500/7B9t8lTFCJQ6GVvSbhrbrA7nsVu.jpg"
+      },
+      {
+        "title": "Animatrix",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/oPHRLYim486RsjbedS5mTFM5ni6.jpg"
+      },
+      {
+        "title": "O Último Azul",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/6Z8M2wJUV2Soc84suEvL2H7lW3l.jpg"
+      },
+      {
+        "title": "Superman: O Filme",
+        "year": "1978",
+        "poster": "https://image.tmdb.org/t/p/w500/sm6BLvYCSe4pUpW2UrCKSsS1o0B.jpg"
+      },
+      {
+        "title": "A Mulher na Lua",
+        "year": "1929",
+        "poster": "https://image.tmdb.org/t/p/w500/4pJkHzEcD9rt0KctlJE9LepVR34.jpg"
+      },
+      {
+        "title": "Okja",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/qUQ7niG9S0cGr1DlMZqlgVBObWG.jpg"
+      },
+      {
+        "title": "Evangelion: 1.0 Você (Não) Está Sozinho",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/i6uXLthvKDQYuqa9qzBJ3RfzLlv.jpg"
+      },
+      {
+        "title": "Evangelion: 3.0 Você (Não) Pode Refazer",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/uCrIBEtb7EwVJZ7cygO2ZxdWmhW.jpg"
+      },
+      {
+        "title": "Gamera 2: Ataque da Legião",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/35VLXxTYUrkPDavGIPMlQs0n7sp.jpg"
+      },
+      {
+        "title": "O Universo no Olhar",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/liySWQIA4AcpwAsEeTlS368IkF9.jpg"
+      },
+      {
+        "title": "Os Vingadores: The Avengers",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/u49fzmIJHkb1H4oGFTXtBGgaUS1.jpg"
+      },
+      {
+        "title": "Az én XX. századom",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/3peb9Ylr1rjxsChVwBQXWK5TnC0.jpg"
+      },
+      {
+        "title": "Thor: Ragnarok",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/2K45Fp6koAVoeeYS6aMb9BeNt4F.jpg"
+      },
+      {
+        "title": "Viagem ao Fim do Universo",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/5yLQhBLerivWsqtYsqqRI0x83Sf.jpg"
+      },
+      {
+        "title": "A Estrela Sussurrante",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/qyCXwMG80xQKtY4n1Sc8D6Y5P1D.jpg"
+      },
+      {
+        "title": "Avatar",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/iNMP8uzV2Ing6ZCw0IICgEFVNfC.jpg"
+      },
+      {
+        "title": "Cidade das Sombras",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/aAXqH3sJRzlAxQzPqhAwpgZTQw1.jpg"
+      },
+      {
+        "title": "Avatar: Fogo e Cinzas",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/m0Wx79hH2mfIp8G4eKFtb4awolB.jpg"
+      },
+      {
+        "title": "Space Is the Place",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/5yPhG0iBQpBObowErVrZLPZzTq.jpg"
+      },
+      {
+        "title": "Alphaville",
+        "year": "1965",
+        "poster": "https://image.tmdb.org/t/p/w500/g7FWGhmOargZyEFjWARkoskveOF.jpg"
+      },
+      {
+        "title": "Royal Space Force: The Wings of Honneamise",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/9JxnXWzU8WNWKoilSeldBTUEosp.jpg"
+      },
+      {
+        "title": "A Antena",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/hHe7E6zHtSnqa0iI7EO54jrHySE.jpg"
+      },
+      {
+        "title": "Transformers: O Despertar das Feras",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/9PSKoY98olv7Sru1PWnLpFDqat9.jpg"
+      },
+      {
+        "title": "MIB - Homens de Preto",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/dZpfLrGiPXaaKGlVw4loCs2QBfx.jpg"
+      },
+      {
+        "title": "Sr. Ninguém",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/rHi1zLK0bnbrlB42B5xqD1oM2C7.jpg"
+      },
+      {
+        "title": "Godzilla, Mothra e King Ghidorah: Ataque Total de Monstros Gigantes (GMK)",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/vMZsdO6ZLBUHLqTOH8YvjwOBqUv.jpg"
+      },
+      {
+        "title": "Clonaram Tyrone!",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/uLYdX64xJVZEFRQJZQU4A2ueMyB.jpg"
+      },
+      {
+        "title": "Viagens Alucinantes",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/8CrpQ3G7lthwOh8lkDVfnSkR0VL.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Neon Genesis Evangelion: O Fim do Evangelho",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/984vnfPmcerjkz8aEbqulbc2X32.jpg"
+      },
+      {
+        "title": "Guerra nas Estrelas: O Império Contra-Ataca",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/dLGT8b4Ut10z44uYLaip4QiwKta.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      }
+    ]
+  }
+}
