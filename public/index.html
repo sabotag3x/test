@@ -271,6 +271,48 @@ input{
   margin-top:60px;
 }
 
+  /* ================= vs ================= */
+
+  .versus-picker{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:30px;
+  margin-top:30px;
+  flex-wrap:wrap;
+}
+
+.versus-picker select{
+  appearance:none;
+  padding:14px 20px;
+  border-radius:30px;
+  border:none;
+  background:#1a1a1a;
+  color:#fff;
+  font-size:16px;
+  min-width:180px;
+  text-align:center;
+  cursor:pointer;
+}
+
+.versus-picker button{
+  padding:16px 42px;
+  border-radius:40px;
+  background:#ffbf2f;
+  border:none;
+  font-weight:bold;
+  font-size:16px;
+  cursor:pointer;
+}
+
+@media(max-width:700px){
+  .versus-picker{
+    flex-direction:column;
+    gap:18px;
+  }
+}
+
+
 
 
 /* ================= MOBILE ================= */
@@ -326,25 +368,32 @@ input{
   <button onclick="startList('criterion')">Criterion</button>
 </div>
 
-  <div class="versus">
-  <h2>Duelo de Listas</h2>
+<h2 style="margin-top:60px">Duelo de Listas</h2>
 
+<div class="versus-picker">
   <select id="listA">
-    <option value="">Lista A</option>
-    <option value="disney">Disney</option>
-    <option value="ghibli">Ghibli</option>
+    <option value="disney" selected>Disney</option>
+    <option value="ghibli">Studio Ghibli</option>
     <option value="a24">A24</option>
-  </select>
-
-  <select id="listB">
-    <option value="">Lista B</option>
-    <option value="ghibli">Ghibli</option>
-    <option value="disney">Disney</option>
-    <option value="a24">A24</option>
+    <option value="criterion">Criterion</option>
+    <option value="brasileiros">Brasileiros</option>
+    <option value="estrangeiros">Estrangeiros</option>
+    <option value="terror">Terror</option>
   </select>
 
   <button onclick="startVersus()">Iniciar Duelo</button>
+
+  <select id="listB">
+    <option value="ghibli" selected>Studio Ghibli</option>
+    <option value="disney">Disney</option>
+    <option value="a24">A24</option>
+    <option value="criterion">Criterion</option>
+    <option value="brasileiros">Brasileiros</option>
+    <option value="estrangeiros">Estrangeiros</option>
+    <option value="terror">Terror</option>
+  </select>
 </div>
+
 
 
 </div>
