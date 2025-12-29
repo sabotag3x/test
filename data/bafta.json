@@ -1,0 +1,373 @@
+{
+  "bafta": {
+    "name": "BAFTA",
+    "updated_at": "2025-12-29",
+    "films": [
+      {
+        "title": "Conclave",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/wWn78TMMw8yOdr5sG0Yl9v4saoA.jpg"
+      },
+      {
+        "title": "Oppenheimer",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/1OsQJEoSXBjduuCvDOlRhoEUaHu.jpg"
+      },
+      {
+        "title": "Ataque dos Cães",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/pTieUAFyDbC22uq0p7uMT1wBYax.jpg"
+      },
+      {
+        "title": "Nomadland",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/pLwarSuyUjw6vF0U6JhlHzAa1Gp.jpg"
+      },
+      {
+        "title": "1917",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/m6VVgmwNdOWvLo8nlheLPQU5wr7.jpg"
+      },
+      {
+        "title": "Roma",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/veWGVw33lnifG10fpkz3QmimVaI.jpg"
+      },
+      {
+        "title": "Três Anúncios Para Um Crime",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/vkmSz7x18uaNqzWVp2UeYOgsSSA.jpg"
+      },
+      {
+        "title": "La La Land: Cantando Estações",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/AvMietG6xuobpSSdmVnKuTjv4bL.jpg"
+      },
+      {
+        "title": "O Regresso",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/x1jViuXsm5ZmrR6uFmxU6AVdXzs.jpg"
+      },
+      {
+        "title": "Boyhood: Da Infância à Juventude",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/rr1rlDZXOeLqtYMEC6xEunxqsD3.jpg"
+      },
+      {
+        "title": "12 Anos de Escravidão",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/o5t8fqcNDyfojYwwlECZEgyD96T.jpg"
+      },
+      {
+        "title": "Argo",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/dZqmn3vr80UeSSj4QbVEUI8D7yb.jpg"
+      },
+      {
+        "title": "O Artista",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/sVBZ45hWFuzZtQc57TUf323R4VF.jpg"
+      },
+      {
+        "title": "Guerra ao Terror",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/dIhJVr5kFdEC1spmNs3w6uKESKH.jpg"
+      },
+      {
+        "title": "Quem Quer Ser um Milionário?",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/timJSy64zR0BM2xhkXwIyvDG6MM.jpg"
+      },
+      {
+        "title": "Desejo e Reparação",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/sFIHg2JAyOe6ua0WM2IvcVplrZj.jpg"
+      },
+      {
+        "title": "A Rainha",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/kd9rMMLWZRIT00Yiphyjbjm32LH.jpg"
+      },
+      {
+        "title": "O Segredo de Brokeback Mountain",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/qZ7fvWbPABjdU8JciIS9f9jCRCb.jpg"
+      },
+      {
+        "title": "O Aviador",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/h5nnmaOarWIC4RRqf77VkiOdYt9.jpg"
+      },
+      {
+        "title": "O Senhor dos Anéis: O Retorno do Rei",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/rU4oIKv5I4C59DpcXKmT7kNwGI0.jpg"
+      },
+      {
+        "title": "O Pianista",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/g0s9Yb5tfka73UKxFAPxO9lPHBW.jpg"
+      },
+      {
+        "title": "O Senhor dos Anéis: A Sociedade do Anel",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/tlvsNCwWEIgwAM23aNzTmMIcPEZ.jpg"
+      },
+      {
+        "title": "Gladiador",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/4DUClyGA6OqjXv6yC0Imf6THGfp.jpg"
+      },
+      {
+        "title": "Beleza Americana",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/9PJKsH7Btz2xjYIvLLtJ7qcJlL3.jpg"
+      },
+      {
+        "title": "Shakespeare Apaixonado",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/3wC7QCcjvT9vRMlWyXoJCbqIuXb.jpg"
+      },
+      {
+        "title": "Ou Tudo, Ou Nada",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/5bgLGnADFEv0FmNSENFVV6MUW6d.jpg"
+      },
+      {
+        "title": "O Paciente Inglês",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/yBnEL8I7MXUvOvdcZV1MJJQDoxU.jpg"
+      },
+      {
+        "title": "Razão e Sensibilidade",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/avfV8Se2eTfmFAZf0aAPOdq2WcV.jpg"
+      },
+      {
+        "title": "Quatro Casamentos e um Funeral",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/wMiCfPLgpVoyGQ5veOYGDhduJ22.jpg"
+      },
+      {
+        "title": "Retorno a Howard's End",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/1009nhfj28VhhQnVadtjkOacduX.jpg"
+      },
+      {
+        "title": "The Commitments - Loucos Pela Fama",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/zCoesCL6qBcACGRIXoRubWouM5I.jpg"
+      },
+      {
+        "title": "Os Bons Companheiros",
+        "year": "1990",
+        "poster": "https://image.tmdb.org/t/p/w500/sTReXuaND1AjkXUfjl1gqRcuGfI.jpg"
+      },
+      {
+        "title": "Sociedade dos Poetas Mortos",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/gMmbJEqEzupp4BYTcRkNsPDPvQE.jpg"
+      },
+      {
+        "title": "O Último Imperador",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/K1azzBrv3CnvPDWd1p5InRh63Q.jpg"
+      },
+      {
+        "title": "Jean de Florette",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/gZUz7fWn5MBRMLlBpKbNhQSPSd2.jpg"
+      },
+      {
+        "title": "Uma Janela Para o Amor",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/mB0GfsOr8e8PN0TKsmGHqHFOqZe.jpg"
+      },
+      {
+        "title": "A Rosa Púrpura do Cairo",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/w9lczCYLLy2UMvB6z19bRamX0Ke.jpg"
+      },
+      {
+        "title": "Os Gritos do Silêncio",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/8PgmK0doOtBQbDIXpOTjGUvjxU6.jpg"
+      },
+      {
+        "title": "O Despertar de Rita",
+        "year": "1983",
+        "poster": "https://image.tmdb.org/t/p/w500/xwxgiRzw2zxzWNIYp98faJ0rUy5.jpg"
+      },
+      {
+        "title": "Gandhi",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/uFNrAcnRbaDgi1D9VM0NLMLAwgX.jpg"
+      },
+      {
+        "title": "Carruagens de Fogo",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/ceKjMhvsa98MbdLYoHsO3wH3uFh.jpg"
+      },
+      {
+        "title": "O Homem Elefante",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/tWzF8k2pkdKIVrFDMnN6lwJmLQ.jpg"
+      },
+      {
+        "title": "Manhattan",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/k4eT3EvfxW1L9Wmt04UqJqCvCR6.jpg"
+      },
+      {
+        "title": "Júlia",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/dwgMKGRo8z3LGiAH5U0d9Qvroil.jpg"
+      },
+      {
+        "title": "Noivo Neurótico, Noiva Nervosa",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/u6N75JTpwdBJeQwCkNz9E05Yuj0.jpg"
+      },
+      {
+        "title": "Lacombe Lucien",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/6UEsBovuiDfJFloCnk0mmHL9f6c.jpg"
+      },
+      {
+        "title": "Bone",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/ik2QO1CLffGOO8khqTfbHMKlTIa.jpg"
+      },
+      {
+        "title": "Cabaret",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/gReWjFxfJzHtzufSld5GehFiUo2.jpg"
+      },
+      {
+        "title": "Domingo Maldito",
+        "year": "1971",
+        "poster": "https://image.tmdb.org/t/p/w500/7q1h3M1vDlsHDKRhoPOzKjmFCVq.jpg"
+      },
+      {
+        "title": "Butch Cassidy",
+        "year": "1969",
+        "poster": "https://image.tmdb.org/t/p/w500/lwiskfO5CJs52Bo3RRQqAJYRqlQ.jpg"
+      },
+      {
+        "title": "Perdidos na Noite",
+        "year": "1969",
+        "poster": "https://image.tmdb.org/t/p/w500/95F9mJEXJNcsrlVNKQ9BwN7cXpj.jpg"
+      },
+      {
+        "title": "A Primeira Noite de um Homem",
+        "year": "1967",
+        "poster": "https://image.tmdb.org/t/p/w500/fshlyfhsT2VwjqaReQ3gsbWMOfJ.jpg"
+      },
+      {
+        "title": "O Homem Que Não Vendeu Sua Alma",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/nlS8n2miCLdG0LSrxdZ9vyE68ea.jpg"
+      },
+      {
+        "title": "Minha Bela Dama",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/lePZjXwcUHzQt5OA1VgUCE5ygRl.jpg"
+      },
+      {
+        "title": "Dr. Fantástico",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/lFcwVewzDwmJjIIjNIWwST4ctaC.jpg"
+      },
+      {
+        "title": "As Aventuras de Tom Jones",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/lr96HlpD2lGCNwHiddCu0WRKJZh.jpg"
+      },
+      {
+        "title": "Lawrence da Arábia",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/r0xZR5ENEc8Pp2ULhkP4lgUWk8Y.jpg"
+      },
+      {
+        "title": "Desafio à Corrupção",
+        "year": "1961",
+        "poster": "https://image.tmdb.org/t/p/w500/f5MZDPjzyuDfVQInT2CEtFLZfmO.jpg"
+      },
+      {
+        "title": "Se Meu Apartamento Falasse",
+        "year": "1960",
+        "poster": "https://image.tmdb.org/t/p/w500/omZs5505ceaHXhh4FL2TpmpVC94.jpg"
+      },
+      {
+        "title": "A Balada do Soldado",
+        "year": "1959",
+        "poster": "https://image.tmdb.org/t/p/w500/oJG87hL5wQp68DhPAr8oWRB1eM0.jpg"
+      },
+      {
+        "title": "Ben-Hur",
+        "year": "1959",
+        "poster": "https://image.tmdb.org/t/p/w500/m4WQ1dBIrEIHZNCoAjdpxwSKWyH.jpg"
+      },
+      {
+        "title": "Almas em Leilão",
+        "year": "1958",
+        "poster": "https://image.tmdb.org/t/p/w500/95zQUW5Y3wLbf6uTrNIIpsxmQMr.jpg"
+      },
+      {
+        "title": "A Ponte do Rio Kwai",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/z4NWsLsLogVh2XfLXbPaaGrX8Zz.jpg"
+      },
+      {
+        "title": "Gervaise, A Flor do Lodo",
+        "year": "1956",
+        "poster": "https://image.tmdb.org/t/p/w500/lyE99xFGW1bHGvDRYLrpTO5oFej.jpg"
+      },
+      {
+        "title": "Ricardo III",
+        "year": "1955",
+        "poster": "https://image.tmdb.org/t/p/w500/3zp2Kg5bvlFkKmWiQLmuWQAIEgG.jpg"
+      },
+      {
+        "title": "O Salário do Medo",
+        "year": "1953",
+        "poster": "https://image.tmdb.org/t/p/w500/m1CwNYtoeAXmfmRXjYSoGbl6rVA.jpg"
+      },
+      {
+        "title": "Sem Barreira no Céu",
+        "year": "1952",
+        "poster": "https://image.tmdb.org/t/p/w500/mRnvfT0GFUwQS2rK8pCrOeWOuzQ.jpg"
+      },
+      {
+        "title": "Brinquedo Proibido",
+        "year": "1952",
+        "poster": "https://image.tmdb.org/t/p/w500/kOq7cM9gxARxvNPQ9yb8G4yzcV.jpg"
+      },
+      {
+        "title": "A Malvada",
+        "year": "1950",
+        "poster": "https://image.tmdb.org/t/p/w500/rkVfbw7S3ijwGNBU0v0odznfKk1.jpg"
+      },
+      {
+        "title": "Conflitos de Amor",
+        "year": "1950",
+        "poster": "https://image.tmdb.org/t/p/w500/2SXZ3nXou8p9bEHmlWy5wzdw8bT.jpg"
+      },
+      {
+        "title": "Ladrões de Bicicleta",
+        "year": "1948",
+        "poster": "https://image.tmdb.org/t/p/w500/8hpVv2G8cXXEBp67dkcLNqrjNUs.jpg"
+      },
+      {
+        "title": "Hamlet",
+        "year": "1948",
+        "poster": "https://image.tmdb.org/t/p/w500/woO9SgU2vTRMZeG0YqOLeoIqlzC.jpg"
+      },
+      {
+        "title": "Os Melhores Anos de Nossas Vidas",
+        "year": "1946",
+        "poster": "https://image.tmdb.org/t/p/w500/lgVHQE0fUHTd8Tgo2uIDQ2Lk0S3.jpg"
+      }
+    ]
+  }
+}
