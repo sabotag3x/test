@@ -54,7 +54,7 @@ async function tmdbEnrich(films, lang = "pt-BR") {
   return enriched;
 }
 
-/* ================= USER (SCRAPING CONTINUA) ================= */
+/* ================= USER (LETTERBOXD) ================= */
 
 app.get("/api/user/:user", async (req, res) => {
   const user = req.params.user.toLowerCase();
@@ -75,6 +75,7 @@ app.get("/api/user/:user", async (req, res) => {
     for (const raw of items) {
       const m = raw.match(/="(.+?)"/)[1];
       const y = m.match(/\((\d{4})\)/);
+
       films.push({
         title: m.replace(/\s*\(\d{4}\)/, "").trim(),
         year: y ? parseInt(y[1]) : null
@@ -89,7 +90,7 @@ app.get("/api/user/:user", async (req, res) => {
   res.json(enriched);
 });
 
-/* ================= LISTAS LOCAIS (1 ARQUIVO POR LISTA) ================= */
+/* ================= LISTAS LOCAIS (FILMES) ================= */
 
 app.get("/api/list/:key", (req, res) => {
   try {
@@ -101,7 +102,7 @@ app.get("/api/list/:key", (req, res) => {
   }
 });
 
-/* ================= SCRAPER MANUAL (ADMIN) ================= */
+/* ================= SCRAPER MANUAL (ADMIN FILMES) ================= */
 
 app.get("/api/list", async (req, res) => {
   const listUrl = req.query.url;
@@ -134,18 +135,12 @@ app.get("/api/list", async (req, res) => {
 
     const enriched = await tmdbEnrich(films);
     res.json(enriched);
-
   } catch {
     res.status(500).json([]);
   }
 });
 
-
-/* ================= START ================= */
-
-app.listen(PORT, "0.0.0.0", () => {
-  console.log("FilmDuel rodando na porta", PORT);
-});
+/* ================= MUSIC API ================= */
 
 app.get("/api/music/artist", async (req, res) => {
   const name = req.query.name;
@@ -183,27 +178,26 @@ app.get("/api/music/artist-with-album", async (req, res) => {
   if (!name) return res.json(null);
 
   try {
-    // 1) buscar artista
     const artistRes = await fetch(
       `https://musicbrainz.org/ws/2/artist?query=${encodeURIComponent(name)}&fmt=json&limit=1`,
       { headers: { "User-Agent": "MusicDuel/1.0" } }
     );
+
     const artistJson = await artistRes.json();
     const artist = artistJson.artists?.[0];
     if (!artist) return res.json(null);
 
-    // 2) buscar 1 álbum oficial
     const relRes = await fetch(
       `https://musicbrainz.org/ws/2/release-group?artist=${artist.id}&type=album&limit=1&fmt=json`,
       { headers: { "User-Agent": "MusicDuel/1.0" } }
     );
+
     const relJson = await relRes.json();
     const album = relJson["release-groups"]?.[0];
 
-    let cover = null;
-    if (album) {
-      cover = `https://coverartarchive.org/release-group/${album.id}/front-250`;
-    }
+    const cover = album
+      ? `https://coverartarchive.org/release-group/${album.id}/front-250`
+      : null;
 
     res.json({
       name: artist.name,
@@ -223,20 +217,19 @@ app.get("/api/music/artist-with-album", async (req, res) => {
   }
 });
 
-const fs = require("fs");
+/* ================= MUSIC LISTAS LOCAIS ================= */
 
 app.get("/api/music/list/:key", (req, res) => {
-  const key = req.params.key;
-
   try {
-    const file = fs.readFileSync(
-      path.join(__dirname, "data/music", `${key}.json`),
-      "utf8"
-    );
-    res.json(JSON.parse(file));
+    const file = path.join(__dirname, "data/music", `${req.params.key}.json`);
+    res.json(JSON.parse(fs.readFileSync(file, "utf8")));
   } catch {
     res.status(404).json({ error: "Lista não encontrada" });
   }
 });
 
+/* ================= START ================= */
 
+app.listen(PORT, "0.0.0.0", () => {
+  console.log("FilmDuel rodando na porta", PORT);
+});
