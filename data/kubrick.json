@@ -1,0 +1,56 @@
+{
+  "films": [
+    {
+      "title": "Barry Lyndon",
+      "year": "1975"
+    },
+    {
+      "title": "Eyes Wide Shut",
+      "year": "1999"
+    },
+    {
+      "title": "2001: A Space Odyssey",
+      "year": "1968"
+    },
+    {
+      "title": "The Shining",
+      "year": "1980"
+    },
+    {
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+      "year": "1964"
+    },
+    {
+      "title": "Paths of Glory",
+      "year": "1957"
+    },
+    {
+      "title": "A Clockwork Orange",
+      "year": "1971"
+    },
+    {
+      "title": "The Killing",
+      "year": "1956"
+    },
+    {
+      "title": "Full Metal Jacket",
+      "year": "1987"
+    },
+    {
+      "title": "Spartacus",
+      "year": "1960"
+    },
+    {
+      "title": "Killer&#039;s Kiss",
+      "year": "1955"
+    },
+    {
+      "title": "Lolita",
+      "year": "1962"
+    },
+    {
+      "title": "Fear and Desire",
+      "year": "1952"
+    }
+  ]
+}
