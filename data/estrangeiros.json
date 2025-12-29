@@ -1,0 +1,1103 @@
+{
+  "estrangeiros": {
+    "name": "Estrangeiros",
+    "updated_at": "2025-12-29",
+    "films": [
+      {
+        "title": "Harakiri",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/o6oORLNmEHiwqXjgGEGDoN720Bk.jpg"
+      },
+      {
+        "title": "Рассказ о фильме «Иди и смотри»",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/3kd322ZpoZdKqrij6CPQtyGaryG.jpg"
+      },
+      {
+        "title": "Os Sete Samurais",
+        "year": "1954",
+        "poster": "https://image.tmdb.org/t/p/w500/telXEMxGtJvffm5JDsx1rQzwWlf.jpg"
+      },
+      {
+        "title": "Céu e Inferno",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/iRvFiy9JpNMQp9PUG2qvN0jfcdG.jpg"
+      },
+      {
+        "title": "Guerra e Humanidade I: Não Há Amor Maior",
+        "year": "1959",
+        "poster": "https://image.tmdb.org/t/p/w500/jNKNJvk7p4TeahZA6H82ibsEZtZ.jpg"
+      },
+      {
+        "title": "Cidade de Deus",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/gfnXixcGC060QcG6JPxN6AMdVsq.jpg"
+      },
+      {
+        "title": "Parasita",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/igw938inb6Fy0YVcwIyxQ7Lu5FO.jpg"
+      },
+      {
+        "title": "Viver",
+        "year": "1952",
+        "poster": "https://image.tmdb.org/t/p/w500/usuyHPG1rKzgANnMufwJRqxQu0Q.jpg"
+      },
+      {
+        "title": "O Ódio",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/75WjFRiElQaEGRqNKJdTSB47rMR.jpg"
+      },
+      {
+        "title": "Três Homens em Conflito",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/16z08yn82sTmdSS7nsGvRNDIVnz.jpg"
+      },
+      {
+        "title": "Um Dia Quente de Verão",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/pTA6qhQiutlMED6vLlLaYHphpWa.jpg"
+      },
+      {
+        "title": "A Um Passo da Liberdade",
+        "year": "1960",
+        "poster": "https://image.tmdb.org/t/p/w500/aPbc8vnGvaiFpnIbJdbWNH8ttpF.jpg"
+      },
+      {
+        "title": "Cinema Paradiso",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/kkmwHNAiCea2QGX6kgPmdDKaWyp.jpg"
+      },
+      {
+        "title": "Sonata de Outono",
+        "year": "1978",
+        "poster": "https://image.tmdb.org/t/p/w500/x7QwdCyeLiD7ljIjqtBy6g5koyP.jpg"
+      },
+      {
+        "title": "Guerra e Humanidade II: Estrada Para a Eternidade",
+        "year": "1959",
+        "poster": "https://image.tmdb.org/t/p/w500/aUwL04WLlXTj9ykMKIx1gcyntJf.jpg"
+      },
+      {
+        "title": "A Mulher da Areia",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/rCfT8KDNZrkeFOa6DSIF1NrbnD1.jpg"
+      },
+      {
+        "title": "Quando Voam as Cegonhas",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/ahoP2N0hQLSMAZ0cogs9yjucsMa.jpg"
+      },
+      {
+        "title": "A Batalha de Argel",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/egAZJTyIBDWeI9xlmx4sZwvZ2I.jpg"
+      },
+      {
+        "title": "Andrei Rublev",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/i1PVtxXWCzdPnAFOWZthYCYEeuA.jpg"
+      },
+      {
+        "title": "Incêndios",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/uCS7IEfBLoBBLpOdCkfpVA7xhed.jpg"
+      },
+      {
+        "title": "Era Uma Vez em Tóquio",
+        "year": "1953",
+        "poster": "https://image.tmdb.org/t/p/w500/4HCbmramVjhtwvPzoRGXiPhu9Zk.jpg"
+      },
+      {
+        "title": "Eu Sou Cuba",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/fVT4zXvkeVW9P2Fh63nQ933hcYF.jpg"
+      },
+      {
+        "title": "O Martírio de Joana D'Arc",
+        "year": "1928",
+        "poster": "https://image.tmdb.org/t/p/w500/apW5bhsxn9fai3ZMpC4l03lhhdo.jpg"
+      },
+      {
+        "title": "Fanny & Alexander",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/u4q6wg1J2ggIMaVQwdbFQSgv1WF.jpg"
+      },
+      {
+        "title": "Mishima: Uma Vida em Quatro Tempos",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/ehfMw79gwPwLlWVUF7xwaclN9VF.jpg"
+      },
+      {
+        "title": "Retrato de uma Jovem em Chamas",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/c3OkDxs7PQuLB12qiwZUDg7ZMO6.jpg"
+      },
+      {
+        "title": "Intendente Sansho",
+        "year": "1954",
+        "poster": "https://image.tmdb.org/t/p/w500/yzoLZ3lXCp2UAwZJ3Cr58sbyb6K.jpg"
+      },
+      {
+        "title": "Memórias de um Assassino",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/hT5TIl0YjjJQNGhPM84k2jzL7Jv.jpg"
+      },
+      {
+        "title": "Close-Up",
+        "year": "1990",
+        "poster": "https://image.tmdb.org/t/p/w500/bqdgN0SE5qbRXFPoaOPRj0yNv9X.jpg"
+      },
+      {
+        "title": "Noites de Cabíria",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/cawvlpcb45Pk7Z76ofgnRzzwX0B.jpg"
+      },
+      {
+        "title": "Ninguém Sabe Tudo",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/w7xc5JJlCSZb0lDFYW0fD6aQtA2.jpg"
+      },
+      {
+        "title": "O Barba Ruiva",
+        "year": "1965",
+        "poster": "https://image.tmdb.org/t/p/w500/tOosAwCK02jbzYEZVVa7ogVdGHP.jpg"
+      },
+      {
+        "title": "A Criada",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/q6ngYthHXCvA2ZubO4FHTFNRrmc.jpg"
+      },
+      {
+        "title": "Quando Duas Mulheres Pecam",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/pMlIFOHnNDa3X0kSpjASn75KAYd.jpg"
+      },
+      {
+        "title": "A Eternidade e Um Dia",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/9y45Ipt5FSAzuIUHg6kLYkQcyWl.jpg"
+      },
+      {
+        "title": "Era uma Vez no Oeste",
+        "year": "1968",
+        "poster": "https://image.tmdb.org/t/p/w500/sBcaRQEZInpiQNSKKW5wjcEtXUS.jpg"
+      },
+      {
+        "title": "Exposição de Amor",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/8dyheRAHPzEgA0a8Ho2jRhlzg2I.jpg"
+      },
+      {
+        "title": "@ in the mood for love",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/c6Xh8CqkKbaVRsmYfJGGiZXSjtn.jpg"
+      },
+      {
+        "title": "Cenas de um Casamento",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/4YcSgho63OKNL8xZ1L1yY6ywgXG.jpg"
+      },
+      {
+        "title": "O Tango de Satã",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/tETTt4yKY4NQOveWTSIoNV34AXK.jpg"
+      },
+      {
+        "title": "Adeus, Minha Concubina",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/gsCvaK3jYniSCBJKxKu8Qwr3jf2.jpg"
+      },
+      {
+        "title": "Um Elefante Sentado Quieto",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/k7HlgFqbxe7iPmx5FXIeJP3pij.jpg"
+      },
+      {
+        "title": "Oldboy",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/vHHxEpNwnHNJTPFxaSfSF0b2kBH.jpg"
+      },
+      {
+        "title": "Separation of the Critic - A Trip with Raya Martin",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/zJD1JWAytI6oGOA1il67OTu2NWG.jpg"
+      },
+      {
+        "title": "O Mundo de Apu",
+        "year": "1959",
+        "poster": "https://image.tmdb.org/t/p/w500/a4QKbeaxpkV31Ytzw3tH3UJ7Jmw.jpg"
+      },
+      {
+        "title": "Τοπίο στην ομίχλη",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/k4I9q9XrKmOaO95qD1yBxZpEuL0.jpg"
+      },
+      {
+        "title": "O Exército das Sombras",
+        "year": "1969",
+        "poster": "https://image.tmdb.org/t/p/w500/vUjGmSl1r55NJpeYlfWh9Sjxshf.jpg"
+      },
+      {
+        "title": "A Palavra",
+        "year": "1955",
+        "poster": "https://image.tmdb.org/t/p/w500/kaIw7YKzOqInAwPavNgGupI7d2G.jpg"
+      },
+      {
+        "title": "O Salário do Medo",
+        "year": "1953",
+        "poster": "https://image.tmdb.org/t/p/w500/m1CwNYtoeAXmfmRXjYSoGbl6rVA.jpg"
+      },
+      {
+        "title": "Um Condenado à Morte Escapou",
+        "year": "1956",
+        "poster": "https://image.tmdb.org/t/p/w500/yKIbJ8Vs1VwRrXeOotSeVnR3sj6.jpg"
+      },
+      {
+        "title": "Z",
+        "year": "1969",
+        "poster": "https://image.tmdb.org/t/p/w500/1L5OOZBpC2AOVPtjBVvfMaGeO6U.jpg"
+      },
+      {
+        "title": "Central do Brasil",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/qfyWFhUhqeNRU9HmCaBDAxVKRZ9.jpg"
+      },
+      {
+        "title": "Como Ganhar Milhões Antes Que a Avó Morra",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/5CQXxYfjDmxS4aQJP7U2J5shoMI.jpg"
+      },
+      {
+        "title": "A Fraternidade é Vermelha",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/z7KvYetZi8rH6PZtC2e9eVaTcfA.jpg"
+      },
+      {
+        "title": "Pai e Filha",
+        "year": "1949",
+        "poster": "https://image.tmdb.org/t/p/w500/zGosUxU59eimSt55WRg6uxSwuVa.jpg"
+      },
+      {
+        "title": "Lanternas Vermelhas",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/A49jkFKNWCzP2jooJDEnORRFUe9.jpg"
+      },
+      {
+        "title": "Morangos Silvestres",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/7VxdomQ3siOTDSDFwFhMw8vDSSw.jpg"
+      },
+      {
+        "title": "Um Dia Muito Especial",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/nGVxxrCIJfvcyBt6K8Xu7RimNrR.jpg"
+      },
+      {
+        "title": "O Sétimo Selo",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/j1xE9l5n3Qk0d0pRG0iz9oNNwoH.jpg"
+      },
+      {
+        "title": "Monster",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/OsWKxswXx2TOx87ZRxdOciu0uB.jpg"
+      },
+      {
+        "title": "O Funeral das Rosas",
+        "year": "1969",
+        "poster": "https://image.tmdb.org/t/p/w500/2VBcBTyirkhwnYvVyd634mSfia4.jpg"
+      },
+      {
+        "title": "Mirror",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/lyUfqBpB3GlBeKSuwtutgV0tdXP.jpg"
+      },
+      {
+        "title": "O Quinto Selo",
+        "year": "1976",
+        "poster": "https://image.tmdb.org/t/p/w500/r69oxvw7uSExxogja1o0RP3388V.jpg"
+      },
+      {
+        "title": "Gosto de Cereja",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/pF19XXqFX3ZYM4CMfXKpm9ozsFL.jpg"
+      },
+      {
+        "title": "مرگ یزدگرد",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/mAo6y2CByAHAs5tbWlaZJLc5FI1.jpg"
+      },
+      {
+        "title": "O Barco: Inferno no Mar",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/5ZYw60u95SxaLWY6YjoVoRaQKfg.jpg"
+      },
+      {
+        "title": "Duas Garotas Românticas",
+        "year": "1967",
+        "poster": "https://image.tmdb.org/t/p/w500/3iQdqQhSWHQS2n81X7CJKT31UAa.jpg"
+      },
+      {
+        "title": "A Canção da Estrada",
+        "year": "1955",
+        "poster": "https://image.tmdb.org/t/p/w500/2NKWR1zyAERkfF4yVlj99QKEADh.jpg"
+      },
+      {
+        "title": "Rocco e Seus Irmãos",
+        "year": "1960",
+        "poster": "https://image.tmdb.org/t/p/w500/vWpEK4iJFNCBojAePZqi1HWD7zQ.jpg"
+      },
+      {
+        "title": "Mommy",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/3zyQtPg3avKprmJP2gBiYgyWUQC.jpg"
+      },
+      {
+        "title": "Tampopo",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/ax7Xu1tpGhtTkGVplRfxDdL5W3I.jpg"
+      },
+      {
+        "title": "The Beatles: A Celebration",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/y0UUnQUsVh5CQRbDpH9GPOdFMlo.jpg"
+      },
+      {
+        "title": "Το Λιβάδι που δακρύζει",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/rtrXrUKLfmZi0bdflb20foJbVBd.jpg"
+      },
+      {
+        "title": "Asas do Desejo",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/AOVUasq9kPPNiHlAL0KJVQ7TWb.jpg"
+      },
+      {
+        "title": "O Melhor da Juventude",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/2G3KYzngpi8rxQJCIXW9OL0ZCHx.jpg"
+      },
+      {
+        "title": "Os Incompreendidos",
+        "year": "1959",
+        "poster": "https://image.tmdb.org/t/p/w500/wHITh5qpAZr9e9Q7mtxXYReJxt2.jpg"
+      },
+      {
+        "title": "Dias Perfeitos",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/p4oCDJgtYPg8lWqmeNIsqPwzZ7X.jpg"
+      },
+      {
+        "title": "As Harmonias de Werckmeister",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/1ddmhSJx7GWa1YsDjgaypdRLN7K.jpg"
+      },
+      {
+        "title": "The Shoplifters",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/k66qtc0p703dCqIBWsxZ51olAp9.jpg"
+      },
+      {
+        "title": "Yojimbo, o Guarda-Costas",
+        "year": "1961",
+        "poster": "https://image.tmdb.org/t/p/w500/7JBlG28700Zx2r4xbVv3n1ssOQU.jpg"
+      },
+      {
+        "title": "Ladrões de Bicicleta",
+        "year": "1948",
+        "poster": "https://image.tmdb.org/t/p/w500/8hpVv2G8cXXEBp67dkcLNqrjNUs.jpg"
+      },
+      {
+        "title": "O Cremador",
+        "year": "1969",
+        "poster": "https://image.tmdb.org/t/p/w500/zk2bvJamZ8K06cJ3QHAHK7IE7kp.jpg"
+      },
+      {
+        "title": "Edvard Munch",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/aXAkJld5UTIa0nijWvDm7DcyBe0.jpg"
+      },
+      {
+        "title": "A Vida dos Outros",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/xaHem8yAbLxGPzHKMsNKsTgalH4.jpg"
+      },
+      {
+        "title": "A Noite",
+        "year": "1961",
+        "poster": "https://image.tmdb.org/t/p/w500/tImlg8XKFZClEqymYA4DdAkZOQE.jpg"
+      },
+      {
+        "title": "O Boulevard do Crime",
+        "year": "1945",
+        "poster": "https://image.tmdb.org/t/p/w500/3mcjw2A8cqRB7zOpe70vi2PuLCV.jpg"
+      },
+      {
+        "title": "Dersu Uzala",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/9Bggg2bios1LsGUAYXuqd6BuVJl.jpg"
+      },
+      {
+        "title": "Rebelião",
+        "year": "1967",
+        "poster": "https://image.tmdb.org/t/p/w500/cTyIHiROkThFRlvaNOfQiPg6cod.jpg"
+      },
+      {
+        "title": "The Hunt",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/mxG7OvFUe8WwIwp1VG209xnT9Tv.jpg"
+      },
+      {
+        "title": "Amores Expressos",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/2M4UmyOsxYInkmpiCCDFbfAUGHG.jpg"
+      },
+      {
+        "title": "Oito e Meio",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/nQkrZRxnvrkb6BV7ZYmdwJoFGDt.jpg"
+      },
+      {
+        "title": "Eureka",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/i4KTlDsGkYmsbi4DO0XC9o69n9o.jpg"
+      },
+      {
+        "title": "E a Vida Continua",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/aXIMFysi9vWS493lJanaUywJJZ0.jpg"
+      },
+      {
+        "title": "Trono Manchado de Sangue",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/27smkhv4qOlo4uJk7UY7lFQ2ngW.jpg"
+      },
+      {
+        "title": "A Cura",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/g2x1gF89LFej8gOTeeLVefDP5Je.jpg"
+      },
+      {
+        "title": "鬼子来了",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/nL46rg8dFR4plAisxuriYmdU2NP.jpg"
+      },
+      {
+        "title": "A Doce Vida",
+        "year": "1960",
+        "poster": "https://image.tmdb.org/t/p/w500/l0IgwhbAuYIbBgm8YsHRit1Fa4L.jpg"
+      },
+      {
+        "title": "கடைசி விவசாயி",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/8TNnEojAEc8Kt6HMWgQNRPcL9J3.jpg"
+      },
+      {
+        "title": "Nós Que Nos Amávamos Tanto",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/jsjfvG1971tCUPtvj1dNSPWNzST.jpg"
+      },
+      {
+        "title": "Jeanne Dielman",
+        "year": "1976",
+        "poster": "https://image.tmdb.org/t/p/w500/fQ3DFpnEiidA5o2RteKRVK8EMhY.jpg"
+      },
+      {
+        "title": "Rififi",
+        "year": "1955",
+        "poster": "https://image.tmdb.org/t/p/w500/kVgmhA1eB0FlI4EctM7PWUoFj95.jpg"
+      },
+      {
+        "title": "Contos da Lua Vaga",
+        "year": "1953",
+        "poster": "https://image.tmdb.org/t/p/w500/73GT8PJJ6LUFOGijLHsAJrSgwyO.jpg"
+      },
+      {
+        "title": "Ritual",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/vahbRvxqpTspqvFgWPoS9ThfODd.jpg"
+      },
+      {
+        "title": "O Invencível",
+        "year": "1956",
+        "poster": "https://image.tmdb.org/t/p/w500/jhdl95qStKZRAVIYt0qKjPMSw0H.jpg"
+      },
+      {
+        "title": "Umberto D.",
+        "year": "1952",
+        "poster": "https://image.tmdb.org/t/p/w500/mbkQ4A04Er9WJNudlVZH5HS8IMf.jpg"
+      },
+      {
+        "title": "Luz de Inverno",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/jjvQxcX5rqxgVQJbJM74hECgGyP.jpg"
+      },
+      {
+        "title": "Metrópolis",
+        "year": "1927",
+        "poster": "https://image.tmdb.org/t/p/w500/xBx21HvGJCb15PKWkyb7uc435Wx.jpg"
+      },
+      {
+        "title": "Aquele Que Sabe Viver",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/9vumJKydNxcFtcFNYPIvFeHXVBQ.jpg"
+      },
+      {
+        "title": "A Face de Um Outro",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/lutxrDJqXlxs6i2GNNhGI9q8Ah5.jpg"
+      },
+      {
+        "title": "Voci nel tempo",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/f8LiZS1X1MAOWOU0S1MSgwgxDiR.jpg"
+      },
+      {
+        "title": "Still Life",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/iiuIHI0pPeS3a21GN059NRpbo3b.jpg"
+      },
+      {
+        "title": "O Preço do Triunfo",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/dsPJRYtMHdu2F4AUetDoEGQm30c.jpg"
+      },
+      {
+        "title": "4 Meses, 3 Semanas e 2 Dias",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/xWkiTwqa6bnUmfNpmK20YyS7apf.jpg"
+      },
+      {
+        "title": "Happy Hour",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/jUtTcSKzKe9mDu3dP3UrsVY5vtE.jpg"
+      },
+      {
+        "title": "Kwaidan: As Quatro Faces do Medo",
+        "year": "1965",
+        "poster": "https://image.tmdb.org/t/p/w500/lxOxZVhGkmnz7jFJDS8EfkhxmmN.jpg"
+      },
+      {
+        "title": "মহানগর",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/arEOYA8yxeReJEK7RNn7dXoaEFj.jpg"
+      },
+      {
+        "title": "Napoleão",
+        "year": "1927",
+        "poster": "https://image.tmdb.org/t/p/w500/eUHKiaHe94z9fqz5yeXhIUGrWkm.jpg"
+      },
+      {
+        "title": "Um Instante de Inocência",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/dPc0nZHvEde4MPSCtxK4EUzvLOA.jpg"
+      },
+      {
+        "title": "Os Amantes de Pont-Neuf",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/nxFO2qEBrufeMFZzgEe0JXTjToY.jpg"
+      },
+      {
+        "title": "Passion & Poetry: Sam Peckinpah's War",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/6Fnr2WLovKyunxWdlASbaSzaiIp.jpg"
+      },
+      {
+        "title": "A Rotina Tem Seu Encanto",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/lia3Lk8AgdtU9SaSq59jANDj3vh.jpg"
+      },
+      {
+        "title": "Por uns Dólares a Mais",
+        "year": "1965",
+        "poster": "https://image.tmdb.org/t/p/w500/1qO2p7gGPhVxjV6FPYwQcQ3gVWC.jpg"
+      },
+      {
+        "title": "Macario",
+        "year": "1960",
+        "poster": "https://image.tmdb.org/t/p/w500/xX9JGtsnXQAR7e1fWkr7zBuQUHN.jpg"
+      },
+      {
+        "title": "Amor",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/obCBsX3PIqCckibGraeJRMubDYX.jpg"
+      },
+      {
+        "title": "Solaris",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/xabQ3ljbRpUYbYxJiRfq7WT15p.jpg"
+      },
+      {
+        "title": "O Segredo dos seus Olhos",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/pefOYP69bB3ZC6p6B3ZbWc46ioT.jpg"
+      },
+      {
+        "title": "Crepúsculo em Tóquio",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/bIXikG9pPtEcFaq7SOzfyXCFd0x.jpg"
+      },
+      {
+        "title": "O Samurai",
+        "year": "1967",
+        "poster": "https://image.tmdb.org/t/p/w500/k2ORRSkOWzv0ALY9cz9fMAqwY1p.jpg"
+      },
+      {
+        "title": "Vida Cigana",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/jz58vplPY3XULYNidK1Mz4QuNpM.jpg"
+      },
+      {
+        "title": "Yearning to Tease",
+        "year": "1965",
+        "poster": "https://image.tmdb.org/t/p/w500/3wG04yfqu7aLmjwxN7SAaRW79FH.jpg"
+      },
+      {
+        "title": "A Fita Branca",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/cL3WiwKKfhckkKdHyAIMFmxJtCp.jpg"
+      },
+      {
+        "title": "O Abraço da Serpente",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/j3MhIZoVPBYdBBeQeLBHRK0g6Ej.jpg"
+      },
+      {
+        "title": "Kagemusha, a Sombra do Samurai",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/e4v3mNc9SvSnESPN9z1zvivkEs0.jpg"
+      },
+      {
+        "title": "O Cavalo de Turim",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/nwHFQRGE5OyMuscTm1deX9Ssn1u.jpg"
+      },
+      {
+        "title": "Un homme qui dort",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/ke01u1s3VFOpoHzFYP6jsTcmLFR.jpg"
+      },
+      {
+        "title": "喜气逼人",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/CwGLyD4lnGsl2uTSGyP1iIqo81.jpg"
+      },
+      {
+        "title": "A Pequena Loja na Rua Principal",
+        "year": "1965",
+        "poster": "https://image.tmdb.org/t/p/w500/o8YFVCX4qGj3kYXJMKepZkRNF52.jpg"
+      },
+      {
+        "title": "Gritos e Sussurros",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/4Sk198bnw1VH68mUwr5meJinJOW.jpg"
+      },
+      {
+        "title": "E Sua Mãe Também",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/cBxIm0aF4MdRD7atLNHryq1WvOW.jpg"
+      },
+      {
+        "title": "Os Esquecidos",
+        "year": "1950",
+        "poster": "https://image.tmdb.org/t/p/w500/jkjw7Y7WgUnUt9OW2KwWWolTyrw.jpg"
+      },
+      {
+        "title": "Pastoral: Morrer No Campo",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/ttWhroijTMTc81SvyqtSYWEbrYV.jpg"
+      },
+      {
+        "title": "Fireworks",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/nGBK97NA5uujslgK9cfIabIS7hh.jpg"
+      },
+      {
+        "title": "O Círculo Vermelho",
+        "year": "1970",
+        "poster": "https://image.tmdb.org/t/p/w500/7aASceZCw8C8Vkn2yheiFkxjTrj.jpg"
+      },
+      {
+        "title": "Manila nas Garras de Néon",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/6eZvo0CSiwGvps9giM7izgFbud.jpg"
+      },
+      {
+        "title": "Rashomon",
+        "year": "1950",
+        "poster": "https://image.tmdb.org/t/p/w500/wNCx5AdhBgSn0ddva3SEUFLs81K.jpg"
+      },
+      {
+        "title": "Rio, Zona Norte",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/mX5CdIwI5RRgL7qmLAlfPHvDhcr.jpg"
+      },
+      {
+        "title": "Cría Cuervos",
+        "year": "1976",
+        "poster": "https://image.tmdb.org/t/p/w500/5TeTo406aBfDXIx2lYnbhEIb7a4.jpg"
+      },
+      {
+        "title": "O Pagador de Promessas",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/udIwjCpsorFKdn1XHJgV1Zc7Joe.jpg"
+      },
+      {
+        "title": "A Grande Ilusão",
+        "year": "1937",
+        "poster": "https://image.tmdb.org/t/p/w500/avoVPM51OM4JQUYPE5c950WjuSZ.jpg"
+      },
+      {
+        "title": "Também Fomos Felizes",
+        "year": "1951",
+        "poster": "https://image.tmdb.org/t/p/w500/5xOVsfZ2eR1gT8jqHZQskI2Cxdo.jpg"
+      },
+      {
+        "title": "Os Emigrantes",
+        "year": "1971",
+        "poster": "https://image.tmdb.org/t/p/w500/hjUy9zP70kReGL0X4btnya7aWbt.jpg"
+      },
+      {
+        "title": "A Bela Intrigante",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/16WlbYMDNWMelBlMcT2whwoEyit.jpg"
+      },
+      {
+        "title": "Sono de Inverno",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/y51wK57MWxxzJaMDUXBWDV2RlkU.jpg"
+      },
+      {
+        "title": "Playtime - Tempo de Diversão",
+        "year": "1967",
+        "poster": "https://image.tmdb.org/t/p/w500/gYSYshXxK6PozPO9Bb32J8Jt7nA.jpg"
+      },
+      {
+        "title": "Adeus, Meninos",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/mSJkBBKNkWYjRn6nmkXlMIoNO7T.jpg"
+      },
+      {
+        "title": "RRR: Revolta, Rebelião, Revolução",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/eK4lWmaEMdBj9nkghRNmfvtRWbq.jpg"
+      },
+      {
+        "title": "Drive My Car",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/z9QqfYRtYS3VqIsWkD09hpilyQ3.jpg"
+      },
+      {
+        "title": "Cafarnaum",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/ReHOMkW1rVTo3Yslqe1xATl8c8.jpg"
+      },
+      {
+        "title": "Investigação sobre um Cidadão Acima de Qualquer Suspeita",
+        "year": "1970",
+        "poster": "https://image.tmdb.org/t/p/w500/78J8uySMPfVvXkjYXznBa4fZGUu.jpg"
+      },
+      {
+        "title": "O Conformista",
+        "year": "1971",
+        "poster": "https://image.tmdb.org/t/p/w500/hkO6QSYE22vJ3uxLjvET2oA6Kt1.jpg"
+      },
+      {
+        "title": "Pixote: A Lei do Mais Fraco",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/g5NxPFGcoUCXOrHx9DHi6AAQWQu.jpg"
+      },
+      {
+        "title": "Oharu: A Vida de uma Cortesã",
+        "year": "1952",
+        "poster": "https://image.tmdb.org/t/p/w500/mzb6FnUFO7fg4JmZ2Q1DC1SN8m.jpg"
+      },
+      {
+        "title": "Marketa Lazarová",
+        "year": "1967",
+        "poster": "https://image.tmdb.org/t/p/w500/iAD1q8GOO1q1h6hRCXgslAxDHBY.jpg"
+      },
+      {
+        "title": "Filhos do Paraíso",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/coUGwSsdWBfRe6mbYQPYTMpnfcM.jpg"
+      },
+      {
+        "title": "Companheiros, quase uma história de amor",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/5zI3WI1qg5fuHxHVJNdGAo8Etr1.jpg"
+      },
+      {
+        "title": "Através das Oliveiras",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/vnypRV30qBqeiuZhytZarP2XfWf.jpg"
+      },
+      {
+        "title": "Primavera, Verão, Outono, Inverno e... Primavera",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/mZReLUhge4XCkxSafLOX0rOXOlh.jpg"
+      },
+      {
+        "title": "Dias de Ira",
+        "year": "1943",
+        "poster": "https://image.tmdb.org/t/p/w500/y3u5MwLAM50IPRkhKxxlrNPd6aL.jpg"
+      },
+      {
+        "title": "O Fabuloso Destino de Amélie Poulain",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/oAYKYALxamhAB1wKUGmOo05Vf92.jpg"
+      },
+      {
+        "title": "Bone",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/ik2QO1CLffGOO8khqTfbHMKlTIa.jpg"
+      },
+      {
+        "title": "As Diabólicas",
+        "year": "1955",
+        "poster": "https://image.tmdb.org/t/p/w500/mz3SpSBvSbCg5bKqtUmv7qYvcS0.jpg"
+      },
+      {
+        "title": "Cléo das 5 às 7",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/p1Qab5pv7bOlu4N3Jjo2fkyp4ym.jpg"
+      },
+      {
+        "title": "Quando a Mulher Sobe a Escada",
+        "year": "1960",
+        "poster": "https://image.tmdb.org/t/p/w500/5s4YwelqkiMYBiTKduRpnU9fgbw.jpg"
+      },
+      {
+        "title": "Tudo Sobre Minha Mãe",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/p6CcV3w9kfpFbB269Mnc16k70U1.jpg"
+      },
+      {
+        "title": "A Estrada da Vida",
+        "year": "1954",
+        "poster": "https://image.tmdb.org/t/p/w500/tYt9BXQ0xgKhopp4Z9Y8rPa9XY1.jpg"
+      },
+      {
+        "title": "President Gordon B. Hinckley: Honoring the Life and Legacy of a Prophet",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/AvprxbV16XqTa2IgHPqCNYpwVES.jpg"
+      },
+      {
+        "title": "O Senhor dos Anéis: O Retorno do Rei",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/rU4oIKv5I4C59DpcXKmT7kNwGI0.jpg"
+      },
+      {
+        "title": "O Medo Devora a Alma",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/vyXRTXtL5nUvrXNIJCWg2zPNhVX.jpg"
+      },
+      {
+        "title": "Amores Brutos",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/tw6q0EFcpr2SbPJAbfQK69ZUk0O.jpg"
+      },
+      {
+        "title": "Os Nibelungos Parte 1: A Morte de Siegfried",
+        "year": "1924",
+        "poster": "https://image.tmdb.org/t/p/w500/2jERXQVDkX0boSjQOzE9ZyDg8DC.jpg"
+      },
+      {
+        "title": "O Anjo Exterminador",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/wl8W4fZwOcWlRV5jshYtjxGFpTE.jpg"
+      },
+      {
+        "title": "Tartarugas podem Voar",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/mpVmQg08l3y7xYJ7p1rSJJWJCBa.jpg"
+      },
+      {
+        "title": "Joguem Fora seus Livros e Saiam às Ruas",
+        "year": "1971",
+        "poster": "https://image.tmdb.org/t/p/w500/jKDLGqkqycm3oZBwKSTWYyJi7vW.jpg"
+      },
+      {
+        "title": "Roma, Cidade Aberta",
+        "year": "1945",
+        "poster": "https://image.tmdb.org/t/p/w500/4F6swrmExL01J7KuZgl841aqiQ.jpg"
+      },
+      {
+        "title": "Güeros",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/xyT8NgctwO9rqbwBTcrSMeeBqjH.jpg"
+      },
+      {
+        "title": "Nostos: il ritorno",
+        "year": "1990",
+        "poster": "https://image.tmdb.org/t/p/w500/zLB23ma2BAiOxiGUZF0WRq0eR2Z.jpg"
+      },
+      {
+        "title": "O Raio Verde",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/fWUjMHrOOTMZu3ycNakkqaKtRWA.jpg"
+      },
+      {
+        "title": "Tudo sobre Lily Chou Chou",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/ApXbFphUnarqvJjREDCWxZ9fVNw.jpg"
+      },
+      {
+        "title": "O Espírito da Colméia",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/sdTbojt6ztECjorBhus0xQn9R5S.jpg"
+      },
+      {
+        "title": "A Esposa Solitária",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/jPp3oUuaqSZjbCdeyhh8vKs3Z5I.jpg"
+      },
+      {
+        "title": "Do Que Vem Antes",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/np2qkMgkdt7P7FvJxO2OaVCjk4r.jpg"
+      },
+      {
+        "title": "Naked Island: The Land of 1001 Nudes",
+        "year": "1961",
+        "poster": "https://image.tmdb.org/t/p/w500/uffzwDugWXpzHCKRy5g9ehExZ5i.jpg"
+      },
+      {
+        "title": "Hiroshima, Meu Amor",
+        "year": "1959",
+        "poster": "https://image.tmdb.org/t/p/w500/7arEdkGJ6gzDhIVvWy4JRyn76nN.jpg"
+      },
+      {
+        "title": "الكيت كات",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/bRY2zqXOk1kjH4wlSKK2rCP2cJt.jpg"
+      },
+      {
+        "title": "Através de um Espelho",
+        "year": "1961",
+        "poster": "https://image.tmdb.org/t/p/w500/xcnapxRTr0gaF9G2muy94OEIt6H.jpg"
+      },
+      {
+        "title": "Bela Aldeia, Bela Chama",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/cc0d0k0DVrJV8E7OjvoL5lg8xVC.jpg"
+      },
+      {
+        "title": "Para Sempre Lilya",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/oY4y1RM5iKTYd8NzcBHbBhEfqH7.jpg"
+      },
+      {
+        "title": "A Liberdade é Azul",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/7gkDknHrHIlLq4mzmLB2KwAGZtT.jpg"
+      },
+      {
+        "title": "Jacquot de Nantes",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/pBZ7IzqUZBBqWpnppJWzWpgUBTD.jpg"
+      },
+      {
+        "title": "A Fonte da Donzela",
+        "year": "1960",
+        "poster": "https://image.tmdb.org/t/p/w500/4XUFWzfNA3PdivkV1fXQ8s029ID.jpg"
+      },
+      {
+        "title": "Cinco Graças",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/mwDXe6ZagrArPeNsKC6QBPUsQ0O.jpg"
+      },
+      {
+        "title": "A Viagem dos Comediantes",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/7XmXCqV5jxUMGG67tsDeiMWFYZh.jpg"
+      },
+      {
+        "title": "Intocáveis",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/2tAzFC2xUAXEx96l5Xixb6WLAyO.jpg"
+      },
+      {
+        "title": "Os Guarda-Chuvas do Amor",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/dzEq7RjIwH2TUEsYCOO0B0sHuVr.jpg"
+      },
+      {
+        "title": "Sanjuro",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/fsLvPyav5liPiHs3UHsQMYtgfVK.jpg"
+      },
+      {
+        "title": "A Cor da Romã",
+        "year": "1969",
+        "poster": "https://image.tmdb.org/t/p/w500/vRfo6wWyX4N8gyzgsFy11lVJK6A.jpg"
+      },
+      {
+        "title": "Fitzcarraldo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/vxLpcp3LxuhU23Rl74q7k5MReDn.jpg"
+      },
+      {
+        "title": "Crisântemos Tardios",
+        "year": "1939",
+        "poster": "https://image.tmdb.org/t/p/w500/yzXf9Ag7WMp3hmfttyjYAad3mlE.jpg"
+      },
+      {
+        "title": "A Espada da Maldição",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/aqFIzzv1EUIpcELO4Pr9FQzZMBR.jpg"
+      },
+      {
+        "title": "À Procura de Elly",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/A5D7ySJsOvBanJn54e03ZeE83xW.jpg"
+      },
+      {
+        "title": "A Montanha Sagrada",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/8FUYzzus5AWUPfF0TZrkNpqLexw.jpg"
+      },
+      {
+        "title": "Amador",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/ud80puLILeljp5kObBcc5ma3qKI.jpg"
+      },
+      {
+        "title": "Kanal",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/xQ8yk1V4Z2EwEtoAUdwOExCp02B.jpg"
+      },
+      {
+        "title": "A Tocha de Zen",
+        "year": "1970",
+        "poster": "https://image.tmdb.org/t/p/w500/yVxME2hqR23Fy1rhXtaf7MQU3q.jpg"
+      },
+      {
+        "title": "Aguirre, a Cólera dos Deuses",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/dA6OhhGFTXp1jfcbJrj938ytYkA.jpg"
+      },
+      {
+        "title": "A Dupla Vida de Véronique",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/pQ25yX2PaqqCnQcEBLss1OdouMB.jpg"
+      },
+      {
+        "title": "Ascensor para o Cadafalso",
+        "year": "1958",
+        "poster": "https://image.tmdb.org/t/p/w500/75VNUuchCgX0Yj9yy7Mva84zPmB.jpg"
+      },
+      {
+        "title": "A Grande Beleza",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/7tkOOOkysBJIhpFKEqouvzUvvZu.jpg"
+      },
+      {
+        "title": "Onibaba - A Mulher Demônio",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/b14LU070wRIiX0PbSLcMgmX1tpi.jpg"
+      }
+    ]
+  }
+}
