@@ -1,0 +1,59 @@
+{
+  "films": [
+    {
+      "title": "Trama Fantasma",
+      "year": "2017",
+      "poster": "https://image.tmdb.org/t/p/w500/BCBB2pNxBb1ruNTO5oqjyMNqW4.jpg"
+    },
+    {
+      "title": "Uma Batalha Após a Outra",
+      "year": "2025",
+      "poster": "https://image.tmdb.org/t/p/w500/2peYXW6CoruehDnKJGMjl2NuaNB.jpg"
+    },
+    {
+      "title": "Sangue Negro",
+      "year": "2007",
+      "poster": "https://image.tmdb.org/t/p/w500/cOEbxHAm8CfbpAE9fKv9vTZaWeL.jpg"
+    },
+    {
+      "title": "Embriagado de Amor",
+      "year": "2002",
+      "poster": "https://image.tmdb.org/t/p/w500/24EtiVyAIG9uk7tA5Gwap1XKKMk.jpg"
+    },
+    {
+      "title": "O Mestre",
+      "year": "2012",
+      "poster": "https://image.tmdb.org/t/p/w500/vz9vNqPzouUPW2Ah7iRBPittuwm.jpg"
+    },
+    {
+      "title": "Licorice Pizza",
+      "year": "2021",
+      "poster": "https://image.tmdb.org/t/p/w500/3QYvJqECFUrNUhKv16izXEG34Cs.jpg"
+    },
+    {
+      "title": "Boogie Nights: Prazer Sem Limites",
+      "year": "1997",
+      "poster": "https://image.tmdb.org/t/p/w500/vLpRnmn90rX0zIL1Z4H5dRtAjmj.jpg"
+    },
+    {
+      "title": "Vício Inerente",
+      "year": "2014",
+      "poster": "https://image.tmdb.org/t/p/w500/z8Vew0X034bqtnEiEIEwatt7u4k.jpg"
+    },
+    {
+      "title": "Magnólia",
+      "year": "1999",
+      "poster": "https://image.tmdb.org/t/p/w500/fzdTiUQ8Qzft7TJRcH8OUPQvutA.jpg"
+    },
+    {
+      "title": "Jogada de Risco",
+      "year": "1997",
+      "poster": "https://image.tmdb.org/t/p/w500/dgn4KUOJZHXkaDzm5AO2F1x8QBl.jpg"
+    },
+    {
+      "title": "Junun",
+      "year": "2015",
+      "poster": "https://image.tmdb.org/t/p/w500/tsssow8XqZgP6KhT39Shx45sWBK.jpg"
+    }
+  ]
+}
