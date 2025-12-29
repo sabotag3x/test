@@ -1,0 +1,1143 @@
+{
+  "terror": {
+    "name": "Terror",
+    "updated_at": "2025-12-29",
+    "films": [
+      {
+        "title": "Perfect Blue",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/79vujbsWEbX4dzffBV541QXN6sf.jpg"
+      },
+      {
+        "title": "O Enigma de Outro Mundo",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/bazlgJAKWCBF7OllC3JtyJ2DV1n.jpg"
+      },
+      {
+        "title": "O Silêncio dos Inocentes",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/aXkldTJlGzqjoaAHBOuAEpXNTCf.jpg"
+      },
+      {
+        "title": "Psicose",
+        "year": "1960",
+        "poster": "https://image.tmdb.org/t/p/w500/A89NmGOdz26aQo97UwVSLrFhA1t.jpg"
+      },
+      {
+        "title": "Twin Peaks: Os Últimos Dias de Laura Palmer",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/69GrIEaBRM4YxdTfr1mazm9yUDE.jpg"
+      },
+      {
+        "title": "O Cremador",
+        "year": "1969",
+        "poster": "https://image.tmdb.org/t/p/w500/zk2bvJamZ8K06cJ3QHAHK7IE7kp.jpg"
+      },
+      {
+        "title": "A Cura",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/g2x1gF89LFej8gOTeeLVefDP5Je.jpg"
+      },
+      {
+        "title": "O Mensageiro do Diabo",
+        "year": "1955",
+        "poster": "https://image.tmdb.org/t/p/w500/rs5l1CMfAIu6sSg3ZWocCkNOBGu.jpg"
+      },
+      {
+        "title": "Alien: O Oitavo Passageiro",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/rFHzJrkO1kNIezb6rFog5oCJUEn.jpg"
+      },
+      {
+        "title": "Kwaidan: As Quatro Faces do Medo",
+        "year": "1965",
+        "poster": "https://image.tmdb.org/t/p/w500/lxOxZVhGkmnz7jFJDS8EfkhxmmN.jpg"
+      },
+      {
+        "title": "O Iluminado",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/47BdQqDWnj3VIzpH9bd2agho2PN.jpg"
+      },
+      {
+        "title": "Os Demônios",
+        "year": "1971",
+        "poster": "https://image.tmdb.org/t/p/w500/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg"
+      },
+      {
+        "title": "Coraline e o Mundo Secreto",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/rranXmvqPT4NoXzmxhFtXr9nNYT.jpg"
+      },
+      {
+        "title": "As Diabólicas",
+        "year": "1955",
+        "poster": "https://image.tmdb.org/t/p/w500/mz3SpSBvSbCg5bKqtUmv7qYvcS0.jpg"
+      },
+      {
+        "title": "O Que Terá Acontecido a Baby Jane?",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/cUmqJtXESwRNTUU9s1Xtu6PJSUH.jpg"
+      },
+      {
+        "title": "Cisne Negro",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/tqlmLBt2i5SHNpXEj2nqk10Crwa.jpg"
+      },
+      {
+        "title": "Vampire Hunter D: Bloodlust",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/l2FyMofnCYoALX8GZ9L9hdH0fEM.jpg"
+      },
+      {
+        "title": "A Casa Lobo",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/pXBOlokmof5i77WnT6D86dI1NOV.jpg"
+      },
+      {
+        "title": "O Segundo Rosto",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/5G3q3OvulFTnFdiouaZdD8wjtIc.jpg"
+      },
+      {
+        "title": "Corra!",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/A0RoSZh8PEYJgDMgM2EV7Ycz3dR.jpg"
+      },
+      {
+        "title": "O Fantasma do Paraíso",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/4uB3Vrh9l78OFB9mLdXjVKmLPhS.jpg"
+      },
+      {
+        "title": "Os Inocentes",
+        "year": "1961",
+        "poster": "https://image.tmdb.org/t/p/w500/t9P2m4mQcqWtTHxkV3X6mXiJKXh.jpg"
+      },
+      {
+        "title": "O Que Fazemos nas Sombras",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/8HXW4KuXtE11B1iTm6SmZtMVLTD.jpg"
+      },
+      {
+        "title": "Pecadores",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/a9kYEboW1TQaeilGYUAx1MO0DUp.jpg"
+      },
+      {
+        "title": "Aliens: O Resgate",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/cORjIMhNxSukd09E6MlvwU5Ev1V.jpg"
+      },
+      {
+        "title": "A Carruagem Fantasma",
+        "year": "1921",
+        "poster": "https://image.tmdb.org/t/p/w500/6LBkwY81bUtWaOFEStJCFYICg80.jpg"
+      },
+      {
+        "title": "O Sexto Sentido",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/ds7jw0WYCd6k7hBzMnzgFsTfg96.jpg"
+      },
+      {
+        "title": "Onibaba - A Mulher Demônio",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/b14LU070wRIiX0PbSLcMgmX1tpi.jpg"
+      },
+      {
+        "title": "Godzilla Minus One",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/9XSOyim1pivuSHQqlrDj5gj2J5w.jpg"
+      },
+      {
+        "title": "O Gabinete do Dr. Caligari",
+        "year": "1920",
+        "poster": "https://image.tmdb.org/t/p/w500/j09TT0S1crBSYjPu14vgzSSFqFo.jpg"
+      },
+      {
+        "title": "O Gato Preto",
+        "year": "1968",
+        "poster": "https://image.tmdb.org/t/p/w500/iCK4QQhC5xaYFuLn2pfTGfgaQf9.jpg"
+      },
+      {
+        "title": "Plano-Sequência dos Mortos",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/wFbAxK10CiJA1XxgJaEc16UeHTb.jpg"
+      },
+      {
+        "title": "Godzilla, O Monstro do Mar",
+        "year": "1954",
+        "poster": "https://image.tmdb.org/t/p/w500/2MmLWzSo1DV8nwOE6OVcysId46M.jpg"
+      },
+      {
+        "title": "The Rocky Horror Picture Show",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/kamLDqtDJWCSqyPATb3b2kVIXeh.jpg"
+      },
+      {
+        "title": "Possessão",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/xtH5Kd2eNU08BTCLGOVI488WE6f.jpg"
+      },
+      {
+        "title": "Santa Sangre",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/6VTra0NR4ygRnq3bD922I4rU0Mq.jpg"
+      },
+      {
+        "title": "Eu Vi o Diabo",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/dMPwI1RnKsngDppHHJfymmzJvfl.jpg"
+      },
+      {
+        "title": "Deixa Ela Entrar",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/usJZD6BgU29hRPzQlvfFGsp8AXC.jpg"
+      },
+      {
+        "title": "A Tortura do Medo",
+        "year": "1960",
+        "poster": "https://image.tmdb.org/t/p/w500/s5KkF5sKYDFZaqEtQLQrw0Jt7qo.jpg"
+      },
+      {
+        "title": "മണിച്ചിത്രത്താഴ്",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/cpgFraQKVWjUqctDHzY37xd1sxm.jpg"
+      },
+      {
+        "title": "Pânico",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/cJj2gYzkPFSqYGGOhfLgeANlXkB.jpg"
+      },
+      {
+        "title": "A Hora do Lobo",
+        "year": "1968",
+        "poster": "https://image.tmdb.org/t/p/w500/i74Ysis4GJiTh8ckByN3XH6Apja.jpg"
+      },
+      {
+        "title": "O Farol",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/zdowK9GrOxK0YddhXuMPyxnTA02.jpg"
+      },
+      {
+        "title": "Uma Noite Alucinante 2",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/gnaDXTfRlTrQ5gYhpEFJKlGuNmA.jpg"
+      },
+      {
+        "title": "A Mosca",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/dQWmNTzZBRuxDGiLsuKuPXJQES1.jpg"
+      },
+      {
+        "title": "O Sanatório da Clepsidra",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/vfHw3lN8jOXmg7UjdpWf5gJ1WB1.jpg"
+      },
+      {
+        "title": "Alice",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/3AY8Sd3XyhP7XWo8OnCMgKpg3XA.jpg"
+      },
+      {
+        "title": "Louca Obsessão",
+        "year": "1990",
+        "poster": "https://image.tmdb.org/t/p/w500/uK4iSJeKvUu5v2PKe5SVtIY2CbA.jpg"
+      },
+      {
+        "title": "Invasão Zumbi",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/QqHtwk0oHYed26zra9WGQGyBSm.jpg"
+      },
+      {
+        "title": "O Lamento",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/mL4vGghS5XtgeNIPjhoTg8Tv5cJ.jpg"
+      },
+      {
+        "title": "O Homem de Palha",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/2eDub2VaMdy8mntxwGTE63g388q.jpg"
+      },
+      {
+        "title": "A Noiva de Frankenstein",
+        "year": "1935",
+        "poster": "https://image.tmdb.org/t/p/w500/hrFGL4lABROsLvoC04JSxvlqSlS.jpg"
+      },
+      {
+        "title": "O Exorcista",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/bYTMDg3eGFuO7emXbQip02a8zvQ.jpg"
+      },
+      {
+        "title": "Despertar dos Mortos",
+        "year": "1978",
+        "poster": "https://image.tmdb.org/t/p/w500/z2vbqFu9s0HhWcTRjGc4JbBHhWs.jpg"
+      },
+      {
+        "title": "Madre Joana dos Anjos",
+        "year": "1961",
+        "poster": "https://image.tmdb.org/t/p/w500/xEHzExZixuMqe3vsB1OpVCpPQJT.jpg"
+      },
+      {
+        "title": "Todo Mundo Quase Morto",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/cu9CgaxcJ3UG1Up3l5bsG2wNtfY.jpg"
+      },
+      {
+        "title": "A Noite dos Mortos-Vivos",
+        "year": "1968",
+        "poster": "https://image.tmdb.org/t/p/w500/WPnjLV9hKP0TVZ8YJ0qWVWhUHF.jpg"
+      },
+      {
+        "title": "Os Invasores de Corpos",
+        "year": "1978",
+        "poster": "https://image.tmdb.org/t/p/w500/x3hXjVonuaUk9Kb5LvjpRamSFRP.jpg"
+      },
+      {
+        "title": "Fome Animal",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/bb1xtx1aUfxGgKfZKEgfj5ni6Ig.jpg"
+      },
+      {
+        "title": "Monstros",
+        "year": "1932",
+        "poster": "https://image.tmdb.org/t/p/w500/ujTGsie0k5JEq6p7AnBdzw6RGIF.jpg"
+      },
+      {
+        "title": "Hereditário",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/wonYMeHauhrxSi5UTOtj5L479mS.jpg"
+      },
+      {
+        "title": "Tubarão",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/iD2XVowFgHngYGamCAdq2T44gMr.jpg"
+      },
+      {
+        "title": "Suspiria",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/5ya8jTbNZTrCFUx9OwpNBjCivXY.jpg"
+      },
+      {
+        "title": "Os Olhos Sem Rosto",
+        "year": "1960",
+        "poster": "https://image.tmdb.org/t/p/w500/vfeFWdqIW6uBJnUdoLTZMgBkb3i.jpg"
+      },
+      {
+        "title": "Violência Gratuita",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/kGHyaJTZgCCTOIq4AuszntNP1lG.jpg"
+      },
+      {
+        "title": "Prelúdio para Matar",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/j6k8qAHnL65p7z6qJnUdxd1bwZ0.jpg"
+      },
+      {
+        "title": "Um Clarão nas Trevas",
+        "year": "1967",
+        "poster": "https://image.tmdb.org/t/p/w500/cNW3ewCB52KkxzSE47PcE5Bqvmr.jpg"
+      },
+      {
+        "title": "O Esqueleto da Sra. Morales",
+        "year": "1960",
+        "poster": "https://image.tmdb.org/t/p/w500/tiEk8dT46cK2KVFxITIqm0kT3iD.jpg"
+      },
+      {
+        "title": "Repulsa ao Sexo",
+        "year": "1965",
+        "poster": "https://image.tmdb.org/t/p/w500/wrunGQKoJrkgBNdI7c2XEOjFLGL.jpg"
+      },
+      {
+        "title": "O Homem Que Ri",
+        "year": "1928",
+        "poster": "https://image.tmdb.org/t/p/w500/xatKRPtXuNyPO87MNX2D7DXwwQg.jpg"
+      },
+      {
+        "title": "Morte ao Vivo",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/kg8Dv4CMOtvmgtil7zqju180ZRp.jpg"
+      },
+      {
+        "title": "Vampira Humanista Procura Suicida Voluntário",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/7ykEOeYVD90w3yxc64jC1qo9qza.jpg"
+      },
+      {
+        "title": "O Martelo das Bruxas",
+        "year": "1970",
+        "poster": "https://image.tmdb.org/t/p/w500/cgVNVFCnI91xCADnB366I2N95z3.jpg"
+      },
+      {
+        "title": "Angel Dust",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/wvFiu1yxTKk3QU7QiPi28T3cOl.jpg"
+      },
+      {
+        "title": "Império dos Sonhos",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/k2pAtp0GKRjSAGwrRpwk4y0wicZ.jpg"
+      },
+      {
+        "title": "A Pequena Loja dos Horrores",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/yYBBEK2WzkLtwGyZlvMAmy8vokG.jpg"
+      },
+      {
+        "title": "Videodrome: A Síndrome do Vídeo",
+        "year": "1983",
+        "poster": "https://image.tmdb.org/t/p/w500/bfXBITvihMWvCb9C6W2niq1SY2r.jpg"
+      },
+      {
+        "title": "O Homem Invisível",
+        "year": "1933",
+        "poster": "https://image.tmdb.org/t/p/w500/4tw6k8EXO7fjW7A4WZSISswgCuT.jpg"
+      },
+      {
+        "title": "Shin Gojira",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/aJnVDeqGvMc2mbwH8DJds652eEo.jpg"
+      },
+      {
+        "title": "Frankenstein",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/cXsMxClCcAF1oMwoXZvbKwWoNeS.jpg"
+      },
+      {
+        "title": "Scooby-Doo na Ilha dos Zumbis",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/fxYjPxMgtbAzsisNRyR0jB9wEOt.jpg"
+      },
+      {
+        "title": "tetsuo: the iron man FIRST CUT",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/li89iDBrXIYpqkEUq0i3SImAK8g.jpg"
+      },
+      {
+        "title": "KOTOKO",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/gR53iaNHHbIGE6nS4np2t5IFkdO.jpg"
+      },
+      {
+        "title": "O Incrível Homem Que Encolheu",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/aG3nY1sN5adP7XhiYEaWvhYXFai.jpg"
+      },
+      {
+        "title": "A Terça Parte da Noite",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/urX3O7X98GtGi8nY1ZKQIPBsYjA.jpg"
+      },
+      {
+        "title": "Caçador de Assassinos",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/sg9lS8hb7JHjv24LDLyPjYLZ3Ab.jpg"
+      },
+      {
+        "title": "Os Demônios",
+        "year": "1971",
+        "poster": "https://image.tmdb.org/t/p/w500/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg"
+      },
+      {
+        "title": "Carrie, A Estranha",
+        "year": "1976",
+        "poster": "https://image.tmdb.org/t/p/w500/bDgI10ARAA8xgeIOtEnQpYeYymA.jpg"
+      },
+      {
+        "title": "Gêmeos: Mórbida Semelhança",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/kAnHux1OKvKxVKAG58xvJYiLOr.jpg"
+      },
+      {
+        "title": "ヘルタースケルター",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/gTU98vSWPmHlgU3MDnE0ruDkF62.jpg"
+      },
+      {
+        "title": "Morgiana",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/yfza3vt4fjSOVJKuoDQnKNwDZKC.jpg"
+      },
+      {
+        "title": "Um Lobisomem Americano em Londres",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/sfYUcV6iSH4DLVUtLYQ1wViBSw6.jpg"
+      },
+      {
+        "title": "Noite do Terror",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/eMniGyTMofqxSrKoGoWMW40wXdk.jpg"
+      },
+      {
+        "title": "A Felicidade dos Katakuris",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/g0tvVSyx9pJT8izJTxCmz79qk7Y.jpg"
+      },
+      {
+        "title": "Vampiros de Almas",
+        "year": "1956",
+        "poster": "https://image.tmdb.org/t/p/w500/4eaAZ1UiTz3VzOSny7LzjycqvpU.jpg"
+      },
+      {
+        "title": "Eraserhead",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/mxveW3mGVc0DzLdOmtkZsgd7c3B.jpg"
+      },
+      {
+        "title": "King Kong",
+        "year": "1933",
+        "poster": "https://image.tmdb.org/t/p/w500/b3CrCIfY8bj9nSsdcFmozTozjyx.jpg"
+      },
+      {
+        "title": "A Bruxa",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/qqOtwhj8DxOBIwI0u6ThooXEIBR.jpg"
+      },
+      {
+        "title": "Nosferatu: Uma Sinfonia de Horror",
+        "year": "1922",
+        "poster": "https://image.tmdb.org/t/p/w500/zEzQTngP7F4qVmLDCWg5Hby6cgX.jpg"
+      },
+      {
+        "title": "Bramayugam",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/x4geWE7mQwGyzNGLw1MKoDf8Fs7.jpg"
+      },
+      {
+        "title": "O Monstro do Circo",
+        "year": "1927",
+        "poster": "https://image.tmdb.org/t/p/w500/c9R1wE1vMJWMZNdmqXUV8oTaCPQ.jpg"
+      },
+      {
+        "title": "Novembro",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/sc5F0vZCbiwC55XLnvtxFsovRI9.jpg"
+      },
+      {
+        "title": "Godzilla VS. Destoroyah",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/oilV4OOGCDZvgsd9ouQa7HGUMOH.jpg"
+      },
+      {
+        "title": "Uma Página de Loucura",
+        "year": "1926",
+        "poster": "https://image.tmdb.org/t/p/w500/axTeDNPNjn0UFc84ih1nDqIFYYm.jpg"
+      },
+      {
+        "title": "Sociedade dos Talentos Mortos",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/6DU4UZTNgt77z4IJtjYv34u8Yjq.jpg"
+      },
+      {
+        "title": "Gamera 3: A Vingança de Iris",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/6tXXrZK4P8qKiXbIP3HUYOfu0dZ.jpg"
+      },
+      {
+        "title": "Nosferatu, o Vampiro da Noite",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/mJozCdRVQ20ppkq6Qu9uet0gjuK.jpg"
+      },
+      {
+        "title": "A Volta dos Mortos Vivos",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/6DGsNitU2bO1n94GNwEeGX4PLMG.jpg"
+      },
+      {
+        "title": "Cecilia Roth: Material for Rapture",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/gwi12xNqY9wkEP8mUTCSVpIqhUi.jpg"
+      },
+      {
+        "title": "À Beira da Loucura",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/cuJz2wJeUmFk3N3eA61cs6iV0T8.jpg"
+      },
+      {
+        "title": "Grito de Pavor",
+        "year": "1961",
+        "poster": "https://image.tmdb.org/t/p/w500/k1Eq0XpDAsCkoGUGv5rV8c4uQUs.jpg"
+      },
+      {
+        "title": "Mad God",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/105stT9GkiENXiYqvWYKoAuHKQL.jpg"
+      },
+      {
+        "title": "Psicopata Americano",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/4AiFo2MwU62mTtuZ7VH16tlZcmo.jpg"
+      },
+      {
+        "title": "O Massacre da Serra Elétrica",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/p4ASEhC23kteI4pabD3cvFccCgO.jpg"
+      },
+      {
+        "title": "A Noite do Demônio",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/ePAjGAhynpwEI5HbpIrB28ML6lg.jpg"
+      },
+      {
+        "title": "Thirst",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/5cFwfCtqjAXvG4ctAyGdwopSNlc.jpg"
+      },
+      {
+        "title": "Uma História Chinesa de Fantasmas",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/t68e36kuIvy40bb5jGstOltq016.jpg"
+      },
+      {
+        "title": "Os Outros",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/oPKffdRjZ5VOe0IcaxdVqG2BIsr.jpg"
+      },
+      {
+        "title": "Garota Sombria Caminha pela Noite",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/9JKxR7ZvxWPRdyU4jXNjdBx6q7E.jpg"
+      },
+      {
+        "title": "Frankenstein",
+        "year": "1931",
+        "poster": "https://image.tmdb.org/t/p/w500/mu6wHwH0IwCCaEYtpqujuPJYat1.jpg"
+      },
+      {
+        "title": "O Vampiro",
+        "year": "1932",
+        "poster": "https://image.tmdb.org/t/p/w500/pyoOy9Up3F78bwYllS9M0SCou9b.jpg"
+      },
+      {
+        "title": "O Corcunda de Notre Dame",
+        "year": "1939",
+        "poster": "https://image.tmdb.org/t/p/w500/m6fsyHeqSQs4tktk9q3awgo7IzF.jpg"
+      },
+      {
+        "title": "Desafio do Além",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/xc36PZ5ZqfWch9FOefXBmRIinOH.jpg"
+      },
+      {
+        "title": "Dia dos Mortos",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/dFvzwRGgiKhjpbZIELfjiEq0Y6U.jpg"
+      },
+      {
+        "title": "O Parque Macabro",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/h4L4va9dSslBnXna9HZrsIn4wkR.jpg"
+      },
+      {
+        "title": "A Verdade de um Sonho",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/6r1PkbA2EdOGNaGxNJIZKbk2GQi.jpg"
+      },
+      {
+        "title": "O Médico e o Monstro",
+        "year": "1932",
+        "poster": "https://image.tmdb.org/t/p/w500/fRKR4HlpPtNBBWbCwJo6rMxKSyy.jpg"
+      },
+      {
+        "title": "Re-Animator: A Hora dos Mortos-Vivos",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/1ZHGvj6OgnNExAxMUx2GW5eiicY.jpg"
+      },
+      {
+        "title": "The Hostage",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/4FYiEot1ERkgUzgCEPueQWnwy7g.jpg"
+      },
+      {
+        "title": "Halloween - A Noite do Terror",
+        "year": "1978",
+        "poster": "https://image.tmdb.org/t/p/w500/ozkOzFITxLmp5nkjvuawQaRHNF3.jpg"
+      },
+      {
+        "title": "Clímax",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/co0GDAHG6yzsOQKG5szYthGigfS.jpg"
+      },
+      {
+        "title": "Na Solidão da Noite",
+        "year": "1945",
+        "poster": "https://image.tmdb.org/t/p/w500/p443gweWg6EZZZKBDw5H3gM9DG8.jpg"
+      },
+      {
+        "title": "Midsommar: O Mal Não Espera a Noite",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/hR4dXPlWq5Nekwjqbp3gFGeiiZS.jpg"
+      },
+      {
+        "title": "Pequeno Otik",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/yQ480SowUToKYGZ7y3obe0AC9d9.jpg"
+      },
+      {
+        "title": "Elvira: a Rainha das Trevas",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/1qqnoUwNYv2cRkS1jZLZFVcRDIA.jpg"
+      },
+      {
+        "title": "A Substância",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/pGn0yJFe1AoyWM33tWcPQ2TfMvL.jpg"
+      },
+      {
+        "title": "Imagens",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/aTezEYoe3hKPGva8yY4M7b24F3D.jpg"
+      },
+      {
+        "title": "A Morte lhe Cai Bem",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/wk9eHXLV8xvk8MQA5l7GMeTJUV7.jpg"
+      },
+      {
+        "title": "Os Pássaros",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/oY6n1y79rLp7yjfJpOehrL3dMUI.jpg"
+      },
+      {
+        "title": "Esposas em Conflito",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/5z1ogJJmQkCoU62VJmut4nnc2qs.jpg"
+      },
+      {
+        "title": "Tenebre",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/pgYutS7386LbXR2m2mZiCrfhZM7.jpg"
+      },
+      {
+        "title": "Culpada Por Romance",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/wNhAK6NCfNQZ7t3fVUmtiUD0Tqx.jpg"
+      },
+      {
+        "title": "O Fantasma da Ópera",
+        "year": "1925",
+        "poster": "https://image.tmdb.org/t/p/w500/mvaYpAYj957C2tlq3vVJPSzGJXK.jpg"
+      },
+      {
+        "title": "Os Meninos",
+        "year": "1976",
+        "poster": "https://image.tmdb.org/t/p/w500/mNwrAOUH6R5yMGypfQWsafq4d6P.jpg"
+      },
+      {
+        "title": "Martin",
+        "year": "1978",
+        "poster": "https://image.tmdb.org/t/p/w500/kZMyVazoLcwqF9hCX5nNjb453sd.jpg"
+      },
+      {
+        "title": "Suspíria - A Dança do Medo",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/qklGv6ZvmIpEP7RTInbngyKUT5V.jpg"
+      },
+      {
+        "title": "Extermínio",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/pVTtJSvJoOofD1YoyPSGwWEWmJd.jpg"
+      },
+      {
+        "title": "Seis Mulheres para o Assassino",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/cIIZzZSaqlzuETLRz2UaSnsnbxF.jpg"
+      },
+      {
+        "title": "A Sétima Maldição",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/di2ODozMfuoZB5AVPnm4dmIBmQ4.jpg"
+      },
+      {
+        "title": "The Fall of the House of Usher",
+        "year": "1928",
+        "poster": "https://image.tmdb.org/t/p/w500/tAQ85wZW4peogUJha88rT8SPq7v.jpg"
+      },
+      {
+        "title": "Até os Ossos",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/h06Kkpav1k4wBKcMHBsIve9tuqm.jpg"
+      },
+      {
+        "title": "Medo",
+        "year": "1983",
+        "poster": "https://image.tmdb.org/t/p/w500/l8wTd2hkf8CIGJ7BrhFPB5VZSOb.jpg"
+      },
+      {
+        "title": "Pelo Amor e pela Morte",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/mD2ODSl7fqre1dx2BatMyotvZho.jpg"
+      },
+      {
+        "title": "Com a Maldade na Alma",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/lyCU3gyCKUEvrOrSoimhtgSHrDk.jpg"
+      },
+      {
+        "title": "Uma Noite Alucinante 3",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/l9f2prMV3b9VtyZRIFHZ6gSfWdD.jpg"
+      },
+      {
+        "title": "A Hora do Pesadelo",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/8cXxfVhSdTL1tC5ivC0mX74QQyI.jpg"
+      },
+      {
+        "title": "Cega Obsessão",
+        "year": "1969",
+        "poster": "https://image.tmdb.org/t/p/w500/jyh96uKE5SQBnVi1gLSSzDgq9TE.jpg"
+      },
+      {
+        "title": "Gamera 2: Ataque da Legião",
+        "year": "1996",
+        "poster": "https://image.tmdb.org/t/p/w500/35VLXxTYUrkPDavGIPMlQs0n7sp.jpg"
+      },
+      {
+        "title": "Cold Fish - Original Japanese Poster - Its Creation, Influences And Film Posters In General",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/zRGZGfgfKX0sM5vuwT7rgwgMybQ.jpg"
+      },
+      {
+        "title": "Pearl: Uma História de Origem 'X'",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/cTgLkhIMmzwH1NAaq7NDbFN20zi.jpg"
+      },
+      {
+        "title": "O Pássaro das Plumas de Cristal",
+        "year": "1970",
+        "poster": "https://image.tmdb.org/t/p/w500/d9DzUaZ5nqrMOuhBYcteprZPyrN.jpg"
+      },
+      {
+        "title": "Medo",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/aAm3cdJNNFVDfa0N1TNqfLgnMYd.jpg"
+      },
+      {
+        "title": "Cão Branco",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/lkroFFcimdZ4HJHymT9SbU1bgKc.jpg"
+      },
+      {
+        "title": "Frenesi",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/ihG3hAsUIOeRg3yHPCE2g7HoPNQ.jpg"
+      },
+      {
+        "title": "Pulse",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/njzd0IKLYny7RLwoVsLr09ekRmU.jpg"
+      },
+      {
+        "title": "Contos Macabros",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/glPNCcI7V8zTTI3BG0iIUJJcwXN.jpg"
+      },
+      {
+        "title": "A Morta-Viva",
+        "year": "1943",
+        "poster": "https://image.tmdb.org/t/p/w500/uoyBR8XNxPQRojujtczfG1qJezY.jpg"
+      },
+      {
+        "title": "Faça Ela Voltar",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/xfmnUz6C5WRboIMQZD0j3SNDT7v.jpg"
+      },
+      {
+        "title": "O Golem",
+        "year": "1920",
+        "poster": "https://image.tmdb.org/t/p/w500/zZMl17e7luk5st1zaVhObM35RV4.jpg"
+      },
+      {
+        "title": "Veneno Para As Fadas",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/b4bOVSACDvRxfXYWI7bCtLqm51g.jpg"
+      },
+      {
+        "title": "Godzilla, Mothra e King Ghidorah: Ataque Total de Monstros Gigantes (GMK)",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/vMZsdO6ZLBUHLqTOH8YvjwOBqUv.jpg"
+      },
+      {
+        "title": "Tumbbad",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/z1xOCxw780WFJC5uCTMfCkQ4Agi.jpg"
+      },
+      {
+        "title": "Viagens Alucinantes",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/8CrpQ3G7lthwOh8lkDVfnSkR0VL.jpg"
+      },
+      {
+        "title": "東海道四谷怪談",
+        "year": "1959",
+        "poster": "https://image.tmdb.org/t/p/w500/oCAXpI8RYevKK6oV5uZv7wcB8iH.jpg"
+      },
+      {
+        "title": "極道恐怖大劇場 牛頭 GOZU",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/zgFYoqhi8bzwuKdhc7kDpoFsJvh.jpg"
+      },
+      {
+        "title": "Encounters of the Spooky Kind",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/gQcr4qwBxT9ZQZejzVyMGcV0sOe.jpg"
+      },
+      {
+        "title": "[REC]",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/hJx9gqUJgWXRkFpIbCcNYrkqAQX.jpg"
+      },
+      {
+        "title": "Island of Lost Souls",
+        "year": "1932",
+        "poster": "https://image.tmdb.org/t/p/w500/g7K7r1FojQC52YHxfmuXgwYBq5Q.jpg"
+      },
+      {
+        "title": "O Dia da Besta",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/2TJqXK2HccY0DyVMrtH8CODUWzu.jpg"
+      },
+      {
+        "title": "A Semente Maldita",
+        "year": "1956",
+        "poster": "https://image.tmdb.org/t/p/w500/8y36mlGQ5kCCHq0ujwdexPYV8Wu.jpg"
+      },
+      {
+        "title": "Nosferatu",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/v7csRKDDx0CnDq4d2ZY7ZR2IAzR.jpg"
+      },
+      {
+        "title": "Não! Não Olhe!",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/eyOw2kAOad2MNVsjMFmfzavB51h.jpg"
+      },
+      {
+        "title": "Singapore Sling: Ο άνθρωπος που αγάπησε ένα πτώμα",
+        "year": "1990",
+        "poster": "https://image.tmdb.org/t/p/w500/61qTmbRikcUUnvMxcU5xv9RUUTO.jpg"
+      },
+      {
+        "title": "Os Garotos Perdidos",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/xlzkIfReoFJbPkbV67NcsuMcu6T.jpg"
+      },
+      {
+        "title": "Gemini",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/nfpJ2OZn5K3SDF7v5hwun0vlnpN.jpg"
+      },
+      {
+        "title": "Tucker e Dale Contra o Mal",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/fgTI1Azpk6iE2DCk5A8LN0SbAid.jpg"
+      },
+      {
+        "title": "A Máscara do Demônio",
+        "year": "1960",
+        "poster": "https://image.tmdb.org/t/p/w500/jrgLAAg1Q0hvm9Dq1Dqhu7dF123.jpg"
+      },
+      {
+        "title": "Sangue de Pantera",
+        "year": "1942",
+        "poster": "https://image.tmdb.org/t/p/w500/7KOcYgJ7r8DUjpldsvNzUyEQKz4.jpg"
+      },
+      {
+        "title": "Os Olhos da Cidade São Meus",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/t3FxT71COm5JjDZZxtVhLJom9RD.jpg"
+      },
+      {
+        "title": "O Mistério de Candyman",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/ro5OqAeL8OQzeTJMnBchKg25rEg.jpg"
+      },
+      {
+        "title": "Coração Satânico",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/x29lRNO7o6Vhf4SFxL3JqFoMujH.jpg"
+      },
+      {
+        "title": "A Meia-Irmã Feia",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/9MBZe0Uk2TXLjgsgtG6HPGmeKLK.jpg"
+      },
+      {
+        "title": "Mortos de Fome",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/6Z5l7LH9NuTZSvJ8hQRpanAXKZT.jpg"
+      },
+      {
+        "title": "Jogos Mortais",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/lwTKflT7UbQCTyImbuq6eamUKwb.jpg"
+      },
+      {
+        "title": "Mr. Vampire",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/AvaTIQjDodkMRf7RsVw13bwSX9I.jpg"
+      },
+      {
+        "title": "O Abominável Dr. Phibes",
+        "year": "1971",
+        "poster": "https://image.tmdb.org/t/p/w500/sqr5h6CsxzOeN8WUJbgISCbUaOD.jpg"
+      },
+      {
+        "title": "Terror na Ópera",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/7meK7jJX8OjTHIsX3sPALISHoAm.jpg"
+      },
+      {
+        "title": "Nazareno Cruz y el lobo",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/2tBUiRIuYgAL5a0iM1IPd98Dqvd.jpg"
+      },
+      {
+        "title": "Uma Noite Alucinante: A Morte do Demônio",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/dCdXagFYR7WwaHuVmZgzw4F0KpP.jpg"
+      },
+      {
+        "title": "A Hora do Mal",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/psEJSjQr6I9GSJTdW28CKC4Kffs.jpg"
+      },
+      {
+        "title": "O Império da Paixão",
+        "year": "1978",
+        "poster": "https://image.tmdb.org/t/p/w500/mVHc6e5Ke171X881fs5utEWFLyY.jpg"
+      },
+      {
+        "title": "Endemoniada",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/ucRS5itC1Ea4kgg8h8QBlCo3qnG.jpg"
+      },
+      {
+        "title": "Os Vourdalak",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/2FOSsY817pAUph6C3nCNEL5HP7M.jpg"
+      },
+      {
+        "title": "Possuída",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/i674A4SCTFUwyKEivUPMKKom2tX.jpg"
+      },
+      {
+        "title": "Prisão de Cristal",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/6MiWKRTV5NVODjscjuJ3it2Ugg2.jpg"
+      },
+      {
+        "title": "Celia",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/vrhapMkOMjaX2sPGgAryxyH9S8L.jpg"
+      },
+      {
+        "title": "Nós",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/5ncjQfUDr0oRKnfpdAXobJFbnao.jpg"
+      },
+      {
+        "title": "O Orfanato",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/f6npb07xOJBj3xLILSo8wXOHWga.jpg"
+      },
+      {
+        "title": "Black Sabbath: As Três Máscaras do Terror",
+        "year": "1963",
+        "poster": "https://image.tmdb.org/t/p/w500/hRbCLQD3NB90NZ3UID3RdcEWut1.jpg"
+      },
+      {
+        "title": "Sala Verde",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/im3BSIqT3JXAdTlLAdhwaw9DSkw.jpg"
+      },
+      {
+        "title": "Um Lugar Silencioso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/tH0YRWQciL1pkwnLR7cZ7xSh7oA.jpg"
+      },
+      {
+        "title": "Silêncio nas Trevas",
+        "year": "1946",
+        "poster": "https://image.tmdb.org/t/p/w500/4k0k9f59g901GWzw0gfFT7f5in.jpg"
+      },
+      {
+        "title": "As Sete Máscaras da Morte",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/jh2AYlIAeWyqgTPSqBeO8DleR3J.jpg"
+      },
+      {
+        "title": "Gremlins",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/qVpNFHNjRkzfZj7bzOK803A0ctO.jpg"
+      },
+      {
+        "title": "Sombre",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/qHf1bZEpo5UE6J8qxMnfTkk3zqh.jpg"
+      },
+      {
+        "title": "Vestida para Matar",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/3wlVVkyxACA2yB4mxZZYS05kXnH.jpg"
+      },
+      {
+        "title": "Dr. Gogol - O Médico Louco",
+        "year": "1935",
+        "poster": "https://image.tmdb.org/t/p/w500/lDD8pKd6jSrFLV3RvE0eDGGGxR0.jpg"
+      },
+      {
+        "title": "O Escondido",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/ps7v0QHm9KRoEtMmcVu6eE6NQBJ.jpg"
+      },
+      {
+        "title": "O Vício",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/1Yy8H2tKQ16mffLFRfxcBHKBdyF.jpg"
+      },
+      {
+        "title": "A Bolha Assassina",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/l9zZIz8ku6HQ03tDwiJGiIKsgM2.jpg"
+      },
+      {
+        "title": "A Máscara Mortal",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/sSYceyGZrWskWDsn3MHtipJ1wFM.jpg"
+      },
+      {
+        "title": "A Morte Pede Carona",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/pavKmi6Alyiav67GLUmsorXDxLn.jpg"
+      },
+      {
+        "title": "May - Obsessão Assassina",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/x9fBwyy9nWUqs5QWx6FC5ixVaZa.jpg"
+      },
+      {
+        "title": "Phenomena",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/8u14C2FLMSCLIT5znmye6RovonO.jpg"
+      },
+      {
+        "title": "Noroi: A Lenda de Kagutaba",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/5H6bfU24aiYKF0KVTSoGt3MyAX.jpg"
+      },
+      {
+        "title": "Rastro de Maldade",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/oyRk9uMgBxRm0ABo7Xne68GOwlm.jpg"
+      },
+      {
+        "title": "Os Tigres Não Tem Medo",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/tlKmfWU6hvga3f9AinTsEGi2THU.jpg"
+      }
+    ]
+  }
+}
