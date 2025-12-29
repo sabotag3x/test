@@ -1,0 +1,468 @@
+{
+  "animacao": {
+    "name": "Animação",
+    "updated_at": "2025-12-29",
+    "films": [
+      {
+        "title": "Túmulo dos Vagalumes",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/kHFUyxNJfhMkKk1FwrNHd62KTEs.jpg"
+      },
+      {
+        "title": "A Viagem de Chihiro",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/hhoKhsyJ3hFaxEm5pMdZRiTu2lJ.jpg"
+      },
+      {
+        "title": "Homem-Aranha: Através do Aranhaverso",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/4CwKj1fw33BXYzxvrpM3GlAhK4L.jpg"
+      },
+      {
+        "title": "Homem-Aranha: No Aranhaverso",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/voO5GpUKdMfryPHxqxdPBj319ky.jpg"
+      },
+      {
+        "title": "Perfect Blue",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/79vujbsWEbX4dzffBV541QXN6sf.jpg"
+      },
+      {
+        "title": "Princesa Mononoke",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/7EadOwHmyQgOnlghRiWBygNtnjl.jpg"
+      },
+      {
+        "title": "O Fantástico Sr. Raposo",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/1Ey4LYUzTqzizPNjcBi20pU9joC.jpg"
+      },
+      {
+        "title": "Evangelion: 3.0+1.0 A Esperança",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/tQ6P7q6vrH8ym7knYmuA6SKmfFZ.jpg"
+      },
+      {
+        "title": "Akira",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/tbwwTQ3EqSdotbQ3ZcIl6vKBv7q.jpg"
+      },
+      {
+        "title": "O Gigante de Ferro",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/qxPusltlonoWMUD5ClEZfdGW0pt.jpg"
+      },
+      {
+        "title": "Look Back",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/uawgC9JOtbBGXwWygb3lon8SaEL.jpg"
+      },
+      {
+        "title": "Mary e Max: Uma Amizade Diferente",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/e9xHS4axFq74BhwxkuVSL3xBVNy.jpg"
+      },
+      {
+        "title": "O Conto da Princesa Kaguya",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/cerV9QJhSdDlnUigrsKZQfOeTpA.jpg"
+      },
+      {
+        "title": "Interstella 5555",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/5h2zae7zxsWnjqeoQ9vdzJMbXlh.jpg"
+      },
+      {
+        "title": "A Canção do Mar",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/39aOJwueG1BX1OZqNdm9tnMUVjE.jpg"
+      },
+      {
+        "title": "THE FIRST SLAM DUNK",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/cEpFGDPSdHEXUkkgrAZdhQyC7ZK.jpg"
+      },
+      {
+        "title": "Marcel, a Concha de Sapatos",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/8hIj0OJI6NDMqOQTt9miZlAVIQP.jpg"
+      },
+      {
+        "title": "O Filho da Égua Branca",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/ypNwvZUPb0kqrdWWG2IdHuN6IUS.jpg"
+      },
+      {
+        "title": "Kizumonogatari III - Sangue Frio",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/3QEJlbDt6VTh24Hq9J0JZKQPaZY.jpg"
+      },
+      {
+        "title": "千年女優 -軌跡-",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/rQfutJfJL3SgcThccDdaK8JVp81.jpg"
+      },
+      {
+        "title": "WALL-E",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/qNiwJPVCO4cgiM8LVtxwPV2HxHS.jpg"
+      },
+      {
+        "title": "Ratatouille",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/41Co0TRUJNyvjr2vHBEcAKAEFpX.jpg"
+      },
+      {
+        "title": "Your name.",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/zteJkqfL00XsneIqgrUEeDIuY9k.jpg"
+      },
+      {
+        "title": "O Rei Leão",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/8aIvm8OaJISOpVTt7rMIh7X35G5.jpg"
+      },
+      {
+        "title": "Wolfwalkers",
+        "year": "2020",
+        "poster": "https://image.tmdb.org/t/p/w500/gCa0yDjBb6zHgy2dhbud9mfsTLK.jpg"
+      },
+      {
+        "title": "Flee: Nenhum Lugar Para Chamar de Lar",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/92sguHEFTZm5bvvTYRoGksFrasb.jpg"
+      },
+      {
+        "title": "Robô Selvagem",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/gAHNIZKG8fmK7njOTpMmLKJXiag.jpg"
+      },
+      {
+        "title": "Persépolis",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/nKk6mPk1JmkRxT92MqGWZQoCX2p.jpg"
+      },
+      {
+        "title": "Mind Game",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/xtLVpIOHkt7NEm2MhSMrLztK81q.jpg"
+      },
+      {
+        "title": "Night Is Short, Walk on Girl",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/4PTsq1R7oN5Qan4aWXsuSc7hf51.jpg"
+      },
+      {
+        "title": "Meu Amigo Totoro",
+        "year": "1988",
+        "poster": "https://image.tmdb.org/t/p/w500/23KKTxDg6rxZVc66bloQQdPSr29.jpg"
+      },
+      {
+        "title": "A Voz do Silêncio",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/haMUCn5bNgeKb2EkILvhYGoHXZX.jpg"
+      },
+      {
+        "title": "Coraline e o Mundo Secreto",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/rranXmvqPT4NoXzmxhFtXr9nNYT.jpg"
+      },
+      {
+        "title": "Minha Vida de Abobrinha",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/4jsmf7rlHvHN0oxuXZPH8xrBt39.jpg"
+      },
+      {
+        "title": "Nausicaä do Vale do Vento",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/UkCcG94fX1fKIu6DWzwEfpbxL9.jpg"
+      },
+      {
+        "title": "Sussurros do Coração",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/5q752lJ1XoRwj6yKVx999avJ8eO.jpg"
+      },
+      {
+        "title": "Klaus",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/guyZW9AQdTMp2F4esttjyIMMK1k.jpg"
+      },
+      {
+        "title": "Memórias de um Caracol",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/zeFRmFslWFp8GqbFfzUgwZb2ufW.jpg"
+      },
+      {
+        "title": "Patlabor 2 - O Filme",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/5LNUJJaKAaM1Jk3FyphZyTbZyDO.jpg"
+      },
+      {
+        "title": "A Casa Lobo",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/pXBOlokmof5i77WnT6D86dI1NOV.jpg"
+      },
+      {
+        "title": "Vampire Hunter D: Bloodlust",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/l2FyMofnCYoALX8GZ9L9hdH0fEM.jpg"
+      },
+      {
+        "title": "BLUE GIANT",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/1njTwaMW14gpbzXbh5Q11yQ05HB.jpg"
+      },
+      {
+        "title": "Mulan",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/bj3iSjLlkwHtJrPmvHXa8P7edI9.jpg"
+      },
+      {
+        "title": "Gato de Botas 2: O Último Pedido",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/t8F7R3y7Yar2JA8IVHN6fjg2RwX.jpg"
+      },
+      {
+        "title": "Como Treinar o Seu Dragão",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/spZbO7Ss6U9W5zSHjtH6FvXvCF7.jpg"
+      },
+      {
+        "title": "Viva: A Vida é uma Festa",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/6oNm06TPz2vGiPc2I52oXW3JwPS.jpg"
+      },
+      {
+        "title": "Redline",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/xjwGQJr4ycbfu7jfhOUDxjyrrmL.jpg"
+      },
+      {
+        "title": "Children’s Game #11: Wolf and Lamb",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/z4ERFLGpqczyIkalx0g62qCrBDJ.jpg"
+      },
+      {
+        "title": "Shrek",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/iB64vpL3dIObOtMZgX3RqdVdQDc.jpg"
+      },
+      {
+        "title": "Ne Zha 2: O Renascer da Alma",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/wJnb4ikygiVuYLuvj4b4Jpvudn1.jpg"
+      },
+      {
+        "title": "Cowboy Bebop: O Filme",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/zgI6Th73JRwATaD0bA3FVVDjUow.jpg"
+      },
+      {
+        "title": "Toy Story: Um Mundo de Aventuras",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/6AafgfifXkFS4g2xGJZIwsPQK6P.jpg"
+      },
+      {
+        "title": "Ponyo - Uma Amizade que Veio do Mar",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/cvpsmNWc8nyePJMbyMc9X5lLN6L.jpg"
+      },
+      {
+        "title": "Shrek 2",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/2yYP0PQjG8zVqturh1BAqu2Tixl.jpg"
+      },
+      {
+        "title": "宮崎 駿の仕事 「風立ちぬ」1000日の記録/引退宣言 知られざる物語",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/bUbsp6i9WIuRAdSCk28ZsDLzWzS.jpg"
+      },
+      {
+        "title": "Neste Canto do Mundo",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/kDzDqsZqwko3uSr0xU9yBhl1BW5.jpg"
+      },
+      {
+        "title": "A Pequena Amélie",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/5hOW0E9llZy2rfgom0UrO1OLaCC.jpg"
+      },
+      {
+        "title": "Up: Altas Aventuras",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/oo5gvGDIiPwbXc3R0snZIuOc517.jpg"
+      },
+      {
+        "title": "Ghost in the Shell: O Fantasma do Futuro",
+        "year": "1995",
+        "poster": "https://image.tmdb.org/t/p/w500/4YgDy47HKxcSwUPQWrg0J39lEZA.jpg"
+      },
+      {
+        "title": "Paprika",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/aD0uIqGX3xdmUF2Ol2nvhJsfL5C.jpg"
+      },
+      {
+        "title": "Tekkonkinkreet",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/Akj8bQtqmTua2L9wdJ0lN9EmHTW.jpg"
+      },
+      {
+        "title": "Flow",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/tx3VT4mKjIlkLpv3UBkOwUxIcB4.jpg"
+      },
+      {
+        "title": "Colegas de Classe",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/7byisQANRFHf9SC60n5PaLywuMa.jpg"
+      },
+      {
+        "title": "A Ganha-Pão",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/n97gnpuOEyYixtYBQPkzW194Si5.jpg"
+      },
+      {
+        "title": "Monstros S.A.",
+        "year": "2001",
+        "poster": "https://image.tmdb.org/t/p/w500/5p6cdAeUevsLOX0oI1T4JIul4QO.jpg"
+      },
+      {
+        "title": "Meu Amigo Robô",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/zmgx7H51Tq9wgpW0DZxSGzXURZy.jpg"
+      },
+      {
+        "title": "O Castelo no Céu",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/9y7AZVM0YLIeNzNVCYyo0vcVxr.jpg"
+      },
+      {
+        "title": "Os Incríveis",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/z8k5EhZZTLsCRF8NWjSe6snWNZg.jpg"
+      },
+      {
+        "title": "O Príncipe do Egito",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/5jco6VjKwjAyN8HElg4F3dXGfT8.jpg"
+      },
+      {
+        "title": "Viagem ao Topo da Terra",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/fj8wv7ip5JbnJFqwNicNKHLClYH.jpg"
+      },
+      {
+        "title": "Kizumonogatari II - Sangue Quente",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/mRknveOnc7dgTQHDHjePgHFPy6P.jpg"
+      },
+      {
+        "title": "One Piece: Baron Omatsuri and the Secret Island",
+        "year": "2005",
+        "poster": "https://image.tmdb.org/t/p/w500/6yB29qd0zjQJE42u6iUKufxMVUk.jpg"
+      },
+      {
+        "title": "Batman: A Máscara do Fantasma",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/opeo3R9l1AgbiIgPqpp1rtPXBwb.jpg"
+      },
+      {
+        "title": "Ilha dos Cachorros",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/4k4sjRXGMTfIDkfVi7lHccatnWk.jpg"
+      },
+      {
+        "title": "Procurando Nemo",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/djbivExXSZb0sTO8uYaaQC5vMRM.jpg"
+      },
+      {
+        "title": "Le Roi et l'Oiseau",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/8LlM0gtrwmzmf9z9RvhWvOOl2WE.jpg"
+      },
+      {
+        "title": "Porco Rosso: O Último Herói Romântico",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/mf3UwAH3b2cCFTyw4qKK62Z7AZb.jpg"
+      },
+      {
+        "title": "Tower",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/sYau8BFtkQUMWDyRbpACru4cS6G.jpg"
+      },
+      {
+        "title": "As Bicicletas de Belleville",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/mpd3JmTh75PD1kKS1RifgIz39Kh.jpg"
+      },
+      {
+        "title": "Panique au village",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/1IYHqB7hT6TVFdrOP8aMxnPU4KN.jpg"
+      },
+      {
+        "title": "Planeta Fantástico",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/6zKP4iIb15XsmpF9XxbdSJOvr5Y.jpg"
+      },
+      {
+        "title": "Lupin III: O Castelo de Cagliostro",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/ljUAzMUhEVf2qXKgCBm61WJmV0J.jpg"
+      },
+      {
+        "title": "Enrolados",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/wZzVkdnc0kw20lSJc13ZmgTPah3.jpg"
+      },
+      {
+        "title": "Os Cães Plagueados",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/gLKf3C4O1ZlkWrz0awUfgRneumL.jpg"
+      },
+      {
+        "title": "Kiriku e a Feiticeira",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/fkKkuQpJAKebK7LS8ckhtBPuZWZ.jpg"
+      },
+      {
+        "title": "Com Amor, Van Gogh",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/pw72rhXTRbIel6iNWKHUqiIvcZm.jpg"
+      },
+      {
+        "title": "Toy Story 3",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/rf67AeS9nP8DD7dZYbvhjEVoIBf.jpg"
+      },
+      {
+        "title": "Valsa com Bashir",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/y0t0yTyrEkzDf0Yl8uiSLrVPWvQ.jpg"
+      },
+      {
+        "title": "Barbie em as 12 Princesas Bailarinas",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/d1WbtY6ThUE2P7riFqmPIYCnUdi.jpg"
+      },
+      {
+        "title": "Quando o Vento Sopra",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/sQ7CgHdDcKnnzhCXA7wC2JVL7qq.jpg"
+      },
+      {
+        "title": "Ongaku",
+        "year": "2020",
+        "poster": "https://image.tmdb.org/t/p/w500/e3ICAxc9VaMjsH05GCCVsdkjLNl.jpg"
+      },
+      {
+        "title": "Gen Pés Descalços",
+        "year": "1983",
+        "poster": "https://image.tmdb.org/t/p/w500/RY4DDZxRkAjAl4yEsFvlj3OBVp.jpg"
+      }
+    ]
+  }
+}
