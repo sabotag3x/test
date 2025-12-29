@@ -1,0 +1,463 @@
+{
+  "palma_de_ouro": {
+    "name": "Palma de Ouro",
+    "updated_at": "2025-12-29",
+    "films": [
+      {
+        "title": "Foi Apenas Um Acidente",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/uFJVkYiiVqaYE3wJYsqE3oWUiLK.jpg"
+      },
+      {
+        "title": "Anora",
+        "year": "2024",
+        "poster": "https://image.tmdb.org/t/p/w500/xmFdNzbUiT5XmH6rbIVGYDQHGeo.jpg"
+      },
+      {
+        "title": "Anatomia de uma Queda",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/woXYl0DJTx6TsfYWPkSfNHTsoOx.jpg"
+      },
+      {
+        "title": "Triângulo da Tristeza",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/scfQwUUe0MQb0T5khF1x5e4HSoR.jpg"
+      },
+      {
+        "title": "Titane",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/y93w5MGC9fbXjy1qfN6rUpSbBti.jpg"
+      },
+      {
+        "title": "Parasita",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/igw938inb6Fy0YVcwIyxQ7Lu5FO.jpg"
+      },
+      {
+        "title": "The Shoplifters",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/k66qtc0p703dCqIBWsxZ51olAp9.jpg"
+      },
+      {
+        "title": "The Square: A Arte da Discórdia",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/wMqVrl7WkmI3Ik5PQDFpUqpDhLW.jpg"
+      },
+      {
+        "title": "Eu, Daniel Blake",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/L5QbyBq8OhKoT566MzJ03J9n6M.jpg"
+      },
+      {
+        "title": "Dheepan: O Refúgio",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/iewfvzrOeUzs1XEYijkEFfa01nw.jpg"
+      },
+      {
+        "title": "Sono de Inverno",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/y51wK57MWxxzJaMDUXBWDV2RlkU.jpg"
+      },
+      {
+        "title": "Azul É A Cor Mais Quente",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/ao3vG9cD1pORpQu6I7KmOiqHIrA.jpg"
+      },
+      {
+        "title": "Amor",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/obCBsX3PIqCckibGraeJRMubDYX.jpg"
+      },
+      {
+        "title": "A Árvore da Vida",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/iDt5nvv2TdZsFFuF5JvnEZr6RGB.jpg"
+      },
+      {
+        "title": "Tio Boonmee, que Pode Recordar Suas Vidas Passadas",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/9XeIVAvmMXyhUtTQoSjRGQt2EjY.jpg"
+      },
+      {
+        "title": "A Fita Branca",
+        "year": "2009",
+        "poster": "https://image.tmdb.org/t/p/w500/cL3WiwKKfhckkKdHyAIMFmxJtCp.jpg"
+      },
+      {
+        "title": "4 Meses, 3 Semanas e 2 Dias",
+        "year": "2007",
+        "poster": "https://image.tmdb.org/t/p/w500/xWkiTwqa6bnUmfNpmK20YyS7apf.jpg"
+      },
+      {
+        "title": "Ventos da Liberdade",
+        "year": "2006",
+        "poster": "https://image.tmdb.org/t/p/w500/o19IHUnX8oxFwx3k8V4x831UWUQ.jpg"
+      },
+      {
+        "title": "Fahrenheit 11 de Setembro",
+        "year": "2004",
+        "poster": "https://image.tmdb.org/t/p/w500/45lmWuZxwVs4ftEjFHUfPpAXw9t.jpg"
+      },
+      {
+        "title": "Elefante",
+        "year": "2003",
+        "poster": "https://image.tmdb.org/t/p/w500/vkwnO17mXcinLgY4ZtOGhYTl03K.jpg"
+      },
+      {
+        "title": "O Pianista",
+        "year": "2002",
+        "poster": "https://image.tmdb.org/t/p/w500/g0s9Yb5tfka73UKxFAPxO9lPHBW.jpg"
+      },
+      {
+        "title": "Dançando no Escuro",
+        "year": "2000",
+        "poster": "https://image.tmdb.org/t/p/w500/uQvZJngcelbZLiROMwmNMkarlzB.jpg"
+      },
+      {
+        "title": "Rosetta",
+        "year": "1999",
+        "poster": "https://image.tmdb.org/t/p/w500/zdWX3mNm9rzEU9f363y0NPehFrS.jpg"
+      },
+      {
+        "title": "A Eternidade e Um Dia",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/9y45Ipt5FSAzuIUHg6kLYkQcyWl.jpg"
+      },
+      {
+        "title": "A Enguia",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/w7cFnCB2UECuekGRzamxiEzMKzE.jpg"
+      },
+      {
+        "title": "Gosto de Cereja",
+        "year": "1997",
+        "poster": "https://image.tmdb.org/t/p/w500/pF19XXqFX3ZYM4CMfXKpm9ozsFL.jpg"
+      },
+      {
+        "title": "Pulp Fiction: Tempo de Violência",
+        "year": "1994",
+        "poster": "https://image.tmdb.org/t/p/w500/tptjnB2LDbuUWya9Cx5sQtv5hqb.jpg"
+      },
+      {
+        "title": "O Piano",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/s6jsdiKPWrqiETLtAtW8T3REE7K.jpg"
+      },
+      {
+        "title": "Adeus, Minha Concubina",
+        "year": "1993",
+        "poster": "https://image.tmdb.org/t/p/w500/gsCvaK3jYniSCBJKxKu8Qwr3jf2.jpg"
+      },
+      {
+        "title": "As Melhores Intenções",
+        "year": "1992",
+        "poster": "https://image.tmdb.org/t/p/w500/98MwCLjxx3dboypNJm8nr4HuPD9.jpg"
+      },
+      {
+        "title": "Barton Fink: Delírios de Hollywood",
+        "year": "1991",
+        "poster": "https://image.tmdb.org/t/p/w500/gScIc40hwbCFE2OWRxbNI547zit.jpg"
+      },
+      {
+        "title": "Coração Selvagem",
+        "year": "1990",
+        "poster": "https://image.tmdb.org/t/p/w500/cxgtKsh86jhRWuL2T5C1juzp9lD.jpg"
+      },
+      {
+        "title": "Sexo, Mentiras e Videotape",
+        "year": "1989",
+        "poster": "https://image.tmdb.org/t/p/w500/qhE4AXfL9N6PiLASIphaKn81HGe.jpg"
+      },
+      {
+        "title": "Pelle o Conquistador",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/m6726gyw7E4LwP4QawBUXqS7DKy.jpg"
+      },
+      {
+        "title": "Sob o Sol de Satã",
+        "year": "1987",
+        "poster": "https://image.tmdb.org/t/p/w500/aKWzbDNbh5tEp53XXfiUAzohVck.jpg"
+      },
+      {
+        "title": "A Missão",
+        "year": "1986",
+        "poster": "https://image.tmdb.org/t/p/w500/hY49cnr03m92iTiKstUCxeQFayP.jpg"
+      },
+      {
+        "title": "Quando Papai Saiu Em Viagem de Negócios",
+        "year": "1985",
+        "poster": "https://image.tmdb.org/t/p/w500/4A1ZiZVisNv7JBjyFAv9wMRl75g.jpg"
+      },
+      {
+        "title": "Paris, Texas",
+        "year": "1984",
+        "poster": "https://image.tmdb.org/t/p/w500/m9LAmYN699kB7zfDmtx2Nk4gYn9.jpg"
+      },
+      {
+        "title": "A Balada de Narayama",
+        "year": "1983",
+        "poster": "https://image.tmdb.org/t/p/w500/2byJZOG95MeNuMsC2YrQHpT0AU2.jpg"
+      },
+      {
+        "title": "Desaparecido",
+        "year": "1982",
+        "poster": "https://image.tmdb.org/t/p/w500/a4urs9a7GF87Ehyq1K29kYNEidJ.jpg"
+      },
+      {
+        "title": "O Homem de Ferro",
+        "year": "1981",
+        "poster": "https://image.tmdb.org/t/p/w500/2FlIwfhRyiJXVgZwjfUSIEeWCmD.jpg"
+      },
+      {
+        "title": "Kagemusha, a Sombra do Samurai",
+        "year": "1980",
+        "poster": "https://image.tmdb.org/t/p/w500/e4v3mNc9SvSnESPN9z1zvivkEs0.jpg"
+      },
+      {
+        "title": "O Show Deve Continuar",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/culCEdj4srLljefgn4XKd6k3C5t.jpg"
+      },
+      {
+        "title": "O Tambor",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/jAIZNPX993L0PhBYQCy3wmLlUAb.jpg"
+      },
+      {
+        "title": "Apocalypse Now",
+        "year": "1979",
+        "poster": "https://image.tmdb.org/t/p/w500/veXttPnNe8EZulvmeGTyDUrG9T4.jpg"
+      },
+      {
+        "title": "A Árvore dos Tamancos",
+        "year": "1978",
+        "poster": "https://image.tmdb.org/t/p/w500/tJYP9DsJz5OMboAWj9dm3FRiZQR.jpg"
+      },
+      {
+        "title": "Pai Patrão",
+        "year": "1977",
+        "poster": "https://image.tmdb.org/t/p/w500/1FcdB0ANZrWZe105rSVnuOZTGXn.jpg"
+      },
+      {
+        "title": "Taxi Driver: Motorista de Táxi",
+        "year": "1976",
+        "poster": "https://image.tmdb.org/t/p/w500/hvJvOYRrF9xxvNzg2Jd9PYWu7c3.jpg"
+      },
+      {
+        "title": "Crônica dos Anos de Fogo",
+        "year": "1975",
+        "poster": "https://image.tmdb.org/t/p/w500/rMIDJSkgX2A40jNRluXxExYeomo.jpg"
+      },
+      {
+        "title": "A Conversação",
+        "year": "1974",
+        "poster": "https://image.tmdb.org/t/p/w500/nHa10YW4PTPnYEkfgQpSLDiR8Xe.jpg"
+      },
+      {
+        "title": "Espantalho",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/oIPMFfFVAxhIFt9zqY5IngqG4Lv.jpg"
+      },
+      {
+        "title": "O Assalariado",
+        "year": "1973",
+        "poster": "https://image.tmdb.org/t/p/w500/xlhaEmOMWFFmCx4O8oPUMlPqEpo.jpg"
+      },
+      {
+        "title": "O Caso Mattei",
+        "year": "1972",
+        "poster": "https://image.tmdb.org/t/p/w500/vJRI66CCv4VG2SNrpEwTXdyk1Lq.jpg"
+      },
+      {
+        "title": "A Classe Operária vai ao Paraíso",
+        "year": "1971",
+        "poster": "https://image.tmdb.org/t/p/w500/8OWORT3ldccCnuyMsHrSkYjwiwN.jpg"
+      },
+      {
+        "title": "O Mensageiro",
+        "year": "1971",
+        "poster": "https://image.tmdb.org/t/p/w500/ooCkvfYAKlzXinbmqp07ZONXYfq.jpg"
+      },
+      {
+        "title": "MASH",
+        "year": "1970",
+        "poster": "https://image.tmdb.org/t/p/w500/sGT8KMnARjnv3ODPF1QfdBtnPGr.jpg"
+      },
+      {
+        "title": "Se…",
+        "year": "1968",
+        "poster": "https://image.tmdb.org/t/p/w500/fxV4A1ZUHpcX70NWEh9WLdMQCgW.jpg"
+      },
+      {
+        "title": "Blow-Up: Depois Daquele Beijo",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/7oRd8zfEGuEwWIOxPxy3JqyRPIn.jpg"
+      },
+      {
+        "title": "Confusões à Italiana",
+        "year": "1966",
+        "poster": "https://image.tmdb.org/t/p/w500/leeTmapQ4nUZQBF4YtcTRJ69LoC.jpg"
+      },
+      {
+        "title": "情夫と情婦",
+        "year": "1967",
+        "poster": "https://image.tmdb.org/t/p/w500/arlkkSJZ7TI6fjx4bF7iLAkzGQi.jpg"
+      },
+      {
+        "title": "A Bossa da Conquista",
+        "year": "1965",
+        "poster": "https://image.tmdb.org/t/p/w500/xO2dJcCISY6lujaU4Qew3RzSErJ.jpg"
+      },
+      {
+        "title": "Os Guarda-Chuvas do Amor",
+        "year": "1964",
+        "poster": "https://image.tmdb.org/t/p/w500/dzEq7RjIwH2TUEsYCOO0B0sHuVr.jpg"
+      },
+      {
+        "title": "O Pagador de Promessas",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/udIwjCpsorFKdn1XHJgV1Zc7Joe.jpg"
+      },
+      {
+        "title": "Uma Tão Longa Ausência",
+        "year": "1961",
+        "poster": "https://image.tmdb.org/t/p/w500/wdarAOFLB9GUJP6UsvHbNYCmh2x.jpg"
+      },
+      {
+        "title": "Viridiana",
+        "year": "1962",
+        "poster": "https://image.tmdb.org/t/p/w500/8GtqDStfrTC6x1JtbpuHdkwzWbu.jpg"
+      },
+      {
+        "title": "A Doce Vida",
+        "year": "1960",
+        "poster": "https://image.tmdb.org/t/p/w500/l0IgwhbAuYIbBgm8YsHRit1Fa4L.jpg"
+      },
+      {
+        "title": "Orfeu do Carnaval",
+        "year": "1959",
+        "poster": "https://image.tmdb.org/t/p/w500/iaYmiZJwicSO5R1DQ2q6lKLAXEi.jpg"
+      },
+      {
+        "title": "Quando Voam as Cegonhas",
+        "year": "1957",
+        "poster": "https://image.tmdb.org/t/p/w500/ahoP2N0hQLSMAZ0cogs9yjucsMa.jpg"
+      },
+      {
+        "title": "Sublime Tentação",
+        "year": "1956",
+        "poster": "https://image.tmdb.org/t/p/w500/m4K0f85sAAXBIdcCza8BwC0FnmC.jpg"
+      },
+      {
+        "title": "O Mundo do Silêncio",
+        "year": "1956",
+        "poster": "https://image.tmdb.org/t/p/w500/x1V5crwN7uqhApqwTcyoTYwHq10.jpg"
+      },
+      {
+        "title": "Marty",
+        "year": "1955",
+        "poster": "https://image.tmdb.org/t/p/w500/8tnGO5VoAQII4DbE3hozWKhV4BY.jpg"
+      },
+      {
+        "title": "The Great Adventures of Captain Kidd",
+        "year": "1953",
+        "poster": "https://image.tmdb.org/t/p/w500/gx9hVwNJhSlN6yreLG6S0vhChiQ.jpg"
+      },
+      {
+        "title": "Piątka z ulicy Barskiej",
+        "year": "1954",
+        "poster": "https://image.tmdb.org/t/p/w500/5SwdAC0RnuWZyMFuEWDfWVmNn1z.jpg"
+      },
+      {
+        "title": "Carrossel Napolitano",
+        "year": "1954",
+        "poster": "https://image.tmdb.org/t/p/w500/umpjOMCfJbEndS391nqjYkXMdhE.jpg"
+      },
+      {
+        "title": "Avant le déluge",
+        "year": "1954",
+        "poster": "https://image.tmdb.org/t/p/w500/1IpTRtLa0HhtsIKsxQMPt2g5VzN.jpg"
+      },
+      {
+        "title": "Os Amantes de Florença",
+        "year": "1954",
+        "poster": "https://image.tmdb.org/t/p/w500/eayiWtUAddoVkvlJAkprjVpqpXx.jpg"
+      },
+      {
+        "title": "Velikiy voin Albanii Skanderbeg",
+        "year": "1953",
+        "poster": "https://image.tmdb.org/t/p/w500/guZE57QZI0s5ZyD8U4ptWbwsbUE.jpg"
+      },
+      {
+        "title": "O Deserto Vivo",
+        "year": "1953",
+        "poster": "https://image.tmdb.org/t/p/w500/Av1A5smWvVfAfS5GnuNgAVXyais.jpg"
+      },
+      {
+        "title": "दो बीघा ज़मीन",
+        "year": "1953",
+        "poster": "https://image.tmdb.org/t/p/w500/t4blIwJ6HG9dqCSmifIhMsu4LvQ.jpg"
+      },
+      {
+        "title": "Die letzte Brücke",
+        "year": "1954",
+        "poster": "https://image.tmdb.org/t/p/w500/euG8g6N9vOiYDjpCghLAhzEnNAg.jpg"
+      },
+      {
+        "title": "O Salário do Medo",
+        "year": "1953",
+        "poster": "https://image.tmdb.org/t/p/w500/m1CwNYtoeAXmfmRXjYSoGbl6rVA.jpg"
+      },
+      {
+        "title": "Dois Vinténs de Esperança",
+        "year": "1952",
+        "poster": "https://image.tmdb.org/t/p/w500/mNc5vYniHUbpCWddBLRnWQn9LIv.jpg"
+      },
+      {
+        "title": "Otelo",
+        "year": "1951",
+        "poster": "https://image.tmdb.org/t/p/w500/aSvpM6apwwzQQaJBS4tCFgdQ9EN.jpg"
+      },
+      {
+        "title": "Senhorita Julia",
+        "year": "1951",
+        "poster": "https://image.tmdb.org/t/p/w500/zDS2qH7kR8BS57G03JXhF4dZRvs.jpg"
+      },
+      {
+        "title": "Milagre em Milão",
+        "year": "1951",
+        "poster": "https://image.tmdb.org/t/p/w500/7lVzQL9gtARaNEX9Fzc2GNoSh3Z.jpg"
+      },
+      {
+        "title": "O 3º Homem",
+        "year": "1949",
+        "poster": "https://image.tmdb.org/t/p/w500/B1MT9bSEfrSnCuNRDj8dRbiuY1.jpg"
+      },
+      {
+        "title": "Rancor",
+        "year": "1947",
+        "poster": "https://image.tmdb.org/t/p/w500/d75K1mydjt71xGscg8JuhVSa8NR.jpg"
+      },
+      {
+        "title": "Powódź",
+        "year": "1947",
+        "poster": "https://image.tmdb.org/t/p/w500/qCiQYKEXamkh58IFF1soQltA9is.jpg"
+      },
+      {
+        "title": "Dumbo",
+        "year": "1941",
+        "poster": "https://image.tmdb.org/t/p/w500/nGvMq9dEQwYrIbZe2N9OvVMBVSL.jpg"
+      },
+      {
+        "title": "Ziegfeld Follies",
+        "year": "1945",
+        "poster": "https://image.tmdb.org/t/p/w500/aOEBNv8ddg6ZsroRSyv7k46xwHG.jpg"
+      },
+      {
+        "title": "A Batalha dos Trilhos",
+        "year": "1946",
+        "poster": "https://image.tmdb.org/t/p/w500/vfGgV6CjKNdHFhXfTcyT5v51rM3.jpg"
+      }
+    ]
+  }
+}
