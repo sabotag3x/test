@@ -10,43 +10,22 @@ async function run(){
   out.value = "Carregando...\n";
 
   try{
-    const films = [];
-    let page = 1;
-    const MAX_PAGES = 20;
+    const res = await fetch(`/api/list?url=${encodeURIComponent(url)}`);
+    const films = await res.json();
 
-    while(page <= MAX_PAGES){
-      const pageUrl = `${url}page/${page}/`;
-      const proxyUrl =
-        "https://corsproxy.io?url=" +
-        encodeURIComponent(pageUrl);
-
-      const html = await fetch(proxyUrl).then(r => r.text());
-
-      const items = html.match(/data-item-full-display-name="([^"]+)"/g);
-      if(!items) break;
-
-      for(const raw of items){
-        const m = raw.match(/="(.+?)"/)[1];
-        const y = m.match(/\((\d{4})\)/);
-
-        films.push({
-          title: m.replace(/\s*\(\d{4}\)/, "").trim(),
-          year: y ? y[1] : null
-        });
-      }
-
-      page++;
+    if(!Array.isArray(films) || films.length === 0){
+      throw new Error();
     }
 
-    if(films.length === 0) throw new Error();
+    const valid = films.filter(f => f && f.poster);
 
     out.value = JSON.stringify(
-      { films },
+      { films: valid },
       null,
       2
     );
 
-  }catch{
+  }catch(e){
     out.value = "Erro ao gerar lista";
   }
 }
