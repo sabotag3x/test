@@ -1,7 +1,4 @@
 {
-  "documentarios": {
-    "name": "Documentários",
-    "updated_at": "2025-12-29",
     "films": [
       {
         "title": "Stop Making Sense",
@@ -1114,5 +1111,4 @@
         "poster": "https://image.tmdb.org/t/p/w500/lVJVAy64NBaqiDIVJCAoe7tsCZk.jpg"
       }
     ]
-  }
 }
