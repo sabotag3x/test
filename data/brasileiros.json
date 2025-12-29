@@ -1,7 +1,4 @@
 {
-  "brasileiros": {
-    "name": "Brasileiros",
-    "updated_at": "2025-12-29",
     "films": [
       {
         "title": "Cidade de Deus",
@@ -430,4 +427,3 @@
       }
     ]
   }
-}
