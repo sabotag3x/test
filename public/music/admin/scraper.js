@@ -1,9 +1,9 @@
 async function run(){
-  const input = document.getElementById("input").value.trim();
-  const out   = document.getElementById("output");
+  const input = document.getElementById("artists").value.trim();
+  const out = document.getElementById("output");
 
   if(!input){
-    alert("Cole ao menos um nome de artista");
+    alert("Cole os nomes dos artistas, um por linha");
     return;
   }
 
@@ -18,22 +18,18 @@ async function run(){
     const artists = [];
 
     for(const name of names){
-const res = await fetch(
-  `/api/music/artist?name=${encodeURIComponent(name)}`
-);
+      const res = await fetch(
+        `/api/music/artist?name=${encodeURIComponent(name)}`
+      );
 
-
-      const data = await res.json();
-      if(!data.artists || !data.artists[0]) continue;
-
-      const a = data.artists[0];
+      const artist = await res.json();
+      if(!artist) continue;
 
       artists.push({
-        name: a.name,
-        country: a.country || null,
-        begin_year: a["life-span"]?.begin
-          ? a["life-span"].begin.slice(0,4)
-          : null
+        name: artist.name,
+        id: artist.id,
+        country: artist.country || null,
+        type: artist.type || null
       });
     }
 
