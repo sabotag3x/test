@@ -1,7 +1,4 @@
 {
-  "bafta": {
-    "name": "BAFTA",
-    "updated_at": "2025-12-29",
     "films": [
       {
         "title": "Conclave",
@@ -370,4 +367,3 @@
       }
     ]
   }
-}
