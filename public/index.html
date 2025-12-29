@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FilmDuel – Batalha de Filmes</title>
 
-  <style>
+<style>
 *{box-sizing:border-box}
 
 body{
@@ -143,153 +143,6 @@ button{
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:90px;
-}
-
-.side{
-  display:flex;
-  gap:26px;
-  align-items:center;
-}
-
-.round{
-  display:flex;
-  flex-direction:column;
-  gap:14px;
-}
-
-.round img{
-  border-radius:8px;
-}
-
-.r1 img{width:55px}
-.r2 img{width:80px}
-.r3 img{width:120px}
-
-.champion{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:14px;
-}
-
-.champion img{
-  width:360px;
-  border-radius:22px;
-}
-
-.champion .title{
-  font-size:24px;
-  font-weight:bold;
-}
-
-#again{
-  margin-top:12px;
-  padding:14px 36px;
-}
-
-/* ================= MOBILE ================= */
-
-
-/* ================= MOBILE GERAL ================= */
-
-@media (max-width: 768px){
-
-  body{
-    font-size: 18px;
-  }
-
-  .container{
-    padding: 12px 16px 24px;
-  }
-
-  h1{
-    font-size: 34px;
-  }
-
-  .subtitle{
-    font-size: 16px;
-  }
-
-  input{
-    width: 90%;
-    font-size: 18px;
-    padding: 16px 20px;
-  }
-
-  button{
-    font-size: 18px;
-    padding: 16px 28px;
-  }
-
-  .lists{
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-    width: 100%;
-  }
-
-  .lists button{
-    width: 100%;
-    padding: 16px 18px;
-    font-size: 16px;
-  }
-}
-
-/* ================= LOADING ================= */
-
-#status{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  min-height:50vh;
-}
-
-#loading-main{
-  font-size: clamp(26px, 6vw, 34px);
-}
-
-#loading-sub{
-  font-size: clamp(16px, 4vw, 18px);
-  margin-top:10px;
-}
-
-/* ================= DUELO ================= */
-
-.duel{
-  align-items:center;
-}
-
-@media (max-width: 768px){
-
-  .duel{
-    gap: 6vw;
-    min-height: auto;
-  }
-
-  .card{
-    width: 42vw;
-  }
-
-  .card img{
-    width: 100%;
-  }
-
-  .title{
-    font-size: 15px;
-    margin-top: 10px;
-    -webkit-line-clamp: unset;
-  }
-}
-
-/* ================= RESULTADO FINAL ================= */
-
-/* ================= RESULTADO FINAL ================= */
-
-.bracket{
-  display:flex;
-  justify-content:center;
-  align-items:center;
   gap:5%;
   width:100%;
   max-width:1400px;
@@ -302,18 +155,17 @@ button{
   align-items:center;
 }
 
-/* colunas (8 / 4 / 2 / 1) */
 .round{
   display:flex;
   flex-direction:column;
   gap:12px;
 }
 
-/* tamanhos proporcionais */
-.r1 img{ width:56px }
-.r2 img{ width:80px }
-.r3 img{ width:110px }
-.r4 img{ width:140px } /* FINALISTAS */
+.round img{border-radius:8px}
+.r1 img{width:56px}
+.r2 img{width:80px}
+.r3 img{width:110px}
+.r4 img{width:140px}
 
 .champion{
   display:flex;
@@ -326,105 +178,53 @@ button{
 .champion img{
   width:100%;
   max-width:360px;
-  height:auto;
 }
 
 .champion .title{
   font-size:22px;
   font-weight:bold;
-  text-align:center;
 }
 
 #again{
   margin-top:14px;
 }
 
-/* ================= RESULTADO FINAL – MOBILE DEFINITIVO ================= */
-
-/* ================= RESULTADO FINAL – MOBILE VERTICAL DEFINITIVO ================= */
+/* ================= MOBILE ================= */
 
 @media (max-width: 900px){
-
   .bracket{
-    display:flex;
     flex-direction:column;
-    align-items:center;
-    justify-content:center;
     gap:16px;
-    width:100%;
   }
 
-  /* blocos de chaves (cima e baixo) */
   .side{
-    display:flex;
     flex-direction:column;
-    align-items:center;
     gap:10px;
-    width:100%;
   }
 
   .round{
-    display:flex;
     flex-direction:row;
-    justify-content:center;
-    align-items:center;
-    gap:8px;
     flex-wrap:wrap;
+    justify-content:center;
+    gap:8px;
   }
 
-  /* TODOS os posters das chaves = mesmo tamanho pequeno */
   .round img{
     width:9vw;
     max-width:42px;
     min-width:30px;
-    height:auto;
-  }
-
-  /* CAMPEÃO */
-  .champion{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-    width:100%;
   }
 
   .champion img{
-    width:40vw;        /* campeão nunca passa disso */
+    width:40vw;
     max-width:220px;
-    height:auto;
   }
 
   .champion .title{
     font-size:18px;
-    text-align:center;
-  }
-
-  #again{
-    margin-top:10px;
-    font-size:16px;
-    padding:12px 26px;
   }
 }
-
-/* ================= MOBILE MUITO PEQUENO ================= */
-
-@media (max-width: 420px){
-
-  .round img{
-    width:10vw;
-    max-width:36px;
-  }
-
-  .champion img{
-    width:46vw;
-    max-width:200px;
-  }
-}
-
-
-    </style>
+</style>
 </head>
 
 <body>
@@ -439,29 +239,14 @@ button{
   <input id="user" placeholder="Seu usuário no Letterboxd">
   <button onclick="startUser()">Meus filmes</button>
 
-  <div class="subtitle" style="margin-top:18px">
-  Listas prontas
-</div>
+  <div class="subtitle" style="margin-top:18px">Listas prontas</div>
 
   <div class="lists">
-    <button onclick="startList('https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/')">Top 250 Letterboxd</button>
-    <button onclick="startList('https://letterboxd.com/dave/list/imdb-top-250/')">IMDb Top 250</button>
-    <button onclick="startList('https://letterboxd.com/jack/list/official-top-250-films-with-the-most-fans/')">Mais Populares</button>
-    <button onclick="startList('https://letterboxd.com/lifeasfiction/list/letterboxd-100-animation/')">Animação</button>
-    <button onclick="startList('https://letterboxd.com/petitebutfierce/list/disney/')">Disney</button>
-    <button onclick="startList('https://letterboxd.com/jaywill/list/ghibli/')">Ghibli</button>
-    <button onclick="startList('https://letterboxd.com/purecinema1/list/brazil/')">Brasil</button>
-    <button onclick="startList('https://letterboxd.com/jack/list/official-top-250-documentary-films/')">Documentários</button>
-    <button onclick="startList('https://letterboxd.com/chris_coke/list/letterboxds-top-250-science-fiction-films/')">Ficção Científica</button>
-    <button onclick="startList('https://letterboxd.com/brsan/list/letterboxds-top-250-international-films/')">Estrangeiros</button>
-    <button onclick="startList('https://letterboxd.com/oscars/list/oscar-winning-films-best-picture/')">Oscar</button>
-    <button onclick="startList('https://letterboxd.com/festival_cannes/list/70-years-of-the-palme-dor-70-ans-de-la-palme/')">Palma de Ouro</button>
-    <button onclick="startList('https://letterboxd.com/bafta/list/all-bafta-best-film-award-winners/')">BAFTA</button>
-    <button onclick="startList('https://letterboxd.com/jbutts15/list/the-complete-criterion-collection/')">Criterion</button>
-    <button onclick="startList('https://letterboxd.com/a24/list/every-a24-movie-ever/')">A24</button>
-    <button onclick="startList('https://letterboxd.com/crew/list/the-2010s-top-250-narrative-features/')">Década 2010</button>
-    <button onclick="startList('https://letterboxd.com/victorp26/list/mcu/')">Universo Marvel</button>
-    <button onclick="startList('https://letterboxd.com/darrencb/list/letterboxds-top-250-horror-films/')">Terror</button>
+    <button onclick="startList('top_250_letterboxd')">Top 250 Letterboxd</button>
+    <button onclick="startList('top_250_imdb')">IMDb Top 250</button>
+    <button onclick="startList('ghibli')">Ghibli</button>
+    <button onclick="startList('disney')">Disney</button>
+    <!-- adicione outras chaves conforme existirem no lists.json -->
   </div>
 </div>
 
@@ -486,19 +271,9 @@ let loadingTimer=null;
 
 const loadingTexts=[
 "Conferindo se o director’s cut é melhor mesmo",
-"Brigando com cinéfilo nos comentários",
 "Reclamando que o livro era melhor",
-"Procurando a cena pós-créditos",
-"Ajustando legenda fora de sincronia",
-"Decidindo se é cult ou só chato",
 "Fingindo que entendeu o final",
-"Ignorando spoilers no Twitter",
 "Discutindo plano-sequência imaginário",
-"Tentando lembrar onde já viu esse ator",
-"Checando se ganhou Palma de Ouro",
-"Fingindo que viu em 35mm",
-"Explicando por que preto e branco é arte",
-"Procurando o filme antes de virar modinha",
 "Atualizando ranking pessoal no Letterboxd"
 ];
 
@@ -519,60 +294,44 @@ function stopLoading(){
   document.getElementById("status").style.display="none";
 }
 
-async function startUser(){
+function startUser(){
   const u=document.getElementById("user").value.trim();
   start(`/api/user/${u}`);
 }
 
-async function startList(url){
-  start(`/api/list?url=${encodeURIComponent(url)}`);
+function startList(key){
+  start(`/api/list/${key}`);
 }
 
 async function start(endpoint){
-  document.getElementById("home").style.display = "none";
-  document.getElementById("game").style.display = "flex";
+  document.getElementById("home").style.display="none";
+  document.getElementById("game").style.display="flex";
   startLoading();
 
   try{
     const res = await fetch(endpoint);
     const data = await res.json();
 
-    const valid = Array.isArray(data)
-      ? data.filter(f => f && f.poster)
-      : [];
+    const valid = data.filter(f=>f && f.poster);
 
-    if(valid.length < 16){
-      throw new Error("NOT_ENOUGH");
-    }
+    if(valid.length < 16) throw new Error();
 
     pool = shuffle(valid);
     filmes = pool.splice(0,16);
-    initialRound = [...filmes];
-    rounds = [];
-    winners = [];
-    idx = 0;
+    initialRound=[...filmes];
+    rounds=[];
+    winners=[];
+    idx=0;
 
     stopLoading();
     next();
 
-  }catch(e){
+  }catch{
     stopLoading();
-    showError(
-      e.message === "NOT_ENOUGH"
-        ? "Esse usuário não tem filmes suficientes para a batalha."
-        : "Usuário inexistente ou erro ao carregar os filmes."
-    );
+    document.getElementById("duel").innerHTML=
+      `<div><b>Erro ao carregar filmes</b><br><button onclick="location.reload()">Voltar</button></div>`;
   }
 }
-  function showError(msg){
-  document.getElementById("duel").innerHTML = `
-    <div style="text-align:center;max-width:420px">
-      <div style="font-size:20px;margin-bottom:14px">${msg}</div>
-      <button onclick="location.reload()">Voltar</button>
-    </div>
-  `;
-}
-
 
 function next(){
   if(idx>=filmes.length){
@@ -602,74 +361,39 @@ function choose(i){
 }
 
 function showFinal(champ){
-  const r1 = initialRound;     // 16
-  const r2 = rounds[0];        // 8
-  const r3 = rounds[1];        // 4
-  const r4 = rounds[2];        // 2
+  const r1=initialRound;
+  const r2=rounds[0];
+  const r3=rounds[1];
+  const r4=rounds[2];
 
-  const left8  = r1.slice(0,8);
-  const right8 = r1.slice(8,16);
+  const left8=r1.slice(0,8), right8=r1.slice(8);
+  const left4=r2.slice(0,4), right4=r2.slice(4);
+  const left2=r3.slice(0,2), right2=r3.slice(2);
 
-  const left4  = r2.slice(0,4);
-  const right4 = r2.slice(4,8);
-
-  const left2  = r3.slice(0,2);
-  const right2 = r3.slice(2,4);
-
-  const left1  = r4[0];
-  const right1 = r4[1];
-
-  document.getElementById("duel").innerHTML = `
-    <div class="bracket">
-
-      <!-- LADO ESQUERDO -->
-      <div class="side">
-        <div class="round r1">
-          ${left8.map(f=>`<img src="${f.poster}">`).join("")}
-        </div>
-        <div class="round r2">
-          ${left4.map(f=>`<img src="${f.poster}">`).join("")}
-        </div>
-        <div class="round r3">
-          ${left2.map(f=>`<img src="${f.poster}">`).join("")}
-        </div>
-        <div class="round r4">
-          <img src="${left1.poster}">
-        </div>
-      </div>
-
-      <!-- CAMPEÃO -->
-      <div class="champion">
-        <img src="${champ.poster}">
-        <div class="title">
-          Campeão<br>${champ.title} (${champ.year})
-        </div>
-        <button id="again" onclick="location.reload()">Jogar novamente</button>
-      </div>
-
-      <!-- LADO DIREITO -->
-      <div class="side">
-        <div class="round r4">
-          <img src="${right1.poster}">
-        </div>
-        <div class="round r3">
-          ${right2.map(f=>`<img src="${f.poster}">`).join("")}
-        </div>
-        <div class="round r2">
-          ${right4.map(f=>`<img src="${f.poster}">`).join("")}
-        </div>
-        <div class="round r1">
-          ${right8.map(f=>`<img src="${f.poster}">`).join("")}
-        </div>
-      </div>
-
+  document.getElementById("duel").innerHTML=`
+  <div class="bracket">
+    <div class="side">
+      <div class="round r1">${left8.map(f=>`<img src="${f.poster}">`).join("")}</div>
+      <div class="round r2">${left4.map(f=>`<img src="${f.poster}">`).join("")}</div>
+      <div class="round r3">${left2.map(f=>`<img src="${f.poster}">`).join("")}</div>
+      <div class="round r4"><img src="${r4[0].poster}"></div>
     </div>
-  `;
-}
 
-  
+    <div class="champion">
+      <img src="${champ.poster}">
+      <div class="title">Campeão<br>${champ.title} (${champ.year})</div>
+      <button id="again" onclick="location.reload()">Jogar novamente</button>
+    </div>
+
+    <div class="side">
+      <div class="round r4"><img src="${r4[1].poster}"></div>
+      <div class="round r3">${right2.map(f=>`<img src="${f.poster}">`).join("")}</div>
+      <div class="round r2">${right4.map(f=>`<img src="${f.poster}">`).join("")}</div>
+      <div class="round r1">${right8.map(f=>`<img src="${f.poster}">`).join("")}</div>
+    </div>
+  </div>`;
+}
 </script>
 
 </body>
 </html>
-
