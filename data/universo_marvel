@@ -1,0 +1,208 @@
+{
+  "universo_marvel": {
+    "name": "Universo Marvel",
+    "updated_at": "2025-12-29",
+    "films": [
+      {
+        "title": "Homem de Ferro",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/6yObhDNEsAmFyMVfWNL64wQGyzj.jpg"
+      },
+      {
+        "title": "O Incrível Hulk",
+        "year": "2008",
+        "poster": "https://image.tmdb.org/t/p/w500/v1UXe9WlwkkZ5YrffUSPdYNeJz3.jpg"
+      },
+      {
+        "title": "Homem de Ferro 2",
+        "year": "2010",
+        "poster": "https://image.tmdb.org/t/p/w500/A7NFIOapixCJV3zA3sF823KVrNL.jpg"
+      },
+      {
+        "title": "Thor",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/aEV9QmgBqjRTdjsvdCgdK89tavQ.jpg"
+      },
+      {
+        "title": "Capitão América: O Primeiro Vingador",
+        "year": "2011",
+        "poster": "https://image.tmdb.org/t/p/w500/19wxfSXHhuJBRbbfUweCsfXFhpv.jpg"
+      },
+      {
+        "title": "Os Vingadores: The Avengers",
+        "year": "2012",
+        "poster": "https://image.tmdb.org/t/p/w500/u49fzmIJHkb1H4oGFTXtBGgaUS1.jpg"
+      },
+      {
+        "title": "Homem de Ferro 3",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/zYDldIetY6AlHw9eeumz1G4tSZG.jpg"
+      },
+      {
+        "title": "Thor: O Mundo Sombrio",
+        "year": "2013",
+        "poster": "https://image.tmdb.org/t/p/w500/9qdqXIx2neypuT1kWKCTI2vsO4q.jpg"
+      },
+      {
+        "title": "Capitão América: O Soldado Invernal",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/9sTDXtIIfHza1rAbmHU2djyzEXA.jpg"
+      },
+      {
+        "title": "Guardiões da Galáxia",
+        "year": "2014",
+        "poster": "https://image.tmdb.org/t/p/w500/xaY92XMToaSnBuvCui3LHzNGqZB.jpg"
+      },
+      {
+        "title": "Vingadores: Era de Ultron",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/uvzqTsRmUzk9mJVzX8cMSWMyM5l.jpg"
+      },
+      {
+        "title": "Homem-Formiga",
+        "year": "2015",
+        "poster": "https://image.tmdb.org/t/p/w500/lsiy4IcnbtChkayPMxLda2fq4xM.jpg"
+      },
+      {
+        "title": "Capitão América: Guerra Civil",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/dsvUR5aEVSkB1Sro7nT6Khqik71.jpg"
+      },
+      {
+        "title": "Doutor Estranho",
+        "year": "2016",
+        "poster": "https://image.tmdb.org/t/p/w500/pb4clPWRJ5AKlSFu1HrrHdt5uAw.jpg"
+      },
+      {
+        "title": "Guardiões da Galáxia - Vol. 2",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/akOXBElzTQ0Q044uB4ztvx6bTqQ.jpg"
+      },
+      {
+        "title": "Homem-Aranha: De Volta ao Lar",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/1nkwRL17cAGO8A1yu3miRBdvOsl.jpg"
+      },
+      {
+        "title": "Thor: Ragnarok",
+        "year": "2017",
+        "poster": "https://image.tmdb.org/t/p/w500/2K45Fp6koAVoeeYS6aMb9BeNt4F.jpg"
+      },
+      {
+        "title": "Pantera Negra",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/ubXNpxL2ASSzY0f8Hxv08pOsV2L.jpg"
+      },
+      {
+        "title": "Vingadores: Guerra Infinita",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/A4kvp7vY1BDLrrQIagRCffLKj1t.jpg"
+      },
+      {
+        "title": "Homem-Formiga e a Vespa",
+        "year": "2018",
+        "poster": "https://image.tmdb.org/t/p/w500/5BKRuGVxx8qsB7WGSJ0oWRCHsgN.jpg"
+      },
+      {
+        "title": "Capitã Marvel",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/n3BisLdTMceUWcdP1ooP5VwN9JF.jpg"
+      },
+      {
+        "title": "Vingadores: Ultimato",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/9fRX8UKlIW7Lb9GqNsJVakWWFCi.jpg"
+      },
+      {
+        "title": "Homem-Aranha: Longe de Casa",
+        "year": "2019",
+        "poster": "https://image.tmdb.org/t/p/w500/8V0hpq8BUzauB06eEfr7AmyTzbK.jpg"
+      },
+      {
+        "title": "Viúva Negra",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/pGkBgxoaNynkOBs6HEIG3dvkbuk.jpg"
+      },
+      {
+        "title": "Shang-Chi e a Lenda dos Dez Anéis",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/fojnVuvt181l7LxsJDxCQfWSKfh.jpg"
+      },
+      {
+        "title": "Eternos",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/2IgZIYa8iTQuLNIcVERwXmh8pUj.jpg"
+      },
+      {
+        "title": "Homem-Aranha: Sem Volta Para Casa",
+        "year": "2021",
+        "poster": "https://image.tmdb.org/t/p/w500/lrexJi7P336iIwtogSq2OP7AVGJ.jpg"
+      },
+      {
+        "title": "Doutor Estranho no Multiverso da Loucura",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/7pLIVfovuIf2KQOOvMsKx3Lanrg.jpg"
+      },
+      {
+        "title": "Thor: Amor e Trovão",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/8gdBMIYwPPxp3b9FjY9yCxme5Rs.jpg"
+      },
+      {
+        "title": "Pantera Negra: Wakanda para Sempre",
+        "year": "2022",
+        "poster": "https://image.tmdb.org/t/p/w500/nj9cgMhqXQJkXutKmvVelKNP1Aa.jpg"
+      },
+      {
+        "title": "Homem-Formiga e a Vespa: Quantumania",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/q7CfFjOvjLz9GZoh5RoCOSVniWm.jpg"
+      },
+      {
+        "title": "Guardiões da Galáxia: Vol. 3",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/xXQxLeJ1PdgL8k56WGphreTDGk3.jpg"
+      },
+      {
+        "title": "As Marvels",
+        "year": "2023",
+        "poster": "https://image.tmdb.org/t/p/w500/wpp5KIwjtrKoWj5H0TSsJdqsDx7.jpg"
+      },
+      {
+        "title": "Capitão América: Admirável Mundo Novo",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/yWOtVhuwJ6f5j9ELD2k3wKELEln.jpg"
+      },
+      {
+        "title": "Thunderbolts*",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/zkysYSX51ddSPQuiDTjkGCS6vyh.jpg"
+      },
+      {
+        "title": "Quarteto Fantástico: Primeiros Passos",
+        "year": "2025",
+        "poster": "https://image.tmdb.org/t/p/w500/hlWOAWRKSno6UxaE0IXDFVvmzTf.jpg"
+      },
+      {
+        "title": "Homem-Aranha: Um Novo Dia",
+        "year": "2026",
+        "poster": "https://image.tmdb.org/t/p/w500/8RwRlxWm3jp5Jg732sjDWefvHvF.jpg"
+      },
+      {
+        "title": "Vingadores: Doutor Destino",
+        "year": "2026",
+        "poster": "https://image.tmdb.org/t/p/w500/F4k01H7IG8S3msL9JNSa3T8nHc.jpg"
+      },
+      {
+        "title": "Vingadores: Guerras Secretas",
+        "year": "2027",
+        "poster": "https://image.tmdb.org/t/p/w500/f0YBuh4hyiAheXhh4JnJWoKi9g5.jpg"
+      },
+      {
+        "title": "Blade: O Caçador de Vampiros",
+        "year": "1998",
+        "poster": "https://image.tmdb.org/t/p/w500/zyivyoXd6zP09tS1PP7b35sB84h.jpg"
+      }
+    ]
+  }
+}
